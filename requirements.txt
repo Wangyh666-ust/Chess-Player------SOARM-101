@@ -1,0 +1,10 @@
+# Tested vision experiment environment. Install CUDA-enabled torch/torchvision separately.
+ultralytics==8.4.173
+numpy==1.26.4
+scipy==1.14.1
+opencv-python==4.11.0.86
+Pillow==12.3.0
+vtk==9.7.1
+matplotlib==3.10.9
+python-chess==1.999
+PyYAML==6.0.3

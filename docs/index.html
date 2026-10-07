@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SO-ARM101 / Chess Vision — Dubrovnik fine-tuning results</title>
+<meta name="description" content="Static, recorded evaluation of a Dubrovnik-specific YOLOv8m chess piece detector: original vs fine-tuned joint accuracy, latency, occupancy F1 and per-example 8x8 board reconstructions.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <span class="brand-mark">SO-ARM101 / CHESS VISION</span>
+    </div>
+    <span class="badge">Dubrovnik-specific fine-tuning</span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="intro">
+    <h1>Same pieces. A better detector.</h1>
+    <p class="lead">
+      A YOLOv8m chess piece detector was fine-tuned on synthetic RGB scenes built from one exact
+      mesh set, <code class="code">ezeeone_Dubrovnik_1960_set_02_stls</code>. This page reports
+      <strong>recorded, static model predictions</strong> — no live inference, no camera, no upload.
+    </p>
+    <p class="scope-strip">Synthetic RGB scenes &middot; Known board corners &middot; Piece detector only</p>
+  </section>
+
+  <section class="section" aria-labelledby="eval-title">
+    <div class="section-head">
+      <h2 id="eval-title">Evaluation set</h2>
+      <div class="control">
+        <label for="dataset-select">Evaluation set</label>
+        <select id="dataset-select" aria-describedby="dataset-note"></select>
+      </div>
+    </div>
+    <p id="dataset-note" class="note">
+      Metrics are computed on the <strong>full selected dataset</strong> and do not change when the
+      example preview below is filtered.
+    </p>
+
+    <div id="metrics" class="metric-grid" aria-live="polite"></div>
+
+    <details class="details">
+      <summary>How the metrics are defined</summary>
+      <ul>
+        <li><strong>Joint accuracy</strong> = piece colour&nbsp;+&nbsp;type both correct, over the
+          ground-truth <em>occupied</em> squares (denominator = GT occupied squares, not 64).</li>
+        <li><strong>Mismatches / misses</strong> count wrong class or empty prediction on a GT
+          occupied square; spurious detections on GT-empty squares are counted as occupancy errors.</li>
+        <li><strong>Exact board</strong> = all 64 squares match the ground truth exactly
+          (including empty squares).</li>
+        <li><strong>Timing</strong> covers preprocessing + GPU inference + square mapping, and
+          excludes image I/O, camera capture and board-corner detection.
+          Hardware: RTX 5070 Laptop 8&nbsp;GB.</li>
+      </ul>
+    </details>
+  </section>
+
+  <section class="section" aria-labelledby="explorer-title">
+    <div class="section-head">
+      <h2 id="explorer-title">Example explorer</h2>
+      <div class="controls-row">
+        <div class="control">
+          <label for="example-select">Example</label>
+          <select id="example-select"></select>
+        </div>
+        <div class="control control-inline">
+          <input type="checkbox" id="failures-only">
+          <label for="failures-only">Only fine-tuned failures</label>
+        </div>
+        <div class="control control-inline">
+          <input type="checkbox" id="boxes-toggle" checked>
+          <label for="boxes-toggle">Detection boxes</label>
+        </div>
+        <div class="control control-inline">
+          <input type="checkbox" id="corners-toggle" checked>
+          <label for="corners-toggle">Known corners</label>
+        </div>
+        <div class="control control-nav">
+          <button type="button" id="prev-example" aria-label="Previous example">&#8249; Prev</button>
+          <button type="button" id="next-example" aria-label="Next example">Next &#8250;</button>
+        </div>
+      </div>
+    </div>
+
+    <p id="preview-counter" class="counter" aria-live="polite"></p>
+
+    <div class="panels">
+      <article class="panel panel-original">
+        <h3>Original YOLOv8m</h3>
+        <p class="panel-stat" id="stat-original"></p>
+        <div class="svg-holder" id="svg-original"></div>
+      </article>
+      <article class="panel panel-finetuned">
+        <h3>Dubrovnik fine-tuned</h3>
+        <p class="panel-stat" id="stat-finetuned"></p>
+        <div class="svg-holder" id="svg-finetuned"></div>
+      </article>
+    </div>
+
+    <div class="boards-row">
+      <div class="board-card">
+        <h4>Ground truth</h4>
+        <div class="board board-truth" id="board-truth"></div>
+      </div>
+      <div class="board-card">
+        <h4>Original board</h4>
+        <div class="board board-orig" id="board-orig"></div>
+      </div>
+      <div class="board-card">
+        <h4>Fine-tuned board</h4>
+        <div class="board board-ft" id="board-ft"></div>
+      </div>
+    </div>
+
+    <div class="legend">
+      <span class="legend-item"><span class="legend-swatch sw-light">&#9812;</span> White</span>
+      <span class="legend-item"><span class="legend-swatch sw-dark">&#9818;</span> Black</span>
+      <span class="legend-item"><span class="legend-swatch sw-err"></span> Mismatch vs ground truth</span>
+    </div>
+
+    <div class="errors">
+      <h4>Fine-tuned square errors</h4>
+      <ul id="error-list"></ul>
+    </div>
+
+    <details class="details">
+      <summary>Position metadata</summary>
+      <pre id="fen-box" class="fen"></pre>
+    </details>
+  </section>
+
+  <section class="section" aria-labelledby="method-title">
+    <h2 id="method-title">Dataset and method</h2>
+    <p>
+      Training data: <strong>3,000 synthetic RGB images</strong> covering
+      <strong>375 distinct board positions</strong> (8 views per position). The positions were split
+      by board position &mdash; not by image &mdash; into <strong>2,096 train</strong>,
+      <strong>448 validation</strong> and <strong>456 test</strong> images. Three old mesh layouts
+      were excluded from training so the model could not memorise them.
+    </p>
+    <p>
+      Model: <strong>YOLOv8m</strong> initialised from ChessReD2K weights, fine-tuned for
+      <strong>15 epochs</strong> with <strong>AdamW</strong>; training loss combines
+      <strong>CIoU + BCE + DFL</strong>. Scenes are rendered procedurally in VTK with
+      <strong>50&nbsp;mm squares</strong> and a <strong>78&nbsp;mm king</strong>, with no board
+      dynamics.
+    </p>
+
+    <table class="table" id="comparison-table">
+      <caption>Full held-out set (456 images) — original vs. fine-tuned</caption>
+      <thead>
+        <tr>
+          <th scope="col">Metric</th>
+          <th scope="col">Original</th>
+          <th scope="col">Fine-tuned</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <details class="details">
+      <summary>Training curves and saved evaluation summary</summary>
+      <figure>
+        <img src="assets/training_curve.png" alt="Training loss and validation curves over 15 epochs" loading="lazy">
+      </figure>
+      <figure>
+        <img src="assets/summary.png" alt="Saved evaluation summary comparing original and fine-tuned models on both datasets" loading="lazy">
+      </figure>
+    </details>
+  </section>
+
+  <section class="section limitations" aria-labelledby="lim-title">
+    <h2 id="lim-title">Limitations</h2>
+    <ul>
+      <li>Specialised for the exact Dubrovnik mesh set; no measured performance on real camera input
+        or other piece sets.</li>
+      <li>Automatic corner detection is unchanged and is <strong>not</strong> part of this benchmark
+        (corners are known here).</li>
+      <li>VLA / robot execution is future work; nothing here drives hardware.</li>
+    </ul>
+    <p class="note">
+      All 14 fine-tuned failure frames are available in the held-out explorer; low-angle views
+      dominate the residual errors.
+    </p>
+    <p class="note">
+      The explorer's selection is the union of the first 6 test frames, 12 evenly spaced frames and
+      all fine-tuned failures; metrics above always reflect all 456 test images.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101">Repository</a>
+    <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/EXPERIMENT.md">Experiment docs</a>
+    <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/raw/refs/heads/main/models/dubrovnik-yolov8m-v1.pt">Trained weight</a>
+    <a href="assets/summary.csv" download>Download summary CSV</a>
+    <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/artifacts/dubrovnik-v1/comparison.json">Full results (comparison.json)</a>
+  </div>
+</footer>
+
+<div id="fatal" class="fatal" hidden>
+  <p>
+    Demo data could not be loaded. Make sure <code>assets/demo-data.js</code> is present next to
+    this page and is loaded before <code>assets/app.js</code>.
+  </p>
+</div>
+
+<script src="assets/demo-data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

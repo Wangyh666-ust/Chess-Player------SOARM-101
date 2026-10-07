@@ -1,0 +1,27 @@
+# Credentials and local environments
+*.env
+.env*
+*api_key*
+*api-key*
+deepseek_api.txt
+*.pem
+*.key
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+*.generation.json
+.pytest_cache/
+
+# Local source assets and regenerated experimental outputs
+vision_eval/prepared/
+vision_eval/alternatives/
+vision_eval/dubrovnik_finetune/
+runs/
+*.cache
+
+# Machine/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
