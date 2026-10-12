@@ -2,6 +2,8 @@
 
 Experiment date: 2026-10-07.
 
+**Project update (2026-10-12):** the project also has a preliminary virtual manipulation experiment and a complete ten-ply video. See [SIMULATION.md](SIMULATION.md). The vision experiment below retains its original scope and results.
+
 This is a targeted **synthetic-domain chess-piece detection experiment** for ezeeone_Dubrovnik_1960_set_02_stls. It does not establish performance on real printed pieces or other chess sets.
 
 ## Task and model

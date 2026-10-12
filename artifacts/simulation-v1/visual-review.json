@@ -1,0 +1,12 @@
+{
+  "reviewer": "GPT 6 Astra, same session",
+  "independent": false,
+  "passed": true,
+  "inspected": ["poster.jpg", "ten_moves_decode_montage.jpg"],
+  "observations": [
+    "Actual decoded images show the robot, board and pieces with readable move/phase labels.",
+    "All ten move thumbnails are present; selected source is the completed random2 run.",
+    "The video header explicitly labels fixed translation plus rotation and variable-speed recorded replay."
+  ],
+  "scope": "Visual inspection supplements all-frame decode and source-pose hash QA; not new physics or independent experiment review."
+}

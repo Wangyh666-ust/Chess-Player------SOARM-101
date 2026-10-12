@@ -19,3 +19,7 @@ The supplied STL asset set is named ezeeone_Dubrovnik_1960_set_02_stls. Mesh ide
 Model training/inference uses [Ultralytics](https://github.com/ultralytics/ultralytics), with its upstream AGPL-3.0 and enterprise licensing options. Rendering and processing use VTK, NumPy, OpenCV, Pillow, python-chess, SciPy, matplotlib, PyYAML, and PyTorch. Each dependency retains its own license; consult its source distribution for terms.
 
 No external font, JavaScript framework, or CDN is needed for the demo.
+
+## Preliminary robot simulation
+
+The recorded motion experiment uses PyBullet, OMPL, SciPy, NumPy, python-chess, Pillow, OpenCV, and imageio-ffmpeg. The video depicts the project's SO-ARM101 and Dubrovnik geometry in a nominal virtual installation. Raw robot/CAD/STL assets and the full local simulation runtime are not bundled by this results update; rendered video, selected recorded poses, and audit data are included. Each dependency and source asset retains its own terms.

@@ -1,0 +1,2096 @@
+{
+  "id": "ideal_grasp_continuous_3x10_v1",
+  "games": [
+    {
+      "game_id": "random1",
+      "planned": 10,
+      "attempted": 7,
+      "completed": 6,
+      "initialization_steps": 120,
+      "failures": [
+        {
+          "ply": 7,
+          "uci": "d4a1",
+          "phase": "plan",
+          "reason": "candidate_preflight"
+        }
+      ],
+      "complete_game": false,
+      "physics_steps": 68182,
+      "simulation_time_s": 284.09166666666664
+    },
+    {
+      "game_id": "random2",
+      "planned": 10,
+      "attempted": 10,
+      "completed": 10,
+      "initialization_steps": 120,
+      "failures": [],
+      "complete_game": true,
+      "physics_steps": 103896,
+      "simulation_time_s": 432.9
+    },
+    {
+      "game_id": "random3",
+      "planned": 10,
+      "attempted": 10,
+      "completed": 10,
+      "initialization_steps": 120,
+      "failures": [],
+      "complete_game": true,
+      "physics_steps": 104033,
+      "simulation_time_s": 433.4708333333333
+    }
+  ],
+  "actions": [
+    {
+      "game": "random1",
+      "ply": 1,
+      "uci": "c4d4",
+      "target": "c4",
+      "action_steps": 10023,
+      "action_time_s": 41.7625,
+      "frame_count": 2976,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply01_c4.json.gz",
+        "raw_hash": "c969a905b5d4f8d89de841fdfc48cef6151c11fd5e90dfc8005ad51d21cee4c7",
+        "frame_count": 2976
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 13.370833333333334,
+      "detach_time": 38.291666666666664,
+      "attachment_samples": 5981,
+      "native_zero_force_samples": 449,
+      "native_force_min_N": [
+        0.0,
+        3.42257047121007e-05
+      ],
+      "constraint_position_error_max_mm": 0.000922906288724359,
+      "constraint_rotation_error_max_deg": 0.001523925002922377,
+      "constraint_reaction_abs_max": [
+        0.003089374802759624,
+        0.002412394849128818,
+        0.033032334685837855,
+        1.0699756607270292e-05,
+        1.2780203901897274e-05,
+        1.7029347766852543e-06
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.16173390176397,
+      "final_xy_error_mm": 0.09383946408668274,
+      "final_tilt_deg": 0.0034602996142318863,
+      "pickup_motion": {
+        "samples": 562,
+        "piece_xy_excursion_mm": 0.001441032702812053,
+        "tcp_xy_excursion_mm": 0.0011928377208822668,
+        "piece_z_change_mm": 24.938578322743663
+      },
+      "placement_motion": {
+        "samples": 776,
+        "piece_xy_excursion_mm": 0.1041214482136642,
+        "tcp_xy_excursion_mm": 0.09901347318682767,
+        "piece_z_change_mm": -24.979414750708997
+      },
+      "home_steps": 1336,
+      "home_time_s": 5.566666666666663,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply01_return_c4.json.gz",
+        "raw_hash": "f3d5c0faded4ff9c58ff816397ef3c71b39b6249d11a5e5dd6adc744e42edb05",
+        "frame_count": 670
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random1",
+      "ply": 2,
+      "uci": "f3c6",
+      "target": "f3",
+      "action_steps": 13300,
+      "action_time_s": 55.41666666666667,
+      "frame_count": 3715,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply02_f3.json.gz",
+        "raw_hash": "9318bd7327d89a1d2db447467272d9bfd617e8ea5fa5c022061f30d3369b8709",
+        "frame_count": 3715
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 60.62916666666666,
+      "detach_time": 99.275,
+      "attachment_samples": 9275,
+      "native_zero_force_samples": 9,
+      "native_force_min_N": [
+        0.0,
+        0.01724729588564082
+      ],
+      "constraint_position_error_max_mm": 0.015060016687936731,
+      "constraint_rotation_error_max_deg": 0.11799233421887187,
+      "constraint_reaction_abs_max": [
+        0.034843498854567674,
+        0.05741395597820443,
+        0.11169982106326103,
+        0.0009099045861242996,
+        0.0011312343601880674,
+        0.00028011755472525334
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 64.37941248211571,
+      "final_xy_error_mm": 0.30899853274963957,
+      "final_tilt_deg": 0.0006473642611933187,
+      "pickup_motion": {
+        "samples": 251,
+        "piece_xy_excursion_mm": 0.06378468464432004,
+        "tcp_xy_excursion_mm": 0.06555829542757759,
+        "piece_z_change_mm": 24.76132693959547
+      },
+      "placement_motion": {
+        "samples": 777,
+        "piece_xy_excursion_mm": 0.12319018678947198,
+        "tcp_xy_excursion_mm": 0.12122072656083792,
+        "piece_z_change_mm": -25.039300972399918
+      },
+      "home_steps": 1262,
+      "home_time_s": 5.258333333333326,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply02_return_f3.json.gz",
+        "raw_hash": "4aea521440859a751383b22a9927fdcd0a1c93941dd247410f937e8cad13a8fa",
+        "frame_count": 632
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random1",
+      "ply": 3,
+      "uci": "d4d3",
+      "target": "c4",
+      "action_steps": 9898,
+      "action_time_s": 41.241666666666674,
+      "frame_count": 2984,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply03_c4.json.gz",
+        "raw_hash": "3b6bf22b31480e8d02e2dad4eaea2cc4279bb67792eadf7325aab50f936f7909",
+        "frame_count": 2984
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 121.4125,
+      "detach_time": 145.775,
+      "attachment_samples": 5847,
+      "native_zero_force_samples": 5847,
+      "native_force_min_N": [
+        0.0,
+        0.0
+      ],
+      "constraint_position_error_max_mm": 0.00018735110914390294,
+      "constraint_rotation_error_max_deg": 8.244220152398791e-05,
+      "constraint_reaction_abs_max": [
+        0.002167459764586183,
+        0.0017753833411412265,
+        0.03345787493487219,
+        3.188443099698439e-06,
+        5.648419540479599e-07,
+        5.637108140354863e-07
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.16607372581036,
+      "final_xy_error_mm": 0.08797033432529294,
+      "final_tilt_deg": 0.003176312674908663,
+      "pickup_motion": {
+        "samples": 563,
+        "piece_xy_excursion_mm": 0.0020157431933118153,
+        "tcp_xy_excursion_mm": 0.0018220621657116685,
+        "piece_z_change_mm": 24.948016702461864
+      },
+      "placement_motion": {
+        "samples": 774,
+        "piece_xy_excursion_mm": 0.08765013872930942,
+        "tcp_xy_excursion_mm": 0.09994662071054058,
+        "piece_z_change_mm": -24.985690936118573
+      },
+      "home_steps": 1344,
+      "home_time_s": 5.599999999999994,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply03_return_c4.json.gz",
+        "raw_hash": "755b631a9283b076e815f70929d52a9d98695d7f6344dc3508bd6b3d1193f87c",
+        "frame_count": 674
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random1",
+      "ply": 4,
+      "uci": "c6c5",
+      "target": "f3",
+      "action_steps": 8681,
+      "action_time_s": 36.17083333333332,
+      "frame_count": 2662,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply04_f3.json.gz",
+        "raw_hash": "2a11aa62dd425ad938d48c18820196b78df8783cfd85cfb585f999d73294baa6",
+        "frame_count": 2662
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 168.55,
+      "detach_time": 187.54583333333332,
+      "attachment_samples": 4559,
+      "native_zero_force_samples": 0,
+      "native_force_min_N": [
+        0.005995357598016519,
+        0.00802715555687174
+      ],
+      "constraint_position_error_max_mm": 0.004246354374229785,
+      "constraint_rotation_error_max_deg": 0.019243210331581138,
+      "constraint_reaction_abs_max": [
+        0.017075100274000256,
+        0.007326558714688111,
+        0.03448717344835856,
+        0.00017263416397701118,
+        0.00021805809248636802,
+        0.00013898853431779166
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.30823274205022,
+      "final_xy_error_mm": 0.5028235524211869,
+      "final_tilt_deg": 0.007477460731254198,
+      "pickup_motion": {
+        "samples": 254,
+        "piece_xy_excursion_mm": 0.34199507280501157,
+        "tcp_xy_excursion_mm": 0.3427535421035103,
+        "piece_z_change_mm": 24.75277861787774
+      },
+      "placement_motion": {
+        "samples": 777,
+        "piece_xy_excursion_mm": 0.09937324301615076,
+        "tcp_xy_excursion_mm": 0.10385000257403154,
+        "piece_z_change_mm": -25.004064466435885
+      },
+      "home_steps": 1192,
+      "home_time_s": 4.966666666666669,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply04_return_f3.json.gz",
+        "raw_hash": "2a4d69cfc7cb2e9433e9d4aff4dc31b02bb5d0b9f92fd1fa7a64f72eb67c52eb",
+        "frame_count": 598
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random1",
+      "ply": 5,
+      "uci": "f4d4",
+      "target": "f4",
+      "action_steps": 8961,
+      "action_time_s": 37.337500000000006,
+      "frame_count": 2598,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply05_f4.json.gz",
+        "raw_hash": "14ed2fafd1e6ee9595d399871c331942d76dc4eeb2357483d3811ee720ad2f24",
+        "frame_count": 2598
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 207.93333333333334,
+      "detach_time": 229.85,
+      "attachment_samples": 5260,
+      "native_zero_force_samples": 1,
+      "native_force_min_N": [
+        0.0,
+        0.08170894294650045
+      ],
+      "constraint_position_error_max_mm": 0.05655570541483523,
+      "constraint_rotation_error_max_deg": 0.13206212827054492,
+      "constraint_reaction_abs_max": [
+        0.06726419343388794,
+        0.04659954046705594,
+        0.40208011384963865,
+        0.0012468558438062808,
+        0.001601463568136185,
+        0.0004872713207924492
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.168378796429728,
+      "final_xy_error_mm": 0.1526485899562795,
+      "final_tilt_deg": 0.002894520325119055,
+      "pickup_motion": {
+        "samples": 250,
+        "piece_xy_excursion_mm": 0.013597301842123962,
+        "tcp_xy_excursion_mm": 0.0059684603394517186,
+        "piece_z_change_mm": 24.722569518731273
+      },
+      "placement_motion": {
+        "samples": 776,
+        "piece_xy_excursion_mm": 0.08216932841904016,
+        "tcp_xy_excursion_mm": 0.0808930529352703,
+        "piece_z_change_mm": -24.992253850061292
+      },
+      "home_steps": 1064,
+      "home_time_s": 4.433333333333337,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply05_return_f4.json.gz",
+        "raw_hash": "c7bcce752242802645523af5d436bbb0356ed2b9aa541c963cebfa36467e534c",
+        "frame_count": 534
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random1",
+      "ply": 6,
+      "uci": "e6e7",
+      "target": "e6",
+      "action_steps": 9457,
+      "action_time_s": 39.40416666666664,
+      "frame_count": 2902,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply06_e6.json.gz",
+        "raw_hash": "a0da1d95f6bf1ab373c62d35667313822ad316516bc651201ff795ce3333a04a",
+        "frame_count": 2902
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 252.2625,
+      "detach_time": 274.5416666666667,
+      "attachment_samples": 5347,
+      "native_zero_force_samples": 1,
+      "native_force_min_N": [
+        0.0,
+        0.0056649830229910415
+      ],
+      "constraint_position_error_max_mm": 0.0018234070953433545,
+      "constraint_rotation_error_max_deg": 0.007023052284283384,
+      "constraint_reaction_abs_max": [
+        0.010173832233466754,
+        0.005181315749973897,
+        0.0365813292101639,
+        0.00030368035711345016,
+        0.00011271986176520125,
+        9.26991316719178e-05
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.06548403882698,
+      "final_xy_error_mm": 0.18912927696745122,
+      "final_tilt_deg": 0.004690635521837139,
+      "pickup_motion": {
+        "samples": 563,
+        "piece_xy_excursion_mm": 0.1419687323680402,
+        "tcp_xy_excursion_mm": 0.1415692581242806,
+        "piece_z_change_mm": 24.948395426554352
+      },
+      "placement_motion": {
+        "samples": 560,
+        "piece_xy_excursion_mm": 0.12547043606527908,
+        "tcp_xy_excursion_mm": 0.11855553035309241,
+        "piece_z_change_mm": -13.043405257932774
+      },
+      "home_steps": 1544,
+      "home_time_s": 6.433333333333337,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply06_return_e6.json.gz",
+        "raw_hash": "be3783196fea8176f6371a0ac4c4f24e2c593d05c439da275c38bbe62044c5e0",
+        "frame_count": 774
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random1",
+      "ply": 7,
+      "uci": "d4a1",
+      "target": "f4",
+      "action_steps": 0,
+      "action_time_s": 0.0,
+      "frame_count": 1,
+      "runtime_outcome": "preparation_blocked",
+      "abort_phase": "plan",
+      "abort_reason": "candidate_preflight",
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply07_f4.json.gz",
+        "raw_hash": "0a41eecfd3105ed775f81a4ad45fe17046e38c622783e5f10472c4a518ee2dc1",
+        "frame_count": 1
+      },
+      "classification": "preparation_blocked",
+      "planning_reason_counts": {
+        "candidate_preflight": 1,
+        "destination_place_ik": 4,
+        "fit": 28
+      },
+      "planning_reasons": [
+        {
+          "path": "/reason",
+          "value": "candidate_preflight"
+        },
+        {
+          "path": "/diagnostics/records/0/reason",
+          "value": "destination_place_ik"
+        },
+        {
+          "path": "/diagnostics/records/1/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/2/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/3/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/4/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/5/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/6/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/7/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/8/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/9/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/10/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/11/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/12/reason",
+          "value": "destination_place_ik"
+        },
+        {
+          "path": "/diagnostics/records/13/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/14/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/15/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/16/reason",
+          "value": "destination_place_ik"
+        },
+        {
+          "path": "/diagnostics/records/17/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/18/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/19/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/20/reason",
+          "value": "destination_place_ik"
+        },
+        {
+          "path": "/diagnostics/records/21/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/22/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/23/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/24/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/25/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/26/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/27/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/28/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/29/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/30/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/31/reason",
+          "value": "fit"
+        }
+      ],
+      "planning_top_keys": [
+        "ok",
+        "nodes",
+        "reason",
+        "wall_s",
+        "diagnostics"
+      ],
+      "planning_wall_s": 3.797278899997764,
+      "native_calls_before_block": 0
+    },
+    {
+      "game": "random2",
+      "ply": 1,
+      "uci": "e5e3",
+      "target": "e5",
+      "action_steps": 8825,
+      "action_time_s": 36.770833333333336,
+      "frame_count": 2599,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply01_e5.json.gz",
+        "raw_hash": "49d7f53db48d8bd5884bb78657b453e537b67a491d4c39d94ba48b657ed24de6",
+        "frame_count": 2599
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 12.254166666666666,
+      "detach_time": 33.3,
+      "attachment_samples": 5051,
+      "native_zero_force_samples": 2,
+      "native_force_min_N": [
+        0.0,
+        0.07377573451395592
+      ],
+      "constraint_position_error_max_mm": 0.054192875303860244,
+      "constraint_rotation_error_max_deg": 0.13995567314130558,
+      "constraint_reaction_abs_max": [
+        0.08055765840398874,
+        0.05691151257237624,
+        0.3648002859322972,
+        0.0011454434811185373,
+        0.0012482735160695444,
+        0.0008653314467574636
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 26.966831894284542,
+      "final_xy_error_mm": 0.33182423616592327,
+      "final_tilt_deg": 0.0010526513180934701,
+      "pickup_motion": {
+        "samples": 251,
+        "piece_xy_excursion_mm": 0.08856131993051886,
+        "tcp_xy_excursion_mm": 0.08241265731917832,
+        "piece_z_change_mm": 24.7399979771843
+      },
+      "placement_motion": {
+        "samples": 777,
+        "piece_xy_excursion_mm": 0.15478408285020728,
+        "tcp_xy_excursion_mm": 0.15733473413304758,
+        "piece_z_change_mm": -25.034049632834208
+      },
+      "home_steps": 923,
+      "home_time_s": 3.8458333333333314,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply01_return_e5.json.gz",
+        "raw_hash": "b38414fa542f5f0b16bb023c04dc1223696e60245e3c1a4e2c45b03734dc0d5e",
+        "frame_count": 462
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random2",
+      "ply": 2,
+      "uci": "c6d6",
+      "target": "c6",
+      "action_steps": 9879,
+      "action_time_s": 41.1625,
+      "frame_count": 2918,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply02_c6.json.gz",
+        "raw_hash": "50bba0456bcac8f7342bdbeacb59e7ce4661105fc911c17d9d1128899b9edccd",
+        "frame_count": 2918
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 53.208333333333336,
+      "detach_time": 78.30833333333334,
+      "attachment_samples": 6024,
+      "native_zero_force_samples": 2,
+      "native_force_min_N": [
+        0.0,
+        0.003736684028521331
+      ],
+      "constraint_position_error_max_mm": 0.0012152709000765294,
+      "constraint_rotation_error_max_deg": 0.00714330448438784,
+      "constraint_reaction_abs_max": [
+        0.008009711178847228,
+        0.006574265338493614,
+        0.0371066569567921,
+        0.00036189171896433727,
+        0.0001141596696013821,
+        4.217933405906606e-05
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.172329899155624,
+      "final_xy_error_mm": 0.09636031722695138,
+      "final_tilt_deg": 0.00455792192820497,
+      "pickup_motion": {
+        "samples": 563,
+        "piece_xy_excursion_mm": 0.09755462980372916,
+        "tcp_xy_excursion_mm": 0.09704047768956,
+        "piece_z_change_mm": 24.9442768758344
+      },
+      "placement_motion": {
+        "samples": 777,
+        "piece_xy_excursion_mm": 0.08386039626917866,
+        "tcp_xy_excursion_mm": 0.08015681131209754,
+        "piece_z_change_mm": -24.99071254856732
+      },
+      "home_steps": 1307,
+      "home_time_s": 5.445833333333326,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply02_return_c6.json.gz",
+        "raw_hash": "768748eac059b345439f2b3b06f310bd55e4fe5f2c7c2570c33b1aaaa4087bb5",
+        "frame_count": 654
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random2",
+      "ply": 3,
+      "uci": "e3e4",
+      "target": "e5",
+      "action_steps": 8703,
+      "action_time_s": 36.2625,
+      "frame_count": 2573,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply03_e5.json.gz",
+        "raw_hash": "2dc7e8f4c8d84b7ec238e21b0fb9ca40327b110ee79e959e32fa046a225b694b",
+        "frame_count": 2573
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 99.9875,
+      "detach_time": 120.01666666666667,
+      "attachment_samples": 4807,
+      "native_zero_force_samples": 0,
+      "native_force_min_N": [
+        0.004849959468650419,
+        0.029289311071570272
+      ],
+      "constraint_position_error_max_mm": 0.009845082157840765,
+      "constraint_rotation_error_max_deg": 0.0499808094608503,
+      "constraint_reaction_abs_max": [
+        0.04714321926705125,
+        0.014815553168810192,
+        0.15381802541462913,
+        0.0005004852835795157,
+        0.0004631257057637664,
+        0.00025911014418370263
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.34802885403091,
+      "final_xy_error_mm": 0.5702851807727313,
+      "final_tilt_deg": 0.005434858017132611,
+      "pickup_motion": {
+        "samples": 254,
+        "piece_xy_excursion_mm": 0.12878191888540041,
+        "tcp_xy_excursion_mm": 0.12844214301066353,
+        "piece_z_change_mm": 24.748189561060585
+      },
+      "placement_motion": {
+        "samples": 777,
+        "piece_xy_excursion_mm": 0.10504815509324764,
+        "tcp_xy_excursion_mm": 0.10207545797729892,
+        "piece_z_change_mm": -25.00228623205101
+      },
+      "home_steps": 904,
+      "home_time_s": 3.7666666666666657,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply03_return_e5.json.gz",
+        "raw_hash": "430ac04da447697d395ccd19f514d8786df9c9644746a0893071eac15a723f0c",
+        "frame_count": 454
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random2",
+      "ply": 4,
+      "uci": "d6c5",
+      "target": "c6",
+      "action_steps": 10135,
+      "action_time_s": 42.22916666666666,
+      "frame_count": 3036,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply04_c6.json.gz",
+        "raw_hash": "afc33fc00d2323316aa6704d0edb0932251e80dbf93016e545c234adac159d01",
+        "frame_count": 3036
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 140.49166666666667,
+      "detach_time": 166.0125,
+      "attachment_samples": 6125,
+      "native_zero_force_samples": 6125,
+      "native_force_min_N": [
+        0.0,
+        0.0
+      ],
+      "constraint_position_error_max_mm": 0.0014687767789647596,
+      "constraint_rotation_error_max_deg": 0.0006471888731118534,
+      "constraint_reaction_abs_max": [
+        0.002444243102102485,
+        0.0025390692919765793,
+        0.03267590070854624,
+        2.5704311705320305e-06,
+        9.359744146808864e-07,
+        4.4438436421835166e-07
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.385669526609853,
+      "final_xy_error_mm": 0.05222622493357901,
+      "final_tilt_deg": 0.005481114037271344,
+      "pickup_motion": {
+        "samples": 563,
+        "piece_xy_excursion_mm": 0.0019518440256161116,
+        "tcp_xy_excursion_mm": 0.0009882803782696003,
+        "piece_z_change_mm": 24.944022563637272
+      },
+      "placement_motion": {
+        "samples": 777,
+        "piece_xy_excursion_mm": 0.15783447348506302,
+        "tcp_xy_excursion_mm": 0.16237186208514404,
+        "piece_z_change_mm": -25.006766208308154
+      },
+      "home_steps": 1170,
+      "home_time_s": 4.875,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply04_return_c6.json.gz",
+        "raw_hash": "55590f4c4b1b8ae84fe61c13698697894293235957eda81578fe16db51aca30f",
+        "frame_count": 586
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random2",
+      "ply": 5,
+      "uci": "f6f5",
+      "target": "f6",
+      "action_steps": 10733,
+      "action_time_s": 44.72083333333333,
+      "frame_count": 3305,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply05_f6.json.gz",
+        "raw_hash": "3a536e5c42408019b02e8096b08aa1f9f3c2cd615f6a7119814432fe5bd74927",
+        "frame_count": 3305
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 191.2125,
+      "detach_time": 215.60833333333332,
+      "attachment_samples": 5855,
+      "native_zero_force_samples": 1,
+      "native_force_min_N": [
+        0.0,
+        0.004923186162158961
+      ],
+      "constraint_position_error_max_mm": 0.0015700382522417045,
+      "constraint_rotation_error_max_deg": 0.005149159996576134,
+      "constraint_reaction_abs_max": [
+        0.008475765045972188,
+        0.005817829087495503,
+        0.03907968757735662,
+        0.0003543399608007274,
+        9.255210957127717e-05,
+        0.000104384791152496
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.21518128093487,
+      "final_xy_error_mm": 0.23931452966062727,
+      "final_tilt_deg": 0.0003784461838105233,
+      "pickup_motion": {
+        "samples": 563,
+        "piece_xy_excursion_mm": 0.1420170566208461,
+        "tcp_xy_excursion_mm": 0.14146753611919885,
+        "piece_z_change_mm": 24.948425458862964
+      },
+      "placement_motion": {
+        "samples": 777,
+        "piece_xy_excursion_mm": 0.11885774167832655,
+        "tcp_xy_excursion_mm": 0.12933493825349476,
+        "piece_z_change_mm": -24.99573638637721
+      },
+      "home_steps": 1636,
+      "home_time_s": 6.816666666666691,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply05_return_f6.json.gz",
+        "raw_hash": "bff217352c045407a5e9c43915093ae0307d0a34820013331a8a138e60eab20f",
+        "frame_count": 820
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random2",
+      "ply": 6,
+      "uci": "d3g3",
+      "target": "d3",
+      "action_steps": 9341,
+      "action_time_s": 38.92083333333332,
+      "frame_count": 2767,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply06_d3.json.gz",
+        "raw_hash": "f9f0217d029f124092ba4ec13b545cfb581aec575027b886076fbda213dc7bcd",
+        "frame_count": 2767
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 238.1,
+      "detach_time": 261.3458333333333,
+      "attachment_samples": 5579,
+      "native_zero_force_samples": 0,
+      "native_force_min_N": [
+        0.009758200952826278,
+        0.029325248604166982
+      ],
+      "constraint_position_error_max_mm": 0.009833788020946073,
+      "constraint_rotation_error_max_deg": 0.05117325250824416,
+      "constraint_reaction_abs_max": [
+        0.03779504262306182,
+        0.008464656180187125,
+        0.12252881914679069,
+        0.0003712600467915745,
+        0.00023626870284205624,
+        0.00015152423013378783
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.288421387288654,
+      "final_xy_error_mm": 0.5908590029649218,
+      "final_tilt_deg": 0.005060113290947745,
+      "pickup_motion": {
+        "samples": 250,
+        "piece_xy_excursion_mm": 0.08162821383862674,
+        "tcp_xy_excursion_mm": 0.08190966835480218,
+        "piece_z_change_mm": 24.737325043984345
+      },
+      "placement_motion": {
+        "samples": 776,
+        "piece_xy_excursion_mm": 0.1277657837867416,
+        "tcp_xy_excursion_mm": 0.12781168036078938,
+        "piece_z_change_mm": -24.99350142782339
+      },
+      "home_steps": 699,
+      "home_time_s": 2.9125000000000227,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply06_return_d3.json.gz",
+        "raw_hash": "e00ab798c4f09eb27573815cb2049f845e3ad5b9c92a0f8823d09acaa1a45d64",
+        "frame_count": 350
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random2",
+      "ply": 7,
+      "uci": "e4f4",
+      "target": "e5",
+      "action_steps": 8211,
+      "action_time_s": 34.21249999999998,
+      "frame_count": 2443,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply07_e5.json.gz",
+        "raw_hash": "d092b65f3cd74cc6a69a1381756cedae79ce4e92f919921c879dcd9170811b42",
+        "frame_count": 2443
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 279.2208333333333,
+      "detach_time": 298.4708333333333,
+      "attachment_samples": 4620,
+      "native_zero_force_samples": 2,
+      "native_force_min_N": [
+        0.0,
+        0.06466942136544018
+      ],
+      "constraint_position_error_max_mm": 0.0416084464957351,
+      "constraint_rotation_error_max_deg": 0.10906265558495097,
+      "constraint_reaction_abs_max": [
+        0.0838617893703171,
+        0.04052760432974555,
+        0.33861212178603445,
+        0.0009762492803517804,
+        0.001218931177830763,
+        0.0007437024476504342
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.238966991002037,
+      "final_xy_error_mm": 0.48786571705176424,
+      "final_tilt_deg": 0.007539301449622655,
+      "pickup_motion": {
+        "samples": 251,
+        "piece_xy_excursion_mm": 0.10770718443841891,
+        "tcp_xy_excursion_mm": 0.10188902506373175,
+        "piece_z_change_mm": 24.742298274709924
+      },
+      "placement_motion": {
+        "samples": 777,
+        "piece_xy_excursion_mm": 0.1015874091348573,
+        "tcp_xy_excursion_mm": 0.10064447031575062,
+        "piece_z_change_mm": -24.98454887742147
+      },
+      "home_steps": 783,
+      "home_time_s": 3.2624999999999886,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply07_return_e5.json.gz",
+        "raw_hash": "222c9096f33287c7c2f1e6532116ab147845d69398ef4628b1aee3a11a972a91",
+        "frame_count": 392
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random2",
+      "ply": 8,
+      "uci": "g3e3",
+      "target": "d3",
+      "action_steps": 10210,
+      "action_time_s": 42.541666666666686,
+      "frame_count": 2917,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply08_d3.json.gz",
+        "raw_hash": "2f513e68d25b71b63cd59f145a02063aafa16785cc964c3145ac334dcaa1e4d2",
+        "frame_count": 2917
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 322.275,
+      "detach_time": 344.275,
+      "attachment_samples": 5280,
+      "native_zero_force_samples": 64,
+      "native_force_min_N": [
+        0.0,
+        0.015144983577083822
+      ],
+      "constraint_position_error_max_mm": 0.011779794894820735,
+      "constraint_rotation_error_max_deg": 0.046934433590031896,
+      "constraint_reaction_abs_max": [
+        0.0639513924902997,
+        0.027869800052268547,
+        0.13624916956336477,
+        0.0003834052119417132,
+        0.0005319223878739135,
+        0.000182939137769621
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.20387334944478,
+      "final_xy_error_mm": 0.2532019615767083,
+      "final_tilt_deg": 0.0014191336071856906,
+      "pickup_motion": {
+        "samples": 254,
+        "piece_xy_excursion_mm": 0.2391146585463696,
+        "tcp_xy_excursion_mm": 0.2393744782853136,
+        "piece_z_change_mm": 24.756077589700144
+      },
+      "placement_motion": {
+        "samples": 776,
+        "piece_xy_excursion_mm": 0.16041806606553607,
+        "tcp_xy_excursion_mm": 0.15839311636684353,
+        "piece_z_change_mm": -24.99063996275438
+      },
+      "home_steps": 915,
+      "home_time_s": 3.8125,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply08_return_d3.json.gz",
+        "raw_hash": "10d3c217aee6c255a8587860e1aa83b2b87fa32d4e7a57dfa0b4726b5df6c47d",
+        "frame_count": 458
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random2",
+      "ply": 9,
+      "uci": "f4h4",
+      "target": "e5",
+      "action_steps": 8790,
+      "action_time_s": 36.625,
+      "frame_count": 2555,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply09_e5.json.gz",
+        "raw_hash": "8887cd53f29d913e5c6b8e0c1f428239cbfcd2890dc3e1446b31a6229d5e2f31",
+        "frame_count": 2555
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 363.5708333333333,
+      "detach_time": 384.7125,
+      "attachment_samples": 5074,
+      "native_zero_force_samples": 0,
+      "native_force_min_N": [
+        0.1257406858496529,
+        0.06145905810220689
+      ],
+      "constraint_position_error_max_mm": 0.033556221786464814,
+      "constraint_rotation_error_max_deg": 0.1808579863048054,
+      "constraint_reaction_abs_max": [
+        0.08162888617752098,
+        0.0979605942058195,
+        0.25453974850048827,
+        0.0020783229469519913,
+        0.0019174495049586178,
+        0.0003400001285598045
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.223287269102883,
+      "final_xy_error_mm": 0.31214326313075946,
+      "final_tilt_deg": 0.0014008716322957424,
+      "pickup_motion": {
+        "samples": 248,
+        "piece_xy_excursion_mm": 0.011077572723021206,
+        "tcp_xy_excursion_mm": 0.0033155418512174984,
+        "piece_z_change_mm": 24.754325905973026
+      },
+      "placement_motion": {
+        "samples": 776,
+        "piece_xy_excursion_mm": 0.1021108416820902,
+        "tcp_xy_excursion_mm": 0.10309084899239516,
+        "piece_z_change_mm": -24.99405482171718
+      },
+      "home_steps": 577,
+      "home_time_s": 2.40416666666664,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply09_return_e5.json.gz",
+        "raw_hash": "27ae4c780b5c11fc8a9e91faa9a399bc69304e2cdf00c4698a68965d84457bfe",
+        "frame_count": 290
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random2",
+      "ply": 10,
+      "uci": "e3g5",
+      "target": "d3",
+      "action_steps": 9434,
+      "action_time_s": 39.30833333333334,
+      "frame_count": 2756,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply10_d3.json.gz",
+        "raw_hash": "61df00043ec315c301424a6dd6fd5216b9278ed3e89dceb8ab2214acf8961a31",
+        "frame_count": 2756
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 403.1,
+      "detach_time": 426.425,
+      "attachment_samples": 5598,
+      "native_zero_force_samples": 2,
+      "native_force_min_N": [
+        0.0,
+        0.04461195488062668
+      ],
+      "constraint_position_error_max_mm": 0.014635720406976296,
+      "constraint_rotation_error_max_deg": 0.08227057676972624,
+      "constraint_reaction_abs_max": [
+        0.04416728584452938,
+        0.032573458115643904,
+        0.23114779407530286,
+        0.0007553492725254107,
+        0.0009789840481239879,
+        8.477743861817641e-05
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.990698175077114,
+      "final_xy_error_mm": 0.7056482567457943,
+      "final_tilt_deg": 0.007133885631626012,
+      "pickup_motion": {
+        "samples": 250,
+        "piece_xy_excursion_mm": 0.01273326809531846,
+        "tcp_xy_excursion_mm": 0.00347207360668072,
+        "piece_z_change_mm": 24.744779844210903
+      },
+      "placement_motion": {
+        "samples": 777,
+        "piece_xy_excursion_mm": 0.15870525760375168,
+        "tcp_xy_excursion_mm": 0.15720357116578695,
+        "piece_z_change_mm": -25.009616952719924
+      },
+      "home_steps": 601,
+      "home_time_s": 2.504166666666663,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random2_ply10_return_d3.json.gz",
+        "raw_hash": "841d0aa3904d00fbbf4dfe822b44e3b877edffd43d889be7f260c7e7548f807a",
+        "frame_count": 302
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random3",
+      "ply": 1,
+      "uci": "c5d4",
+      "target": "c5",
+      "action_steps": 8986,
+      "action_time_s": 37.44166666666666,
+      "frame_count": 2724,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply01_c5.json.gz",
+        "raw_hash": "83d782b35985831a102b8fc1660762ec4679ff6cc718eeb308aaa69ab3865026",
+        "frame_count": 2724
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 14.1375,
+      "detach_time": 33.97083333333333,
+      "attachment_samples": 4760,
+      "native_zero_force_samples": 1,
+      "native_force_min_N": [
+        0.0,
+        0.0606569875124542
+      ],
+      "constraint_position_error_max_mm": 0.05269196370070781,
+      "constraint_rotation_error_max_deg": 0.2282505758527557,
+      "constraint_reaction_abs_max": [
+        0.11004622952475122,
+        0.05764391565863593,
+        0.35119131594767483,
+        0.0036310870409681562,
+        0.0009706030063856615,
+        0.0005173944106840705
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.145980413343498,
+      "final_xy_error_mm": 0.07698451847931054,
+      "final_tilt_deg": 0.005526279953543442,
+      "pickup_motion": {
+        "samples": 251,
+        "piece_xy_excursion_mm": 0.235771248935763,
+        "tcp_xy_excursion_mm": 0.23457709011188863,
+        "piece_z_change_mm": 24.739777036621412
+      },
+      "placement_motion": {
+        "samples": 776,
+        "piece_xy_excursion_mm": 0.1606983762062896,
+        "tcp_xy_excursion_mm": 0.16138746263707757,
+        "piece_z_change_mm": -24.994832149113744
+      },
+      "home_steps": 1006,
+      "home_time_s": 4.19166666666667,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply01_return_c5.json.gz",
+        "raw_hash": "02d881a077a3b962011edcd755b7cfd1760ea42b409686b9c3cf1cd8248b1983",
+        "frame_count": 504
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random3",
+      "ply": 2,
+      "uci": "e3f4",
+      "target": "e3",
+      "action_steps": 8767,
+      "action_time_s": 36.52916666666666,
+      "frame_count": 2588,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply02_e3.json.gz",
+        "raw_hash": "cf6a18ca943cc7deeb537f6b4a6b07200a56f02aff1560421db8d995b6ee3a58",
+        "frame_count": 2588
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 54.19583333333333,
+      "detach_time": 74.69166666666666,
+      "attachment_samples": 4919,
+      "native_zero_force_samples": 0,
+      "native_force_min_N": [
+        0.003102980592275201,
+        0.015464804899010443
+      ],
+      "constraint_position_error_max_mm": 0.008285632992321958,
+      "constraint_rotation_error_max_deg": 0.04314484397576271,
+      "constraint_reaction_abs_max": [
+        0.027164191346859587,
+        0.0077094905610154765,
+        0.09553833460624792,
+        0.0004161471074768321,
+        0.00030097552516367035,
+        0.0001241122973857358
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.302970598527605,
+      "final_xy_error_mm": 0.6784516328660639,
+      "final_tilt_deg": 0.0051612782747116216,
+      "pickup_motion": {
+        "samples": 254,
+        "piece_xy_excursion_mm": 0.009120700981409161,
+        "tcp_xy_excursion_mm": 0.00673181300476449,
+        "piece_z_change_mm": 24.761698736375862
+      },
+      "placement_motion": {
+        "samples": 776,
+        "piece_xy_excursion_mm": 0.1291900716127493,
+        "tcp_xy_excursion_mm": 0.12692930685776793,
+        "piece_z_change_mm": -24.991617141199796
+      },
+      "home_steps": 776,
+      "home_time_s": 3.2333333333333343,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply02_return_e3.json.gz",
+        "raw_hash": "c5b6f550f9b5bcfd5db6a35998ae6ae9012d6e04232e1ea179e92b3166fcdbe5",
+        "frame_count": 390
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random3",
+      "ply": 3,
+      "uci": "c6c5",
+      "target": "c6",
+      "action_steps": 9657,
+      "action_time_s": 40.2375,
+      "frame_count": 2864,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply03_c6.json.gz",
+        "raw_hash": "e9a632005513ccd1b287c6198afcb48ef31bb2e80a47c5aec2e48b90344e2409",
+        "frame_count": 2864
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 94.2,
+      "detach_time": 118.1625,
+      "attachment_samples": 5751,
+      "native_zero_force_samples": 0,
+      "native_force_min_N": [
+        0.009551999905495594,
+        0.04846040462281411
+      ],
+      "constraint_position_error_max_mm": 0.013897081084226331,
+      "constraint_rotation_error_max_deg": 0.045236970510614476,
+      "constraint_reaction_abs_max": [
+        0.06645481076297613,
+        0.01864733738913087,
+        0.1801004741598308,
+        0.0014945223248749404,
+        0.0006736138136967511,
+        0.0005209795057512873
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.131677709684,
+      "final_xy_error_mm": 0.15557123205686282,
+      "final_tilt_deg": 7.036255218450931e-05,
+      "pickup_motion": {
+        "samples": 550,
+        "piece_xy_excursion_mm": 0.28564302776720585,
+        "tcp_xy_excursion_mm": 0.27870953202864224,
+        "piece_z_change_mm": 24.92824080429923
+      },
+      "placement_motion": {
+        "samples": 777,
+        "piece_xy_excursion_mm": 0.11264097596381144,
+        "tcp_xy_excursion_mm": 0.12911942551258795,
+        "piece_z_change_mm": -25.000134750947325
+      },
+      "home_steps": 1169,
+      "home_time_s": 4.870833333333337,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply03_return_c6.json.gz",
+        "raw_hash": "e00cde51caad4c418962c70c93c6082450756fae96c9c07e87efde6a294fc769",
+        "frame_count": 586
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random3",
+      "ply": 4,
+      "uci": "f4f3",
+      "target": "e3",
+      "action_steps": 8312,
+      "action_time_s": 34.633333333333326,
+      "frame_count": 2434,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply04_e3.json.gz",
+        "raw_hash": "606dfcc120e6eb0de445454cccb6aa9fee87f8037567d9adb297e0ead83ef0aa",
+        "frame_count": 2434
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 138.56666666666666,
+      "detach_time": 157.66666666666666,
+      "attachment_samples": 4584,
+      "native_zero_force_samples": 0,
+      "native_force_min_N": [
+        0.026730340086306013,
+        0.11301375556979318
+      ],
+      "constraint_position_error_max_mm": 0.057796939707697136,
+      "constraint_rotation_error_max_deg": 0.16108614172858868,
+      "constraint_reaction_abs_max": [
+        0.07050711481641453,
+        0.053352978802124335,
+        0.42552637800392135,
+        0.0016426458725217724,
+        0.0010307195059712031,
+        0.0006318920876676025
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.23967333733527,
+      "final_xy_error_mm": 0.3972203874277346,
+      "final_tilt_deg": 0.002474305553513027,
+      "pickup_motion": {
+        "samples": 247,
+        "piece_xy_excursion_mm": 0.03145040392817605,
+        "tcp_xy_excursion_mm": 0.023224146923123485,
+        "piece_z_change_mm": 24.72533723042641
+      },
+      "placement_motion": {
+        "samples": 776,
+        "piece_xy_excursion_mm": 0.07986377856387934,
+        "tcp_xy_excursion_mm": 0.08138085127723037,
+        "piece_z_change_mm": -24.991685547113832
+      },
+      "home_steps": 822,
+      "home_time_s": 3.4250000000000114,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply04_return_e3.json.gz",
+        "raw_hash": "cb4bcb48781ae21b2e97a5ec7455b90b2055093306fedbdf3584d9d1c852eb55",
+        "frame_count": 412
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random3",
+      "ply": 5,
+      "uci": "d4c3",
+      "target": "c5",
+      "action_steps": 8724,
+      "action_time_s": 36.349999999999994,
+      "frame_count": 2614,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply05_c5.json.gz",
+        "raw_hash": "56cd497bf019bed87290fef38587ab6760ccf18aa8d17f6641e6ba6bd98a5296",
+        "frame_count": 2614
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 177.1375,
+      "detach_time": 197.44166666666666,
+      "attachment_samples": 4873,
+      "native_zero_force_samples": 0,
+      "native_force_min_N": [
+        0.004688253846013469,
+        0.003062303439508491
+      ],
+      "constraint_position_error_max_mm": 0.0036718822844186098,
+      "constraint_rotation_error_max_deg": 0.014241032528848027,
+      "constraint_reaction_abs_max": [
+        0.02081342310355575,
+        0.012062671947932363,
+        0.03408418673693473,
+        7.440865831035681e-05,
+        0.00031164878162660934,
+        0.00011248055360444448
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.230855027215203,
+      "final_xy_error_mm": 0.446044875182029,
+      "final_tilt_deg": 0.0028438755455609745,
+      "pickup_motion": {
+        "samples": 254,
+        "piece_xy_excursion_mm": 0.21828368382584726,
+        "tcp_xy_excursion_mm": 0.22062927084844813,
+        "piece_z_change_mm": 24.761214105492943
+      },
+      "placement_motion": {
+        "samples": 776,
+        "piece_xy_excursion_mm": 0.10230401519057825,
+        "tcp_xy_excursion_mm": 0.10301019534790919,
+        "piece_z_change_mm": -24.99936221982142
+      },
+      "home_steps": 1136,
+      "home_time_s": 4.7333333333333485,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply05_return_c5.json.gz",
+        "raw_hash": "0b42eba3ac30ab1043b3953f0e028fa5358347a74db607b6497c8bdd8d9eca49",
+        "frame_count": 570
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random3",
+      "ply": 6,
+      "uci": "f3e2",
+      "target": "e3",
+      "action_steps": 8994,
+      "action_time_s": 37.474999999999994,
+      "frame_count": 2616,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply06_e3.json.gz",
+        "raw_hash": "9397b24eee40b4390e9f9a9c02d43f824d0532c50e9dda9649c9d7bc4e57de42",
+        "frame_count": 2616
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 219.18333333333334,
+      "detach_time": 239.65,
+      "attachment_samples": 4912,
+      "native_zero_force_samples": 0,
+      "native_force_min_N": [
+        0.0024598857850555863,
+        0.005921202000857868
+      ],
+      "constraint_position_error_max_mm": 0.008582637981712762,
+      "constraint_rotation_error_max_deg": 0.017966163128305054,
+      "constraint_reaction_abs_max": [
+        0.033582393609407464,
+        0.00442929975780389,
+        0.09100730216050415,
+        0.00034688264568895653,
+        0.0001882973858378202,
+        4.8530158593930026e-05
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.308563544656575,
+      "final_xy_error_mm": 0.4811706260225048,
+      "final_tilt_deg": 0.00271199179554115,
+      "pickup_motion": {
+        "samples": 253,
+        "piece_xy_excursion_mm": 0.004605841993925645,
+        "tcp_xy_excursion_mm": 0.0006780028343200684,
+        "piece_z_change_mm": 24.758486643862856
+      },
+      "placement_motion": {
+        "samples": 776,
+        "piece_xy_excursion_mm": 0.08280992685649508,
+        "tcp_xy_excursion_mm": 0.08190938710920453,
+        "piece_z_change_mm": -24.99232487364629
+      },
+      "home_steps": 940,
+      "home_time_s": 3.916666666666657,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply06_return_e3.json.gz",
+        "raw_hash": "714661ae25585d935446520cf3f85a3fad7e69b2e11cb5afc0f38ff3cb7e4310",
+        "frame_count": 472
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random3",
+      "ply": 7,
+      "uci": "c5b6",
+      "target": "c6",
+      "action_steps": 10381,
+      "action_time_s": 43.25416666666669,
+      "frame_count": 3060,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply07_c6.json.gz",
+        "raw_hash": "1008e6d2e82f621121872baba1b61900d920c382ab1236b645009e0a55b02ac1",
+        "frame_count": 3060
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 260.0958333333333,
+      "detach_time": 286.8208333333333,
+      "attachment_samples": 6414,
+      "native_zero_force_samples": 0,
+      "native_force_min_N": [
+        0.0034202691780813328,
+        0.016660352969258652
+      ],
+      "constraint_position_error_max_mm": 0.0023339914191807167,
+      "constraint_rotation_error_max_deg": 0.0212031619100185,
+      "constraint_reaction_abs_max": [
+        0.012424548197188284,
+        0.01667490459012696,
+        0.06669899926761468,
+        0.00024018233710773555,
+        0.0005799096546447489,
+        0.00014721804818485935
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.19149876913451,
+      "final_xy_error_mm": 0.21946982801494544,
+      "final_tilt_deg": 0.004919673858721416,
+      "pickup_motion": {
+        "samples": 563,
+        "piece_xy_excursion_mm": 0.2753491796550289,
+        "tcp_xy_excursion_mm": 0.2735966863894308,
+        "piece_z_change_mm": 24.944815519615286
+      },
+      "placement_motion": {
+        "samples": 776,
+        "piece_xy_excursion_mm": 0.08247355890039111,
+        "tcp_xy_excursion_mm": 0.08021555414595329,
+        "piece_z_change_mm": -24.99302445510317
+      },
+      "home_steps": 960,
+      "home_time_s": 4.0,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply07_return_c6.json.gz",
+        "raw_hash": "bce569c291184f1f633de685cb16f73f5ff435833cffc8aa6d9fcc829f96abd0",
+        "frame_count": 482
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random3",
+      "ply": 8,
+      "uci": "e2d3",
+      "target": "e3",
+      "action_steps": 9392,
+      "action_time_s": 39.133333333333326,
+      "frame_count": 2751,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply08_e3.json.gz",
+        "raw_hash": "2d071531528fcc15a64e83c6cbb5cc438c0709de9953744115f6f2fb9ca95b1a",
+        "frame_count": 2751
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 309.0208333333333,
+      "detach_time": 329.95416666666665,
+      "attachment_samples": 5024,
+      "native_zero_force_samples": 2,
+      "native_force_min_N": [
+        0.0,
+        0.0
+      ],
+      "constraint_position_error_max_mm": 0.020701340052235954,
+      "constraint_rotation_error_max_deg": 0.03364163881823746,
+      "constraint_reaction_abs_max": [
+        0.027517918544106706,
+        0.026362966467753435,
+        0.1473933963154687,
+        0.0006277737533705057,
+        0.0005488392717077993,
+        1.4770348155761852e-05
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.374940629069904,
+      "final_xy_error_mm": 0.8079972594648883,
+      "final_tilt_deg": 0.000570040822145025,
+      "pickup_motion": {
+        "samples": 253,
+        "piece_xy_excursion_mm": 0.8557303736389071,
+        "tcp_xy_excursion_mm": 0.0048507814485599515,
+        "piece_z_change_mm": 24.572175489011673
+      },
+      "placement_motion": {
+        "samples": 776,
+        "piece_xy_excursion_mm": 0.13156532860819115,
+        "tcp_xy_excursion_mm": 0.12803755446783746,
+        "piece_z_change_mm": -25.002761217516106
+      },
+      "home_steps": 1050,
+      "home_time_s": 4.375,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply08_return_e3.json.gz",
+        "raw_hash": "b5207a87205680a45de5da5e6a4a1d581458830d092775af939bd18353d3c493",
+        "frame_count": 526
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random3",
+      "ply": 9,
+      "uci": "c3c6",
+      "target": "c5",
+      "action_steps": 9959,
+      "action_time_s": 41.49583333333334,
+      "frame_count": 2993,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply09_c5.json.gz",
+        "raw_hash": "863b9b55029e1e403c1f4ef31c1828da40349b6c860a2d822732a725398c32ee",
+        "frame_count": 2993
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 351.6166666666667,
+      "detach_time": 375.825,
+      "attachment_samples": 5810,
+      "native_zero_force_samples": 0,
+      "native_force_min_N": [
+        0.1664929387220637,
+        0.0413599837615449
+      ],
+      "constraint_position_error_max_mm": 0.037631804909714975,
+      "constraint_rotation_error_max_deg": 0.2507515713078054,
+      "constraint_reaction_abs_max": [
+        0.1763453339688356,
+        0.14650918777232846,
+        0.233412293563775,
+        0.0016119396021199962,
+        0.003420986779460974,
+        0.0011186326784361725
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 32.51200019138125,
+      "final_xy_error_mm": 0.07524105913954093,
+      "final_tilt_deg": 0.004214930642785224,
+      "pickup_motion": {
+        "samples": 247,
+        "piece_xy_excursion_mm": 0.4476606579875431,
+        "tcp_xy_excursion_mm": 0.4313552531417178,
+        "piece_z_change_mm": 24.730401472202203
+      },
+      "placement_motion": {
+        "samples": 777,
+        "piece_xy_excursion_mm": 0.07803795198239791,
+        "tcp_xy_excursion_mm": 0.07717500018215873,
+        "piece_z_change_mm": -25.02396807068531
+      },
+      "home_steps": 1255,
+      "home_time_s": 5.229166666666629,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply09_return_c5.json.gz",
+        "raw_hash": "c2be7b6aebf75f59ca8a0799fab12e8b46e1685e3b12e384452bd52a3ba24f83",
+        "frame_count": 628
+      },
+      "native_ompl_calls": 1
+    },
+    {
+      "game": "random3",
+      "ply": 10,
+      "uci": "e6e5",
+      "target": "e6",
+      "action_steps": 10144,
+      "action_time_s": 42.26666666666671,
+      "frame_count": 3097,
+      "runtime_outcome": "physical_task_success",
+      "abort_phase": null,
+      "abort_reason": null,
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply10_e6.json.gz",
+        "raw_hash": "cc87b28c8a1d90daaf34c36743078750060dfa5fdf17a7a98cd220b1c8f3aaf9",
+        "frame_count": 3097
+      },
+      "classification": "ideal_grasp_flow_success",
+      "attachment_time": 399.04583333333335,
+      "detach_time": 423.3208333333333,
+      "attachment_samples": 5826,
+      "native_zero_force_samples": 0,
+      "native_force_min_N": [
+        0.0012017734719168744,
+        0.00522529706436194
+      ],
+      "constraint_position_error_max_mm": 0.001689663977602788,
+      "constraint_rotation_error_max_deg": 0.004897700824647961,
+      "constraint_reaction_abs_max": [
+        0.00904568918846768,
+        0.004185807775131239,
+        0.03812348302525094,
+        0.0003544178091297609,
+        8.511073262470064e-05,
+        9.19436864420996e-05
+      ],
+      "release_before_open": true,
+      "post_release_contiguous_support_s": 0.5999999999999991,
+      "no_observed_drop": true,
+      "no_recorded_neighbor_collision": true,
+      "lift_max_mm": 25.214655632053784,
+      "final_xy_error_mm": 0.18148694294727785,
+      "final_tilt_deg": 0.0027216830858196772,
+      "pickup_motion": {
+        "samples": 563,
+        "piece_xy_excursion_mm": 0.14212660717885392,
+        "tcp_xy_excursion_mm": 0.14156151464812694,
+        "piece_z_change_mm": 24.948435215604995
+      },
+      "placement_motion": {
+        "samples": 777,
+        "piece_xy_excursion_mm": 0.14380233855758556,
+        "tcp_xy_excursion_mm": 0.16071552904449457,
+        "piece_z_change_mm": -25.002431232902047
+      },
+      "home_steps": 1483,
+      "home_time_s": 6.179166666666617,
+      "checked_home": true,
+      "home_trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random3_ply10_return_e6.json.gz",
+        "raw_hash": "c94326b5fffc24b141b34b60ae1283998c8c8df55802606f7dfc588ef64f9c1c",
+        "frame_count": 742
+      },
+      "native_ompl_calls": 1
+    }
+  ],
+  "blocked": [
+    {
+      "game": "random1",
+      "ply": 7,
+      "uci": "d4a1",
+      "target": "f4",
+      "action_steps": 0,
+      "action_time_s": 0.0,
+      "frame_count": 1,
+      "runtime_outcome": "preparation_blocked",
+      "abort_phase": "plan",
+      "abort_reason": "candidate_preflight",
+      "trace": {
+        "raw_path": "reachability_eval/results/ideal_grasp_continuous_3x10_v1/random1_ply07_f4.json.gz",
+        "raw_hash": "0a41eecfd3105ed775f81a4ad45fe17046e38c622783e5f10472c4a518ee2dc1",
+        "frame_count": 1
+      },
+      "classification": "preparation_blocked",
+      "planning_reason_counts": {
+        "candidate_preflight": 1,
+        "destination_place_ik": 4,
+        "fit": 28
+      },
+      "planning_reasons": [
+        {
+          "path": "/reason",
+          "value": "candidate_preflight"
+        },
+        {
+          "path": "/diagnostics/records/0/reason",
+          "value": "destination_place_ik"
+        },
+        {
+          "path": "/diagnostics/records/1/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/2/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/3/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/4/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/5/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/6/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/7/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/8/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/9/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/10/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/11/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/12/reason",
+          "value": "destination_place_ik"
+        },
+        {
+          "path": "/diagnostics/records/13/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/14/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/15/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/16/reason",
+          "value": "destination_place_ik"
+        },
+        {
+          "path": "/diagnostics/records/17/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/18/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/19/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/20/reason",
+          "value": "destination_place_ik"
+        },
+        {
+          "path": "/diagnostics/records/21/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/22/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/23/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/24/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/25/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/26/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/27/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/28/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/29/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/30/reason",
+          "value": "fit"
+        },
+        {
+          "path": "/diagnostics/records/31/reason",
+          "value": "fit"
+        }
+      ],
+      "planning_top_keys": [
+        "ok",
+        "nodes",
+        "reason",
+        "wall_s",
+        "diagnostics"
+      ],
+      "planning_wall_s": 3.797278899997764,
+      "native_calls_before_block": 0
+    }
+  ],
+  "checks": [
+    "all raw trace hashes",
+    "exact same-world snapshot continuity across completed home to next action",
+    "one measured bilateral attachment and pre-open detach per physical action",
+    "each-tick constraint error and uncommanded escape/fall records",
+    "native contact vectors and neighbor/piece-pair collisions",
+    "post-release sustained actual support and correct cell",
+    "actual positive-step return with checked path and no held constraint",
+    "physics counters reconcile including initialization/home"
+  ],
+  "independent": false,
+  "no_subagents": true,
+  "new_deepseek_calls": 0,
+  "gpt_tokens": "unknown",
+  "raw_result_sha256": "4b75ff7dab982350a6f9632b0b5ff5eaf7bccf6b1a80fa507e182e452a2debbb",
+  "process_wall_s": 1632.7810000000027,
+  "runtime_completed": 26,
+  "runtime_games": 2,
+  "aggregate": {
+    "planned_plies": 30,
+    "attempted_plies": 27,
+    "completed_plies": 26,
+    "complete_games": 2,
+    "planning_blocks": 1,
+    "unattempted_plies": 3,
+    "positive_physics_actions": 26,
+    "total_physics_steps": 276111,
+    "total_simulation_time_s": 1150.4624999999999,
+    "action_steps": 247897,
+    "home_steps": 27854,
+    "initialization_steps": 360,
+    "max_xy_error_mm": 0.8079972594648883,
+    "max_final_tilt_deg": 0.007539301449622655,
+    "max_constraint_position_error_mm": 0.057796939707697136,
+    "max_constraint_rotation_error_deg": 0.2507515713078054,
+    "attachment_samples": 143155,
+    "native_zero_force_samples": 12508,
+    "actions_with_native_zero_force": 14,
+    "min_post_release_support_s": 0.5999999999999991,
+    "max_pickup_xy_excursion_mm": 0.8557303736389071,
+    "max_lower_xy_excursion_mm": 0.1606983762062896,
+    "verified_home_returns": 26,
+    "observed_drops": 0,
+    "recorded_unintended_contacts": 0
+  },
+  "limitations": [
+    "Ideal constraint fixes both translation and rotation;success does not establish native pressure/friction stability.",
+    "Constraint/task records are each physics tick;full contact vectors/poses are regular captured frames plus event boundaries. Runtime collision guards check each tick;cannot reconstruct unrecorded contact details.",
+    "Same GPT separately reviews raw records;not second independent reviewer.3fixed sparse K/Q games,not population reliability estimate.",
+    "Near-vertical motion is reported via observed horizontal excursions,not a new strict task-abort threshold."
+  ]
+}

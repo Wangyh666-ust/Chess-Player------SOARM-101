@@ -3,24 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SO-ARM101 / Chess Vision — Dubrovnik fine-tuning results</title>
-<meta name="description" content="Static, recorded evaluation of a Dubrovnik-specific YOLOv8m chess piece detector: original vs fine-tuned joint accuracy, latency, occupancy F1 and per-example 8x8 board reconstructions.">
+<title>SO-ARM101 Chess Player — Vision &amp; Virtual Simulation</title>
+<meta name="description" content="Chess-piece recognition and preliminary SO-ARM101 virtual manipulation: a recorded ten-ply game demo, ideal-grasp simulation results, and Dubrovnik YOLOv8m evaluation.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap header-inner">
     <div class="brand">
-      <span class="brand-mark">SO-ARM101 / CHESS VISION</span>
+      <span class="brand-mark">SO-ARM101 / CHESS PLAYER</span>
     </div>
-    <span class="badge">Dubrovnik-specific fine-tuning</span>
+    <span class="badge">Vision + preliminary simulation</span>
   </div>
 </header>
 
 <main class="wrap">
 
   <section class="intro">
-    <h1>Same pieces. A better detector.</h1>
+    <h1>From chess recognition to simulated moves.</h1>
+    <p class="lead">The project now includes a trained piece detector and an initial virtual
+      manipulation workflow. Watch SO-ARM101 complete ten consecutive simulated plies,
+      then explore the recorded vision benchmark below.</p>
+    <p class="scope-strip">Synthetic vision &middot; PyBullet motion prototype &middot; Ideal fixed grasp</p>
+  </section>
+
+  <section class="section" id="simulation" aria-labelledby="simulation-title">
+    <h2 id="simulation-title">New: a complete 10-ply simulated game</h2>
+    <p class="note">Recorded run <strong>random2 — 10/10 plies completed</strong>. Each ply includes
+      pickup, transport, release, settled board support, and a checked return home in the same
+      persistent scene. Ten plies means ten halfmoves.</p>
+    <video class="simulation-video" controls playsinline preload="metadata"
+      poster="assets/simulation-poster.jpg" aria-label="SO-ARM101 recorded ten-ply virtual chess manipulation demo">
+      <source src="assets/simulation-random2-10plies.mp4" type="video/mp4">
+      Your browser does not support embedded video. <a href="assets/simulation-random2-10plies.mp4">Download the MP4</a>.
+    </video>
+    <p class="note"><strong>89.7-second recorded-pose replay, variable playback speed.</strong>
+      All ten action and home segments are retained. No new physics was run to export this video.</p>
+    <div class="metric-grid">
+      <article class="metric"><div class="metric-label">Complete games</div><div class="metric-value">2 / 3</div><div class="metric-sub">Run results: 6/10, 10/10, 10/10</div></article>
+      <article class="metric"><div class="metric-label">Planned plies completed</div><div class="metric-value">26 / 30</div><div class="metric-sub">1 planning block; 3 unattempted</div></article>
+      <article class="metric"><div class="metric-label">Largest final XY error</div><div class="metric-value">0.808 mm</div><div class="metric-sub">Across 26 completed physical actions</div></article>
+    </div>
+    <p class="note">All 26 actions that entered physical manipulation completed release, settled support,
+      and checked home, with no observed drops or unintended collisions. The first game stopped before
+      motion on <code class="code">d4 → a1</code> because candidate/placement-IK preflight failed.</p>
+    <p class="scope-strip"><strong>Model assumption:</strong> real bilateral closure is followed by an
+      ideal fixed grasp that constrains both relative translation and rotation until release.
+      Native force readings remain unchanged. This is a known-state IK/OMPL workflow test,
+      not live vision-driven manipulation, a VLA policy, or a hardware reliability result.</p>
+    <p><a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/SIMULATION.md">Simulation protocol and limitations</a> &middot;
+      <a href="assets/simulation-random2-10plies.mp4" download>Download video</a> &middot;
+      <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/artifacts/simulation-v1/raw-audit.json">Recorded result audit</a></p>
+  </section>
+
+  <section class="intro" id="vision">
+    <h2>Vision benchmark: same pieces, a better detector.</h2>
     <p class="lead">
       A YOLOv8m chess piece detector was fine-tuned on synthetic RGB scenes built from one exact
       mesh set, <code class="code">ezeeone_Dubrovnik_1960_set_02_stls</code>. This page reports
@@ -181,7 +218,8 @@
         or other piece sets.</li>
       <li>Automatic corner detection is unchanged and is <strong>not</strong> part of this benchmark
         (corners are known here).</li>
-      <li>VLA / robot execution is future work; nothing here drives hardware.</li>
+      <li>The virtual motion prototype uses known simulator state and an ideal fixed grasp.
+        End-to-end vision/VLA control and real-robot execution remain future work; this demo drives no hardware.</li>
     </ul>
     <p class="note">
       All 14 fine-tuned failure frames are available in the held-out explorer; low-angle views
@@ -199,6 +237,7 @@
   <div class="wrap footer-inner">
     <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101">Repository</a>
     <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/EXPERIMENT.md">Experiment docs</a>
+    <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/SIMULATION.md">Simulation experiment</a>
     <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/raw/refs/heads/main/models/dubrovnik-yolov8m-v1.pt">Trained weight</a>
     <a href="assets/summary.csv" download>Download summary CSV</a>
     <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/artifacts/dubrovnik-v1/comparison.json">Full results (comparison.json)</a>

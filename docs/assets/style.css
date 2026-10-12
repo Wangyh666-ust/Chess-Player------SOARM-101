@@ -72,6 +72,8 @@ h3{font-size:1.05rem;margin:0 0 6px}
 h4{font-size:.92rem;margin:0 0 8px;color:var(--navy-soft);text-transform:uppercase;letter-spacing:.06em}
 .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap}
 .note{color:var(--navy-soft);font-size:.92rem;max-width:78ch}
+.simulation-video{display:block;width:100%;max-width:800px;height:auto;background:#fff;border:1px solid var(--line);border-radius:8px;margin:18px 0}
+#simulation{scroll-margin-top:20px}
 
 /* controls */
 .control{display:flex;flex-direction:column;gap:4px;font-size:.82rem;color:var(--navy-soft)}
