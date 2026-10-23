@@ -1,6 +1,6 @@
 # Real-camera evidence package — 2026-10-23
 
-See [the full Chinese report](../../REAL_VISION.md) for methods, figures, interpretation and limitations.
+Full report: [<kbd> English </kbd>](../../REAL_VISION.en.md) · [<kbd> 简体中文 </kbd>](../../REAL_VISION.md). Both versions cover methods, figures, interpretation and limitations.
 
 | File | Meaning |
 | --- | --- |

@@ -2,7 +2,9 @@
 
 ## New: real-camera chess recognition — 2026-10-23
 
-**[实拍识别完整报告：实验环境、三次微调、loss 曲线与前后对比](REAL_VISION.md)**
+**Real-camera report / 实拍识别报告:** [<kbd> 简体中文 </kbd>](REAL_VISION.md) · [<kbd> English </kbd>](REAL_VISION.en.md)
+
+Experiment setup, three fine-tuning runs, loss curves, and before/after comparisons / 实验环境、三次微调、loss 曲线与前后对比。
 
 当前固定棋具下，已经跑通双摄实时 **“棋子类别＋检测框＋棋格坐标”** 预览链路：相机 2 为主、相机 1 辅助，使用棋盘附近输入与参考辅助网格关联。最新 28 组实拍微调在留出的两组主视角照片上，由 **46/56（82.1%）提高到 53/56（94.6%）** 类别与框正确匹配。
 
