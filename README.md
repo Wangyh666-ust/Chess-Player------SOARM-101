@@ -1,8 +1,26 @@
 # SO-ARM101 Chess Player — Vision & Simulation
 
-The project now includes **chess-piece recognition and an initial virtual robot manipulation experiment**. The vision module fine-tunes YOLOv8m for **ezeeone_Dubrovnik_1960_set_02_stls**; the new PyBullet prototype tests SO-ARM101 picking up, moving, releasing pieces, and returning home across consecutive chess moves.
+## New: real-camera chess recognition — 2026-10-23
 
-The two results are currently separate: vision uses synthetic RGB images and known board corners; motion uses known simulator state, IK/OMPL planning, and an **ideal fixed grasp** during transport. This is preliminary virtual simulation, not an end-to-end vision-driven/VLA policy or hardware demonstration.
+**[实拍识别完整报告：实验环境、三次微调、loss 曲线与前后对比](REAL_VISION.md)**
+
+当前固定棋具下，已经跑通双摄实时 **“棋子类别＋检测框＋棋格坐标”** 预览链路：相机 2 为主、相机 1 辅助，使用棋盘附近输入与参考辅助网格关联。最新 28 组实拍微调在留出的两组主视角照片上，由 **46/56（82.1%）提高到 53/56（94.6%）** 类别与框正确匹配。
+
+The real-camera pipeline now displays **piece class, bounding box, and square coordinate**. The latest fine-tune uses 28 paired groups, split into **23 training / 3 validation / 2 test groups**, on an RTX 5070 Laptop GPU. Main-camera class-and-box matches improved **82.1% → 94.6%** on those two held-out groups; combined-camera detection mAP50 improved **68.0% → 89.5%**.
+
+**Scope:** the live class/grid pipeline was accepted with an earlier checkpoint. The newest weights have been evaluated offline on reviewed board crops and are **not yet deployed**. The 94.6% result is not square-coordinate, fusion, or full-board accuracy; **0/2 main-camera boards were entirely correct**. See the report for remaining black-rook confusions, occlusion, and sample-size limits.
+
+![Current physical chess environment](docs/assets/real-vision-20261023/environment.jpg)
+
+![Raw loss and validation curves for three real-image fine-tunes](docs/assets/real-vision-20261023/training-curves.png)
+
+The report includes the actual live grid overlay, three real-image training stages, raw epoch CSVs, paired before/after test metrics, successful corrections and residual failures. Each stage uses a different held-out set, so its metrics must be compared **within that stage**. This branch publishes the evidence and documentation; the newest checkpoint binary is not bundled.
+
+## Earlier results: synthetic vision and virtual manipulation
+
+The earlier vision module fine-tunes YOLOv8m for **ezeeone_Dubrovnik_1960_set_02_stls**. The PyBullet prototype tests SO-ARM101 picking up, moving, releasing pieces, and returning home across consecutive chess moves.
+
+Those results retain their original scope: synthetic vision uses known board corners; motion uses known simulator state, IK/OMPL planning, and an **ideal fixed grasp** during transport. The new real-camera results above do not establish end-to-end vision-driven/VLA manipulation or real-robot grasping success.
 
 ## New: 10 consecutive simulated moves
 
@@ -42,7 +60,7 @@ To host this static demo on GitHub Pages, select **Settings → Pages → Deploy
 
 ## Measured result
 
-Held-out test: **456 synthetic images from 57 positions**, with **10,784 occupied ground-truth squares**.
+This section describes the **earlier synthetic benchmark**, not the new physical chess set. Held-out test: **456 synthetic images from 57 positions**, with **10,784 occupied ground-truth squares**.
 
 | Metric | Original YOLOv8m | Dubrovnik fine-tuned |
 | --- | ---: | ---: |
@@ -62,6 +80,7 @@ The earlier nine scenes improved from **116/222 (52.25%)** to **222/222 (100%)**
 
 ## What is included
 
+- [Real-camera report](REAL_VISION.md), current environment photograph, actual class/grid screenshots, [three-run training records and metrics](artifacts/real-vision-20261023/README.md), and latest held-out comparisons.
 - [Simulation video](docs/assets/simulation-random2-10plies.mp4), [experiment summary](SIMULATION.md), and [recorded replay/evidence package](artifacts/simulation-v1/README.md).
 - [Trained checkpoint](models/dubrovnik-yolov8m-v1.pt), approximately 49.6 MiB.
 - [English interactive demo](docs/index.html), preview images, and recorded detections.
@@ -82,7 +101,7 @@ For standalone piece detection:
 yolo predict model=models/dubrovnik-yolov8m-v1.pt source=your_image.jpg imgsz=640 conf=0.25 iou=0.7 device=0
 ~~~
 
-This produces bounding boxes and piece classes. Reconstructing square occupancy also requires ordered board corners and a known board orientation; the provided mapper supports **known corners** only.
+This uses the earlier **synthetic Dubrovnik checkpoint**, not the new real-camera weights. It produces bounding boxes and piece classes. Reconstructing square occupancy also requires ordered board corners and a known board orientation; the original portable mapper supports **known corners** only. The separate local real-camera prototype uses reference-assisted grid tracking, as documented in [REAL_VISION.md](REAL_VISION.md).
 
 For verification of the published artifacts, a GPU and PyTorch are unnecessary:
 
@@ -103,7 +122,7 @@ RGB + robot state + move instruction → VLA policy → SO-ARM101
 New RGB image → recognition → execution verification
 ~~~
 
-The repository now documents the recognition experiment **and preliminary continuous virtual manipulation**. The simulation uses known state and explicit motion planning; connecting recognition to execution, real-camera adaptation, turn handling, VLA action learning, and hardware validation remain subsequent work.
+The repository now documents **real-camera adaptation, a live class/grid preview prototype, and preliminary continuous virtual manipulation**. The simulation uses known state and explicit motion planning; connecting visual recognition to robot execution, robust turn handling, VLA action learning, and hardware grasp validation remain subsequent work.
 
 ## Attribution and model workflow
 

@@ -1,0 +1,70 @@
+{
+  "category": "deployment_and_program_acceptance",
+  "created_at_utc": "2026-10-23T07:39:38.110708+00:00",
+  "result": "live_chain_connected",
+  "robot_commands": 0,
+  "new_training_runs": 0,
+  "classification_accuracy_measured": false,
+  "grid_cameras": [
+    {
+      "camera_index": 0,
+      "seq": 2824,
+      "captured_at": 1792741112.8383482,
+      "age_ms": 196.31123542785645,
+      "fresh": true,
+      "grid_valid": true,
+      "reason": "ok",
+      "inliers": 49,
+      "checker_count": 29,
+      "grid_ms": 13.823644,
+      "process_ms": 39.25299644470215,
+      "assigned_count": 17,
+      "unresolved_count": 8
+    },
+    {
+      "camera_index": 1,
+      "seq": 3041,
+      "captured_at": 1792741112.7329867,
+      "age_ms": 301.67269706726074,
+      "fresh": true,
+      "grid_valid": true,
+      "reason": "ok",
+      "inliers": 40,
+      "checker_count": 21,
+      "grid_ms": 15.994732,
+      "process_ms": 45.95184326171875,
+      "assigned_count": 23,
+      "unresolved_count": 6
+    }
+  ],
+  "aux_usable": true,
+  "pair_skew_ms": 105.3614616394043,
+  "ui_checks": [
+    "both current camera images show grid and class @ square",
+    "camera1 checkbox off hides overlay",
+    "camera2 rotation selector 90 accepted and restored270",
+    "camera1 pause yields paused label and auxiliary excluded",
+    "resume camera1 returns fresh results and auxiliary use",
+    "manual pair capture ZIP has7 files and original source hashes match",
+    "capture metadata sequence and timestamp match grid on both cameras",
+    "existing local launcher config points to new remote service"
+  ],
+  "limitations": [
+    "Reference-assisted registration against previous manual grid; no universal cold-start board detection.",
+    "Only fixed current scene plus four pre-registered offline cases checked; synthetic translation consistency is not absolute grid accuracy or real board-motion robustness.",
+    "Piece base is bbox heuristic; not trained footpoint; uncertain and duplicate assignments retained as unknown/conflict.",
+    "Camera1 uses conservative fixed occlusion mask, no general hand segmentation.",
+    "Camera2 authoritative, aux disagreements flagged; auxiliary-only tentative. Unknown is not empty.",
+    "Live timings are instantaneous samples, not throughput benchmark.",
+    "No recognition accuracy or manipulation success claim. Same GPT review, not independent."
+  ],
+  "model_at_capture": "R1 phone fine-tune; not R3",
+  "source_sha256": "7dabb1acd3e562d22f3a016144627532087883edd213b097c6eeeebff8f0c217",
+  "detector_postprocess_at_capture": "Ultralytics standard NMS; offline large-box preference not integrated in this service version",
+  "live_roi_padding": {
+    "horizontal_fraction_per_side": 0.15,
+    "top_fraction": 0.25,
+    "bottom_fraction": 0.1,
+    "grid_invalid_fallback": "full frame"
+  }
+}

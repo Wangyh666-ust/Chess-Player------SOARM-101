@@ -1,0 +1,80 @@
+{
+  "copied": [
+    {
+      "artifact": "artifacts/real-vision-20261023/r1-phone-training.csv",
+      "source": "results.csv",
+      "sha256": "0fb2c5adc1eb8b5655b4ae0c7c74bcb0743c7a386333b5ed6613333d03940fe5",
+      "copied_without_pixel_changes": false
+    },
+    {
+      "artifact": "artifacts/real-vision-20261023/r2-dual-pilot-training.csv",
+      "source": "results.csv",
+      "sha256": "1887c5fbae961a7554a88e2ce1012b7f7835a555df671ca80aa29961d8403763",
+      "copied_without_pixel_changes": false
+    },
+    {
+      "artifact": "artifacts/real-vision-20261023/r3-groups28-training.csv",
+      "source": "results.csv",
+      "sha256": "43674c90aa7e5bbf960941bed2dd53f1a09de25c8a0455f12a0bd20be0628c9c",
+      "copied_without_pixel_changes": false
+    },
+    {
+      "artifact": "docs/assets/real-vision-20261023/environment.jpg",
+      "source": "codex-clipboard-902d7b08-8ea6-4ccc-aa9f-693309f02762.jpg",
+      "sha256": "a34cc2d95da3bedb2a2878c9b9de67dd618e3381f06b1520f5227893b714e2d2",
+      "copied_without_pixel_changes": true
+    },
+    {
+      "artifact": "docs/assets/real-vision-20261023/live-camera2-grid.jpg",
+      "source": "camera2_yolo.jpg",
+      "sha256": "f5d67599c90bb7302a618a4fd53c9c78553b0e96b1f9a491fa7ae7e67fe7973f",
+      "copied_without_pixel_changes": true
+    },
+    {
+      "artifact": "docs/assets/real-vision-20261023/live-camera1-grid.jpg",
+      "source": "camera1_yolo.jpg",
+      "sha256": "4656a6b7ccbf2b422105b8ff39926a69fdd10574065d5a763a1681045acfdd38",
+      "copied_without_pixel_changes": true
+    },
+    {
+      "artifact": "docs/assets/real-vision-20261023/latest-success-and-failures.png",
+      "source": "key_examples.png",
+      "sha256": "e5ffd1409c5e9d898d711311b2de576274d9dbede8b38ee37e06e61a1cac227d",
+      "copied_without_pixel_changes": true
+    },
+    {
+      "artifact": "docs/assets/real-vision-20261023/group16-before.jpg",
+      "source": "before_large__g16_c2.jpg",
+      "sha256": "5f474b24b6d3db6c529d724206586fa3fb195b4bce2140145b1717757dad8abb",
+      "copied_without_pixel_changes": true
+    },
+    {
+      "artifact": "docs/assets/real-vision-20261023/group16-after.jpg",
+      "source": "after_large__g16_c2.jpg",
+      "sha256": "2eb7e98d43511bcb4248e478b7b3d8d947e43d3b9f7195897d7c704706a5179c",
+      "copied_without_pixel_changes": true
+    },
+    {
+      "artifact": "docs/assets/real-vision-20261023/group25-before.jpg",
+      "source": "before_large__g25_c2.jpg",
+      "sha256": "0b3bc0761ec33dc4628261defe339b533b74d7bdb7b467a8be191363f844c6af",
+      "copied_without_pixel_changes": true
+    },
+    {
+      "artifact": "docs/assets/real-vision-20261023/group25-after.jpg",
+      "source": "after_large__g25_c2.jpg",
+      "sha256": "274d8a9eb36b463dba463f8107d292351c39cfa72973930a88a2b0bc7aa00216",
+      "copied_without_pixel_changes": true
+    },
+    {
+      "artifact": "artifacts/real-vision-20261023/grid-registration-audit.json",
+      "source": "registration_raw_audit.json",
+      "sha256": "e2226184da18e77ee466e49f4f69a77e1d3361f8b5888d06e93edf48d3a8cd50",
+      "copied_without_pixel_changes": false
+    }
+  ],
+  "generated_plots": {
+    "training-curves.png": "Raw copied training CSVs; all epochs, train/val box/cls/DFL and val AP; no smoothing",
+    "heldout-comparison.png": "training-history.json official heldout before/after AP; separate panels per dataset"
+  }
+}

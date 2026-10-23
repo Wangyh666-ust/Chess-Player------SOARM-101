@@ -6,6 +6,9 @@
 *.md text eol=lf
 *.json text eol=lf
 *.csv text eol=lf
+# Keep these published raw epoch logs byte-identical to their audit hashes.
+artifacts/real-vision-20261023/*-training.csv -text whitespace=cr-at-eol
+artifacts/real-vision-20261023/grid-registration-audit.json -text whitespace=cr-at-eol
 *.pt binary
 *.png binary
 *.jpg binary

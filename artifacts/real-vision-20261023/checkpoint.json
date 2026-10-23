@@ -1,0 +1,67 @@
+{
+  "status": "offline_candidate_not_deployed",
+  "sha256": "72997374c6f835409880c1973bab732460e726a6eac631c50953fbbf917a6819",
+  "epochs_completed": 66,
+  "best_epoch": 46,
+  "training_job_seconds": 266.954,
+  "dataset_groups": 28,
+  "train_groups": 23,
+  "val_groups": [
+    15,
+    21,
+    27
+  ],
+  "test_groups": [
+    16,
+    25
+  ],
+  "counts": {
+    "train": {
+      "images": 46,
+      "boxes": 1131
+    },
+    "val": {
+      "images": 6,
+      "boxes": 137
+    },
+    "test": {
+      "images": 4,
+      "boxes": 113
+    }
+  },
+  "classes": [
+    "white-pawn",
+    "white-rook",
+    "white-knight",
+    "white-bishop",
+    "white-queen",
+    "white-king",
+    "black-pawn",
+    "black-rook",
+    "black-knight",
+    "black-bishop",
+    "black-queen",
+    "black-king",
+    "empty"
+  ],
+  "input": "upright board-near crop, imgsz960, no perspective rectification",
+  "official_test": {
+    "before": {
+      "fitness": 0.5598618779039692,
+      "metrics/mAP50(B)": 0.6796367551921092,
+      "metrics/mAP50-95(B)": 0.5598618779039692,
+      "metrics/precision(B)": 0.6470162630129627,
+      "metrics/recall(B)": 0.6001529069657715
+    },
+    "after": {
+      "fitness": 0.7134110715297914,
+      "metrics/mAP50(B)": 0.8946778941374528,
+      "metrics/mAP50-95(B)": 0.7134110715297914,
+      "metrics/precision(B)": 0.8581354623888745,
+      "metrics/recall(B)": 0.8540557124810095
+    }
+  },
+  "scope": "Piece detector fine-tune only; board localization, grid mapping, fusion and live service unchanged",
+  "base_sha256": "a391bdb4c978c46179aa576f5fc2cabe21bddf3f7fdac00fe3a3f2e240f009dc",
+  "checkpoint_bundled": false
+}

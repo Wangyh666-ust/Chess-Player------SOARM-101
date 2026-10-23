@@ -1,0 +1,374 @@
+{
+  "official_test": {
+    "before": {
+      "fitness": 0.5598618779039692,
+      "metrics/mAP50(B)": 0.6796367551921092,
+      "metrics/mAP50-95(B)": 0.5598618779039692,
+      "metrics/precision(B)": 0.6470162630129627,
+      "metrics/recall(B)": 0.6001529069657715
+    },
+    "after": {
+      "fitness": 0.7134110715297914,
+      "metrics/mAP50(B)": 0.8946778941374528,
+      "metrics/mAP50-95(B)": 0.7134110715297914,
+      "metrics/precision(B)": 0.8581354623888745,
+      "metrics/recall(B)": 0.8540557124810095
+    }
+  },
+  "fixed_threshold": {
+    "confidence": 0.25,
+    "nms_iou": 0.7,
+    "imgsz": 960,
+    "match_iou": 0.5,
+    "match": "Existing class-independent descending-IoU greedy one-to-one threshold0.5; visible box passed through legacy amodal_box field",
+    "large_box_policy": {
+      "min_ioa": 0.85,
+      "max_center_dx": 0.25,
+      "max_bottom_dy": 0.25
+    }
+  },
+  "aggregate": {
+    "before_raw_c0": {
+      "gt_labelled": 113,
+      "matched": 106,
+      "false_pred": 26,
+      "class_correct": 81,
+      "object_recall": 0.9380530973451328,
+      "precision": 0.803030303030303,
+      "conditional_class_accuracy": 0.7641509433962265,
+      "joint_object_recall": 0.7168141592920354
+    },
+    "before_large_c0": {
+      "gt_labelled": 113,
+      "matched": 106,
+      "false_pred": 3,
+      "class_correct": 80,
+      "object_recall": 0.9380530973451328,
+      "precision": 0.9724770642201835,
+      "conditional_class_accuracy": 0.7547169811320755,
+      "joint_object_recall": 0.7079646017699115
+    },
+    "after_raw_c0": {
+      "gt_labelled": 113,
+      "matched": 111,
+      "false_pred": 14,
+      "class_correct": 99,
+      "object_recall": 0.9823008849557522,
+      "precision": 0.888,
+      "conditional_class_accuracy": 0.8918918918918919,
+      "joint_object_recall": 0.8761061946902655
+    },
+    "after_large_c0": {
+      "gt_labelled": 113,
+      "matched": 111,
+      "false_pred": 3,
+      "class_correct": 101,
+      "object_recall": 0.9823008849557522,
+      "precision": 0.9736842105263158,
+      "conditional_class_accuracy": 0.9099099099099099,
+      "joint_object_recall": 0.8938053097345132
+    },
+    "before_raw_c1": {
+      "gt_labelled": 57,
+      "matched": 51,
+      "false_pred": 14,
+      "class_correct": 34,
+      "object_recall": 0.8947368421052632,
+      "precision": 0.7846153846153846,
+      "conditional_class_accuracy": 0.6666666666666666,
+      "joint_object_recall": 0.5964912280701754
+    },
+    "before_large_c1": {
+      "gt_labelled": 57,
+      "matched": 51,
+      "false_pred": 1,
+      "class_correct": 34,
+      "object_recall": 0.8947368421052632,
+      "precision": 0.9807692307692307,
+      "conditional_class_accuracy": 0.6666666666666666,
+      "joint_object_recall": 0.5964912280701754
+    },
+    "after_raw_c1": {
+      "gt_labelled": 57,
+      "matched": 56,
+      "false_pred": 8,
+      "class_correct": 48,
+      "object_recall": 0.9824561403508771,
+      "precision": 0.875,
+      "conditional_class_accuracy": 0.8571428571428571,
+      "joint_object_recall": 0.8421052631578947
+    },
+    "after_large_c1": {
+      "gt_labelled": 57,
+      "matched": 56,
+      "false_pred": 2,
+      "class_correct": 48,
+      "object_recall": 0.9824561403508771,
+      "precision": 0.9655172413793104,
+      "conditional_class_accuracy": 0.8571428571428571,
+      "joint_object_recall": 0.8421052631578947
+    },
+    "before_raw_c2": {
+      "gt_labelled": 56,
+      "matched": 55,
+      "false_pred": 12,
+      "class_correct": 47,
+      "object_recall": 0.9821428571428571,
+      "precision": 0.8208955223880597,
+      "conditional_class_accuracy": 0.8545454545454545,
+      "joint_object_recall": 0.8392857142857143
+    },
+    "before_large_c2": {
+      "gt_labelled": 56,
+      "matched": 55,
+      "false_pred": 2,
+      "class_correct": 46,
+      "object_recall": 0.9821428571428571,
+      "precision": 0.9649122807017544,
+      "conditional_class_accuracy": 0.8363636363636363,
+      "joint_object_recall": 0.8214285714285714
+    },
+    "after_raw_c2": {
+      "gt_labelled": 56,
+      "matched": 55,
+      "false_pred": 6,
+      "class_correct": 51,
+      "object_recall": 0.9821428571428571,
+      "precision": 0.9016393442622951,
+      "conditional_class_accuracy": 0.9272727272727272,
+      "joint_object_recall": 0.9107142857142857
+    },
+    "after_large_c2": {
+      "gt_labelled": 56,
+      "matched": 55,
+      "false_pred": 1,
+      "class_correct": 53,
+      "object_recall": 0.9821428571428571,
+      "precision": 0.9821428571428571,
+      "conditional_class_accuracy": 0.9636363636363636,
+      "joint_object_recall": 0.9464285714285714
+    }
+  },
+  "primary_per_class": [
+    {
+      "class_id": 0,
+      "class_name": "白兵",
+      "before": {
+        "total": 11,
+        "correct": 11,
+        "wrong": 0,
+        "missed": 0
+      },
+      "after": {
+        "total": 11,
+        "correct": 11,
+        "wrong": 0,
+        "missed": 0
+      }
+    },
+    {
+      "class_id": 1,
+      "class_name": "白车",
+      "before": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0,
+        "missed": 0
+      },
+      "after": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0,
+        "missed": 0
+      }
+    },
+    {
+      "class_id": 2,
+      "class_name": "白马",
+      "before": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 0
+      },
+      "after": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 0
+      }
+    },
+    {
+      "class_id": 3,
+      "class_name": "白象",
+      "before": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 0
+      },
+      "after": {
+        "total": 3,
+        "correct": 3,
+        "wrong": 0,
+        "missed": 0
+      }
+    },
+    {
+      "class_id": 4,
+      "class_name": "白后",
+      "before": {
+        "total": 2,
+        "correct": 0,
+        "wrong": 1,
+        "missed": 1
+      },
+      "after": {
+        "total": 2,
+        "correct": 1,
+        "wrong": 0,
+        "missed": 1
+      }
+    },
+    {
+      "class_id": 5,
+      "class_name": "白王",
+      "before": {
+        "total": 2,
+        "correct": 1,
+        "wrong": 1,
+        "missed": 0
+      },
+      "after": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0,
+        "missed": 0
+      }
+    },
+    {
+      "class_id": 6,
+      "class_name": "黑兵",
+      "before": {
+        "total": 16,
+        "correct": 14,
+        "wrong": 2,
+        "missed": 0
+      },
+      "after": {
+        "total": 16,
+        "correct": 16,
+        "wrong": 0,
+        "missed": 0
+      }
+    },
+    {
+      "class_id": 7,
+      "class_name": "黑车",
+      "before": {
+        "total": 5,
+        "correct": 2,
+        "wrong": 3,
+        "missed": 0
+      },
+      "after": {
+        "total": 5,
+        "correct": 3,
+        "wrong": 2,
+        "missed": 0
+      }
+    },
+    {
+      "class_id": 8,
+      "class_name": "黑马",
+      "before": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 0
+      },
+      "after": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 0
+      }
+    },
+    {
+      "class_id": 9,
+      "class_name": "黑象",
+      "before": {
+        "total": 4,
+        "correct": 3,
+        "wrong": 1,
+        "missed": 0
+      },
+      "after": {
+        "total": 4,
+        "correct": 4,
+        "wrong": 0,
+        "missed": 0
+      }
+    },
+    {
+      "class_id": 10,
+      "class_name": "黑后",
+      "before": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0,
+        "missed": 0
+      },
+      "after": {
+        "total": 2,
+        "correct": 2,
+        "wrong": 0,
+        "missed": 0
+      }
+    },
+    {
+      "class_id": 11,
+      "class_name": "黑王",
+      "before": {
+        "total": 1,
+        "correct": 0,
+        "wrong": 1,
+        "missed": 0
+      },
+      "after": {
+        "total": 1,
+        "correct": 1,
+        "wrong": 0,
+        "missed": 0
+      }
+    }
+  ],
+  "primary_remaining": [
+    {
+      "group": 16,
+      "square": "f3",
+      "gt": "黑车",
+      "pred": "黑后"
+    },
+    {
+      "group": 25,
+      "square": "f2",
+      "gt": "黑车",
+      "pred": "黑王"
+    },
+    {
+      "group": 16,
+      "square": "g4",
+      "gt": "白后",
+      "result": "No IoU>=0.5 match, partially occluded"
+    }
+  ],
+  "whole_primary_boards_correct": {
+    "before": 0,
+    "after": 0,
+    "total": 2
+  },
+  "scope": "Reviewed board ROI, not automatic board/grid/fusion accuracy",
+  "same_gpt_raw_review": true,
+  "independent": false
+}

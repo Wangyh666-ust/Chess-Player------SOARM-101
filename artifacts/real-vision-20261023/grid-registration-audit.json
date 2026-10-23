@@ -1,0 +1,71 @@
+{
+  "reviewer": "GPT",
+  "independent": false,
+  "reviewed_images": [
+    "offline_audit/case0.jpg",
+    "offline_audit/case1.jpg"
+  ],
+  "results": [
+    {
+      "case": 0,
+      "camera_index": 0,
+      "valid": true,
+      "inliers": 49,
+      "checker_count": 29,
+      "elapsed_ms": 14.8927,
+      "displacement": null
+    },
+    {
+      "case": 1,
+      "camera_index": 1,
+      "valid": true,
+      "inliers": 40,
+      "checker_count": 22,
+      "elapsed_ms": 11.8829,
+      "displacement": null
+    },
+    {
+      "case": 2,
+      "camera_index": 0,
+      "valid": true,
+      "inliers": 48,
+      "checker_count": 29,
+      "elapsed_ms": 12.614099999999999,
+      "displacement": {
+        "mean_dx": 11.998803286070093,
+        "mean_dy": -7.998050041270853,
+        "known_dx": 12.0,
+        "known_dy": -8.0,
+        "max_error_vs_known": 0.01751127674823614
+      }
+    },
+    {
+      "case": 3,
+      "camera_index": 1,
+      "valid": true,
+      "inliers": 40,
+      "checker_count": 22,
+      "elapsed_ms": 11.4603,
+      "displacement": {
+        "mean_dx": 12.000004062201386,
+        "mean_dy": -7.999995734322077,
+        "known_dx": 12.0,
+        "known_dy": -8.0,
+        "max_error_vs_known": 3.378279027558707e-05
+      }
+    }
+  ],
+  "conclusion": "Both current-image grids visually align with visible black-white boundaries. Two controlled translations track expected displacement, all four cases meet preregistered checks.",
+  "limitations": [
+    "Image translations are synthetic transformations, not physical movement of board/cameras. Small displacement errors are transform tracking consistency, NOT absolute grid accuracy.",
+    "Manual calibrated reference still required. Large viewpoint/board appearance changes need new reference; no universal cold-start discovery.",
+    "Camera1 old conservative occlusion mask retained while robot fixed. No general dynamic hand segmentation.",
+    "No new YOLO accuracy experiment, no robot access, no training.",
+    "Same GPT reviewed both references and outcomes; not independent second reviewer."
+  ],
+  "execution": {
+    "actual_cases": 4,
+    "policy_invocations": 0,
+    "robot_commands": 0
+  }
+}
