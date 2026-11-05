@@ -1,0 +1,121 @@
+{
+  "seed": 20261105,
+  "presets_file": "lighting_presets.json",
+  "lighting_presets": [
+    "01_reference_room",
+    "02_overhead_strips",
+    "03_overhead_panels",
+    "04_strips_daylight",
+    "05_panels_daylight",
+    "06_dim_room",
+    "07_bright_room"
+  ],
+  "lighting_bounds": {
+    "azimuth_degrees": [
+      -30.0,
+      90.0
+    ],
+    "power_scale": [
+      0.8,
+      1.0
+    ],
+    "per_light_power_scale": [
+      0.65,
+      1.0
+    ],
+    "world_scale": [
+      1.0,
+      1.0
+    ]
+  },
+  "samples": 64,
+  "resolution_scale": 1.0,
+  "threads": 4,
+  "base_config": "scene.json",
+  "piece_randomization": {
+    "offset_mm": null,
+    "cell_margin_mm": 0.0,
+    "yaw_degrees": 180.0
+  },
+  "camera_randomization": {
+    "fixed": {
+      "enabled": true,
+      "azimuth_offset_degrees": [
+        -10,
+        10
+      ],
+      "elevation_offset_degrees": [
+        -5,
+        5
+      ],
+      "distance_scale": [
+        1.4,
+        1.8
+      ],
+      "target_offset_mm": [
+        [
+          -5,
+          5
+        ],
+        [
+          -5,
+          5
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "roll_degrees": [
+        -3,
+        3
+      ],
+      "lens_scale": [
+        0.9,
+        1.0
+      ],
+      "margin_fraction": 0.04,
+      "max_attempts": 100
+    },
+    "arm": {
+      "enabled": true,
+      "azimuth_offset_degrees": [
+        -10,
+        10
+      ],
+      "elevation_offset_degrees": [
+        -5,
+        5
+      ],
+      "distance_scale": [
+        1.15,
+        1.45
+      ],
+      "target_offset_mm": [
+        [
+          -5,
+          5
+        ],
+        [
+          -5,
+          5
+        ],
+        [
+          -2,
+          2
+        ]
+      ],
+      "roll_degrees": [
+        -3,
+        3
+      ],
+      "lens_scale": [
+        0.9,
+        1.0
+      ],
+      "margin_fraction": 0.04,
+      "max_attempts": 100
+    }
+  },
+  "variants_per_setup": 1
+}
