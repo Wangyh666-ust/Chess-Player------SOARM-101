@@ -1,0 +1,23 @@
+[
+  {
+    "piece": "rook",
+    "height_mm": 25.5,
+    "vertices": 20098,
+    "closed": true,
+    "volume_mm3": 1810.2,
+    "top_reduction_checks": [
+      {
+        "object": "White Rook",
+        "head_diameter_mm": 11.520000000000001,
+        "top_radial_ratio": 0.9000000373150501,
+        "height_and_lower_body_unchanged": true
+      },
+      {
+        "object": "Black Rook",
+        "head_diameter_mm": 11.520000000000001,
+        "top_radial_ratio": 0.9000000373150501,
+        "height_and_lower_body_unchanged": true
+      }
+    ]
+  }
+]

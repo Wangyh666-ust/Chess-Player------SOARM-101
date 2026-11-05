@@ -8,6 +8,7 @@ deepseek_api.txt
 *.key
 .venv*/
 venv/
+.local-blender/
 __pycache__/
 *.py[cod]
 *.generation.json
@@ -25,3 +26,11 @@ runs/
 Thumbs.db
 .vscode/
 .idea/
+
+# Regenerable photo-set render datasets
+vision_eval/photo_synthetic/pilots/
+datasets/synthetic/
+
+# Asset references
+/assets/chess_board_pictures/
+/assets/chess_pieces_pictures/

@@ -1,0 +1,90 @@
+{
+  "asset": "knight",
+  "checks": [
+    {
+      "object": "White Knight \u2014 rebuilt",
+      "height_mm": 27.499999850988388,
+      "vertices": 327213,
+      "closed": true,
+      "volume_mm3": 1622.3357027332913,
+      "height_and_width_drivers_checked": true
+    },
+    {
+      "object": "Black Knight \u2014 rebuilt",
+      "height_mm": 27.499999850988388,
+      "vertices": 327213,
+      "closed": true,
+      "volume_mm3": 1622.3357027332913,
+      "height_and_width_drivers_checked": true
+    }
+  ],
+  "reference_fit": "manual multi-view estimate; perspective not calibrated",
+  "manual_cleanup": {
+    "vertices": 217464,
+    "mean_body_polish_change_mm": 0.048278128667341505,
+    "max_body_polish_change_mm": 0.2540811443813404,
+    "height_mm": 27.49544195830822,
+    "base_diameter_x_mm": 15.2,
+    "backup_object": "Before detail cleanup \u2014 user sculpt",
+    "details": [
+      "Surface polish",
+      "Regularized existing base rings",
+      "Soft eyelids and nostrils",
+      "Short mouth corners",
+      "Shallow neck relief",
+      "Subtle mane divisions"
+    ],
+    "source": "User sculpt, not dimensions.json. create.py would discard this manual refinement.",
+    "date": "2026-11-04",
+    "object": "Knight \u2014 sculpt working copy",
+    "scene": "Knight \u2014 photo modeling",
+    "bounds_mm": {
+      "min": [
+        -7.499860133975744,
+        -7.599998265504837,
+        0.0
+      ],
+      "max": [
+        7.699767127633095,
+        7.599998265504837,
+        27.49544195830822
+      ]
+    },
+    "faces": 217070,
+    "connected_components": 1,
+    "non_manifold_edges": 0,
+    "loose_vertices": 0,
+    "volume_mm3": 1871.704463340304,
+    "reference_opacity": 0.16428568959236145,
+    "dataset_presets_updated": false
+  },
+  "molded_details": {
+    "backup": "Before molded details \u2014 cleaned sculpt",
+    "mane_pitch_mm": 1.12,
+    "mane_peak_to_valley_mm": 0.31144116892521934,
+    "eye_depth_mm": 0.31,
+    "mouth_depth_mm": 0.25,
+    "jaw_recess_depth_mm": 0.085,
+    "main_body_recess_depth_mm": 0.45,
+    "body_recess_width_mm": 3.0,
+    "body_recess_shape": "Broad central hollow with smooth falloff; no narrow channels",
+    "base_max_diameter_mm": 14.6,
+    "upper_base_round_height_mm": 5.5,
+    "upper_base_round_diameter_mm": 12.6,
+    "base_collar_lowering_mm": 0.0,
+    "height_mm": 27.49544195830822,
+    "description": "Photo-guided relief added to the user-approved manual silhouette.",
+    "date": "2026-11-04",
+    "object": "Knight \u2014 sculpt working copy",
+    "scene": "Knight \u2014 photo modeling",
+    "vertices": 217464,
+    "faces": 217070,
+    "non_manifold_edges": 0,
+    "connected_components": 1,
+    "volume_mm3": 1808.3844444369727,
+    "loose_vertices": 0,
+    "reference_camera_preserved": true,
+    "dataset_presets_updated": false,
+    "previous_revision_backup": "Before centered recess and round base"
+  }
+}

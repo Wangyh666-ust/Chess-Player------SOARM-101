@@ -1,0 +1,17 @@
+{
+  "asset": "bishop",
+  "checks": [
+    {
+      "object": "White Bishop",
+      "height_mm": 32.0,
+      "vertices": 28533,
+      "closed": true
+    },
+    {
+      "object": "Black Bishop",
+      "height_mm": 32.0,
+      "vertices": 28533,
+      "closed": true
+    }
+  ]
+}

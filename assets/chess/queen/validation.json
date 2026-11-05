@@ -1,0 +1,17 @@
+{
+  "asset": "queen",
+  "checks": [
+    {
+      "object": "White Queen",
+      "height_mm": 35.0,
+      "vertices": 23682,
+      "closed": true
+    },
+    {
+      "object": "Black Queen",
+      "height_mm": 35.0,
+      "vertices": 23682,
+      "closed": true
+    }
+  ]
+}

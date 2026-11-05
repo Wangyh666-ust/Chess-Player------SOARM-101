@@ -1,0 +1,17 @@
+{
+  "asset": "king",
+  "checks": [
+    {
+      "object": "White King",
+      "height_mm": 45.0,
+      "vertices": 23627,
+      "closed": true
+    },
+    {
+      "object": "Black King",
+      "height_mm": 45.0,
+      "vertices": 23627,
+      "closed": true
+    }
+  ]
+}

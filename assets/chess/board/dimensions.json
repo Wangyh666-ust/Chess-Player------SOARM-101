@@ -1,0 +1,203 @@
+{
+  "width_mm": 248.0,
+  "depth_mm": 245.8,
+  "thickness_mm": 15.0,
+  "square_mm": 25.223229104719604,
+  "frame_mm": 7.5,
+  "seam_mm": 0.6,
+  "rim_height_mm": 0.9,
+  "corner_radius_mm": 1.8,
+  "label_size_mm": 7.0,
+  "aruco": {
+    "enabled": true,
+    "dictionary": "DICT_4X4_50",
+    "white_border_mm": 1.1,
+    "surface_offset_mm": 0.025,
+    "source_note": "IDs and orientations detected from IMG_4467.JPEG. 4x4 dictionaries share these IDs; DICT_4X4_50 reproduces the detected patterns. Sizes and offsets estimated by a planar fit with 26 mm squares. 1=black in pattern_rows, including the one-cell black border.",
+    "markers": [
+      {
+        "square": "d1",
+        "id": 5,
+        "black_size_mm": 20.656,
+        "rotation_degrees": 179.458,
+        "offset_mm": [
+          -0.216,
+          -0.396
+        ],
+        "pattern_rows": [
+          "111111",
+          "110001",
+          "101101",
+          "100111",
+          "100101",
+          "111111"
+        ]
+      },
+      {
+        "square": "h1",
+        "id": 4,
+        "black_size_mm": 20.137,
+        "rotation_degrees": 93.931,
+        "offset_mm": [
+          0.346,
+          -0.316
+        ],
+        "pattern_rows": [
+          "111111",
+          "110101",
+          "110111",
+          "101101",
+          "100011",
+          "111111"
+        ]
+      },
+      {
+        "square": "a2",
+        "id": 6,
+        "black_size_mm": 20.388,
+        "rotation_degrees": -89.742,
+        "offset_mm": [
+          -0.234,
+          0.337
+        ],
+        "pattern_rows": [
+          "111111",
+          "101101",
+          "100011",
+          "111011",
+          "100011",
+          "111111"
+        ]
+      },
+      {
+        "square": "f3",
+        "id": 11,
+        "black_size_mm": 20.651,
+        "rotation_degrees": -87.857,
+        "offset_mm": [
+          -0.652,
+          0.254
+        ],
+        "pattern_rows": [
+          "111111",
+          "111101",
+          "111101",
+          "101011",
+          "110001",
+          "111111"
+        ]
+      },
+      {
+        "square": "h3",
+        "id": 3,
+        "black_size_mm": 20.586,
+        "rotation_degrees": -88.839,
+        "offset_mm": [
+          0.207,
+          -1.215
+        ],
+        "pattern_rows": [
+          "111111",
+          "101101",
+          "101101",
+          "110111",
+          "110011",
+          "111111"
+        ]
+      },
+      {
+        "square": "f5",
+        "id": 9,
+        "black_size_mm": 20.657,
+        "rotation_degrees": 89.677,
+        "offset_mm": [
+          -0.122,
+          1.259
+        ],
+        "pattern_rows": [
+          "111111",
+          "100111",
+          "100001",
+          "110101",
+          "110011",
+          "111111"
+        ]
+      },
+      {
+        "square": "c6",
+        "id": 8,
+        "black_size_mm": 20.31,
+        "rotation_degrees": -2.807,
+        "offset_mm": [
+          0.504,
+          -0.071
+        ],
+        "pattern_rows": [
+          "111111",
+          "100001",
+          "100011",
+          "100101",
+          "101011",
+          "111111"
+        ]
+      },
+      {
+        "square": "h7",
+        "id": 2,
+        "black_size_mm": 19.806,
+        "rotation_degrees": 174.429,
+        "offset_mm": [
+          -0.132,
+          0.822
+        ],
+        "pattern_rows": [
+          "111111",
+          "111001",
+          "111001",
+          "111011",
+          "100101",
+          "111111"
+        ]
+      },
+      {
+        "square": "a8",
+        "id": 0,
+        "black_size_mm": 20.466,
+        "rotation_degrees": 2.255,
+        "offset_mm": [
+          0.292,
+          0.727
+        ],
+        "pattern_rows": [
+          "111111",
+          "101001",
+          "110101",
+          "111001",
+          "111011",
+          "111111"
+        ]
+      },
+      {
+        "square": "e8",
+        "id": 1,
+        "black_size_mm": 20.415,
+        "rotation_degrees": 176.993,
+        "offset_mm": [
+          1.737,
+          1.542
+        ],
+        "pattern_rows": [
+          "111111",
+          "111111",
+          "100001",
+          "101101",
+          "101011",
+          "111111"
+        ]
+      }
+    ]
+  },
+  "label_stroke_mm": 0.025,
+  "slit_depth_mm": 1.2,
+  "grid_outline_mm": 0.35
+}

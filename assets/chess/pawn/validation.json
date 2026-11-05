@@ -1,0 +1,11 @@
+{
+  "asset": "pawn",
+  "checks": [
+    {
+      "object": "Pawn",
+      "height_mm": 23.0,
+      "vertices": 22658,
+      "closed": true
+    }
+  ]
+}
