@@ -23,3 +23,10 @@ No external font, JavaScript framework, or CDN is needed for the demo.
 ## Preliminary robot simulation
 
 The recorded motion experiment uses PyBullet, OMPL, SciPy, NumPy, python-chess, Pillow, OpenCV, and imageio-ffmpeg. The video depicts the project's SO-ARM101 and Dubrovnik geometry in a nominal virtual installation. Raw robot/CAD/STL assets and the full local simulation runtime are not bundled by this results update; rendered video, selected recorded poses, and audit data are included. Each dependency and source asset retains its own terms.
+
+## Synthetic chess setup generation
+
+`vision_eval/photo_synthetic/create_setups.py` uses python-chess and optionally
+[Stockfish](https://stockfishchess.org/download/) for legal self-play. The local
+Stockfish 19 installation is under the ignored `.local-blender/stockfish/` directory,
+with its source and GPL license retained; the binary is not tracked in this repo.

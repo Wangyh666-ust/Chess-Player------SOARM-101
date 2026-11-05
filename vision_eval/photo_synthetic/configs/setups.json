@@ -1,0 +1,19 @@
+{
+  "seed": 20261105,
+  "mode": "engine",
+  "engine_path": ".local-blender/stockfish/stockfish-linux-x86-64-universal",
+  "engine_nodes": 20000,
+  "candidate_moves": 3,
+  "max_loss_cp": 80,
+  "games": 12,
+  "count": 24,
+  "max_plies": 200,
+  "min_ply": 8,
+  "sample_every_plies": 8,
+  "positions_per_phase_per_game": 2,
+  "split_weights": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  }
+}
