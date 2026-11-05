@@ -1,0 +1,957 @@
+{
+  "base_config": "../../configs/scene.json",
+  "output": "vision_eval/photo_synthetic/pilots/lighting_bounds/results",
+  "samples": 24,
+  "resolution_scale": 0.5,
+  "cases": [
+    {
+      "id": "00_reference",
+      "bounds": {
+        "azimuth_degrees": [
+          0,
+          0
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "direction_minus45",
+      "bounds": {
+        "azimuth_degrees": [
+          -45,
+          -45
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "direction_45",
+      "bounds": {
+        "azimuth_degrees": [
+          45,
+          45
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "direction_minus90",
+      "bounds": {
+        "azimuth_degrees": [
+          -90,
+          -90
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "direction_90",
+      "bounds": {
+        "azimuth_degrees": [
+          90,
+          90
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "direction_180",
+      "bounds": {
+        "azimuth_degrees": [
+          180,
+          180
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "power_04",
+      "bounds": {
+        "azimuth_degrees": [
+          0,
+          0
+        ],
+        "power_scale": [
+          0.4,
+          0.4
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "power_06",
+      "bounds": {
+        "azimuth_degrees": [
+          0,
+          0
+        ],
+        "power_scale": [
+          0.6,
+          0.6
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "power_08",
+      "bounds": {
+        "azimuth_degrees": [
+          0,
+          0
+        ],
+        "power_scale": [
+          0.8,
+          0.8
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "power_12",
+      "bounds": {
+        "azimuth_degrees": [
+          0,
+          0
+        ],
+        "power_scale": [
+          1.2,
+          1.2
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "power_14",
+      "bounds": {
+        "azimuth_degrees": [
+          0,
+          0
+        ],
+        "power_scale": [
+          1.4,
+          1.4
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "fixtures_025",
+      "bounds": {
+        "azimuth_degrees": [
+          0,
+          0
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          0.25,
+          0.25
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "fixtures_200",
+      "bounds": {
+        "azimuth_degrees": [
+          0,
+          0
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          2,
+          2
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "combined_dim",
+      "bounds": {
+        "azimuth_degrees": [
+          90,
+          90
+        ],
+        "power_scale": [
+          0.6,
+          0.6
+        ],
+        "per_light_power_scale": [
+          2,
+          2
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "combined_bright",
+      "bounds": {
+        "azimuth_degrees": [
+          -90,
+          -90
+        ],
+        "power_scale": [
+          1.2,
+          1.2
+        ],
+        "per_light_power_scale": [
+          2,
+          2
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "direction_minus30",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          -30
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "direction_120",
+      "bounds": {
+        "azimuth_degrees": [
+          120,
+          120
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "direction_150",
+      "bounds": {
+        "azimuth_degrees": [
+          150,
+          150
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "power_05",
+      "bounds": {
+        "azimuth_degrees": [
+          0,
+          0
+        ],
+        "power_scale": [
+          0.5,
+          0.5
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "power_07",
+      "bounds": {
+        "azimuth_degrees": [
+          0,
+          0
+        ],
+        "power_scale": [
+          0.7,
+          0.7
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "power_11",
+      "bounds": {
+        "azimuth_degrees": [
+          0,
+          0
+        ],
+        "power_scale": [
+          1.1,
+          1.1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "edge_dim",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          -30
+        ],
+        "power_scale": [
+          0.6,
+          0.6
+        ],
+        "per_light_power_scale": [
+          0.5,
+          0.5
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "edge_bright",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          -30
+        ],
+        "power_scale": [
+          1.1,
+          1.1
+        ],
+        "per_light_power_scale": [
+          1.5,
+          1.5
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "edge_other_side",
+      "bounds": {
+        "azimuth_degrees": [
+          90,
+          90
+        ],
+        "power_scale": [
+          1.1,
+          1.1
+        ],
+        "per_light_power_scale": [
+          1.5,
+          1.5
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "01_reference_room_dim",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          -30
+        ],
+        "power_scale": [
+          0.8,
+          0.8
+        ],
+        "per_light_power_scale": [
+          0.65,
+          0.65
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "01_reference_room"
+    },
+    {
+      "id": "01_reference_room_bright",
+      "bounds": {
+        "azimuth_degrees": [
+          90,
+          90
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "01_reference_room"
+    },
+    {
+      "id": "02_overhead_strips_dim",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          -30
+        ],
+        "power_scale": [
+          0.8,
+          0.8
+        ],
+        "per_light_power_scale": [
+          0.65,
+          0.65
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "02_overhead_strips"
+    },
+    {
+      "id": "02_overhead_strips_bright",
+      "bounds": {
+        "azimuth_degrees": [
+          90,
+          90
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "02_overhead_strips"
+    },
+    {
+      "id": "03_overhead_panels_dim",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          -30
+        ],
+        "power_scale": [
+          0.8,
+          0.8
+        ],
+        "per_light_power_scale": [
+          0.65,
+          0.65
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "03_overhead_panels"
+    },
+    {
+      "id": "03_overhead_panels_bright",
+      "bounds": {
+        "azimuth_degrees": [
+          90,
+          90
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "03_overhead_panels"
+    },
+    {
+      "id": "04_strips_daylight_dim",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          -30
+        ],
+        "power_scale": [
+          0.8,
+          0.8
+        ],
+        "per_light_power_scale": [
+          0.65,
+          0.65
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "04_strips_daylight"
+    },
+    {
+      "id": "04_strips_daylight_bright",
+      "bounds": {
+        "azimuth_degrees": [
+          90,
+          90
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "04_strips_daylight"
+    },
+    {
+      "id": "05_panels_daylight_dim",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          -30
+        ],
+        "power_scale": [
+          0.8,
+          0.8
+        ],
+        "per_light_power_scale": [
+          0.65,
+          0.65
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "05_panels_daylight"
+    },
+    {
+      "id": "05_panels_daylight_bright",
+      "bounds": {
+        "azimuth_degrees": [
+          90,
+          90
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "05_panels_daylight"
+    },
+    {
+      "id": "06_dim_room_dim",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          -30
+        ],
+        "power_scale": [
+          0.8,
+          0.8
+        ],
+        "per_light_power_scale": [
+          0.65,
+          0.65
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "06_dim_room"
+    },
+    {
+      "id": "06_dim_room_bright",
+      "bounds": {
+        "azimuth_degrees": [
+          90,
+          90
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "06_dim_room"
+    },
+    {
+      "id": "07_bright_room_dim",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          -30
+        ],
+        "power_scale": [
+          0.8,
+          0.8
+        ],
+        "per_light_power_scale": [
+          0.65,
+          0.65
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "07_bright_room"
+    },
+    {
+      "id": "07_bright_room_bright",
+      "bounds": {
+        "azimuth_degrees": [
+          90,
+          90
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      },
+      "preset": "07_bright_room"
+    },
+    {
+      "id": "07_bright_room_glare_edge",
+      "preset": "07_bright_room",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          -30
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "04_strips_daylight_glare_edge",
+      "preset": "04_strips_daylight",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          -30
+        ],
+        "power_scale": [
+          1,
+          1
+        ],
+        "per_light_power_scale": [
+          1,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "random_101",
+      "seed": 101,
+      "preset": "03_overhead_panels",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          90
+        ],
+        "power_scale": [
+          0.8,
+          1
+        ],
+        "per_light_power_scale": [
+          0.65,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "random_202",
+      "seed": 202,
+      "preset": "04_strips_daylight",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          90
+        ],
+        "power_scale": [
+          0.8,
+          1
+        ],
+        "per_light_power_scale": [
+          0.65,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "random_303",
+      "seed": 303,
+      "preset": "07_bright_room",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          90
+        ],
+        "power_scale": [
+          0.8,
+          1
+        ],
+        "per_light_power_scale": [
+          0.65,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "random_404",
+      "seed": 404,
+      "preset": "06_dim_room",
+      "bounds": {
+        "azimuth_degrees": [
+          -30,
+          90
+        ],
+        "power_scale": [
+          0.8,
+          1
+        ],
+        "per_light_power_scale": [
+          0.65,
+          1
+        ],
+        "world_scale": [
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "presets_file": "../../configs/lighting_presets.json"
+}

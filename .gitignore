@@ -28,7 +28,7 @@ Thumbs.db
 .idea/
 
 # Regenerable photo-set render datasets
-vision_eval/photo_synthetic/pilots/
+vision_eval/photo_synthetic/pilots/*/results/
 datasets/synthetic/
 
 # Asset references

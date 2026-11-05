@@ -1,0 +1,481 @@
+{
+  "seed": 20261027,
+  "output": "vision_eval/photo_synthetic/pilots/environment/results",
+  "resolution": [
+    960,
+    720
+  ],
+  "samples": 128,
+  "min_visible_pixels": 20,
+  "piece_jitter_mm": 0,
+  "piece_yaw_jitter_degrees": 0,
+  "camera_position_jitter_mm": 0,
+  "camera_target_jitter_mm": 0,
+  "cameras": {
+    "photo": {
+      "resolution": [
+        970,
+        720
+      ],
+      "location_m": [
+        -0.07981515831474742,
+        -0.5482502193302494,
+        0.5898008452300577
+      ],
+      "target_m": [
+        0.017935375028950373,
+        0.044433620299669796,
+        0.04759747102520806
+      ],
+      "matrix_world": [
+        [
+          0.9917338586577489,
+          0.0432638939629135,
+          -0.12079813355751148,
+          -0.07981515831474742
+        ],
+        [
+          -0.11846175399466034,
+          0.6704609803190391,
+          -0.7324267108114925,
+          -0.5482502193302494
+        ],
+        [
+          0.04930280349352537,
+          0.7406823268775884,
+          0.6700439718547434,
+          0.5898008452300577
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens_mm": 97.45429224638664,
+      "sensor_width_mm": 36,
+      "fit_rms_px": 0.13658007396384106,
+      "reference_corners": [
+        [
+          662,
+          872
+        ],
+        [
+          1026,
+          849
+        ],
+        [
+          961,
+          612
+        ],
+        [
+          658,
+          625
+        ]
+      ],
+      "fitted_corners": [
+        [
+          662.005085034356,
+          872.1795202252481
+        ],
+        [
+          1025.946473221431,
+          848.8057082426157
+        ],
+        [
+          961.0765341204699,
+          612.1948871562613
+        ],
+        [
+          657.9819566922083,
+          624.8205532815988
+        ]
+      ],
+      "reference_image": "environment.jpg",
+      "shift_x": -0.007216494845360825,
+      "shift_y": -0.2515463917525773,
+      "crop_original_pixels": [
+        605,
+        580,
+        1090,
+        940
+      ]
+    }
+  },
+  "table_colors": [
+    [
+      0.2,
+      0.105,
+      0.045
+    ],
+    [
+      0.12,
+      0.15,
+      0.18
+    ],
+    [
+      0.45,
+      0.4,
+      0.32
+    ],
+    [
+      0.07,
+      0.09,
+      0.07
+    ]
+  ],
+  "light_power_w": [
+    8.0,
+    20.0
+  ],
+  "light_size_m": [
+    0.15,
+    0.45
+  ],
+  "world_strength": [
+    0.008,
+    0.008
+  ],
+  "exposure": [
+    1.0,
+    1.0
+  ],
+  "assets": {
+    "board": {
+      "file": "assets/chess/board/model.blend",
+      "scene": "Board \u2022 photo reference",
+      "object": "Board controls"
+    },
+    "pawn": {
+      "file": "assets/chess/pawn/model.blend",
+      "scene": "Pawn \u2022 photo reference",
+      "object": "Pawn"
+    },
+    "knight": {
+      "file": "assets/chess/knight/model.blend",
+      "scene": "Knight \u2014 photo modeling",
+      "object": "Knight \u2014 sculpt working copy"
+    },
+    "rook": {
+      "file": "assets/chess/rook/model.blend",
+      "scene": "Rook \u2014 individual asset",
+      "object": "White Rook"
+    },
+    "bishop": {
+      "file": "assets/chess/bishop/model.blend",
+      "scene": "Bishop \u2014 individual asset",
+      "object": "White Bishop"
+    },
+    "queen": {
+      "file": "assets/chess/queen/model.blend",
+      "scene": "Queen \u2014 individual asset",
+      "object": "White Queen"
+    },
+    "king": {
+      "file": "assets/chess/king/model.blend",
+      "scene": "King \u2014 individual asset",
+      "object": "White King"
+    }
+  },
+  "positions": [
+    {
+      "id": "environment",
+      "split": "test",
+      "fen": "8/n5b1/2N1p3/1p1K1q2/R4p1p/2k1Q1n1/p2b1p2/2r2R2 w - - 0 1",
+      "piece_transforms": {
+        "a7": {
+          "offset_mm": [
+            0.87,
+            1.513
+          ],
+          "yaw_degrees": 180
+        },
+        "g7": {
+          "offset_mm": [
+            1.244,
+            -0.245
+          ],
+          "yaw_degrees": -90
+        },
+        "c6": {
+          "offset_mm": [
+            -2.24,
+            2.489
+          ],
+          "yaw_degrees": 180
+        },
+        "e6": {
+          "offset_mm": [
+            3.298,
+            1.327
+          ],
+          "yaw_degrees": 0
+        },
+        "b5": {
+          "offset_mm": [
+            -0.572,
+            3.932
+          ],
+          "yaw_degrees": 0
+        },
+        "d5": {
+          "offset_mm": [
+            3.322,
+            -5.058
+          ],
+          "yaw_degrees": 90
+        },
+        "f5": {
+          "offset_mm": [
+            2.587,
+            -2.59
+          ],
+          "yaw_degrees": 0
+        },
+        "a4": {
+          "offset_mm": [
+            0.912,
+            1.718
+          ],
+          "yaw_degrees": 0
+        },
+        "f4": {
+          "offset_mm": [
+            4.436,
+            -2.823
+          ],
+          "yaw_degrees": 0
+        },
+        "h4": {
+          "offset_mm": [
+            -3.095,
+            0.716
+          ],
+          "yaw_degrees": 0
+        },
+        "c3": {
+          "offset_mm": [
+            0.076,
+            -1.294
+          ],
+          "yaw_degrees": 90
+        },
+        "e3": {
+          "offset_mm": [
+            2.431,
+            -1.334
+          ],
+          "yaw_degrees": 0
+        },
+        "g3": {
+          "offset_mm": [
+            1.165,
+            -2.631
+          ],
+          "yaw_degrees": 180
+        },
+        "a2": {
+          "offset_mm": [
+            0.299,
+            4.266
+          ],
+          "yaw_degrees": 0
+        },
+        "d2": {
+          "offset_mm": [
+            1.493,
+            -1.608
+          ],
+          "yaw_degrees": -90
+        },
+        "f2": {
+          "offset_mm": [
+            2.707,
+            0.44
+          ],
+          "yaw_degrees": 0
+        },
+        "c1": {
+          "offset_mm": [
+            -1.698,
+            -5.105
+          ],
+          "yaw_degrees": 0
+        },
+        "f1": {
+          "offset_mm": [
+            1.857,
+            -2.141
+          ],
+          "yaw_degrees": 0
+        }
+      }
+    }
+  ],
+  "world_color": [
+    0.45,
+    0.45,
+    0.45
+  ],
+  "wood": {
+    "grain_scale": [
+      2,
+      35,
+      8
+    ],
+    "fiber_scale": [
+      15,
+      850,
+      8
+    ],
+    "roughness": 0.4,
+    "colors": [
+      [
+        0.2,
+        [
+          0.04,
+          0.014,
+          0.004
+        ]
+      ],
+      [
+        0.4,
+        [
+          0.12,
+          0.05,
+          0.014
+        ]
+      ],
+      [
+        0.55,
+        [
+          0.24,
+          0.12,
+          0.036
+        ]
+      ],
+      [
+        0.8,
+        [
+          0.38,
+          0.23,
+          0.09
+        ]
+      ]
+    ],
+    "grain_warp_m": 0.04
+  },
+  "lights": [
+    {
+      "location_m": [
+        -0.55,
+        0.45,
+        3.2
+      ],
+      "target_m": [
+        -0.55,
+        0.45,
+        0
+      ],
+      "power_w": 140,
+      "shape": "RECTANGLE",
+      "size_m": 1.2,
+      "size_y_m": 0.15,
+      "color": [
+        1,
+        0.98,
+        0.94
+      ]
+    },
+    {
+      "location_m": [
+        0.65,
+        0.35,
+        3.2
+      ],
+      "target_m": [
+        0.65,
+        0.35,
+        0
+      ],
+      "power_w": 70,
+      "shape": "RECTANGLE",
+      "size_m": 1.2,
+      "size_y_m": 0.15,
+      "color": [
+        1,
+        0.98,
+        0.94
+      ]
+    },
+    {
+      "location_m": [
+        0.1,
+        -0.25,
+        3.2
+      ],
+      "target_m": [
+        0.1,
+        -0.25,
+        0
+      ],
+      "power_w": 35,
+      "shape": "SQUARE",
+      "size_m": 0.6,
+      "color": [
+        1,
+        0.98,
+        0.94
+      ]
+    }
+  ],
+  "reference_note": "Manual reconstruction of 18 on-board pieces from environment.jpg. g7 interpreted as bishop; small details and yaw remain uncertain. This is a physical arrangement, not a claim of a legal game position. Off-board pieces, robots, cables and room geometry are outside this crop study. Lighting remains an estimated room-light setup, not recovered calibration.",
+  "aruco_enabled": false,
+  "surface_finishes": {
+    "board": {
+      "roughness": 0.22,
+      "coat": 0,
+      "coat_roughness": 0.4
+    },
+    "pieces": {
+      "roughness": 0.28,
+      "coat": 0
+    },
+    "white_pieces": {
+      "base_color": [
+        0.68,
+        0.7,
+        0.46
+      ]
+    },
+    "white_squares": {
+      "base_color": [
+        0.82,
+        0.81,
+        0.77
+      ]
+    },
+    "black_pieces": {
+      "base_color": [
+        0.0017,
+        0.0022,
+        0.002
+      ],
+      "roughness": 0.22,
+      "coat": 0,
+      "specular": 0.25
+    },
+    "black_squares": {
+      "base_color": [
+        0.0026,
+        0.003,
+        0.0027
+      ],
+      "roughness": 0.18,
+      "coat": 0,
+      "specular": 0.35
+    }
+  },
+  "lighting_note": "Estimated overhead room LEDs: two horizontal diffused strips and a weaker square panel, 3.2 m above the table. Their centres are 5\u201313 degrees from vertical over the board. No strong camera-side fill. Power is Blender emitted power, not electrical fixture wattage. Exposure compensates for the darker visible sides. Black plastic reflection strength is reduced and slightly broadened; near-black base colours, geometry and camera are unchanged."
+}

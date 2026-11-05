@@ -1,0 +1,7 @@
+{
+  "branch": "origin/codex/real-chess-vision-20261023",
+  "commit": "c67d8e046aac12f4d70d35c75ac663102be264bb",
+  "note": "Published setup/live-camera illustrations; full raw fine-tuning photographs are not tracked in this branch.",
+  "last_remote_check": "2026-11-05",
+  "additional_references": "codex_branch/manifest.json"
+}

@@ -1,0 +1,6 @@
+{
+  "base_config": "../../configs/scene.json",
+  "resolution_scale": 1.0,
+  "samples": 64,
+  "presets_file": "../../configs/lighting_presets.json"
+}
