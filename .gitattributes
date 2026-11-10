@@ -18,3 +18,4 @@ artifacts/control-20261110/** -text
 simulation/runtime/**/*.obj binary
 simulation/runtime/**/*.stl binary
 simulation/runtime/**/*.npz binary
+artifacts/current-success-video-20261110/** -text

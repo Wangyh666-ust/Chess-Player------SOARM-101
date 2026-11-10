@@ -1,0 +1,14 @@
+{
+  "reviewer": "GPT",
+  "independent": false,
+  "selected_poses_verified_against_original_rows": 1133,
+  "all_phase_beginnings_and_endings_preserved": true,
+  "all_10_checked_home_endings_preserved": true,
+  "actual_piece_type_color_source_destination_labels_verified": true,
+  "recorded_joint_gripper_piece_transforms_unchanged": true,
+  "source_result_sha256": "d5066800ea1bec7a08b0385bc6bda730113facbd31af65d7d258a5dadda217d2",
+  "source_physics_steps": 80283,
+  "source_simulation_s": 334.5125,
+  "render_world_physics_policy": "Native stepping forbidden; recorded-pose resets only",
+  "scope": "Separate same-GPT raw pose/label audit; media decode and chunk coverage are reviewed after rendering."
+}

@@ -39,6 +39,8 @@ The current `run_three_staged_v2.py` fixes classification of an expected empty-r
 
 Evidence: [combined raw audit](artifacts/control-20261110/combined-raw-audit.json), [knight opening/settling measurements](artifacts/control-20261110/knight-final-xy.json), and [evidence index](artifacts/control-20261110/README.md). Review was a separate raw-data pass by the same GPT; `independent=false`.
 
+[Watch the complete current 10-step example](https://wangyh666-ust.github.io/Chess-Player------SOARM-101/#successful-game): the successful seed-202 session, rendered from recorded states at approximately 3.5× average speed. All ten grasp/place/home sequences are retained. See [video provenance](artifacts/current-success-video-20261110/README.md) for the source and decode checks.
+
 ## 3. Environment and installation
 
 | Component | Recorded physical-run baseline |

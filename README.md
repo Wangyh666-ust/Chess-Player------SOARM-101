@@ -6,6 +6,12 @@
 
 This handoff is for a developer taking over **simulation first**. It covers the exact environment, current models and frames, source map, control phases, reproducible commands and parameters that may be unnecessarily strict. Running it requires no API key, GPU, vision model or real arm.
 
+**[Watch the current 10-step success](https://wangyh666-ust.github.io/Chess-Player------SOARM-101/#successful-game)** · [Download MP4](docs/assets/current-success-seed202-20261110.mp4)
+
+[![Current SO-ARM101 ten-step simulation, seed 202](docs/assets/current-success-seed202-20261110.jpg)](https://wangyh666-ust.github.io/Chess-Player------SOARM-101/#successful-game)
+
+The approximately 96-second recorded replay shows all ten moves of the successful second session, including release, settling and checked home. Average playback is about 3.5×, with phase boundaries retained. It uses the current scanned models and native-contact controller; exporting the video adds no physics steps.
+
 | Session | Complete / planned | Outcome |
 | --- | ---: | --- |
 | seed 101 | 0 / 10 | Queen placed/settled; post-release exit planning blocked |

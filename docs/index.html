@@ -20,6 +20,23 @@
       and continue from the recorded results and known limits.</p>
     <p class="scope-strip">Simulation first &middot; Native contact &middot; Known simulator state</p>
   </section>
+  <section class="section" id="successful-game" aria-labelledby="successful-game-title">
+    <h2 id="successful-game-title">Watch a complete 10-step simulation</h2>
+    <p class="note"><strong>Game 2 · seed 202 · 10/10 piece moves completed.</strong>
+      This is the current scanned-piece environment and native-contact controller.</p>
+    <video class="simulation-video" style="max-width:1100px" controls playsinline preload="metadata"
+      poster="assets/current-success-seed202-20261110.jpg"
+      aria-label="Current SO-ARM101 ten-step simulation, accelerated recorded replay">
+      <source src="assets/current-success-seed202-20261110.mp4" type="video/mp4">
+      <a href="assets/current-success-seed202-20261110.mp4">Download the MP4</a>.
+    </video>
+    <p class="note">Approximately <strong>96 seconds, averaging 3.5× playback speed</strong>.
+      Both views show recorded arm and piece poses from the original 334.5-second simulation.
+      Grasp, transfer, supported release, settling and checked home endings are retained for all ten moves.
+      Speed varies at phase boundaries; video export adds no physics steps.</p>
+    <p><a href="assets/current-success-seed202-20261110.mp4" download>Download MP4</a> &middot;
+      <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/artifacts/current-success-video-20261110/README.md">Video source and verification</a></p>
+  </section>
   <section class="section" id="current-control" aria-labelledby="current-control-title">
     <h2 id="current-control-title">Current control baseline — November 2026</h2>
     <p class="note">Six scanned piece types, <strong>25.223 mm squares</strong>, five arm joints

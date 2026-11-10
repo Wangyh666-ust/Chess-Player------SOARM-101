@@ -1,0 +1,84 @@
+{
+  "decoded_all_frames": true,
+  "frames": 1148,
+  "fps": 12.0,
+  "size": [
+    1280,
+    540
+  ],
+  "duration_s": 95.66666666666667,
+  "source_simulation_s": 334.5125,
+  "average_speedup": 3.496646341463414,
+  "faststart_moov_before_mdat": true,
+  "poster_decoded_frame_index": 266,
+  "source_pose_frames": 1133,
+  "final_pause_frames": 15,
+  "all_source_windows_contiguous": true,
+  "boundary_frame_comparisons": [
+    {
+      "merged_index": 0,
+      "source_local_index": 0,
+      "RGB_MAE_after_transcode": 0.38116560570987656
+    },
+    {
+      "merged_index": 351,
+      "source_local_index": 351,
+      "RGB_MAE_after_transcode": 0.4388059413580247
+    },
+    {
+      "merged_index": 352,
+      "source_local_index": 0,
+      "RGB_MAE_after_transcode": 0.7280309606481481
+    },
+    {
+      "merged_index": 612,
+      "source_local_index": 260,
+      "RGB_MAE_after_transcode": 0.5785243055555556
+    },
+    {
+      "merged_index": 613,
+      "source_local_index": 0,
+      "RGB_MAE_after_transcode": 0.6042959104938271
+    },
+    {
+      "merged_index": 872,
+      "source_local_index": 259,
+      "RGB_MAE_after_transcode": 0.6017173032407407
+    },
+    {
+      "merged_index": 873,
+      "source_local_index": 0,
+      "RGB_MAE_after_transcode": 0.6858164544753086
+    },
+    {
+      "merged_index": 1147,
+      "source_local_index": 274,
+      "RGB_MAE_after_transcode": 0.5462620563271605
+    }
+  ],
+  "mp4_bytes": 4252647,
+  "mp4_sha256": "ba37c95b48029bf5cc595bb05460af336e658addbc11b4b2dc5f68c0b5419ae5",
+  "new_manipulation_trials": 0,
+  "reviewer": "GPT",
+  "independent": false,
+  "source_frame_windows": [
+    [
+      0,
+      352
+    ],
+    [
+      352,
+      613
+    ],
+    [
+      613,
+      873
+    ],
+    [
+      873,
+      1133
+    ]
+  ],
+  "source_windows_cover_all_1133_once": true,
+  "visual_review": "Same GPT inspected decoded transfer milestones and final Move10/Home checked frame; no geometry or recorded-pose edits."
+}
