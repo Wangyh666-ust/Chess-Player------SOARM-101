@@ -1,0 +1,37 @@
+{
+  "q5": [
+    -0.03984112255353058,
+    0.21418400869380014,
+    0.03160067589029856,
+    1.3250200698016372,
+    -0.0021412005986559614
+  ],
+  "g": -0.0008912691706566588,
+  "contacts": [
+    {
+      "link": "fixed_jaw_collision",
+      "point_on_robot_world_m": [
+        0.24575007092707665,
+        0.012124256274727511,
+        0.03285190981653115
+      ],
+      "weight_N": 0.3330274765043114
+    },
+    {
+      "link": "moving_jaw_so101_v1_link",
+      "point_on_robot_world_m": [
+        0.2592063166355229,
+        0.012233904719472288,
+        0.032940620580947884
+      ],
+      "weight_N": 0.38427296947534145
+    }
+  ],
+  "source": {
+    "path": "calibration/manipulation_20261109_v1/rook_e4e5_v5/results/trial_on_demand/trace.jsonl.gz",
+    "sha256": "63f28d5fdbb94dcda81ee999df8ffce243e63788197c2a91b94bd5f6648f1973",
+    "step": 5843,
+    "time": 6.086458333333333
+  },
+  "scope": "measured collision-surface reference from historical natural rook hold; not hardware calibration"
+}

@@ -1,0 +1,19 @@
+{
+  "mode": "games",
+  "diagnostic_threshold": 0.002,
+  "budget_s": 2700,
+  "sessions": [
+    {
+      "id": "random1_seed101",
+      "config": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\config\\random1_seed101.json"
+    },
+    {
+      "id": "random2_seed202",
+      "config": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\config\\random2_seed202.json"
+    },
+    {
+      "id": "random3_seed303",
+      "config": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\config\\random3_seed303.json"
+    }
+  ]
+}

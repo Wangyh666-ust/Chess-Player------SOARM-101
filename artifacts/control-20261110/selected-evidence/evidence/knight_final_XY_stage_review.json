@@ -1,0 +1,46 @@
+{
+  "provenance": "Exact originallastphase records,analysis only,notnew physics",
+  "stages": {
+    "lower": {
+      "step": 7271,
+      "XY_mm": 2.894294041168999,
+      "target_pos": [
+        0.22705436786221309,
+        0.04070979935228095,
+        0.014250684427423072
+      ],
+      "boardforceN": 0.08214304672805732
+    },
+    "support": {
+      "step": 7286,
+      "XY_mm": 2.89422687512122,
+      "target_pos": [
+        0.22705533852457743,
+        0.04070984434433365,
+        0.014251526103873416
+      ],
+      "boardforceN": 0.08129202082136407
+    },
+    "open": {
+      "step": 7475,
+      "XY_mm": 3.0438421249031236,
+      "target_pos": [
+        0.2270749743927028,
+        0.04086250750763775,
+        0.013648667458665102
+      ],
+      "boardforceN": 0.029418121606436354
+    },
+    "settle_board": {
+      "step": 7619,
+      "XY_mm": 3.0431529611345653,
+      "target_pos": [
+        0.2270764008120901,
+        0.04086196201156156,
+        0.013648688369732261
+      ],
+      "boardforceN": 0.029418146070049323
+    }
+  },
+  "scope": "Descriptivepositions only;doesnotisolate cause ofoffset"
+}

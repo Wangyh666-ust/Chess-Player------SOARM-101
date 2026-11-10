@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SO-ARM101 Chess Player — Vision &amp; Virtual Simulation</title>
-<meta name="description" content="Chess-piece recognition and preliminary SO-ARM101 virtual manipulation: a recorded ten-ply game demo, ideal-grasp simulation results, and Dubrovnik YOLOv8m evaluation.">
+<title>SO-ARM101 Chess Player — Simulation Control Handoff</title>
+<meta name="description" content="English handoff for current SO-ARM101 PyBullet control: portable setup, scanned chess-piece models, measured-grasp workflow, latest three-game results and known parameter limits.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -13,22 +13,48 @@
     <div class="brand">
       <span class="brand-mark">SO-ARM101 / CHESS PLAYER</span>
     </div>
-    <span class="badge">Vision + preliminary simulation</span>
+    <span class="badge">Simulation handoff · 10 Nov 2026</span>
   </div>
 </header>
 
 <main class="wrap">
 
   <section class="intro">
-    <h1>From chess recognition to simulated moves.</h1>
-    <p class="lead">The project now includes a trained piece detector and an initial virtual
-      manipulation workflow. Watch SO-ARM101 complete ten consecutive simulated plies,
-      then explore the recorded vision benchmark below.</p>
-    <p class="scope-strip">Synthetic vision &middot; PyBullet motion prototype &middot; Ideal fixed grasp</p>
+    <h1>Take over the virtual arm.</h1>
+    <p class="lead">An English developer handoff for the current PyBullet control workflow:
+      set up the environment, load the current scanned pieces, understand each control phase,
+      and continue from the recorded results and known limits.</p>
+    <p class="scope-strip">Simulation first &middot; Native contact &middot; Known simulator state</p>
+  </section>
+
+  <section class="section" id="current-control" aria-labelledby="current-control-title">
+    <h2 id="current-control-title">Current control baseline — November 2026</h2>
+    <p class="note">The current environment uses six scanned piece types, <strong>25.223 mm squares</strong>,
+      five arm joints and one gripper joint. Holding uses native contacts with natural rotation.
+      Measured-grasp rebuilding, bounded support feedback, actual release settling and independent
+      empty-gripper withdrawal are implemented. No fixed attachment is used in this baseline.</p>
+    <div class="metric-grid">
+      <article class="metric"><div class="metric-label">Complete games</div><div class="metric-value">1 / 3</div><div class="metric-sub">Original sessions: 0/10, 10/10, 5/10</div></article>
+      <article class="metric"><div class="metric-label">Complete actions</div><div class="metric-value">15 / 30</div><div class="metric-sub">17 physical starts; 13 unattempted</div></article>
+      <article class="metric"><div class="metric-label">Current contact threshold</div><div class="metric-value">0.002 m</div><div class="metric-sub">Whole-operation wrapper; 240 Hz physics</div></article>
+    </div>
+    <p class="note"><strong>Work remaining:</strong> queen f7→d7 settled successfully but exit planning
+      rejected approximately 0.06 mm finger overlap against a 0.05 mm tolerance. The third game stopped
+      after knight d6→f5 settled at 3.043 mm XY error, just beyond the 3 mm criterion. Both remain
+      incomplete actions. The handoff explains which limits merit review and how to preserve the baseline.</p>
+    <p><a href="control-handoff.html"><strong>Read the English handoff</strong></a> &middot;
+      <a href="control-setup.html">Install and run</a> &middot;
+      <a href="assets/control-handoff-20261110.zip">Download handoff ZIP</a> &middot;
+      <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/tree/main/simulation">Control source and current models</a> &middot;
+      <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/artifacts/control-20261110/README.md">Evidence and portability checks</a></p>
+    <p class="note">CPU-only control setup; no GPU, detector weights, API credentials or hardware connection required.
+      Environment loading checks perform zero physics and do not add manipulation successes.
+      Full-game results are recorded Windows experiments, with a same-GPT raw review.</p>
   </section>
 
   <section class="section" id="simulation" aria-labelledby="simulation-title">
-    <h2 id="simulation-title">New: a complete 10-ply simulated game</h2>
+    <h2 id="simulation-title">Historical demo — October ideal-grasp experiment</h2>
+    <p class="scope-strip">Different assets &middot; 30 mm squares &middot; Fixed translation and rotation</p>
     <p class="note">Recorded run <strong>random2 — 10/10 plies completed</strong>. Each ply includes
       pickup, transport, release, settled board support, and a checked return home in the same
       persistent scene. Ten plies means ten halfmoves.</p>
@@ -51,13 +77,13 @@
       ideal fixed grasp that constrains both relative translation and rotation until release.
       Native force readings remain unchanged. This is a known-state IK/OMPL workflow test,
       not live vision-driven manipulation, a VLA policy, or a hardware reliability result.</p>
-    <p><a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/SIMULATION.md">Simulation protocol and limitations</a> &middot;
+    <p><a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/SIMULATION-20261012.md">Historical protocol and limitations</a> &middot;
       <a href="assets/simulation-random2-10plies.mp4" download>Download video</a> &middot;
       <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/artifacts/simulation-v1/raw-audit.json">Recorded result audit</a></p>
   </section>
 
   <section class="intro" id="vision">
-    <h2>Vision benchmark: same pieces, a better detector.</h2>
+    <h2>Historical vision benchmark — Dubrovnik pieces</h2>
     <p class="lead">
       A YOLOv8m chess piece detector was fine-tuned on synthetic RGB scenes built from one exact
       mesh set, <code class="code">ezeeone_Dubrovnik_1960_set_02_stls</code>. This page reports

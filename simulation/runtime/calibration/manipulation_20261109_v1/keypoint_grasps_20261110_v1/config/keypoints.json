@@ -1,0 +1,1077 @@
+{
+  "schema_version": 1,
+  "units": "m",
+  "frame": "piece-local bottom-centered",
+  "pieces": {
+    "rook": {
+      "candidates": [
+        {
+          "id": "rook_head_3",
+          "heading_deg": 90,
+          "height_m": 0.022439999580383303,
+          "points_m": [
+            [
+              0.0,
+              -0.005091257,
+              0.02244
+            ],
+            [
+              0.0,
+              0.005091257,
+              0.02244
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.005958221153409217,
+              -0.9820375961657904,
+              -0.18859124931343657
+            ],
+            [
+              0.005958221153409217,
+              0.9820375961657906,
+              -0.18859124931343663
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7032165364177031,
+            0.7109757400282299,
+            4.353327043260686e-17,
+            -4.3058171930504216e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": 0.002471338691026473,
+          "mesh_normal_vertical_score": 0.3771824986268732,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "rook_head_2",
+          "heading_deg": 0,
+          "height_m": 0.022439999580383303,
+          "points_m": [
+            [
+              -0.005091257,
+              0.0,
+              0.02244
+            ],
+            [
+              0.005091257,
+              0.0,
+              0.02244
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.9820375961657906,
+              0.005958221153409216,
+              -0.1885912493134366
+            ],
+            [
+              0.9820375961657906,
+              -0.005958221153409216,
+              -0.18859124931343663
+            ]
+          ],
+          "tool_quat_local": [
+            0.005486585489610648,
+            0.99998494857656,
+            6.122939608767992e-17,
+            3.359453725683429e-19
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": 0.002471338691026473,
+          "mesh_normal_vertical_score": 0.37718249862687325,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "rook_head_0",
+          "heading_deg": 0,
+          "height_m": 0.020399999618530274,
+          "points_m": [
+            [
+              -0.004612429,
+              0.0,
+              0.0204
+            ],
+            [
+              0.004612429,
+              0.0,
+              0.0204
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.9600869506430564,
+              -9.994139299485555e-05,
+              -0.27970169326737243
+            ],
+            [
+              0.9600869506430564,
+              9.994139299485555e-05,
+              -0.27970169326737243
+            ]
+          ],
+          "tool_quat_local": [
+            0.005486585489610648,
+            0.99998494857656,
+            6.122939608767992e-17,
+            3.359453725683429e-19
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": 0.002471338691026473,
+          "mesh_normal_vertical_score": 0.5594033865347449,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "rook_head_1",
+          "heading_deg": 90,
+          "height_m": 0.020399999618530274,
+          "points_m": [
+            [
+              0.0,
+              -0.004612429,
+              0.0204
+            ],
+            [
+              0.0,
+              0.004612429,
+              0.0204
+            ]
+          ],
+          "normals_local": [
+            [
+              9.994139299485555e-05,
+              -0.9600869506430564,
+              -0.27970169326737243
+            ],
+            [
+              -9.994139299485555e-05,
+              0.9600869506430564,
+              -0.27970169326737243
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7032165364177031,
+            0.7109757400282299,
+            4.353327043260686e-17,
+            -4.3058171930504216e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": 0.002471338691026473,
+          "mesh_normal_vertical_score": 0.5594033865347449,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        }
+      ],
+      "frame": "piece bottom origin, Zup, meters",
+      "mesh_sha256": "b6ea06156d00503b9dbfa9cb11073cb02ac7b57de9f9d5e8437f5e2e52006918"
+    },
+    "pawn": {
+      "candidates": [
+        {
+          "id": "pawn_head_0",
+          "heading_deg": 0,
+          "height_m": 0.018170000035315752,
+          "points_m": [
+            [
+              -0.004266561,
+              0.0,
+              0.01817
+            ],
+            [
+              0.004266561,
+              0.0,
+              0.01817
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.9920832044573811,
+              0.004081254702370774,
+              -0.1255159702732235
+            ],
+            [
+              0.9920832044573811,
+              -0.004081254702370775,
+              -0.12551597027322348
+            ]
+          ],
+          "tool_quat_local": [
+            0.005486585489610648,
+            0.99998494857656,
+            6.122939608767992e-17,
+            3.359453725683429e-19
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.03707127717447005,
+          "mesh_normal_vertical_score": 0.25103194054644695,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "pawn_head_1",
+          "heading_deg": 90,
+          "height_m": 0.018170000035315752,
+          "points_m": [
+            [
+              0.0,
+              -0.004266561,
+              0.01817
+            ],
+            [
+              0.0,
+              0.004266561,
+              0.01817
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.004081254702370773,
+              -0.9920832044573811,
+              -0.12551597027322348
+            ],
+            [
+              0.004081254702370775,
+              0.9920832044573811,
+              -0.1255159702732235
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7032165364177031,
+            0.7109757400282299,
+            4.353327043260686e-17,
+            -4.3058171930504216e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.03707127717447005,
+          "mesh_normal_vertical_score": 0.25103194054644695,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "pawn_head_2",
+          "heading_deg": 0,
+          "height_m": 0.01955000003799796,
+          "points_m": [
+            [
+              -0.004215105,
+              0.0,
+              0.01955
+            ],
+            [
+              0.004215105,
+              0.0,
+              0.01955
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.9802191226915593,
+              -0.0001710676010044589,
+              0.19791524005408334
+            ],
+            [
+              0.9802191226915593,
+              0.0001710676010044589,
+              0.19791524005408337
+            ]
+          ],
+          "tool_quat_local": [
+            0.005486585489610648,
+            0.99998494857656,
+            6.122939608767992e-17,
+            3.359453725683429e-19
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.03707127717447005,
+          "mesh_normal_vertical_score": 0.3958304801081667,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "pawn_head_3",
+          "heading_deg": 90,
+          "height_m": 0.01955000003799796,
+          "points_m": [
+            [
+              0.0,
+              -0.004215105,
+              0.01955
+            ],
+            [
+              0.0,
+              0.004215105,
+              0.01955
+            ]
+          ],
+          "normals_local": [
+            [
+              0.0001710676010044589,
+              -0.9802191226915593,
+              0.19791524005408334
+            ],
+            [
+              -0.0001710676010044589,
+              0.9802191226915593,
+              0.19791524005408337
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7032165364177031,
+            0.7109757400282299,
+            4.353327043260686e-17,
+            -4.3058171930504216e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.03707127717447005,
+          "mesh_normal_vertical_score": 0.3958304801081667,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        }
+      ],
+      "frame": "piece bottom origin, Zup, meters",
+      "mesh_sha256": "9b864f75dc9163cdd5c3c0d7f61760f266034e00abc172d41ec1e4d7fb1a3a8a"
+    },
+    "bishop": {
+      "candidates": [
+        {
+          "id": "bishop_head_1",
+          "heading_deg": 90,
+          "height_m": 0.0246400011703372,
+          "points_m": [
+            [
+              0.0,
+              -0.004167373,
+              0.024640001
+            ],
+            [
+              0.0,
+              0.004167373,
+              0.024640001
+            ]
+          ],
+          "normals_local": [
+            [
+              9.658951222079133e-05,
+              -0.9419483076685887,
+              -0.3357579133106885
+            ],
+            [
+              -9.658951222079133e-05,
+              0.9419483076685887,
+              -0.3357579133106885
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7032165364177031,
+            0.7109757400282299,
+            4.353327043260686e-17,
+            -4.3058171930504216e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.028140100142780324,
+          "mesh_normal_vertical_score": 0.671515826621377,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "bishop_head_0",
+          "heading_deg": 0,
+          "height_m": 0.0246400011703372,
+          "points_m": [
+            [
+              -0.004167373,
+              0.0,
+              0.024640001
+            ],
+            [
+              0.004167373,
+              0.0,
+              0.024640001
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.9419483076685888,
+              -9.658951222079134e-05,
+              -0.33575791331068855
+            ],
+            [
+              0.9419483076685888,
+              9.658951222079134e-05,
+              -0.33575791331068855
+            ]
+          ],
+          "tool_quat_local": [
+            0.005486585489610648,
+            0.99998494857656,
+            6.122939608767992e-17,
+            3.359453725683429e-19
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.028140100142780324,
+          "mesh_normal_vertical_score": 0.6715158266213771,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "bishop_head_2",
+          "heading_deg": 0,
+          "height_m": 0.027200001291930676,
+          "points_m": [
+            [
+              -0.003403383,
+              0.0,
+              0.027200001
+            ],
+            [
+              0.003403383,
+              0.0,
+              0.027200001
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.8406673157081207,
+              0.0,
+              0.5415519036067578
+            ],
+            [
+              0.8406673157081207,
+              0.0,
+              0.5415519036067578
+            ]
+          ],
+          "tool_quat_local": [
+            0.005486585489610648,
+            0.99998494857656,
+            6.122939608767992e-17,
+            3.359453725683429e-19
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.028140100142780324,
+          "mesh_normal_vertical_score": 1.0831038072135155,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "bishop_head_3",
+          "heading_deg": 90,
+          "height_m": 0.027200001291930676,
+          "points_m": [
+            [
+              -0.000618873,
+              -0.003345813,
+              0.027200001
+            ],
+            [
+              -0.000618873,
+              0.003345813,
+              0.027200001
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.11638365659171593,
+              -0.8127277282421008,
+              0.5709014663011258
+            ],
+            [
+              -0.13155621309230892,
+              0.8188424536349337,
+              0.5587396521833156
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7032165364177031,
+            0.7109757400282299,
+            4.353327043260686e-17,
+            -4.3058171930504216e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.028140100142780324,
+          "mesh_normal_vertical_score": 1.1296411184844413,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        }
+      ],
+      "frame": "piece bottom origin, Zup, meters",
+      "mesh_sha256": "131872d84f974f41c1e4a63dabb925f3dd26308035fafc39de48f00784dae483"
+    },
+    "knight": {
+      "candidates": [
+        {
+          "id": "knight_head_0",
+          "heading_deg": 90,
+          "height_m": 0.021996353566646577,
+          "points_m": [
+            [
+              0.000224864,
+              -0.002563589,
+              0.021996354
+            ],
+            [
+              0.000232905,
+              0.002564691,
+              0.021996354
+            ]
+          ],
+          "normals_local": [
+            [
+              0.005295886553329118,
+              -0.9901317468289799,
+              -0.1400395569366287
+            ],
+            [
+              0.0013508978178957225,
+              0.9892026168075689,
+              -0.14654814217909315
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7032165364177031,
+            0.7109757400282299,
+            4.353327043260686e-17,
+            -4.3058171930504216e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.06505790443789475,
+          "mesh_normal_vertical_score": 0.28658769911572185,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "knight_head_1",
+          "heading_deg": 270,
+          "height_m": 0.021996353566646577,
+          "points_m": [
+            [
+              0.000232905,
+              0.002564691,
+              0.021996354
+            ],
+            [
+              0.000224864,
+              -0.002563589,
+              0.021996354
+            ]
+          ],
+          "normals_local": [
+            [
+              0.0013508978178957225,
+              0.9892026168075689,
+              -0.14654814217909315
+            ],
+            [
+              0.005295886553329118,
+              -0.9901317468289799,
+              -0.1400395569366287
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7109757400282299,
+            -0.7032165364177031,
+            -4.3058171930504216e-17,
+            -4.353327043260686e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.06505790443789475,
+          "mesh_normal_vertical_score": 0.28658769911572185,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "knight_head_2",
+          "heading_deg": 90,
+          "height_m": 0.02364608008414507,
+          "points_m": [
+            [
+              -9.7166e-05,
+              -0.002951123,
+              0.02364608
+            ],
+            [
+              -9.7242e-05,
+              0.002951572,
+              0.02364608
+            ]
+          ],
+          "normals_local": [
+            [
+              0.0028283062558957725,
+              -0.9817082269036749,
+              -0.19037058048281957
+            ],
+            [
+              -0.002371194599560637,
+              0.981661716354986,
+              -0.19061650526424512
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7032165364177031,
+            0.7109757400282299,
+            4.353327043260686e-17,
+            -4.3058171930504216e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.06505790443789475,
+          "mesh_normal_vertical_score": 0.3809870857470647,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "knight_head_3",
+          "heading_deg": 270,
+          "height_m": 0.02364608008414507,
+          "points_m": [
+            [
+              -9.7242e-05,
+              0.002951572,
+              0.02364608
+            ],
+            [
+              -9.7166e-05,
+              -0.002951123,
+              0.02364608
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.002371194599560637,
+              0.981661716354986,
+              -0.19061650526424512
+            ],
+            [
+              0.0028283062558957725,
+              -0.9817082269036749,
+              -0.19037058048281957
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7109757400282299,
+            -0.7032165364177031,
+            -4.3058171930504216e-17,
+            -4.353327043260686e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.06505790443789475,
+          "mesh_normal_vertical_score": 0.3809870857470647,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        }
+      ],
+      "frame": "piece bottom origin, Zup, meters",
+      "mesh_sha256": "3dbc4b91e5e4e8cdc8c3d49b04dea3480fbe8e8a423f8c4eac440b8b2253e6e5"
+    },
+    "queen": {
+      "candidates": [
+        {
+          "id": "queen_head_0",
+          "heading_deg": 0,
+          "height_m": 0.025900000110268592,
+          "points_m": [
+            [
+              -0.003285288,
+              0.0,
+              0.0259
+            ],
+            [
+              0.003285288,
+              0.0,
+              0.0259
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.9923858513817894,
+              0.0,
+              -0.12316786097534285
+            ],
+            [
+              0.9923858513817894,
+              0.0,
+              -0.12316786097534285
+            ]
+          ],
+          "tool_quat_local": [
+            0.005486585489610648,
+            0.99998494857656,
+            6.122939608767992e-17,
+            3.359453725683429e-19
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.0110958691662732,
+          "mesh_normal_vertical_score": 0.2463357219506857,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "queen_head_1",
+          "heading_deg": 90,
+          "height_m": 0.025900000110268592,
+          "points_m": [
+            [
+              0.0,
+              -0.003285288,
+              0.0259
+            ],
+            [
+              0.0,
+              0.003285288,
+              0.0259
+            ]
+          ],
+          "normals_local": [
+            [
+              0.0,
+              -0.9923858513817894,
+              -0.12316786097534285
+            ],
+            [
+              0.0,
+              0.9923858513817894,
+              -0.12316786097534285
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7032165364177031,
+            0.7109757400282299,
+            4.353327043260686e-17,
+            -4.3058171930504216e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.0110958691662732,
+          "mesh_normal_vertical_score": 0.2463357219506857,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "queen_head_2",
+          "heading_deg": 0,
+          "height_m": 0.02870000012218952,
+          "points_m": [
+            [
+              -0.00390077,
+              0.0,
+              0.0287
+            ],
+            [
+              0.00390077,
+              0.0,
+              0.0287
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.9511699648484895,
+              0.0038241863476802525,
+              -0.30864392682977154
+            ],
+            [
+              0.9511699648484895,
+              -0.0038241863476802525,
+              -0.30864392682977154
+            ]
+          ],
+          "tool_quat_local": [
+            0.005486585489610648,
+            0.99998494857656,
+            6.122939608767992e-17,
+            3.359453725683429e-19
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.0110958691662732,
+          "mesh_normal_vertical_score": 0.6172878536595431,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "queen_head_3",
+          "heading_deg": 90,
+          "height_m": 0.02870000012218952,
+          "points_m": [
+            [
+              0.0,
+              -0.00390077,
+              0.0287
+            ],
+            [
+              0.0,
+              0.00390077,
+              0.0287
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.0038241863476802525,
+              -0.9511699648484895,
+              -0.30864392682977154
+            ],
+            [
+              0.0038241863476802525,
+              0.9511699648484895,
+              -0.30864392682977154
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7032165364177031,
+            0.7109757400282299,
+            4.353327043260686e-17,
+            -4.3058171930504216e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.0110958691662732,
+          "mesh_normal_vertical_score": 0.6172878536595431,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        }
+      ],
+      "frame": "piece bottom origin, Zup, meters",
+      "mesh_sha256": "c21209d12a070732f6e47a68ea087f2ea86576538aa8332cd148824d07ae4e32"
+    },
+    "king": {
+      "candidates": [
+        {
+          "id": "king_head_0",
+          "heading_deg": 0,
+          "height_m": 0.03150000125169754,
+          "points_m": [
+            [
+              -0.003976885,
+              0.0,
+              0.031500001
+            ],
+            [
+              0.003976885,
+              0.0,
+              0.031500001
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.9349798448207888,
+              0.0,
+              -0.35470084547248215
+            ],
+            [
+              0.9349798448207888,
+              0.0,
+              -0.35470084547248215
+            ]
+          ],
+          "tool_quat_local": [
+            0.005486585489610648,
+            0.99998494857656,
+            6.122939608767992e-17,
+            3.359453725683429e-19
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": 0.01794750041769494,
+          "mesh_normal_vertical_score": 0.7094016909449643,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "king_head_1",
+          "heading_deg": 90,
+          "height_m": 0.03150000125169754,
+          "points_m": [
+            [
+              0.0,
+              -0.003976885,
+              0.031500001
+            ],
+            [
+              0.0,
+              0.003976885,
+              0.031500001
+            ]
+          ],
+          "normals_local": [
+            [
+              0.0,
+              -0.9349798448207888,
+              -0.35470084547248215
+            ],
+            [
+              0.0,
+              0.9349798448207888,
+              -0.35470084547248215
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7032165364177031,
+            0.7109757400282299,
+            4.353327043260686e-17,
+            -4.3058171930504216e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": 0.01794750041769494,
+          "mesh_normal_vertical_score": 0.7094016909449643,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "king_head_2",
+          "heading_deg": 0,
+          "height_m": 0.034200001358985904,
+          "points_m": [
+            [
+              -0.00540669,
+              0.0,
+              0.034200001
+            ],
+            [
+              0.00540669,
+              0.0,
+              0.034200001
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.8239889559123162,
+              0.009887377818847718,
+              -0.5665195850934002
+            ],
+            [
+              0.8239889559123162,
+              -0.009887377818847718,
+              -0.5665195850934002
+            ]
+          ],
+          "tool_quat_local": [
+            0.005486585489610648,
+            0.99998494857656,
+            6.122939608767992e-17,
+            3.359453725683429e-19
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": 0.01794750041769494,
+          "mesh_normal_vertical_score": 1.1330391701868003,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        },
+        {
+          "id": "king_head_3",
+          "heading_deg": 90,
+          "height_m": 0.034200001358985904,
+          "points_m": [
+            [
+              0.0,
+              -0.00540669,
+              0.034200001
+            ],
+            [
+              0.0,
+              0.00540669,
+              0.034200001
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.009887377818847718,
+              -0.8239889559123162,
+              -0.5665195850934002
+            ],
+            [
+              0.009887377818847718,
+              0.8239889559123162,
+              -0.5665195850934002
+            ]
+          ],
+          "tool_quat_local": [
+            -0.7032165364177031,
+            0.7109757400282299,
+            4.353327043260686e-17,
+            -4.3058171930504216e-17
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": 0.01794750041769494,
+          "mesh_normal_vertical_score": 1.1330391701868003,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass"
+        }
+      ],
+      "frame": "piece bottom origin, Zup, meters",
+      "mesh_sha256": "cb5e965e8412e3c65e6ad93ba782ab65c3ce54b8c41036769fae54d572795a66"
+    }
+  },
+  "scope": "24 existing head section pairs, explicit local points/surface normals/regions; actual contact must be checked",
+  "native_collision_envelope_assumed_m": 0.001
+}

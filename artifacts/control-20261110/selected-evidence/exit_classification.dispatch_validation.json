@@ -1,0 +1,10 @@
+{
+  "category": "program_validation",
+  "passed": 1,
+  "failures": [],
+  "code_hashes": {
+    "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/staged_three_batch_v1.py": "4b368c80e03e7ad53a934ad1e57e373550f2d479ce0562ad761ee1c3f8c1c84f"
+  },
+  "fixture_sha256": "04243d25805fdbae138d594b435f4e496b58576fe75ec73eb86e5dacd2eee4b7",
+  "scope": "Actual existing batch run reproduced expected empty_return_no_plan misclassification:onefakegame stops remaining2. New classifier actualmock validation pending.0nativeworlds."
+}

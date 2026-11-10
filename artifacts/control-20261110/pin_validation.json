@@ -1,0 +1,9 @@
+{
+  "category": "program_validation",
+  "passed": 3,
+  "failures": [],
+  "code_hashes": {
+    "_model_tools/control_handoff_20261110/pin_record.py": "37108111773617bc487827b6a371fe2c635c0a67b82b1da971234938a46f5aca"
+  },
+  "scope": "Pure metadata tests; placeholders pinned, existing stale hash rejected, no design/result modification. Declared inputs are also added to source_hashes; no file discovery."
+}

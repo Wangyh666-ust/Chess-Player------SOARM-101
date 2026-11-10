@@ -1,0 +1,34 @@
+{
+  "category": "program_validation",
+  "passed": 6,
+  "failures": [],
+  "checks": [
+    "actual independent-process batch/session/planner/compiled executor bindings:staged measuredH routes,geometry,original support/protector",
+    "actual batch fixed3games/10actions each;30mock actions accounted without native execution",
+    "whole-operation factory forwards every constructor update to.002 and preserves other params/restores setter",
+    "onegame physicalfailure retained;othergames continue;no within-game retry or success fabrication",
+    "program/evidencefault stopsbatch with unattempted game and restores APIs",
+    "actual Runner._record writes two distinct samepiece plytraces in workspace-temp paths without overwrite"
+  ],
+  "native_worlds": 0,
+  "physics_steps": 0,
+  "mock_only": true,
+  "code_hashes": {
+    "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_three_staged_v1.py": "d5b5b0e6c83907f0a5bb96e76e347ea72c18f99463b73d805ff5c850cc656a23",
+    "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/staged_three_batch_v1.py": "4b368c80e03e7ad53a934ad1e57e373550f2d479ce0562ad761ee1c3f8c1c84f",
+    "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/run_targeted_batch_v2.py": "941fcee581b4a285d954a8a53c3835155d646d74dd943dd83ddfe7d384deada0",
+    "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/targeted_batch_v1.py": "a58d0cfb874916bdc4010caac16b9d4462a497ccb9a66901b491c740414288a2",
+    "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/prepared_session_staged_v2.py": "988ccbc484f1fe27d101057ed4948293860ab586a094686ac297136545130064",
+    "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/resident_planner_staged_v2.py": "ba2771fdb1a223537d6fa5854a15f428f6cf28980f7a60797fd9142f317308f4",
+    "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/sequence_coordinator_staged_v1.py": "b3e54dbbbdce57f572764a7e19ac278937486d740fe16b54ae64e990dcdd4592",
+    "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/staged_runner_v2.py": "a4a1dd89a5c2d7cc11f1776fa7634e517632da6644c49636e89a9dd89dba75eb",
+    "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/stage_routes_bound_v3.py": "b30fe272062aeff19f28327d1a67fdc20b0622cba321e4499c98f28c5579d6f6",
+    "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/transfer_bridge_v2.py": "622dd322198fcddfcd73f4df4ea6755f8f1af2ca73822b695900548106305f4b",
+    "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/release_planner_bound_v1.py": "a1109ac22be1b298a79b68abe05f5db5dffb96af347a72a20a77204f0ee8f207",
+    "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/query_safety_bound_v1.py": "a7720d826d647bf9f608784fa287f22e1ad211977e6be9921e8c2a346dd58ebc",
+    "calibration/manipulation_20261109_v1/first_contact_root_20261110_v1/work/threshold_factory_v2.py": "489c680f7e7c4796029a8a518de57def96489fe44e93f001990bd15dd1e8c3d4",
+    "calibration/manipulation_20261109_v1/knight_support_20261110_v1/work/support_feedback_v2.py": "aaf015796c37d2bddd73061b1d3909dd799d254364e9c8f12a917b415f134b6f",
+    "experiment_review/tools/recontact_hold_control_v1.py": "1a3ace842971ba2a917b1828173dc05eb88fbb10cd5b69aa604d5a8077d27b99",
+    "reachability_eval/physics_world.py": "33c9534e6768afad7c9e1aa3bec18f4bef33e43db4148d97ecf20a4a76ed95bd"
+  }
+}

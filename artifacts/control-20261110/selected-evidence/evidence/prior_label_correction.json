@@ -1,0 +1,29 @@
+{
+  "category": "report_label_correction",
+  "reviewer": "GPT",
+  "independent": false,
+  "original_report": {
+    "path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/report/index.html",
+    "sha256": "26cd86d03a75e3ce50f1bfc68f411775e2edbb6e162170ca40544e1bdc58e5f5"
+  },
+  "corrected_report": {
+    "path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/report/index_v2.html",
+    "sha256": "5fbf4f52378ad7a9bfc82c92199fd97566d3b1f386728faabb0c26694cf5a792"
+  },
+  "raw_source": {
+    "path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/results/targeted_physical_v1/rook_released/step02_ply03_f2h4/query.json",
+    "sha256": "6d7cc298dd145c9b26894e383d52c5048f36e9c46599e5431178ec38554a2cbd",
+    "selector": "/case",
+    "actual": {
+      "target_key": "bQ",
+      "type": "queen",
+      "source": "f2",
+      "dest": "h4"
+    }
+  },
+  "incorrect_prior_label": "下一步王f2h4",
+  "correct_label": "下一步黑后f2h4",
+  "replacement_occurrences": 3,
+  "physical_steps_added": 0,
+  "result_change": "none;corrected type label only;actual immutable records always bQ/queen"
+}

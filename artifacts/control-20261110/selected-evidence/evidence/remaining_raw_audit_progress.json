@@ -1,0 +1,1904 @@
+{
+  "reviewer": "GPT",
+  "independent": false,
+  "actions": [
+    {
+      "game": "random2_seed202",
+      "id": "ply01_g2f2",
+      "target_key": "bQ",
+      "type": "queen",
+      "source": "g2",
+      "dest": "f2",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 7586,
+      "time_s": 31.608333333333334,
+      "trace_rows": 7587,
+      "trace_sha256": "bde735269c569a4e82a4bf675e7c03a9e060584ddb9a1fd5454c58e468af5c26",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step01_ply01_g2f2/trial/result.json",
+      "result_sha256": "fb6864af87f68e0f77383b9119feecbb0911957a35ca5bd320d4e386baa1e91a",
+      "phase_counts": {
+        "reposition": 2023,
+        "home": 96,
+        "descend": 291,
+        "source": 48,
+        "close": 468,
+        "hold": 72,
+        "lift": 291,
+        "transfer": 626,
+        "lower": 540,
+        "support": 159,
+        "open": 192,
+        "settle_board": 144,
+        "empty_exit": 528,
+        "empty_home": 2060,
+        "ready": 48
+      },
+      "final_XY_mm": 0.3007392162814535,
+      "final_tilt_deg": 0.055025105558396216,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "d7",
+          "actual": "d7"
+        },
+        {
+          "key": "wQ",
+          "expected": "d1",
+          "actual": "d1"
+        },
+        {
+          "key": "wR",
+          "expected": "f5",
+          "actual": "f5"
+        },
+        {
+          "key": "wB",
+          "expected": "b5",
+          "actual": "b5"
+        },
+        {
+          "key": "wN",
+          "expected": "a5",
+          "actual": "a5"
+        },
+        {
+          "key": "wP",
+          "expected": "a3",
+          "actual": "a3"
+        },
+        {
+          "key": "bK",
+          "expected": "e4",
+          "actual": "e4"
+        },
+        {
+          "key": "bQ",
+          "expected": "f2",
+          "actual": "f2"
+        },
+        {
+          "key": "bR",
+          "expected": "b6",
+          "actual": "b6"
+        },
+        {
+          "key": "bB",
+          "expected": "b3",
+          "actual": "b3"
+        },
+        {
+          "key": "bN",
+          "expected": "e2",
+          "actual": "e2"
+        },
+        {
+          "key": "bP",
+          "expected": "g4",
+          "actual": "g4"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 1474,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.2493487353818189,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005882213183138464,
+        "target_gap_m": 0.041737549783781754
+      },
+      "actual_exit_gap_m": 0.014523397931485589,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\queen_0_1.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random2_seed202",
+      "id": "ply02_f5f7",
+      "target_key": "wR",
+      "type": "rook",
+      "source": "f5",
+      "dest": "f7",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 7825,
+      "time_s": 32.60416666666667,
+      "trace_rows": 7826,
+      "trace_sha256": "9a2a10be40edeb62f3a619c2c45c48eb4a482c8728d64b221db551040af03fb3",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step02_ply02_f5f7/trial/result.json",
+      "result_sha256": "e16d32868aa6929441e3478f883932d03f42e5bf1ea1c26e7cf4b891749df354",
+      "phase_counts": {
+        "reposition": 2006,
+        "home": 96,
+        "descend": 292,
+        "source": 48,
+        "close": 363,
+        "hold": 72,
+        "lift": 292,
+        "transfer": 1226,
+        "lower": 478,
+        "support": 123,
+        "open": 194,
+        "settle_board": 144,
+        "empty_exit": 533,
+        "empty_home": 1910,
+        "ready": 48
+      },
+      "final_XY_mm": 1.5267134468811234,
+      "final_tilt_deg": 0.02117246996803562,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "d7",
+          "actual": "d7"
+        },
+        {
+          "key": "wQ",
+          "expected": "d1",
+          "actual": "d1"
+        },
+        {
+          "key": "wR",
+          "expected": "f7",
+          "actual": "f7"
+        },
+        {
+          "key": "wB",
+          "expected": "b5",
+          "actual": "b5"
+        },
+        {
+          "key": "wN",
+          "expected": "a5",
+          "actual": "a5"
+        },
+        {
+          "key": "wP",
+          "expected": "a3",
+          "actual": "a3"
+        },
+        {
+          "key": "bK",
+          "expected": "e4",
+          "actual": "e4"
+        },
+        {
+          "key": "bQ",
+          "expected": "f2",
+          "actual": "f2"
+        },
+        {
+          "key": "bR",
+          "expected": "b6",
+          "actual": "b6"
+        },
+        {
+          "key": "bB",
+          "expected": "b3",
+          "actual": "b3"
+        },
+        {
+          "key": "bN",
+          "expected": "e2",
+          "actual": "e2"
+        },
+        {
+          "key": "bP",
+          "expected": "g4",
+          "actual": "g4"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 1980,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.24624395299961518,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005883144920096359,
+        "target_gap_m": 0.05
+      },
+      "actual_exit_gap_m": 0.009198627522465102,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\rook_0_3.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random2_seed202",
+      "id": "ply03_f2h4",
+      "target_key": "bQ",
+      "type": "queen",
+      "source": "f2",
+      "dest": "h4",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 8707,
+      "time_s": 36.279166666666654,
+      "trace_rows": 8708,
+      "trace_sha256": "a8cbe8f74b0a4bb120d359ae0baef399fd8d3574513645ec08d8fcb052537b68",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step03_ply03_f2h4/trial/result.json",
+      "result_sha256": "a614393abb2f3b9acdb62670daadab64355ebc5af0478d4f834253319aa9f241",
+      "phase_counts": {
+        "reposition": 2036,
+        "home": 96,
+        "descend": 288,
+        "source": 48,
+        "close": 469,
+        "hold": 72,
+        "lift": 288,
+        "transfer": 1706,
+        "lower": 540,
+        "support": 159,
+        "open": 193,
+        "settle_board": 144,
+        "empty_exit": 533,
+        "empty_home": 2087,
+        "ready": 48
+      },
+      "final_XY_mm": 0.8273849300090063,
+      "final_tilt_deg": 0.0377634476046468,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "d7",
+          "actual": "d7"
+        },
+        {
+          "key": "wQ",
+          "expected": "d1",
+          "actual": "d1"
+        },
+        {
+          "key": "wR",
+          "expected": "f7",
+          "actual": "f7"
+        },
+        {
+          "key": "wB",
+          "expected": "b5",
+          "actual": "b5"
+        },
+        {
+          "key": "wN",
+          "expected": "a5",
+          "actual": "a5"
+        },
+        {
+          "key": "wP",
+          "expected": "a3",
+          "actual": "a3"
+        },
+        {
+          "key": "bK",
+          "expected": "e4",
+          "actual": "e4"
+        },
+        {
+          "key": "bQ",
+          "expected": "h4",
+          "actual": "h4"
+        },
+        {
+          "key": "bR",
+          "expected": "b6",
+          "actual": "b6"
+        },
+        {
+          "key": "bB",
+          "expected": "b3",
+          "actual": "b3"
+        },
+        {
+          "key": "bN",
+          "expected": "e2",
+          "actual": "e2"
+        },
+        {
+          "key": "bP",
+          "expected": "g4",
+          "actual": "g4"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 2554,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.24278680492535012,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005882169073965725,
+        "target_gap_m": 0.05
+      },
+      "actual_exit_gap_m": 0.014758302898335228,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\queen_0_1.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random2_seed202",
+      "id": "ply04_d7c7",
+      "target_key": "wK",
+      "type": "king",
+      "source": "d7",
+      "dest": "c7",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 7782,
+      "time_s": 32.425,
+      "trace_rows": 7783,
+      "trace_sha256": "1973e4eee1d1b09e08277596a3afb23df03e463a885ca8142ae742f06b896f5b",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step04_ply04_d7c7/trial/result.json",
+      "result_sha256": "b66fe12ce2d753334c7c4cbde8e3fd8418cabe1bf41fe5cf6d1b5c1ecdf2c1ad",
+      "phase_counts": {
+        "reposition": 2066,
+        "home": 96,
+        "descend": 299,
+        "source": 48,
+        "close": 373,
+        "hold": 72,
+        "lift": 290,
+        "transfer": 626,
+        "lower": 540,
+        "support": 159,
+        "open": 192,
+        "settle_board": 144,
+        "empty_exit": 533,
+        "empty_home": 2296,
+        "ready": 48
+      },
+      "final_XY_mm": 0.6592218536755816,
+      "final_tilt_deg": 0.02075807276509188,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "c7",
+          "actual": "c7"
+        },
+        {
+          "key": "wQ",
+          "expected": "d1",
+          "actual": "d1"
+        },
+        {
+          "key": "wR",
+          "expected": "f7",
+          "actual": "f7"
+        },
+        {
+          "key": "wB",
+          "expected": "b5",
+          "actual": "b5"
+        },
+        {
+          "key": "wN",
+          "expected": "a5",
+          "actual": "a5"
+        },
+        {
+          "key": "wP",
+          "expected": "a3",
+          "actual": "a3"
+        },
+        {
+          "key": "bK",
+          "expected": "e4",
+          "actual": "e4"
+        },
+        {
+          "key": "bQ",
+          "expected": "h4",
+          "actual": "h4"
+        },
+        {
+          "key": "bR",
+          "expected": "b6",
+          "actual": "b6"
+        },
+        {
+          "key": "bB",
+          "expected": "b3",
+          "actual": "b3"
+        },
+        {
+          "key": "bN",
+          "expected": "e2",
+          "actual": "e2"
+        },
+        {
+          "key": "bP",
+          "expected": "g4",
+          "actual": "g4"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 1481,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.24789916993507902,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005896418941634662,
+        "target_gap_m": 0.05
+      },
+      "actual_exit_gap_m": 0.010277625985146872,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\king_0_0.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random2_seed202",
+      "id": "ply05_e4e5",
+      "target_key": "bK",
+      "type": "king",
+      "source": "e4",
+      "dest": "e5",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 4448,
+      "time_s": 18.53333333333333,
+      "trace_rows": 4449,
+      "trace_sha256": "fe33e8bbbb0a7e07a90c493748e4e70c7c392cff922357c3eab5dc8139ee4776",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step05_ply05_e4e5/trial/result.json",
+      "result_sha256": "d1e326846973cd7e95286632c72178d38fdc67ce0d1a20b8d3453c9e327b8756",
+      "phase_counts": {
+        "reposition": 311,
+        "home": 96,
+        "descend": 299,
+        "source": 48,
+        "close": 399,
+        "hold": 72,
+        "lift": 290,
+        "transfer": 626,
+        "lower": 540,
+        "support": 159,
+        "open": 192,
+        "settle_board": 144,
+        "empty_exit": 533,
+        "empty_home": 691,
+        "ready": 48
+      },
+      "final_XY_mm": 0.5744817255406707,
+      "final_tilt_deg": 4.623797189200755e-05,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "c7",
+          "actual": "c7"
+        },
+        {
+          "key": "wQ",
+          "expected": "d1",
+          "actual": "d1"
+        },
+        {
+          "key": "wR",
+          "expected": "f7",
+          "actual": "f7"
+        },
+        {
+          "key": "wB",
+          "expected": "b5",
+          "actual": "b5"
+        },
+        {
+          "key": "wN",
+          "expected": "a5",
+          "actual": "a5"
+        },
+        {
+          "key": "wP",
+          "expected": "a3",
+          "actual": "a3"
+        },
+        {
+          "key": "bK",
+          "expected": "e5",
+          "actual": "e5"
+        },
+        {
+          "key": "bQ",
+          "expected": "h4",
+          "actual": "h4"
+        },
+        {
+          "key": "bR",
+          "expected": "b6",
+          "actual": "b6"
+        },
+        {
+          "key": "bB",
+          "expected": "b3",
+          "actual": "b3"
+        },
+        {
+          "key": "bN",
+          "expected": "e2",
+          "actual": "e2"
+        },
+        {
+          "key": "bP",
+          "expected": "g4",
+          "actual": "g4"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 1477,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.24928997413253146,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005896548569466259,
+        "target_gap_m": 0.012771394150844603
+      },
+      "actual_exit_gap_m": 0.010042037468188275,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\king_0_0.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random2_seed202",
+      "id": "ply06_d1g1",
+      "target_key": "wQ",
+      "type": "queen",
+      "source": "d1",
+      "dest": "g1",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 9896,
+      "time_s": 41.23333333333335,
+      "trace_rows": 9897,
+      "trace_sha256": "7ad961ba679e769727a569075e96b2ec3e71d6308b62cc6bbf6647a33f8089f1",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step06_ply06_d1g1/trial/result.json",
+      "result_sha256": "c2ce07b37cc538d334ae543030eb12dd04adfa72d1e3ca887deb6d64e5a4d672",
+      "phase_counts": {
+        "reposition": 2366,
+        "home": 96,
+        "descend": 292,
+        "source": 48,
+        "close": 479,
+        "hold": 72,
+        "lift": 292,
+        "transfer": 1826,
+        "lower": 602,
+        "support": 195,
+        "open": 192,
+        "settle_board": 144,
+        "empty_exit": 534,
+        "empty_home": 2710,
+        "ready": 48
+      },
+      "final_XY_mm": 1.576996061751222,
+      "final_tilt_deg": 0.02147181599336984,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "c7",
+          "actual": "c7"
+        },
+        {
+          "key": "wQ",
+          "expected": "g1",
+          "actual": "g1"
+        },
+        {
+          "key": "wR",
+          "expected": "f7",
+          "actual": "f7"
+        },
+        {
+          "key": "wB",
+          "expected": "b5",
+          "actual": "b5"
+        },
+        {
+          "key": "wN",
+          "expected": "a5",
+          "actual": "a5"
+        },
+        {
+          "key": "wP",
+          "expected": "a3",
+          "actual": "a3"
+        },
+        {
+          "key": "bK",
+          "expected": "e5",
+          "actual": "e5"
+        },
+        {
+          "key": "bQ",
+          "expected": "h4",
+          "actual": "h4"
+        },
+        {
+          "key": "bR",
+          "expected": "b6",
+          "actual": "b6"
+        },
+        {
+          "key": "bB",
+          "expected": "b3",
+          "actual": "b3"
+        },
+        {
+          "key": "bN",
+          "expected": "e2",
+          "actual": "e2"
+        },
+        {
+          "key": "bP",
+          "expected": "g4",
+          "actual": "g4"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 2727,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.2480727913975602,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005881902403793457,
+        "target_gap_m": 0.05
+      },
+      "actual_exit_gap_m": 0.01388535257817401,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\queen_1_1.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random2_seed202",
+      "id": "ply07_b6c6",
+      "target_key": "bR",
+      "type": "rook",
+      "source": "b6",
+      "dest": "c6",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 8353,
+      "time_s": 34.804166666666646,
+      "trace_rows": 8354,
+      "trace_sha256": "7ddb89ad7939f92e05c2c9d86da12fc688bd52982db6ccd29c97f244c37b617f",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step07_ply07_b6c6/trial/result.json",
+      "result_sha256": "bdfb7be6709bb6ae21f3d09b8d1a98f37a6abdd521b349186a505be37dff87bc",
+      "phase_counts": {
+        "reposition": 2738,
+        "home": 96,
+        "descend": 292,
+        "source": 48,
+        "close": 369,
+        "hold": 72,
+        "lift": 292,
+        "transfer": 602,
+        "lower": 540,
+        "support": 159,
+        "open": 198,
+        "settle_board": 144,
+        "empty_exit": 533,
+        "empty_home": 2222,
+        "ready": 48
+      },
+      "final_XY_mm": 0.31816140234794177,
+      "final_tilt_deg": 0.007852763651813616,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "c7",
+          "actual": "c7"
+        },
+        {
+          "key": "wQ",
+          "expected": "g1",
+          "actual": "g1"
+        },
+        {
+          "key": "wR",
+          "expected": "f7",
+          "actual": "f7"
+        },
+        {
+          "key": "wB",
+          "expected": "b5",
+          "actual": "b5"
+        },
+        {
+          "key": "wN",
+          "expected": "a5",
+          "actual": "a5"
+        },
+        {
+          "key": "wP",
+          "expected": "a3",
+          "actual": "a3"
+        },
+        {
+          "key": "bK",
+          "expected": "e5",
+          "actual": "e5"
+        },
+        {
+          "key": "bQ",
+          "expected": "h4",
+          "actual": "h4"
+        },
+        {
+          "key": "bR",
+          "expected": "c6",
+          "actual": "c6"
+        },
+        {
+          "key": "bB",
+          "expected": "b3",
+          "actual": "b3"
+        },
+        {
+          "key": "bN",
+          "expected": "e2",
+          "actual": "e2"
+        },
+        {
+          "key": "bP",
+          "expected": "g4",
+          "actual": "g4"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 1455,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.2460075427220908,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005883144756154668,
+        "target_gap_m": 0.05
+      },
+      "actual_exit_gap_m": 0.009132300294993848,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\rook_0_3.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random2_seed202",
+      "id": "ply08_c7b7",
+      "target_key": "wK",
+      "type": "king",
+      "source": "c7",
+      "dest": "b7",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 8496,
+      "time_s": 35.400000000000006,
+      "trace_rows": 8497,
+      "trace_sha256": "09edea0b84afe7e46bc84ea0137fc68f06c9e81a11d3dcc41e5dba1d3009ac5d",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step08_ply08_c7b7/trial/result.json",
+      "result_sha256": "41c7abba81d95bf8a3df891ad0e827e91571c858d5ae77d57765615ac311fa04",
+      "phase_counts": {
+        "reposition": 2332,
+        "home": 96,
+        "descend": 299,
+        "source": 48,
+        "close": 413,
+        "hold": 72,
+        "lift": 290,
+        "transfer": 650,
+        "lower": 540,
+        "support": 159,
+        "open": 192,
+        "settle_board": 144,
+        "empty_exit": 533,
+        "empty_home": 2680,
+        "ready": 48
+      },
+      "final_XY_mm": 1.540672403951754,
+      "final_tilt_deg": 0.017857640195233483,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "b7",
+          "actual": "b7"
+        },
+        {
+          "key": "wQ",
+          "expected": "g1",
+          "actual": "g1"
+        },
+        {
+          "key": "wR",
+          "expected": "f7",
+          "actual": "f7"
+        },
+        {
+          "key": "wB",
+          "expected": "b5",
+          "actual": "b5"
+        },
+        {
+          "key": "wN",
+          "expected": "a5",
+          "actual": "a5"
+        },
+        {
+          "key": "wP",
+          "expected": "a3",
+          "actual": "a3"
+        },
+        {
+          "key": "bK",
+          "expected": "e5",
+          "actual": "e5"
+        },
+        {
+          "key": "bQ",
+          "expected": "h4",
+          "actual": "h4"
+        },
+        {
+          "key": "bR",
+          "expected": "c6",
+          "actual": "c6"
+        },
+        {
+          "key": "bB",
+          "expected": "b3",
+          "actual": "b3"
+        },
+        {
+          "key": "bN",
+          "expected": "e2",
+          "actual": "e2"
+        },
+        {
+          "key": "bP",
+          "expected": "g4",
+          "actual": "g4"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 1506,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.25077756592834566,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005896418869197528,
+        "target_gap_m": 0.05
+      },
+      "actual_exit_gap_m": 0.010361884456327675,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\king_0_0.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random2_seed202",
+      "id": "ply09_h4f6",
+      "target_key": "bQ",
+      "type": "queen",
+      "source": "h4",
+      "dest": "f6",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 8033,
+      "time_s": 33.47083333333336,
+      "trace_rows": 8034,
+      "trace_sha256": "f16832607495f12c80686a2bc6a73bb810c73339ae7af38577e801a07210a830",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step09_ply09_h4f6/trial/result.json",
+      "result_sha256": "72939b0a0bcb9e8ad42e43a4809fa9134e57828d2fb18231693dc06d29b95746",
+      "phase_counts": {
+        "reposition": 1988,
+        "home": 96,
+        "descend": 290,
+        "source": 48,
+        "close": 449,
+        "hold": 72,
+        "lift": 290,
+        "transfer": 1682,
+        "lower": 540,
+        "support": 159,
+        "open": 188,
+        "settle_board": 144,
+        "empty_exit": 533,
+        "empty_home": 1506,
+        "ready": 48
+      },
+      "final_XY_mm": 0.4371539389854282,
+      "final_tilt_deg": 1.3740186487444049e-05,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "b7",
+          "actual": "b7"
+        },
+        {
+          "key": "wQ",
+          "expected": "g1",
+          "actual": "g1"
+        },
+        {
+          "key": "wR",
+          "expected": "f7",
+          "actual": "f7"
+        },
+        {
+          "key": "wB",
+          "expected": "b5",
+          "actual": "b5"
+        },
+        {
+          "key": "wN",
+          "expected": "a5",
+          "actual": "a5"
+        },
+        {
+          "key": "wP",
+          "expected": "a3",
+          "actual": "a3"
+        },
+        {
+          "key": "bK",
+          "expected": "e5",
+          "actual": "e5"
+        },
+        {
+          "key": "bQ",
+          "expected": "f6",
+          "actual": "f6"
+        },
+        {
+          "key": "bR",
+          "expected": "c6",
+          "actual": "c6"
+        },
+        {
+          "key": "bB",
+          "expected": "b3",
+          "actual": "b3"
+        },
+        {
+          "key": "bN",
+          "expected": "e2",
+          "actual": "e2"
+        },
+        {
+          "key": "bP",
+          "expected": "g4",
+          "actual": "g4"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 2534,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.24707402779292675,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005880458042954429,
+        "target_gap_m": 0.0440027231293494
+      },
+      "actual_exit_gap_m": 0.015051063506575561,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\queen_0_0.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random2_seed202",
+      "id": "ply10_g1g3",
+      "target_key": "wQ",
+      "type": "queen",
+      "source": "g1",
+      "dest": "g3",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 9157,
+      "time_s": 38.15416666666664,
+      "trace_rows": 9158,
+      "trace_sha256": "e8003b1d779ec56e83b0e4a743a847e3ac93d5ef019ce8ad89311f535edbdbef",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step10_ply10_g1g3/trial/result.json",
+      "result_sha256": "810952a47448ab11695b2aaa9be39766cbe182666b5ea1bed7940b0ed2919930",
+      "phase_counts": {
+        "reposition": 2661,
+        "home": 96,
+        "descend": 292,
+        "source": 48,
+        "close": 466,
+        "hold": 72,
+        "lift": 292,
+        "transfer": 1248,
+        "lower": 602,
+        "support": 195,
+        "open": 190,
+        "settle_board": 144,
+        "empty_exit": 533,
+        "empty_home": 2270,
+        "ready": 48
+      },
+      "final_XY_mm": 0.36893520029461596,
+      "final_tilt_deg": 0.020018299225180676,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "b7",
+          "actual": "b7"
+        },
+        {
+          "key": "wQ",
+          "expected": "g3",
+          "actual": "g3"
+        },
+        {
+          "key": "wR",
+          "expected": "f7",
+          "actual": "f7"
+        },
+        {
+          "key": "wB",
+          "expected": "b5",
+          "actual": "b5"
+        },
+        {
+          "key": "wN",
+          "expected": "a5",
+          "actual": "a5"
+        },
+        {
+          "key": "wP",
+          "expected": "a3",
+          "actual": "a3"
+        },
+        {
+          "key": "bK",
+          "expected": "e5",
+          "actual": "e5"
+        },
+        {
+          "key": "bQ",
+          "expected": "f6",
+          "actual": "f6"
+        },
+        {
+          "key": "bR",
+          "expected": "c6",
+          "actual": "c6"
+        },
+        {
+          "key": "bB",
+          "expected": "b3",
+          "actual": "b3"
+        },
+        {
+          "key": "bN",
+          "expected": "e2",
+          "actual": "e2"
+        },
+        {
+          "key": "bP",
+          "expected": "g4",
+          "actual": "g4"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 2186,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.24963749249503164,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005882080368025312,
+        "target_gap_m": 0.05
+      },
+      "actual_exit_gap_m": 0.014437918556375483,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\queen_1_1.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random3_seed303",
+      "id": "ply01_d3c2",
+      "target_key": "wK",
+      "type": "king",
+      "source": "d3",
+      "dest": "c2",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 8303,
+      "time_s": 34.59583333333333,
+      "trace_rows": 8304,
+      "trace_sha256": "d96463789596a9e46ce3abb9a3c506257d25018a7595bcaee19ec6203966ddf2",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step01_ply01_d3c2/trial/result.json",
+      "result_sha256": "3fd6d44108290bb2c23dbf986c3069e063bf564119b97337620466354ecf4879",
+      "phase_counts": {
+        "reposition": 901,
+        "home": 96,
+        "descend": 280,
+        "source": 48,
+        "close": 431,
+        "hold": 72,
+        "lift": 280,
+        "transfer": 2165,
+        "lower": 594,
+        "support": 195,
+        "open": 190,
+        "settle_board": 144,
+        "empty_exit": 517,
+        "empty_home": 2342,
+        "ready": 48
+      },
+      "final_XY_mm": 1.163865498136118,
+      "final_tilt_deg": 0.000191046996499111,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "c2",
+          "actual": "c2"
+        },
+        {
+          "key": "wQ",
+          "expected": "g7",
+          "actual": "g7"
+        },
+        {
+          "key": "wR",
+          "expected": "a4",
+          "actual": "a4"
+        },
+        {
+          "key": "wB",
+          "expected": "f3",
+          "actual": "f3"
+        },
+        {
+          "key": "wN",
+          "expected": "c7",
+          "actual": "c7"
+        },
+        {
+          "key": "wP",
+          "expected": "e5",
+          "actual": "e5"
+        },
+        {
+          "key": "bK",
+          "expected": "d8",
+          "actual": "d8"
+        },
+        {
+          "key": "bQ",
+          "expected": "d4",
+          "actual": "d4"
+        },
+        {
+          "key": "bR",
+          "expected": "f7",
+          "actual": "f7"
+        },
+        {
+          "key": "bB",
+          "expected": "b8",
+          "actual": "b8"
+        },
+        {
+          "key": "bN",
+          "expected": "b5",
+          "actual": "b5"
+        },
+        {
+          "key": "bP",
+          "expected": "d2",
+          "actual": "d2"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 3088,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.24303373958729976,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005896353717109253,
+        "target_gap_m": 0.04817559393019607
+      },
+      "actual_exit_gap_m": 0.009486182292265772,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\king_0_0.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random3_seed303",
+      "id": "ply02_b5d6",
+      "target_key": "bN",
+      "type": "knight",
+      "source": "b5",
+      "dest": "d6",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 9254,
+      "time_s": 38.55833333333334,
+      "trace_rows": 9255,
+      "trace_sha256": "6979be8e6c4de3be9c26eafdc200d7d34c7105adbb058d411137fe64cad3d005",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step02_ply02_b5d6/trial/result.json",
+      "result_sha256": "a7228d3fa1515a50d82506689d926996eb62b73309d1668de57cc5b954d952d9",
+      "phase_counts": {
+        "reposition": 2696,
+        "home": 96,
+        "descend": 292,
+        "source": 48,
+        "close": 461,
+        "hold": 72,
+        "lift": 292,
+        "transfer": 1370,
+        "lower": 540,
+        "support": 159,
+        "open": 191,
+        "settle_board": 144,
+        "empty_exit": 533,
+        "empty_home": 2312,
+        "ready": 48
+      },
+      "final_XY_mm": 0.8041298013488314,
+      "final_tilt_deg": 0.014232610660956825,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "c2",
+          "actual": "c2"
+        },
+        {
+          "key": "wQ",
+          "expected": "g7",
+          "actual": "g7"
+        },
+        {
+          "key": "wR",
+          "expected": "a4",
+          "actual": "a4"
+        },
+        {
+          "key": "wB",
+          "expected": "f3",
+          "actual": "f3"
+        },
+        {
+          "key": "wN",
+          "expected": "c7",
+          "actual": "c7"
+        },
+        {
+          "key": "wP",
+          "expected": "e5",
+          "actual": "e5"
+        },
+        {
+          "key": "bK",
+          "expected": "d8",
+          "actual": "d8"
+        },
+        {
+          "key": "bQ",
+          "expected": "d4",
+          "actual": "d4"
+        },
+        {
+          "key": "bR",
+          "expected": "f7",
+          "actual": "f7"
+        },
+        {
+          "key": "bB",
+          "expected": "b8",
+          "actual": "b8"
+        },
+        {
+          "key": "bN",
+          "expected": "d6",
+          "actual": "d6"
+        },
+        {
+          "key": "bP",
+          "expected": "d2",
+          "actual": "d2"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 2214,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.24112106341130335,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005836815450478798,
+        "target_gap_m": 0.04612332172969191
+      },
+      "actual_exit_gap_m": 0.012750530711109341,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\knight_0_2.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random3_seed303",
+      "id": "ply03_c7d5",
+      "target_key": "wN",
+      "type": "knight",
+      "source": "c7",
+      "dest": "d5",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 9903,
+      "time_s": 41.2625,
+      "trace_rows": 9904,
+      "trace_sha256": "0dfaef533f79a2862a80425edb93f2570ac7d5ecca2e47dc2efdd2b6769796b2",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step03_ply03_c7d5/trial/result.json",
+      "result_sha256": "6992ec7e512d9367792eb5f7ab830a2d114559d65b802c08806299109616703d",
+      "phase_counts": {
+        "reposition": 2618,
+        "home": 96,
+        "descend": 533,
+        "source": 48,
+        "close": 456,
+        "hold": 72,
+        "lift": 533,
+        "transfer": 1403,
+        "lower": 781,
+        "support": 159,
+        "open": 191,
+        "settle_board": 144,
+        "empty_exit": 533,
+        "empty_home": 2288,
+        "ready": 48
+      },
+      "final_XY_mm": 1.3892341377197739,
+      "final_tilt_deg": 0.006843330249608106,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "c2",
+          "actual": "c2"
+        },
+        {
+          "key": "wQ",
+          "expected": "g7",
+          "actual": "g7"
+        },
+        {
+          "key": "wR",
+          "expected": "a4",
+          "actual": "a4"
+        },
+        {
+          "key": "wB",
+          "expected": "f3",
+          "actual": "f3"
+        },
+        {
+          "key": "wN",
+          "expected": "d5",
+          "actual": "d5"
+        },
+        {
+          "key": "wP",
+          "expected": "e5",
+          "actual": "e5"
+        },
+        {
+          "key": "bK",
+          "expected": "d8",
+          "actual": "d8"
+        },
+        {
+          "key": "bQ",
+          "expected": "d4",
+          "actual": "d4"
+        },
+        {
+          "key": "bR",
+          "expected": "f7",
+          "actual": "f7"
+        },
+        {
+          "key": "bB",
+          "expected": "b8",
+          "actual": "b8"
+        },
+        {
+          "key": "bN",
+          "expected": "d6",
+          "actual": "d6"
+        },
+        {
+          "key": "bP",
+          "expected": "d2",
+          "actual": "d2"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 2728,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.24846430552673235,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005836815336901191,
+        "target_gap_m": 0.03373781377412226
+      },
+      "actual_exit_gap_m": 0.01278863785004071,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\knight_0_2.json",
+      "selected_transfer_method": "joint",
+      "audit_success": true
+    },
+    {
+      "game": "random3_seed303",
+      "id": "ply04_f7d7",
+      "target_key": "bR",
+      "type": "rook",
+      "source": "f7",
+      "dest": "d7",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 9738,
+      "time_s": 40.575,
+      "trace_rows": 9739,
+      "trace_sha256": "523269ee29de8f894d94d6c49adb2afea8708442cc38c9d702ad6b7867ab1ed9",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step04_ply04_f7d7/trial/result.json",
+      "result_sha256": "5384261a6ca3b5deb514216f1e38e013129db07eb120d350ce706f0fba8abb8a",
+      "phase_counts": {
+        "reposition": 2208,
+        "home": 96,
+        "descend": 292,
+        "source": 48,
+        "close": 379,
+        "hold": 72,
+        "lift": 292,
+        "transfer": 2345,
+        "lower": 540,
+        "support": 159,
+        "open": 198,
+        "settle_board": 144,
+        "empty_exit": 533,
+        "empty_home": 2384,
+        "ready": 48
+      },
+      "final_XY_mm": 1.0462058829607597,
+      "final_tilt_deg": 0.009364142267838091,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "c2",
+          "actual": "c2"
+        },
+        {
+          "key": "wQ",
+          "expected": "g7",
+          "actual": "g7"
+        },
+        {
+          "key": "wR",
+          "expected": "a4",
+          "actual": "a4"
+        },
+        {
+          "key": "wB",
+          "expected": "f3",
+          "actual": "f3"
+        },
+        {
+          "key": "wN",
+          "expected": "d5",
+          "actual": "d5"
+        },
+        {
+          "key": "wP",
+          "expected": "e5",
+          "actual": "e5"
+        },
+        {
+          "key": "bK",
+          "expected": "d8",
+          "actual": "d8"
+        },
+        {
+          "key": "bQ",
+          "expected": "d4",
+          "actual": "d4"
+        },
+        {
+          "key": "bR",
+          "expected": "d7",
+          "actual": "d7"
+        },
+        {
+          "key": "bB",
+          "expected": "b8",
+          "actual": "b8"
+        },
+        {
+          "key": "bN",
+          "expected": "d6",
+          "actual": "d6"
+        },
+        {
+          "key": "bP",
+          "expected": "d2",
+          "actual": "d2"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 3192,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.24350196700955268,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.000588372044881305,
+        "target_gap_m": 0.05
+      },
+      "actual_exit_gap_m": 0.009223316072814954,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\rook_0_2.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random3_seed303",
+      "id": "ply05_f3d1",
+      "target_key": "wB",
+      "type": "bishop",
+      "source": "f3",
+      "dest": "d1",
+      "runtime_ok": true,
+      "runtime_classification": "physical_task_success",
+      "reason": "completed",
+      "physics_steps": 8924,
+      "time_s": 37.18333333333334,
+      "trace_rows": 8925,
+      "trace_sha256": "20b2762fd170f51a1085548c58c47e6f438288fef5289db7dee3ca94317cfdea",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step05_ply05_f3d1/trial/result.json",
+      "result_sha256": "84f38154b401dbeb3bba8fbabaaacbd3df71a5777a98b14172332060d7f72d4d",
+      "phase_counts": {
+        "reposition": 2072,
+        "home": 96,
+        "descend": 292,
+        "source": 48,
+        "close": 406,
+        "hold": 72,
+        "lift": 292,
+        "transfer": 1706,
+        "lower": 540,
+        "support": 159,
+        "open": 192,
+        "settle_board": 144,
+        "empty_exit": 533,
+        "empty_home": 2324,
+        "ready": 48
+      },
+      "final_XY_mm": 0.9665235543178826,
+      "final_tilt_deg": 0.0,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "c2",
+          "actual": "c2"
+        },
+        {
+          "key": "wQ",
+          "expected": "g7",
+          "actual": "g7"
+        },
+        {
+          "key": "wR",
+          "expected": "a4",
+          "actual": "a4"
+        },
+        {
+          "key": "wB",
+          "expected": "d1",
+          "actual": "d1"
+        },
+        {
+          "key": "wN",
+          "expected": "d5",
+          "actual": "d5"
+        },
+        {
+          "key": "wP",
+          "expected": "e5",
+          "actual": "e5"
+        },
+        {
+          "key": "bK",
+          "expected": "d8",
+          "actual": "d8"
+        },
+        {
+          "key": "bQ",
+          "expected": "d4",
+          "actual": "d4"
+        },
+        {
+          "key": "bR",
+          "expected": "d7",
+          "actual": "d7"
+        },
+        {
+          "key": "bB",
+          "expected": "b8",
+          "actual": "b8"
+        },
+        {
+          "key": "bN",
+          "expected": "d6",
+          "actual": "d6"
+        },
+        {
+          "key": "bP",
+          "expected": "d2",
+          "actual": "d2"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 2548,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.24821945324840788,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": {
+        "joint_error_deg": 0.0005857838095036136,
+        "target_gap_m": 0.05
+      },
+      "actual_exit_gap_m": 0.00970791843353964,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\bishop_1_0.json",
+      "selected_transfer_method": "cartesian",
+      "audit_success": true
+    },
+    {
+      "game": "random3_seed303",
+      "id": "ply06_d6f5",
+      "target_key": "bN",
+      "type": "knight",
+      "source": "d6",
+      "dest": "f5",
+      "runtime_ok": false,
+      "runtime_classification": "physical_task_failed",
+      "reason": "final_check xy=0.0030 tilt=0.0003 bf=0.0294",
+      "physics_steps": 7619,
+      "time_s": 31.74583333333331,
+      "trace_rows": 7620,
+      "trace_sha256": "04b7464299dba0b59fcc00ab4089443e8764307b64fe3f1088b3cd8f2fdd675f",
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step06_ply06_d6f5/trial/result.json",
+      "result_sha256": "18c138cd7b7b1cc8a97412591c1982be098b44cc4235ce3530e29f6e3ae8b7cc",
+      "phase_counts": {
+        "reposition": 2348,
+        "home": 96,
+        "descend": 799,
+        "source": 48,
+        "close": 460,
+        "hold": 72,
+        "lift": 770,
+        "transfer": 1394,
+        "lower": 1104,
+        "support": 195,
+        "open": 189,
+        "settle_board": 144
+      },
+      "final_XY_mm": 3.0431529611345653,
+      "final_tilt_deg": 0.014460231104308281,
+      "occupancy": [
+        {
+          "key": "wK",
+          "expected": "c2",
+          "actual": "c2"
+        },
+        {
+          "key": "wQ",
+          "expected": "g7",
+          "actual": "g7"
+        },
+        {
+          "key": "wR",
+          "expected": "a4",
+          "actual": "a4"
+        },
+        {
+          "key": "wB",
+          "expected": "d1",
+          "actual": "d1"
+        },
+        {
+          "key": "wN",
+          "expected": "d5",
+          "actual": "d5"
+        },
+        {
+          "key": "wP",
+          "expected": "e5",
+          "actual": "e5"
+        },
+        {
+          "key": "bK",
+          "expected": "d8",
+          "actual": "d8"
+        },
+        {
+          "key": "bQ",
+          "expected": "d4",
+          "actual": "d4"
+        },
+        {
+          "key": "bR",
+          "expected": "d7",
+          "actual": "d7"
+        },
+        {
+          "key": "bB",
+          "expected": "b8",
+          "actual": "b8"
+        },
+        {
+          "key": "bN",
+          "expected": "f5",
+          "actual": "f5"
+        },
+        {
+          "key": "bP",
+          "expected": "d2",
+          "actual": "d2"
+        }
+      ],
+      "preopen_supported_15": true,
+      "settle_samples": 144,
+      "settle_supported_samples": 144,
+      "unsupported_unreleased_samples": 3312,
+      "nearzero_native_bilateral_samples": 0,
+      "min_native_bilateral_N": 0.2423196056783258,
+      "unexpected_contacts": {
+        "neighbor_contacts": 0,
+        "robot_board_contacts": 0,
+        "self_contacts": 0,
+        "target_neighbor": 0
+      },
+      "separation_fall_candidates": [],
+      "checked_home": null,
+      "actual_exit_gap_m": null,
+      "selected_catalog": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\knight_0_2.json",
+      "selected_transfer_method": null,
+      "audit_success": false
+    }
+  ]
+}

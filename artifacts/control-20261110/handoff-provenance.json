@@ -1,0 +1,188 @@
+{
+  "scope": "Handoff helpers and portable asset loading; not physical manipulation",
+  "reviewer": "GPT",
+  "independent": false,
+  "new_manipulation_trials": 0,
+  "api_calls": [
+    {
+      "unit_id": "control_handoff_snapshot_v1",
+      "attempt": "attempt_1",
+      "status": "generated",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 6392,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 973,
+        "prompt_tokens": 973,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 7365
+      },
+      "usage_known": true,
+      "task_sha256": "069eeb1b590b3933d85318a36ee76b01c9f5d8fca060058e7f268e6c84eab2f3",
+      "contract_sha256": "a1a58f7acce0803a89ac95554a16fa5d796d469b0e9c0beff72005002b8fb08a"
+    },
+    {
+      "unit_id": "control_handoff_snapshot_v1",
+      "attempt": "attempt_2",
+      "status": "generated",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 863,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 982,
+        "prompt_tokens": 982,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 1845
+      },
+      "usage_known": true,
+      "task_sha256": "1859efd9b4b19075bd39fa985fe8be8a1f52485ed1287971ed5d23c49b72a197",
+      "contract_sha256": "7f27dc5891010a0ed5faea3256c8b4b2bbd565299c390be6a132dd4aa515b1bb"
+    },
+    {
+      "unit_id": "control_handoff_static_environment_v1",
+      "attempt": "attempt_1",
+      "status": "generated",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 2633,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2134,
+        "prompt_tokens": 2134,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 4767
+      },
+      "usage_known": true,
+      "task_sha256": "01ccba2f4c7de64828d4b22dbec5faf833c16876dbb274c39dbae63806ee7463",
+      "contract_sha256": "864f9fee3226c99aaa20572ce683c134902c17b1aa66b197a22ffd320a63f33a"
+    },
+    {
+      "unit_id": "control_handoff_static_environment_v1",
+      "attempt": "attempt_2",
+      "status": "generated",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 889,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1166,
+        "prompt_tokens": 1166,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 2055
+      },
+      "usage_known": true,
+      "task_sha256": "8797d1f8ed137bd346637e117274bdeaa4b4c272c755d8c77379df16848cd14a",
+      "contract_sha256": "f6366b5b6ed672b82a2adc0ec70c16f05d30505fdbdc048c93b1be735c853fd0"
+    },
+    {
+      "unit_id": "control_handoff_record_pinning_v1",
+      "attempt": "attempt_1",
+      "status": "incomplete",
+      "finish_reason": "length",
+      "usage": {
+        "completion_tokens": 1900,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 631,
+        "prompt_tokens": 631,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "total_tokens": 2531
+      },
+      "usage_known": true,
+      "task_sha256": "e03a124e50f2692c94c08da60d208f88e0442e7bd1e82cf257d7952bdf750727",
+      "contract_sha256": "b72c865ce4fee99f74ee7353d67df9a9182e24027fc6a11eab4dddf69c7666da"
+    },
+    {
+      "unit_id": "control_handoff_record_pinning_v1",
+      "attempt": "attempt_2",
+      "status": "generated",
+      "finish_reason": "stop",
+      "usage": {
+        "completion_tokens": 2524,
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 247,
+        "prompt_tokens": 631,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "total_tokens": 3155
+      },
+      "usage_known": true,
+      "task_sha256": "e03a124e50f2692c94c08da60d208f88e0442e7bd1e82cf257d7952bdf750727",
+      "contract_sha256": "58d90f9d3ba0e465657412525c9b3b83c43c17f1c5396704b83302c4473b8369"
+    }
+  ],
+  "deepseek_known_tokens": 21718,
+  "gpt_usage": "unknown",
+  "program_validation": {
+    "snapshot_validation": {
+      "category": "program_validation",
+      "passed": 5,
+      "checks": [
+        "nested JSON values, unchanged keys, sibling-prefix boundary, spaces",
+        "source bytes and relative URDF mesh",
+        "invalid paths credentials and missing input rejected",
+        "overwrite and hash mismatch rejected",
+        "Windows separator normalization"
+      ],
+      "failures": [],
+      "code_hashes": {
+        "_model_tools/control_handoff_20261110/portable_snapshot_v2.py": "6e3fc8d22ae2450d909bc8eba1dbe2b5ae6f6723275f9601d8908f539c490ab6"
+      },
+      "scope": "Temporary-file tests; no worlds. Build requires a dedicated output parent outside the source tree and its ancestors. Raw XML wrapper removed before parsing the exact repair applier."
+    },
+    "static_program_validation": {
+      "category": "program_validation",
+      "passed": 3,
+      "failures": [],
+      "code_hashes": {
+        "_model_tools/control_handoff_20261110/check_environment_v2.py": "5fc8060e1636d86faeaa4d0b42523492a8df862fe9a882ce239f1703fc8609d2"
+      },
+      "checks": [
+        "actual checker main with real threshold_factory and mocked twelve-body world; correct paths/joint IDs",
+        "close failure restores native step and threshold APIs",
+        "constructor failure restores native APIs"
+      ],
+      "scope": "Program integration mocks; zero worlds/physics"
+    },
+    "pin_validation": {
+      "category": "program_validation",
+      "passed": 3,
+      "failures": [],
+      "code_hashes": {
+        "_model_tools/control_handoff_20261110/pin_record.py": "37108111773617bc487827b6a371fe2c635c0a67b82b1da971234938a46f5aca"
+      },
+      "scope": "Pure metadata tests; placeholders pinned, existing stale hash rejected, no design/result modification. Declared inputs are also added to source_hashes; no file discovery."
+    }
+  },
+  "bundle_files": 383,
+  "bundle_manifest_sha256": "00216ebdfe96deeaa13b6e69c8bd9c9d53292878ee02d29e9a48abccd790d68c",
+  "static_checks": {
+    "windows": "windows-static-result.json",
+    "ubuntu_wsl": "ubuntu-static-result.json"
+  },
+  "preparation_faults": [
+    "First Windows static launch stopped during import because a dynamically compiled predecessor was absent; zero worlds/physics. Exact predecessor added, original code unchanged.",
+    "First pin-record generation truncated; second completed.",
+    "Portable helper first draft boundary defects repaired with exact source-bound second call. Closing response XML tag removed before parsing the repair applier; raw response retained locally.",
+    "Static checker first draft guessed config directory/joint ownership; source-bound exact second call repaired these and guaranteed step-trap restoration on close failure."
+  ],
+  "limitations": [
+    "Static environment/asset loading only. No new 3x10 physical result.",
+    "Linux uses freshly compiled PyBullet3.2.7 on Python3.12.3; full contact reproducibility remains untested.",
+    "Public evidence is selected, not all original traces."
+  ],
+  "published_helpers": {
+    "portable_snapshot.py": "6e3fc8d22ae2450d909bc8eba1dbe2b5ae6f6723275f9601d8908f539c490ab6",
+    "check_environment.py": "5fc8060e1636d86faeaa4d0b42523492a8df862fe9a882ce239f1703fc8609d2",
+    "pin_record.py": "37108111773617bc487827b6a371fe2c635c0a67b82b1da971234938a46f5aca"
+  },
+  "raw_review": "portable-raw-review.json"
+}

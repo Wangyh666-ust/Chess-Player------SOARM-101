@@ -1,0 +1,40 @@
+{
+  "mode": "games",
+  "sessions": [
+    {
+      "id": "random1_seed101",
+      "returncode": 2,
+      "raw_classification": "program_error",
+      "classification": "program_error",
+      "ok": false,
+      "runner_attempted_actions": 1,
+      "positive_step_actions": 1,
+      "completed_actions": 0,
+      "completed_action_ids": [],
+      "total_physics_steps": 5639,
+      "total_sim_time_s": 23.495833333333334,
+      "total_wall_s": 36.49163460731506,
+      "result_path": "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\three_games_v1\\random1_seed101\\result.json",
+      "error": null,
+      "trace_paths": [
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\three_games_v1\\random1_seed101\\step01_ply01_f7d7\\trial\\trace.jsonl.gz"
+      ]
+    }
+  ],
+  "unattempted": [
+    "random2_seed202",
+    "random3_seed303"
+  ],
+  "planned_actions": 30,
+  "completed_actions": 0,
+  "runner_attempted_actions": 1,
+  "positive_step_actions": 1,
+  "total_physics_steps": 5639,
+  "total_sim_time_s": 23.495833333333334,
+  "known_total_physics_steps": 5639,
+  "known_completed_actions": 0,
+  "known_runner_attempted_actions": 1,
+  "accounting_complete": true,
+  "wall_s": 36.64918875694275,
+  "error": "program_error"
+}

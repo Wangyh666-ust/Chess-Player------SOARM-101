@@ -1,0 +1,12 @@
+{
+  "category": "program_validation",
+  "passed": 2,
+  "failures": [],
+  "scope": "General3game wrapper retains original30budget while source-boundexitplanningclassification continuesothergames. Allsessionoutputs mockonly;not newphysicalexecution. Existing6remaining-classifier negative tests remain applicable unchanged classifierliteral.",
+  "native_worlds": 0,
+  "physics_steps": 0,
+  "code_hashes": {
+    "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_three_staged_v2.py": "191b4cde5fdba0f37e9b825604b47234d889c1c596bccce37e69092647f5f182",
+    "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/staged_three_batch_v2.py": "cdf77716787e88034dd872ef04e34711fa184f991a88aa749c333d68070a9516"
+  }
+}

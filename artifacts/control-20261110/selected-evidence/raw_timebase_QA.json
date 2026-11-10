@@ -1,0 +1,108 @@
+{
+  "native_traces": 17,
+  "dt_s": 0.004166666666666667,
+  "checks": [
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/three_games_v1/random1_seed101/step01_ply01_f7d7/trial/result.json",
+      "samples": 5640,
+      "max_dt_error_s": 3.3159239243296668e-15,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step01_ply01_g2f2/trial/result.json",
+      "samples": 7587,
+      "max_dt_error_s": 3.3159239243296668e-15,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step02_ply02_f5f7/trial/result.json",
+      "samples": 7826,
+      "max_dt_error_s": 1.0421351281930669e-14,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step03_ply03_f2h4/trial/result.json",
+      "samples": 8708,
+      "max_dt_error_s": 1.0421351281930669e-14,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step04_ply04_d7c7/trial/result.json",
+      "samples": 7783,
+      "max_dt_error_s": 2.4632205997132672e-14,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step05_ply05_e4e5/trial/result.json",
+      "samples": 4449,
+      "max_dt_error_s": 2.4632205997132672e-14,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step06_ply06_d1g1/trial/result.json",
+      "samples": 9897,
+      "max_dt_error_s": 2.4632205997132672e-14,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step07_ply07_b6c6/trial/result.json",
+      "samples": 8354,
+      "max_dt_error_s": 2.4632205997132672e-14,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step08_ply08_c7b7/trial/result.json",
+      "samples": 8497,
+      "max_dt_error_s": 5.305391542753668e-14,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step09_ply09_h4f6/trial/result.json",
+      "samples": 8034,
+      "max_dt_error_s": 5.305391542753668e-14,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step10_ply10_g1g3/trial/result.json",
+      "samples": 9158,
+      "max_dt_error_s": 5.305391542753668e-14,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step01_ply01_d3c2/trial/result.json",
+      "samples": 8304,
+      "max_dt_error_s": 3.789503433271335e-15,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step02_ply02_b5d6/trial/result.json",
+      "samples": 9255,
+      "max_dt_error_s": 1.0421351281930669e-14,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step03_ply03_c7d5/trial/result.json",
+      "samples": 9904,
+      "max_dt_error_s": 1.0421351281930669e-14,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step04_ply04_f7d7/trial/result.json",
+      "samples": 9739,
+      "max_dt_error_s": 2.4632205997132672e-14,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step05_ply05_f3d1/trial/result.json",
+      "samples": 8925,
+      "max_dt_error_s": 2.4632205997132672e-14,
+      "positive_time_increments": true
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step06_ply06_d6f5/trial/result.json",
+      "samples": 7620,
+      "max_dt_error_s": 2.4632205997132672e-14,
+      "positive_time_increments": true
+    }
+  ]
+}

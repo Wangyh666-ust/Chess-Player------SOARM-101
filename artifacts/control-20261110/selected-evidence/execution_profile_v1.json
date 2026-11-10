@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "status": "original3games_assessed_0_10_5_complete_not_fullpass",
+  "executed_legs": [
+    {
+      "record": "experiment_review/proposals/staged_continuous_3x10_20261110_v1.json",
+      "entrypoint": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_three_staged_v1.py",
+      "source": "initialfirstgameprefixonly"
+    },
+    {
+      "record": "experiment_review/proposals/staged_remaining_2x10_20261110_v1.json",
+      "entrypoint": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_remaining_two_v1.py",
+      "source": "unattemptedoriginalgames2/3only"
+    }
+  ],
+  "current_three_game_entrypoint": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_three_staged_v2.py",
+  "current_three_game_config": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/batch.json",
+  "classification_v2_status": "2programchecks only;notphysicallyreexecutedaftercurrentruns",
+  "unchanged_physical_sources": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/config/validated_staged_profile_v1.json",
+  "known_remaining_blocks": [
+    "Firstqueen f7d7 postreleaseemptyexit origin ~.06mm vs.05mmtolerance;0actualexit/home",
+    "Game3blackknightd6f5 finalXY3.043152961mm>3mm;0exit/home"
+  ],
+  "launch_policy": "Future new trials need independent preregistration and experiment_gate;do not direct-launch oldentry or relabel existing failures.",
+  "overall_assessment": "experiment_review/ledger/staged_continuous_3x10_assessment_20261110_v1.json"
+}

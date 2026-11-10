@@ -1,0 +1,440 @@
+{
+  "schema_version": 1,
+  "id": "staged_remaining_2x10_20261110_v1",
+  "title": "分类修正后补跑尚未启动的原第2、第3局各10动作",
+  "tags": [
+    "staged",
+    "continuous",
+    "3x10",
+    "natural_contact"
+  ],
+  "kind": "executed",
+  "configuration": {
+    "completeness": "complete",
+    "factors": {
+      "task": {
+        "description": "Exactly original random2seed202 andrandom3seed303,10frozenactions each;previousfirstgame isNOT rerun. New20planned actions,eachgameactualpersistentworld."
+      },
+      "method": "Reuse reviewed staged session/planner/controller/support with original3x10 batchlibrary;bounded measuredH goal reselect postclose/postlift;native mesh2mmpreland then .5mm supportfeedback;independent emptywithdrawal and actualsafehome.Original Cartesian transfer first;directjointfallback only after rejection,fully sampled. Original bishop1_0/3_0 priority;alloriginalprofiles retained,current-scene fit. No new implementation API calls. Classification-onlysource-bound expectedempty-return RuntimeError adapter;doesnotchangecontroller/geometry/trajectory orfirstgame result.",
+      "backend": "physics_simulation",
+      "layout": {
+        "applicable": true,
+        "board_center_m": [
+          0.24,
+          0
+        ],
+        "board_yaw_deg": 90,
+        "square_m": 0.025223229104719604,
+        "board_top_m": 0.01266,
+        "table_top_m": -0.0024,
+        "hardware_calibrated": false
+      },
+      "inputs": [
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/remaining_two_batch.json",
+          "sha256": "f08ccd99061e753a5ea3d6454742be1ad60085c59a352171a2b99cd0a478c407"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/random2_seed202.json",
+          "sha256": "657d92458e126250d37fb163a38e9527485fdedd8b22775417898f59990415ed"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/random3_seed303.json",
+          "sha256": "61fbd8c0b244cfe91089990af87aa3bc42e071a3a6c72a987c0b8a67d497bc13"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/remaining_program_validation.json",
+          "sha256": "e186e066d3b0bd341952a965f1209eac941e41f9d50b746abf85ceb6f47db80e"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/initial_stop_raw_audit.json",
+          "sha256": "6f567d1d93becda1a4e2dc8fd2de7bb914c8722291eeee3826cfbfd172b748d4"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/exit_classification.contract.json",
+          "sha256": "0a8570c0640baf96b2a9e2dee93419c5906dc79fc2445acabd44d37a49f8b665"
+        }
+      ],
+      "random_seed": 0,
+      "parameters": {
+        "dt_s": 0.004166666666666667,
+        "contactBreakingThreshold": 0.002,
+        "native_target_force_N": 0.25,
+        "torque_cap_Nm": 0.05,
+        "force_friction_motor_recovery": "unchanged original",
+        "max_physical_actions": 20,
+        "max_steps_per_action": 24000,
+        "max_total_physics_steps": 480000,
+        "per_game_deadline_s": 900,
+        "batch_deadline_s": 1800,
+        "per_action_wall_s": 180,
+        "planning_budget": "original60saggregate selection/15scentering/28profiles/4validcenters/64nominalplans;measuredH<=12goals/shared45spercall",
+        "carry_height_options_m": [
+          0.01,
+          0.02,
+          0.03,
+          0.04
+        ],
+        "prelanding_native_mesh_gap_m": [
+          0.001,
+          0.003
+        ],
+        "support_feedback": "max6x.5mm;nativeboardforce>.005N continuous.06sbeforeintentionalopen",
+        "post_release_support_s": 0.6,
+        "final_physical_XY_m": 0.003,
+        "final_piece_tilt_deg": 10,
+        "oldtarget_empty_exit_end_clearance_m": 0.0005,
+        "home_joint_error_max_deg": 2,
+        "projection": false,
+        "fixed_attachment": false,
+        "static_target_board_lower_penetration_m": 0.001,
+        "nearvertical": "same Cartesian source lift/lower;actualXYexcursion diagnostics,notnewtinyabort",
+        "original_game_seeds": [
+          202,
+          303
+        ]
+      },
+      "source_hashes": {
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/run_targeted_batch_v2.py": "941fcee581b4a285d954a8a53c3835155d646d74dd943dd83ddfe7d384deada0",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/targeted_batch_v1.py": "a58d0cfb874916bdc4010caac16b9d4462a497ccb9a66901b491c740414288a2",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/prepared_session_staged_v2.py": "988ccbc484f1fe27d101057ed4948293860ab586a094686ac297136545130064",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/resident_planner_staged_v2.py": "ba2771fdb1a223537d6fa5854a15f428f6cf28980f7a60797fd9142f317308f4",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/sequence_coordinator_staged_v1.py": "b3e54dbbbdce57f572764a7e19ac278937486d740fe16b54ae64e990dcdd4592",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/staged_runner_v2.py": "a4a1dd89a5c2d7cc11f1776fa7634e517632da6644c49636e89a9dd89dba75eb",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/stage_routes_bound_v3.py": "b30fe272062aeff19f28327d1a67fdc20b0622cba321e4499c98f28c5579d6f6",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/transfer_bridge_v2.py": "622dd322198fcddfcd73f4df4ea6755f8f1af2ca73822b695900548106305f4b",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/release_planner_bound_v1.py": "a1109ac22be1b298a79b68abe05f5db5dffb96af347a72a20a77204f0ee8f207",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/query_safety_bound_v1.py": "a7720d826d647bf9f608784fa287f22e1ad211977e6be9921e8c2a346dd58ebc",
+        "calibration/manipulation_20261109_v1/first_contact_root_20261110_v1/work/threshold_factory_v2.py": "489c680f7e7c4796029a8a518de57def96489fe44e93f001990bd15dd1e8c3d4",
+        "calibration/manipulation_20261109_v1/knight_support_20261110_v1/work/support_feedback_v2.py": "aaf015796c37d2bddd73061b1d3909dd799d254364e9c8f12a917b415f134b6f",
+        "experiment_review/tools/recontact_hold_control_v1.py": "1a3ace842971ba2a917b1828173dc05eb88fbb10cd5b69aa604d5a8077d27b99",
+        "reachability_eval/physics_world.py": "33c9534e6768afad7c9e1aa3bec18f4bef33e43db4148d97ecf20a4a76ed95bd",
+        "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_remaining_two_v1.py": "2196c636d321930959ecbe4bc3355effdb03b0dd0a4dbe141a2d8deb641a085c",
+        "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/staged_remaining_batch_v1.py": "5c00778e0ebb508c9269567fe6d89011335e74785e022eb5cdb4660e8b7751e7"
+      }
+    },
+    "unknown_fields": []
+  },
+  "evidence": [
+    {
+      "id": "input0",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/remaining_two_batch.json",
+      "sha256": "f08ccd99061e753a5ea3d6454742be1ad60085c59a352171a2b99cd0a478c407",
+      "selector": ""
+    },
+    {
+      "id": "input1",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/random2_seed202.json",
+      "sha256": "657d92458e126250d37fb163a38e9527485fdedd8b22775417898f59990415ed",
+      "selector": ""
+    },
+    {
+      "id": "input2",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/random3_seed303.json",
+      "sha256": "61fbd8c0b244cfe91089990af87aa3bc42e071a3a6c72a987c0b8a67d497bc13",
+      "selector": ""
+    },
+    {
+      "id": "input3",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/remaining_program_validation.json",
+      "sha256": "e186e066d3b0bd341952a965f1209eac941e41f9d50b746abf85ceb6f47db80e",
+      "selector": ""
+    },
+    {
+      "id": "input4",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/initial_stop_raw_audit.json",
+      "sha256": "6f567d1d93becda1a4e2dc8fd2de7bb914c8722291eeee3826cfbfd172b748d4",
+      "selector": ""
+    },
+    {
+      "id": "input5",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/exit_classification.contract.json",
+      "sha256": "0a8570c0640baf96b2a9e2dee93419c5906dc79fc2445acabd44d37a49f8b665",
+      "selector": ""
+    },
+    {
+      "id": "result",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/result.json",
+      "sha256": "e6f11c1051b7db84005a5f87d39cd9a6fb85618398fd55338274827bbb60473f",
+      "selector": ""
+    },
+    {
+      "id": "raw_audit",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/remaining_raw_audit_progress.json",
+      "sha256": "0e2e807da98f10b112dde1a54f7ecc04a72ae83ff24877909056c26f08f4770f",
+      "selector": ""
+    },
+    {
+      "id": "combined_audit",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/combined_raw_audit_v1.json",
+      "sha256": "ea0d95f7bea588aeab79251a27573c6f3ee88dc1532df3aec59eb79a03abe266",
+      "selector": ""
+    },
+    {
+      "id": "XY_stages",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/knight_final_XY_stage_review.json",
+      "sha256": "9da348936f4fe1742f3258ce83f7d1ea5488712c554b73a6b3c425691b816b76",
+      "selector": ""
+    },
+    {
+      "id": "selected_raw",
+      "path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/selected_raw_frames.json",
+      "sha256": "e7110c8bd43cc1c416adfeccb7fda4145df9a33721ebab1b0f082648c14366d4",
+      "selector": ""
+    },
+    {
+      "id": "timebase",
+      "path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/raw_timebase_QA.json",
+      "sha256": "db5a4425d1978ed9062faf935313abf8d998899e27dee05adb73754fe283bb08",
+      "selector": ""
+    },
+    {
+      "id": "archive",
+      "path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/archive_manifest_v2.json",
+      "sha256": "544462c59969e95d49861721dd6ed57a18f9bc6d4ca2fd4a53dc5db2acd06fe3",
+      "selector": ""
+    },
+    {
+      "id": "api_usage",
+      "path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/api_usage.json",
+      "sha256": "d7fa081eb186235fe487861821c6cf7ed3933c25cecc4821e74e5af13c7ec036",
+      "selector": ""
+    },
+    {
+      "id": "report",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/report/index.html",
+      "sha256": "e52034214271c9cdd982477a65b9b78a2e6fa74c69954542b5363794ec2fe394"
+    },
+    {
+      "id": "process",
+      "path": "experiment_review/runs/staged_remaining_2x10_20261110_v1/process_result.json",
+      "sha256": "bfde24edd7e7e257f261dd2f62d0ec907d382388b4a2bffed142772aa4e57683",
+      "selector": ""
+    }
+  ],
+  "history_review": {
+    "searched": [
+      "experiment_review/README_zh.md",
+      "experiment_review/index_zh.md",
+      "experiment_review/coverage.json",
+      "experiment_review/ledger",
+      "calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/results/three_games_v1",
+      "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/results/targeted_physical_v1"
+    ],
+    "related_ids": [
+      "adaptive_continuous_3x10_20261110_v1",
+      "staged_targeted_physical_20261110_v1",
+      "staged_bishop_grasps_static_20261110_v1",
+      "staged_continuous_3x10_20261110_v1"
+    ],
+    "known": [
+      "Original3games1/10,2/10,4/10;8actualstarts7complete;measuredHfixedgoal,oldtargetclearance andbishopprelandingblocks",
+      "Targeted staged4/4fresh actions37236ticks;10661unsupportedunreleasedsamplescontinuousnativegrip,allactualsupportsettle/home;notfullgames",
+      "Actual prior nextactionf2h4 is blackqueen bQ;prior proseking label correctedwithrawcase,0physics",
+      "Newactualbatch namespace/30accounting/failurecontinuation/tracewriter6programchecks pass0worlds",
+      "Firstlegfirstgamequeenprefix5639ticksstopsafterreleaseandsettle atemptyexitstartquery;no newfirstgame retry",
+      "Remaining2games had0physicalstart;classificationpatch6purechecks preserveunknownprogramfaultstop"
+    ],
+    "unknown": [
+      "Whetherremaining2originalgamesfinish10actions under unchangedstagedphysicalflow"
+    ],
+    "decision": "new",
+    "rationale": "Fulfillalready-authorized3gametestafterprovenclassification-onlybatchhalt;notaphysicalretry,reseed,ornewcontrollertrial.",
+    "changed_conditions": [
+      {
+        "field": "scheduled games",
+        "before": "initial3gamebatchstoppedafterfirstprefix;2gamesunattempted",
+        "after": "exactlyoriginalunattemptedgames2and3only;firstresultimmutable"
+      },
+      {
+        "field": "derived error classification",
+        "before": "knownempty_return_no_plan mapsprogram_error andhaltsall",
+        "after": "source/trace-bound knowncase mapsplanningblock;unknownfaultsstillstopbatch;no physical/tolerance changes"
+      }
+    ],
+    "repeat_of": [],
+    "repeat_purpose": ""
+  },
+  "judgement": {
+    "unit": "2unattemptedoriginalpersistentgames each10actions;20newactionsmaximum",
+    "success": "Bothremaininggames10/10 usingunchangedcurrentphysicalcriteria;overall3gameassessmentretainsfirstgame0/10",
+    "failure": "Firstgeometric/IK preparation orpostgraspplanningblock,observedcollision/drop,support/finalpose failure stopsitsgame;othergamescontinuefor task/planningfailures. Separate blocks fromobservedcollision/drop.",
+    "inconclusive": "Program/interface/evidencefaultstopsbatch;resourcebudget retainscompletedprefix andunattemptedactions. No tasksuccess fromreturncodealone.",
+    "planned_trials": 2,
+    "budget": {
+      "wall_time_seconds": 1800,
+      "max_attempts": 2
+    },
+    "stop_conditions": [
+      "Onlyoriginalgames2/3;no firstgame retry",
+      "20actionsmaximum,480000ticks;900sgame/1800sbatch",
+      "Firsttask/planningfailurestopsitsgame;unknownprogram/evidencefaultstopsbatch"
+    ],
+    "preregistration": "declared_before_execution"
+  },
+  "execution": {
+    "entrypoint": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_remaining_two_v1.py",
+    "args": [
+      "--config",
+      "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/remaining_two_batch.json",
+      "--out",
+      "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1"
+    ],
+    "output_dir": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1"
+  },
+  "observations": [
+    {
+      "category": "measurement",
+      "judgement": "failure",
+      "scope": "Remainingoriginalgames2and3:1/2fullgames,15/20plannedactionscomplete,16positivephysicalstarts,4unattempted",
+      "count": 1,
+      "total": 2,
+      "interpretation": "Game2complete10;game3complete5thenknightfinalXY3.043153mm>3.0;failureprefixnotcomplete. No firstgame rerun.",
+      "evidence_ids": [
+        "result",
+        "raw_audit",
+        "timebase"
+      ],
+      "execution": {
+        "origin": "new_execution",
+        "mechanism": "numeric_ik",
+        "attempted": true,
+        "confirmed": true,
+        "physics_steps": 134024,
+        "simulation_time_s": 558.4333333333333,
+        "policy_invocations": 0
+      }
+    },
+    {
+      "category": "physical_task_success",
+      "judgement": "success",
+      "scope": "15completefreshactions with actualsettle/checkedphysicalhome;notall20planned",
+      "count": 15,
+      "total": 15,
+      "interpretation": "All15original12pieceoccupancies,144supportticksandactualhomepass;14Cartesian,1jointselectedexecutedtransfer.",
+      "evidence_ids": [
+        "raw_audit",
+        "selected_raw",
+        "timebase"
+      ],
+      "execution": {
+        "origin": "new_execution",
+        "mechanism": "numeric_ik",
+        "attempted": true,
+        "confirmed": true,
+        "physics_steps": 126405,
+        "simulation_time_s": 526.6875,
+        "policy_invocations": 0
+      }
+    },
+    {
+      "category": "physical_task_failed",
+      "judgement": "failure",
+      "scope": "Game3ply6 blackknightd6f5,positivephysicalprefix beforefinalpose check",
+      "count": 1,
+      "total": 1,
+      "interpretation": "Realrelease/settle support butfinalXY3.043152961mm>3mm;no retreat/home;notobserveddrop/collision.",
+      "evidence_ids": [
+        "raw_audit",
+        "XY_stages",
+        "selected_raw"
+      ],
+      "execution": {
+        "origin": "new_execution",
+        "mechanism": "numeric_ik",
+        "attempted": true,
+        "confirmed": true,
+        "physics_steps": 7619,
+        "simulation_time_s": 31.745833333333334,
+        "policy_invocations": 0
+      }
+    }
+  ],
+  "design_review": {
+    "reviewer": "GPT",
+    "checked_evidence_ids": [
+      "input0",
+      "input1",
+      "input2",
+      "input3",
+      "input4",
+      "input5"
+    ],
+    "conclusion": "approved",
+    "notes": "SameGPT rawverified knownemptyexit rejection;DS1boundedclassification-onlycall1880tokens reviewed,actual6mockchecks pass. No robotcode,geometry/force/friction/timestep changes;new2gamecountbinding exact. Firstfailedgame neverreplayed."
+  },
+  "review": {
+    "status": "verified",
+    "reviewer": "GPT",
+    "independent": false,
+    "checked_evidence_ids": [
+      "input0",
+      "input1",
+      "input2",
+      "input3",
+      "input4",
+      "input5",
+      "result",
+      "raw_audit",
+      "combined_audit",
+      "XY_stages",
+      "selected_raw",
+      "timebase",
+      "archive",
+      "api_usage",
+      "report",
+      "process"
+    ],
+    "single_reviewer_exception": {
+      "mode": "user_requested_same_session_raw_audit",
+      "user_instruction_quote": "感觉你不要开子agent了",
+      "raw_audit_evidence_id": "raw_audit",
+      "limitation": "当前同一GPT直接复核全部原始逐步轨迹，未启用子代理，非独立审核。"
+    },
+    "claims": [
+      {
+        "text": "原第2局连续10/10完整成功，第3局5/10完整；第6步黑马最终XY3.043153mm超过3mm，保持原判据记失败且未复位。",
+        "scope": "补跑仅原两局，20计划/16实际启动/15完整/4未尝试",
+        "evidence_ids": [
+          "result",
+          "raw_audit",
+          "XY_stages"
+        ]
+      },
+      {
+        "text": "已完成的15步各12子占格、支撑确认、0.6秒落稳及实际受检归位通过；真实场景/棋子ID和世界步数连续。",
+        "scope": "固定两局的实际过程，不推断普适可靠性",
+        "evidence_ids": [
+          "raw_audit",
+          "combined_audit",
+          "timebase"
+        ]
+      },
+      {
+        "text": "白马c7d5实际采用90节点的受检直接关节连接并完成抓放归位；其余14个完整动作采用笛卡尔搬运。",
+        "scope": "成功执行分支来源，非新增OMPL搜索或所有关节连接可靠性证明",
+        "evidence_ids": [
+          "raw_audit",
+          "combined_audit"
+        ]
+      },
+      {
+        "text": "本轮只新增一次1880已知tokens的分类实现调用，旧初批和原始错误记录保留，未重试首局或放宽物理/几何判据。",
+        "scope": "实现与实验计数独立；通用三局v2仅程序检查未额外执行",
+        "evidence_ids": [
+          "api_usage",
+          "report",
+          "combined_audit"
+        ]
+      }
+    ],
+    "limitations": [
+      "当前同一GPT直接复核全部原始逐步轨迹，未启用子代理，非独立审核。",
+      "只有原两局1/2完整，不把15/15已完成动作当作15/20计划全部成功。",
+      "失败马仍在f5格且有棋盘支撑不能抵消3mm判据失败；未执行撤回/复位。",
+      "有旧程序分类中断，整体三局来自两个显式登记执行批次，不是单进程三局全部完成。",
+      "240Hz采样和固定稀疏12子仿真；非硬件或所有布局可靠性。",
+      "新旧实验最终XY门限不同，不能作单因素因果归因。"
+    ]
+  }
+}

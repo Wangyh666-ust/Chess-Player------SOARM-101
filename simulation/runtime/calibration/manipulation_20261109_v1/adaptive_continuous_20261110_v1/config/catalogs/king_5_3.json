@@ -1,0 +1,52 @@
+{
+  "pieces": {
+    "king": {
+      "candidates": [
+        {
+          "id": "king_head_1",
+          "heading_deg": 90,
+          "height_m": 0.03150000125169754,
+          "points_m": [
+            [
+              0.0,
+              -0.003976885,
+              0.031500001
+            ],
+            [
+              0.0,
+              0.003976885,
+              0.031500001
+            ]
+          ],
+          "normals_local": [
+            [
+              0.0,
+              -0.9349798448207888,
+              -0.35470084547248215
+            ],
+            [
+              0.0,
+              0.9349798448207888,
+              -0.35470084547248215
+            ]
+          ],
+          "tool_quat_local": [
+            -0.6792550139994067,
+            0.6867498291582499,
+            -0.18200583245593188,
+            0.1840140621251645
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": 0.01794750041769494,
+          "mesh_normal_vertical_score": 0.7094016909449643,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass",
+          "tilt_candidate_deg": -30
+        }
+      ]
+    }
+  }
+}

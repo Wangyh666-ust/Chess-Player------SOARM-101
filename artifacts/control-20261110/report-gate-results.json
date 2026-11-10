@@ -1,0 +1,20 @@
+{
+  "control_handoff_windows_static_20261110_v1": {
+    "phase": "report",
+    "ok": true,
+    "record_sha256": "cd42bb6ae6cb7bdc79c16b20bcbc39aafb293dcb3cb866fb9fc2056fe6a4b48a",
+    "basis": "Actual experiment_gate report checks returned ok=true in this handoff session"
+  },
+  "control_handoff_windows_static_20261110_v2": {
+    "phase": "report",
+    "ok": true,
+    "record_sha256": "7d3c8c607a4bfab8fa7f6661355d23062382877741b4c533ddafcbc7d8c453d9",
+    "basis": "Actual experiment_gate report checks returned ok=true in this handoff session"
+  },
+  "control_handoff_ubuntu_static_20261110_v1": {
+    "phase": "report",
+    "ok": true,
+    "record_sha256": "64a96737a2744ea063f9b7fab84248bd2314aad05a24e2965a68c7bcc38cc889",
+    "basis": "Actual experiment_gate report checks returned ok=true in this handoff session"
+  }
+}

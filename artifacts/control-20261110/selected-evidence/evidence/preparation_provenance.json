@@ -1,0 +1,56 @@
+{
+  "scope": "Configuration/data preparation and exact-count source-adapter reuse only;zero new implementation API calls",
+  "source_profile": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/config/validated_staged_profile_v1.json",
+  "original_batch": "calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/batch.json",
+  "original_sessions": {
+    "random1_seed101": {
+      "path": "calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/random1_seed101.json",
+      "sha256": "03f28096369de063defb2233cf580c408a46842df2f0c9a8c12adcb04773df57"
+    },
+    "random2_seed202": {
+      "path": "calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/random2_seed202.json",
+      "sha256": "5f5a1645fc7f611777d62519267b7a1d4526bd7e5ea180070bea21f82073787e"
+    },
+    "random3_seed303": {
+      "path": "calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/random3_seed303.json",
+      "sha256": "3268f3639688c6fa24fdf6643d1e09b9aa6090fef46351c83b1194f84785cf26"
+    }
+  },
+  "bishop_order_changes": [
+    {
+      "session": "random1_seed101",
+      "step": "ply03_g7h8",
+      "before_first": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\bishop_0_0.json",
+      "after_first": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\bishop_1_0.json",
+      "same_candidate_set": true
+    },
+    {
+      "session": "random1_seed101",
+      "step": "ply07_h8e5",
+      "before_first": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\bishop_0_0.json",
+      "after_first": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\bishop_1_0.json",
+      "same_candidate_set": true
+    },
+    {
+      "session": "random1_seed101",
+      "step": "ply08_c8b7",
+      "before_first": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\bishop_0_0.json",
+      "after_first": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\bishop_1_0.json",
+      "same_candidate_set": true
+    },
+    {
+      "session": "random3_seed303",
+      "step": "ply05_f3d1",
+      "before_first": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\bishop_0_0.json",
+      "after_first": "D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\adaptive_continuous_20261110_v1\\config\\catalogs\\bishop_1_0.json",
+      "same_candidate_set": true
+    }
+  ],
+  "allowed_changes": [
+    "Use actual staged session/planner/controller bindings from validated4action profile",
+    "Original bishop1_0/3_0 candidate order prioritized;current scene refits and all original candidates retained",
+    "900s pergame/2700s batch;max30actions no retry"
+  ],
+  "no_physics": true,
+  "DeepSeek_calls": 0
+}

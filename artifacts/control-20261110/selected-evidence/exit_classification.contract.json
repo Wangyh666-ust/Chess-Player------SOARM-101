@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "unit_id": "staged_exit_batch_classification_20261110_v1",
+  "unit_scope": "Source/exception-bound expected empty-return planning rejection classification;no physical behavior or retry change",
+  "unit_kind": "patch",
+  "task": {
+    "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/exit_classification.task.txt",
+    "sha256": "5edc87a4eb1adae78f036e10857454adedb0fcb40e95db8e8651a961cb9aff31"
+  },
+  "output_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/exit_classification_patch_v1.py",
+  "max_tokens": 1400,
+  "max_calls": 2,
+  "contracts": [
+    {
+      "source": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/staged_three_batch_v1.py",
+      "sha256": "4b368c80e03e7ad53a934ad1e57e373550f2d479ce0562ad761ee1c3f8c1c84f",
+      "excerpt": "                planning_rejection = None\n                if wrapper_err is None and rec[\"raw_classification\"] == \"program_error\":\n                    for step_record in (raw.get(\"per_step\") or []):\n                        result = step_record.get(\"results\") or {}\n                        reason = result.get(\"reason\") or \"\"\n                        tb = result.get(\"traceback\") or \"\"\n                        expected = reason.startswith((\"RuntimeError: solve_pose fail at phase=\", \"RuntimeError: joint jump \", \"RuntimeError: geo.check failed at phase=\", \"RuntimeError: route: first node jump\", \"RuntimeError: rebuild: open check rejected\"))\n                        if expected and \"tilt_route\" in tb and \"rebuild\" in tb:\n                            planning_rejection = {\"reason\": reason, \"step\": step_record.get(\"id\"), \"positive_steps\": step_record.get(\"physics_steps_delta\")}\n                            break\n                if planning_rejection is not None:\n                    rec[\"classification\"] = \"post_grasp_planning_block\"\n                    rec[\"planning_rejection\"] = planning_rejection\n                elif rec[\"classification\"] == \"program_error\":\n                    fault = \"program_error\"\n",
+      "owner": "staged_three_batch_v1",
+      "symbol": "run_batch classification branch",
+      "signature": "                planning_rejection = None",
+      "return_shape": "Derived rec classification; raw result immutable",
+      "units": [
+        "meters",
+        "seconds",
+        "physics step counts unchanged"
+      ]
+    }
+  ],
+  "fixture": {
+    "inputs": {
+      "runner_result": {
+        "reason": "RuntimeError: empty_return_no_plan:[bounded empty_exit geometry rejected]",
+        "traceback": "Traceback (most recent call last):\n  File \"D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\staged_manipulation_20261110_v1\\work\\staged_runner_v2.py\", line 423, in run\n    exit_plan = plan_exit(self.wq, self.geo, self.kin, snap, qact,\n  File \"C:\\Users\\Admin1\\AppData\\Roaming\\uv\\python\\cpython-3.10-windows-x86_64-none\\lib\\contextlib.py\", line 79, in inner\n    return func(*args, **kwds)\n  File \"D:\\study\\comp4471\\Project\\VLA\\calibration\\manipulation_20261109_v1\\staged_manipulation_20261110_v1\\work\\release_planner_bound_v1.py\", line 176, in plan_exit\n    raise RuntimeError(\"empty_return_no_plan:\" + str(tried))\nRuntimeError: empty_return_no_plan:[{'height_m': 0.02, 'ok': False, 'reason': 'geo.check failed at phase=empty_exit q=[0.08831829913540734, -0.46410928474962243, 0.6401613254263561, 1.3945501617264922, 0.1573162786266646] reason=phase=empty_exit target link=7 d=-0.00006 clearance=1.7529833867838416'}, {'height_m': 0.03, 'ok': False, 'reason': 'geo.check failed at phase=empty_exit q=[0.08831829777519792, -0.4641983725753043, 0.6396994757908795, 1.3951010991841377, 0.15731627726646386] reason=phase=empty_exit target link=7 d=-0.00006 clearance=1.7774853156341026'}, {'height_m': 0.04, 'ok': False, 'reason': 'geo.check failed at phase=empty_exit q=[0.0883182984718906, -0.4641527940939395, 0.6399360701416172, 1.3948189263538349, 0.1573162779631521] reason=phase=empty_exit target link=7 d=-0.00006 clearance=1.7649350478329138'}, {'height_m': 0.015, 'ok': False, 'reason': 'geo.check failed at phase=empty_exit q=[0.08831829777519802, -0.4641983725753065, 0.6396994757908832, 1.3951010991841364, 0.1573162772664639] reason=phase=empty_exit target link=7 d=-0.00006 clearance=1.7774853156337194'}]\n",
+        "release_started": true
+      },
+      "raw_classification": "program_error",
+      "wrapper_error": null
+    },
+    "expected": {
+      "classification": "post_release_planning_block",
+      "continue_other_games": true,
+      "do_not_retry_failed_game": true,
+      "unknown_trace_is_program_fault": true
+    }
+  },
+  "validation": {
+    "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/exit_classification.dispatch_validation.json",
+    "sha256": "b358de9f62d682a1299c3557b3e99206bfeddbf42515511368fcee8ec62cbb4b"
+  },
+  "review": {
+    "reviewer": "GPT",
+    "status": "approved",
+    "reuse_decision": "Reuse existing batch/fixture/trace writer and exact-count source materializer. Tiny classification patch only;first failed scene never retried. Separate remaining-two-game manifest."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "published_control_baseline_20261110",
+  "title": "Published index of the November control baseline; partial evidence archive",
+  "tags": [
+    "handoff",
+    "baseline",
+    "natural_contact"
+  ],
+  "kind": "historical",
+  "configuration": {
+    "completeness": "partial",
+    "factors": {
+      "description": "Original registered 3-game physical assessment: 0/10,10/10,5/10. Published audits and selected raw records, not a new execution.",
+      "original_ids": [
+        "staged_continuous_3x10_20261110_v1",
+        "staged_remaining_2x10_20261110_v1",
+        "staged_continuous_3x10_assessment_20261110_v1"
+      ]
+    },
+    "unknown_fields": [
+      "Full high-frequency source recordings and original local ledger dependency tree are not included in the public subset."
+    ]
+  },
+  "evidence": [
+    {
+      "id": "baseline_audit",
+      "path": "artifacts/control-20261110/combined-raw-audit.json",
+      "sha256": "ea0d95f7bea588aeab79251a27573c6f3ee88dc1532df3aec59eb79a03abe266",
+      "selector": ""
+    }
+  ],
+  "history_review": {
+    "searched": [
+      "artifacts/control-20261110"
+    ],
+    "related_ids": [],
+    "known": [
+      "Original Windows physics evidence is summarized in the linked byte-exact audit."
+    ],
+    "unknown": [
+      "Cross-machine reproducibility; broad layout reliability."
+    ],
+    "decision": "retrospective",
+    "rationale": "Partial public evidence index retaining original experiment identities; not a replacement for full local raw review.",
+    "changed_conditions": [],
+    "repeat_of": [],
+    "repeat_purpose": ""
+  },
+  "judgement": {
+    "unit": "Original 30 planned actions across 3 games",
+    "success": "Complete pickup, transfer, support, release, settle, checked withdrawal and home",
+    "failure": "Collision/drop/task tolerance/planning block prevents complete action; retain stage and classification",
+    "inconclusive": "Missing raw records or program/evidence fault",
+    "planned_trials": null,
+    "budget": {
+      "wall_time_seconds": null,
+      "max_attempts": null
+    },
+    "stop_conditions": [
+      "Historical archive; no execution"
+    ],
+    "preregistration": "retrospective_not_recorded"
+  },
+  "execution": {
+    "entrypoint": null,
+    "args": [],
+    "output_dir": null
+  },
+  "observations": [],
+  "design_review": {
+    "reviewer": "GPT",
+    "checked_evidence_ids": [
+      "baseline_audit"
+    ],
+    "conclusion": "historical_import",
+    "notes": "Public subset index only; original raw review was same GPT independent=false."
+  },
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "independent": false,
+    "checked_evidence_ids": [],
+    "claims": [],
+    "limitations": [
+      "Partial public index only; original registered records and selected snapshots retained separately."
+    ]
+  }
+}

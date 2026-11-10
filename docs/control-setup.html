@@ -1,0 +1,103 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SO-ARM101 — Simulation Setup</title><style>body{margin:0;background:#f6f2ea;color:#141c2c;font:17px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}header,main,footer{max-width:1050px;margin:auto;padding:24px}header{border-bottom:1px solid #d9d2c5}main{padding-top:0}a{color:#096e65}h1{font-size:clamp(1.8rem,5vw,2.7rem);line-height:1.2;margin-top:28px}h2{margin-top:2.4em;border-top:1px solid #d9d2c5;padding-top:22px;line-height:1.35}h3{margin-top:1.8em}table{display:block;overflow-x:auto;border-collapse:collapse;font-size:.9rem;margin:20px 0;background:#fffdf8}td,th{padding:10px 14px;border:1px solid #d9d2c5;text-align:left;vertical-align:top}th{background:#e2f2ef}code{font: .86em ui-monospace,Consolas,monospace;overflow-wrap:anywhere;background:#fffdf8}pre{overflow-x:auto;padding:18px;background:#141c2c;color:#fff;border-radius:8px}pre code{background:none;color:inherit;white-space:pre;overflow-wrap:normal}p,li{max-width:85ch}img{max-width:100%;height:auto}nav{display:flex;gap:20px;flex-wrap:wrap}nav a{font-weight:600}.toc{padding:16px 22px;background:#fffdf8;border:1px solid #d9d2c5;border-radius:8px}.flow{display:flex;gap:12px;flex-wrap:wrap;padding:0;list-style:none;counter-reset:stage}.flow li{flex:1 1 210px;background:#e2f2ef;border:1px solid #83b8b0;border-radius:8px;padding:12px;counter-increment:stage;font-size:15px}.flow li:before{content:counter(stage) '. ';font-weight:700}.note{color:#3c4a63;font-size:14px}footer{border-top:1px solid #d9d2c5}figure{margin:24px 0}figcaption{font-size:14px;color:#3c4a63}@media(max-width:600px){body{font-size:16px}header,main,footer{padding:18px}td,th{padding:8px}table{font-size:13px}}</style></head><body><header><nav><a href="index.html#current-control">Project</a><a href="control-handoff.html">Control handoff</a><a href="control-setup.html">Setup &amp; run</a><a href="assets/control-handoff-20261110.zip">Download handoff ZIP</a><a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/simulation/README.md">Markdown source</a></nav></header><main><h1 id="start-here-simulation-control">Start here: simulation control</h1>
+<div class="toc">
+<ul>
+<li><a href="#start-here-simulation-control">Start here: simulation control</a><ul>
+<li><a href="#1-clone-and-install">1. Clone and install</a></li>
+<li><a href="#2-materialize-a-portable-workspace">2. Materialize a portable workspace</a></li>
+<li><a href="#3-check-imports-and-static-asset-loading">3. Check imports and static asset loading</a></li>
+<li><a href="#4-reproduce-the-three-game-control-baseline">4. Reproduce the three-game control baseline</a></li>
+<li><a href="#5-troubleshooting">5. Troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>This package is for running the virtual arm before working on hardware. Read <a href="control-handoff.html">CONTROL_HANDOFF.md</a> for the workflow, current results, models and parameter limitations.</p>
+<h2 id="1-clone-and-install">1. Clone and install</h2>
+<p>Commands below start at the repository root. Use a new 64-bit Python virtual environment. Python 3.10.20 is the recorded Windows physics baseline. The separate <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/artifacts/control-20261110/PORTABILITY.md">portability record</a> states which Linux setup was actually checked.</p>
+<p>If you downloaded the handoff ZIP, extract it, enter its top-level folder and skip the two Git commands below. The remaining setup commands work from that folder.</p>
+<pre><code class="language-bash">git clone https://github.com/Wangyh666-ust/Chess-Player------SOARM-101.git
+cd Chess-Player------SOARM-101
+</code></pre>
+<p>Ubuntu/Linux:</p>
+<pre><code class="language-bash">python3 -m venv .venv-control
+source .venv-control/bin/activate
+python -m pip install -r simulation/requirements.txt
+mkdir -p runs
+</code></pre>
+<p>If the distribution does not provide <code>venv</code>, install its Python venv package first. If pip must compile PyBullet, install the distribution's C/C++ build tools and Python development headers. A source build can take several minutes. GPU/CUDA and ROS are not required.</p>
+<p>Windows PowerShell, with Python 3.10 available:</p>
+<pre><code class="language-powershell">py -3.10 -m venv .venv-control
+.\.venv-control\Scripts\Activate.ps1
+python -m pip install -r simulation/requirements.txt
+New-Item -ItemType Directory -Force runs | Out-Null
+</code></pre>
+<p>You can invoke <code>.venv-control/Scripts/python.exe</code> explicitly if PowerShell activation is unavailable. Do not copy an existing Windows virtual environment onto Linux.</p>
+<h2 id="2-materialize-a-portable-workspace">2. Materialize a portable workspace</h2>
+<pre><code class="language-bash">python simulation/tools/portable_snapshot.py prepare --bundle simulation --out runs/control-workspace
+</code></pre>
+<p>The destination must be new. This checks all bundle hashes, copies the runtime and expands JSON path tokens to your absolute workspace path. URDF meshes already use relative paths. Keep <code>simulation/runtime</code> and <code>simulation/manifest.json</code> as the immutable export. Edit a separately versioned workspace when developing.</p>
+<p>The result contains <code>materialization.json</code>, dated runtime source directories, current assets and all three ten-action input sessions. The original directory structure is required by source-relative imports.</p>
+<h2 id="3-check-imports-and-static-asset-loading">3. Check imports and static asset loading</h2>
+<pre><code class="language-bash">python simulation/tools/pin_record.py --root . --template simulation/records/environment-smoke.template.json --out runs/environment-smoke.json
+python simulation/runtime/experiment_review/experiment_gate.py --root . --ledger simulation/review/ledger check --record runs/environment-smoke.json --phase start
+python simulation/runtime/experiment_review/experiment_gate.py --root . --ledger simulation/review/ledger run --record runs/environment-smoke.json
+</code></pre>
+<p>Expected: <code>runs/environment-smoke/result.json</code> reports 12 pieces, six geometry types, five arm joint names plus <code>gripper</code>, <code>dt_s=1/240</code>, threshold 0.002, zero attempted <code>stepSimulation</code> calls and zero physics steps. Open <code>runs/environment-smoke/preview.png</code> to inspect the <strong>static</strong> scene. This proves environment/asset loading only.</p>
+<p>The gate's process result deliberately leaves scientific outcome unknown until raw review. Inspect the checker result and image. Do not infer a manipulation pass from <code>ok: true</code> in a process wrapper.</p>
+<h2 id="4-reproduce-the-three-game-control-baseline">4. Reproduce the three-game control baseline</h2>
+<p>The known physical results are <strong>0/10, 10/10, 5/10</strong>. Expect the documented exit/XY blocks to remain until separately corrected; this package does not claim all games pass. The v2 entrypoint has a classification-only fix, not another recorded full-batch physical pass.</p>
+<p>The supplied reproduction template fixes the original scenes, moves, physics and budgets. It pins every declared materialized JSON input and runtime Python file. Review its criteria before launch. If you change a source or configuration, prepare a new reviewed version rather than bypassing a hash mismatch.</p>
+<pre><code class="language-bash">python simulation/tools/pin_record.py --root . --template simulation/records/three-games.template.json --out runs/three-games.json
+python simulation/runtime/experiment_review/experiment_gate.py --root . --ledger simulation/review/ledger check --record runs/three-games.json --phase start
+python simulation/runtime/experiment_review/experiment_gate.py --root . --ledger simulation/review/ledger run --record runs/three-games.json
+</code></pre>
+<p>Allow up to 2,700 seconds for the batch. The scene is headless; detailed files appear under <code>runs/three-games/</code>. Each game retains its physical state between actions. Task failures stop that game; program/evidence faults stop the batch. There are no automatic retries. Keep the output and gate logs even when a task stops early.</p>
+<p>The setup/portability work for this handoff does <strong>not</strong> execute this three-game command. It is provided for the receiving developer's subsequent reproduction.</p>
+<h2 id="5-troubleshooting">5. Troubleshooting</h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@WORKSPACE@</code> in a missing filename</td>
+<td>Materialize first; do not launch runtime templates directly.</td>
+</tr>
+<tr>
+<td>Missing URDF/OBJ or a bundle hash mismatch</td>
+<td>Complete clone/download; inspect <code>simulation/manifest.json</code>. Do not replace current models with the old Dubrovnik set.</td>
+</tr>
+<tr>
+<td>Missing <code>query_world_reuse_v1.py</code></td>
+<td>The pinned v2 adapter dynamically compiles its predecessor. Keep the entire exported source closure.</td>
+</tr>
+<tr>
+<td><code>ModuleNotFoundError</code></td>
+<td>Activate the control environment; install <code>simulation/requirements.txt</code>; keep the original directory layout.</td>
+</tr>
+<tr>
+<td>Output already exists</td>
+<td>Preserve it. Prepare a new versioned record and new output directory.</td>
+</tr>
+<tr>
+<td>Immediate queen <code>empty_return_no_plan</code></td>
+<td>Known post-release planning block; read the empty-exit section of the handoff.</td>
+</tr>
+<tr>
+<td>Knight final XY slightly above 3 mm</td>
+<td>Known task tolerance failure; investigate release/centring and predeclare any tolerance revision.</td>
+</tr>
+<tr>
+<td>Planning timeouts on a slower computer</td>
+<td>Resource block; report actual wall budget separately from physics/task outcome.</td>
+</tr>
+<tr>
+<td>Threshold log shows 0.0002 requested by legacy code</td>
+<td>Check forwarded <strong>requested</strong> value: the wrapper must forward 0.002. Never launch legacy PhysicsWorld alone for a new trial.</td>
+</tr>
+</tbody>
+</table>
+<p>The source tree still imports historical modules; inclusion does not make those older controllers the active default. The three-game entrypoint and actual runner bindings define the active flow.</p></main><footer>10 November 2026 · Simulation control snapshot · Historical results and static checks are reported separately.</footer></body></html>

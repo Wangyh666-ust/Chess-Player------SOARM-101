@@ -1,0 +1,16 @@
+{
+  "category": "program_validation",
+  "passed": 5,
+  "checks": [
+    "nested JSON values, unchanged keys, sibling-prefix boundary, spaces",
+    "source bytes and relative URDF mesh",
+    "invalid paths credentials and missing input rejected",
+    "overwrite and hash mismatch rejected",
+    "Windows separator normalization"
+  ],
+  "failures": [],
+  "code_hashes": {
+    "_model_tools/control_handoff_20261110/portable_snapshot_v2.py": "6e3fc8d22ae2450d909bc8eba1dbe2b5ae6f6723275f9601d8908f539c490ab6"
+  },
+  "scope": "Temporary-file tests; no worlds. Build requires a dedicated output parent outside the source tree and its ancestors. Raw XML wrapper removed before parsing the exact repair applier."
+}

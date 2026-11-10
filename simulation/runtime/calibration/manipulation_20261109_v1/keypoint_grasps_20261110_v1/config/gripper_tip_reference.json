@@ -1,0 +1,53 @@
+{
+  "q5": [
+    -0.03984112255353058,
+    0.21418400869380014,
+    0.03160067589029856,
+    1.3250200698016372,
+    -0.0021412005986559614
+  ],
+  "g": -0.0008912691706566588,
+  "contacts": [
+    {
+      "link": "fixed_jaw_collision",
+      "point_on_robot_world_m": [
+        0.24570974950731797,
+        0.008448843363369362,
+        0.029148808049045502
+      ],
+      "weight_N": 1.0,
+      "weight_note": "uniform averaging weight only, not contact force telemetry",
+      "is_measured_contact": false
+    },
+    {
+      "link": "moving_jaw_so101_v1_link",
+      "point_on_robot_world_m": [
+        0.25915800177509196,
+        0.008254063686534058,
+        0.028237719777022025
+      ],
+      "weight_N": 1.0,
+      "weight_note": "uniform averaging weight only, not contact force telemetry",
+      "is_measured_contact": false
+    }
+  ],
+  "source": {
+    "path": "calibration/manipulation_20261109_v1/rook_e4e5_v5/results/trial_on_demand/trace.jsonl.gz",
+    "sha256": "63f28d5fdbb94dcda81ee999df8ffce243e63788197c2a91b94bd5f6648f1973",
+    "step": 5843,
+    "time": 6.086458333333333
+  },
+  "scope": "CAD-defined inner distal jaw patches,2mm from physical tip; includes assumed1mm native child envelope; q/g only establishes link frames; not measured new grip or hardware calibration",
+  "reference_points_link_m": {
+    "fixed_jaw_collision": [
+      -0.0067599999494850635,
+      3.499991726130247e-05,
+      -0.10261799800395965
+    ],
+    "moving_jaw_so101_v1_link": [
+      -0.013439000420272351,
+      -0.08014099705219269,
+      0.018812499940395355
+    ]
+  }
+}

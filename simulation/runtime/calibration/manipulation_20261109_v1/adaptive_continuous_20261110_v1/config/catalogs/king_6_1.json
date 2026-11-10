@@ -1,0 +1,52 @@
+{
+  "pieces": {
+    "king": {
+      "candidates": [
+        {
+          "id": "king_upper_head_90",
+          "heading_deg": 90,
+          "height_m": 0.0358,
+          "points_m": [
+            [
+              -1.1966618641632453e-18,
+              -0.00651432357649838,
+              0.0358
+            ],
+            [
+              3.9888728805441507e-19,
+              0.00651432357649838,
+              0.0358
+            ]
+          ],
+          "normals_local": [
+            [
+              1.4563093568377412e-05,
+              -0.877058151677523,
+              -0.4803842195200875
+            ],
+            [
+              -1.4563093568377412e-05,
+              0.877058151677523,
+              -0.4803842195200875
+            ]
+          ],
+          "tool_quat_local": [
+            -0.6792550139994066,
+            0.6867498291582498,
+            0.182005832455932,
+            -0.18401406212516452
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": 0.01794750041769494,
+          "mesh_normal_vertical_score": 0.7094016909449643,
+          "source": "additional wide upper-head mesh section after explicit static early-contact rejection; not physical success",
+          "status": "geometric_candidate_not_physical_pass",
+          "tilt_candidate_deg": 30
+        }
+      ]
+    }
+  }
+}

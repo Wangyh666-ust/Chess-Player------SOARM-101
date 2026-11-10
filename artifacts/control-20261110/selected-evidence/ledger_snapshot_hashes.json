@@ -1,0 +1,17 @@
+[
+  {
+    "original": "experiment_review/ledger/staged_continuous_3x10_20261110_v1.json",
+    "snapshot": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/ledger_snapshots/staged_continuous_3x10_20261110_v1.json",
+    "sha256": "16ba898c3b67bfc4a226655da2ee4a0284e662435d3a6efb14a986e095896cc0"
+  },
+  {
+    "original": "experiment_review/ledger/staged_remaining_2x10_20261110_v1.json",
+    "snapshot": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/ledger_snapshots/staged_remaining_2x10_20261110_v1.json",
+    "sha256": "5af69927683dd04b4b06ff32dca25de7d1bb1a0605a65d35c3ee8bef4dd12e36"
+  },
+  {
+    "original": "experiment_review/ledger/staged_continuous_3x10_assessment_20261110_v1.json",
+    "snapshot": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/ledger_snapshots/staged_continuous_3x10_assessment_20261110_v1.json",
+    "sha256": "2aed42d918cf5c991033c8fa63cff2de909b6d88556a1292ec46d44f668a828e"
+  }
+]

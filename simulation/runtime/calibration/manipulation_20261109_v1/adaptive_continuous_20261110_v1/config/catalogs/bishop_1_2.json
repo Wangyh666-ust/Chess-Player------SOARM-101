@@ -1,0 +1,52 @@
+{
+  "pieces": {
+    "bishop": {
+      "candidates": [
+        {
+          "id": "bishop_head_2",
+          "heading_deg": 0,
+          "height_m": 0.027200001291930676,
+          "points_m": [
+            [
+              -0.003403383,
+              0.0,
+              0.027200001
+            ],
+            [
+              0.003403383,
+              0.0,
+              0.027200001
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.8406673157081207,
+              0.0,
+              0.5415519036067578
+            ],
+            [
+              0.8406673157081207,
+              0.0,
+              0.5415519036067578
+            ]
+          ],
+          "tool_quat_local": [
+            0.0054396469901625884,
+            0.9914299387173844,
+            -0.1305242276150624,
+            0.0007161431122486655
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.028140100142780324,
+          "mesh_normal_vertical_score": 1.0831038072135155,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass",
+          "tilt_candidate_deg": -15
+        }
+      ]
+    }
+  }
+}

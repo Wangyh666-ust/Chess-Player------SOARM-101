@@ -1,0 +1,27 @@
+{
+  "info": [
+    {
+      "constructor_completed": true,
+      "forwarded_updates": [
+        {
+          "original": 0.0002,
+          "physicsClientId": 0,
+          "requested": 0.002
+        },
+        {
+          "original": 0.0002,
+          "physicsClientId": 1,
+          "requested": 0.002
+        },
+        {
+          "original": 0.0002,
+          "physicsClientId": 2,
+          "requested": 0.002
+        }
+      ],
+      "threshold": 0.002
+    }
+  ],
+  "scope": "whole_three_game_batch",
+  "threshold": 0.002
+}

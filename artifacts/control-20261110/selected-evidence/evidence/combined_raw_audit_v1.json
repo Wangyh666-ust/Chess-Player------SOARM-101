@@ -1,0 +1,523 @@
+{
+  "reviewer": "GPT",
+  "independent": false,
+  "aggregation_provenance": "Initialregistered3gamebatch stoppedaftergame1 prefix dueclassificationomission;separatelyregisteredremaining2gamebatch onlygames2/3. No firstgame replay,no physicalretry,no tolerance/control edits.",
+  "games": [
+    {
+      "id": "random1_seed101",
+      "seed": 101,
+      "planned_actions": 10,
+      "completed_actions": 0,
+      "physical_attempts": 1,
+      "runner_attempts": 1,
+      "unattempted_actions": 9,
+      "actual_persisted": true,
+      "continuity": [],
+      "total_physics_steps": 5639,
+      "simulation_time_s": 23.495833333333334,
+      "process_session_wall_s": 36.49163460731506,
+      "runtime_classification": "program_error",
+      "reviewed_classification": "post_release_planning_block",
+      "full_game_success": false,
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/three_games_v1/random1_seed101/result.json",
+      "result_sha256": "44a7799401c9d3a0925df545bd8a646705457e23505470904c69259501d5001c",
+      "stopping_action": "ply01_f7d7",
+      "stopping_reason": "RuntimeError: empty_return_no_plan:[{'height_m': 0.02, 'ok': False, 'reason': 'geo.check failed at phase=empty_exit q=[0.08831829913540734, -0.46410928474962243, 0.6401613254263561, 1.3945501617264922, 0.1573162786266646] reason=phase=empty_exit target link=7 d=-0.00006 clearance=1.7529833867838416'}, {'height_m': 0.03, 'ok': False, 'reason': 'geo.check failed at phase=empty_exit q=[0.08831829777519792, -0.4641983725753043, 0.6396994757908795, 1.3951010991841377, 0.15731627726646386] reason=phase=empty_exit target link=7 d=-0.00006 clearance=1.7774853156341026'}, {'height_m': 0.04, 'ok': False, 'reason': 'geo.check failed at phase=empty_exit q=[0.0883182984718906, -0.4641527940939395, 0.6399360701416172, 1.3948189263538349, 0.1573162779631521] reason=phase=empty_exit target link=7 d=-0.00006 clearance=1.7649350478329138'}, {'height_m': 0.015, 'ok': False, 'reason': 'geo.check failed at phase=empty_exit q=[0.08831829777519802, -0.4641983725753065, 0.6396994757908832, 1.3951010991841364, 0.1573162772664639] reason=phase=empty_exit target link=7 d=-0.00006 clearance=1.7774853156337194'}]",
+      "stop_stage": "Afterintentionalrelease+144supportedsettleticks,beforeemptywithdrawal;querypredicts~.06mmfixedfingerpenetration vs.05mmtolerance;no actualretreat/home"
+    },
+    {
+      "id": "random2_seed202",
+      "seed": 202,
+      "planned_actions": 10,
+      "completed_actions": 10,
+      "physical_attempts": 10,
+      "runner_attempts": 10,
+      "unattempted_actions": 0,
+      "actual_persisted": true,
+      "continuity": [
+        {
+          "from": "ply01_g2f2",
+          "to": "ply02_f5f7",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        },
+        {
+          "from": "ply02_f5f7",
+          "to": "ply03_f2h4",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        },
+        {
+          "from": "ply03_f2h4",
+          "to": "ply04_d7c7",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        },
+        {
+          "from": "ply04_d7c7",
+          "to": "ply05_e4e5",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        },
+        {
+          "from": "ply05_e4e5",
+          "to": "ply06_d1g1",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        },
+        {
+          "from": "ply06_d1g1",
+          "to": "ply07_b6c6",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        },
+        {
+          "from": "ply07_b6c6",
+          "to": "ply08_c7b7",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        },
+        {
+          "from": "ply08_c7b7",
+          "to": "ply09_h4f6",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        },
+        {
+          "from": "ply09_h4f6",
+          "to": "ply10_g1g3",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        }
+      ],
+      "total_physics_steps": 80283,
+      "simulation_time_s": 334.5125,
+      "process_session_wall_s": 290.66732358932495,
+      "runtime_classification": "physical_task_success",
+      "reviewed_classification": "physical_task_success",
+      "full_game_success": true,
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/result.json",
+      "result_sha256": "d5066800ea1bec7a08b0385bc6bda730113facbd31af65d7d258a5dadda217d2",
+      "stopping_action": null,
+      "stopping_reason": null
+    },
+    {
+      "id": "random3_seed303",
+      "seed": 303,
+      "planned_actions": 10,
+      "completed_actions": 5,
+      "physical_attempts": 6,
+      "runner_attempts": 6,
+      "unattempted_actions": 4,
+      "actual_persisted": true,
+      "continuity": [
+        {
+          "from": "ply01_d3c2",
+          "to": "ply02_b5d6",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        },
+        {
+          "from": "ply02_b5d6",
+          "to": "ply03_c7d5",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        },
+        {
+          "from": "ply03_c7d5",
+          "to": "ply04_f7d7",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        },
+        {
+          "from": "ply04_f7d7",
+          "to": "ply05_f3d1",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        },
+        {
+          "from": "ply05_f3d1",
+          "to": "ply06_d6f5",
+          "same_client": true,
+          "same_bodies": true,
+          "world_step_contiguous": true
+        }
+      ],
+      "total_physics_steps": 53741,
+      "simulation_time_s": 223.92083333333332,
+      "process_session_wall_s": 219.56766819953918,
+      "runtime_classification": "physical_task_failed",
+      "reviewed_classification": "physical_task_failed",
+      "full_game_success": false,
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/result.json",
+      "result_sha256": "c85179dea7fa3c0b49aeda75a5c545354c510fe216d364d442ef2708872a0864",
+      "stopping_action": "ply06_d6f5",
+      "stopping_reason": "final_check xy=0.0030 tilt=0.0003 bf=0.0294",
+      "stop_stage": "Afterrelease+144supportedsettleticks;finalXY3.043152961mm>3mm;noemptywithdrawal/home",
+      "final_XY_failed_mm": 3.0431529611345653
+    }
+  ],
+  "totals": {
+    "planned_games": 3,
+    "full_games": 1,
+    "planned_actions": 30,
+    "completed_actions": 15,
+    "physical_attempts": 17,
+    "unattempted_actions": 13,
+    "physics_steps": 139663,
+    "simulation_time_s": 581.9291666666667,
+    "both_process_wall_s": 548.6240000000107,
+    "unsupported_unreleased_samples_after_3mm": 38529,
+    "native_zero_or_nearzero_samples": 0,
+    "min_native_bilateral_N": 0.24066315359429516,
+    "max_final_XY_complete_mm": 1.576996061751222,
+    "max_final_XY_including_failed_mm": 3.0431529611345653,
+    "new_implementation_API_calls": 1,
+    "new_known_API_tokens": 1880,
+    "GPT_usage": "unknown"
+  },
+  "selected_executed_transfer_methods_complete": {
+    "cartesian": 14,
+    "joint": 1
+  },
+  "threshold_forwarding": [
+    {
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/three_games_v1/threshold_forwarding.json",
+      "sha256": "a8c247867aa086c6bca98a5be45312865fc230dd033098e85e3cc1e2fc593957",
+      "update_count": 3,
+      "all_.002": true
+    },
+    {
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/threshold_forwarding.json",
+      "sha256": "88dcd09ca96b28dc7afbc9b8ae2443c0cb572f33d56089a957b7f5febf724363",
+      "update_count": 20,
+      "all_.002": true
+    }
+  ],
+  "no_observed_drop_or_unintended_contact": true,
+  "completed_actions_support_and_home_verified": true,
+  "failed_actions_not_counted_complete": true,
+  "evidence_paths": {
+    "first_stop_raw_audit": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/initial_stop_raw_audit.json",
+    "remaining_raw_audit": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/remaining_raw_audit_progress.json"
+  },
+  "limitations": [
+    "One original3scene batch assessedvia2registeredexecutionlegs;notasingleuninterrupted3gameprocess",
+    "Only1/3fullgames and15/30completeactions;2incompletepositivephysics prefixes retained",
+    "Current3mm physicalcriterion differsoldadaptive5mm;do notclaimpurecausalperformance improvement",
+    "SameGPT rawreview,no independentagent orhardware proof"
+  ],
+  "motion_diagnostics": {
+    "per_action": [
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/three_games_v1/random1_seed101/step01_ply01_f7d7/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.0008351299923182758,
+            "piece_xy_excursion_mm": 0.6615543631675547,
+            "piece_dz_mm": 9.992364302548047
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09457110714617036,
+            "piece_xy_excursion_mm": 1.0154006025077276,
+            "piece_dz_mm": -11.96601139960914
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step01_ply01_g2f2/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.39012282304458223,
+            "piece_xy_excursion_mm": 0.35211792334934366,
+            "piece_dz_mm": 9.7234541493205
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09312038353387925,
+            "piece_xy_excursion_mm": 0.11084907618901053,
+            "piece_dz_mm": -11.970420123482883
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step02_ply02_f5f7/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.0015335215318178009,
+            "piece_xy_excursion_mm": 1.1240767580351985,
+            "piece_dz_mm": 10.01453278106166
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09416045764663451,
+            "piece_xy_excursion_mm": 1.2186604427342203,
+            "piece_dz_mm": -11.471453700662074
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step03_ply03_f2h4/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.3875716157585238,
+            "piece_xy_excursion_mm": 0.3214388648392248,
+            "piece_dz_mm": 9.68853164885756
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09402966419019165,
+            "piece_xy_excursion_mm": 1.1980677336240342,
+            "piece_dz_mm": -11.9343595104413
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step04_ply04_d7c7/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.0009425909290353537,
+            "piece_xy_excursion_mm": 0.229918174067837,
+            "piece_dz_mm": 10.000982610500198
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09450320658416668,
+            "piece_xy_excursion_mm": 0.8528522734683118,
+            "piece_dz_mm": -11.951345761344797
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step05_ply05_e4e5/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.000850745712619786,
+            "piece_xy_excursion_mm": 0.20805693066539133,
+            "piece_dz_mm": 10.000057961522392
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09638478857953565,
+            "piece_xy_excursion_mm": 0.269223366974185,
+            "piece_dz_mm": -11.954347660698298
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step06_ply06_d1g1/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.003937476768841411,
+            "piece_xy_excursion_mm": 0.08036099481505674,
+            "piece_dz_mm": 10.006325926574373
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09493396010314654,
+            "piece_xy_excursion_mm": 0.9266220662026262,
+            "piece_dz_mm": -11.870937788687774
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step07_ply07_b6c6/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.0007692521511995975,
+            "piece_xy_excursion_mm": 1.13455885520827,
+            "piece_dz_mm": 10.007737013185315
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09581843450919181,
+            "piece_xy_excursion_mm": 0.8895194327756418,
+            "piece_dz_mm": -11.94944024402569
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step08_ply08_c7b7/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.0009426162338912483,
+            "piece_xy_excursion_mm": 0.2981616494132155,
+            "piece_dz_mm": 10.001488241397398
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09316211817778308,
+            "piece_xy_excursion_mm": 1.3714170910637848,
+            "piece_dz_mm": -11.856466633278213
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step09_ply09_h4f6/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.0658757972461722,
+            "piece_xy_excursion_mm": 0.18536997573652306,
+            "piece_dz_mm": 9.954785234238772
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09421753419355644,
+            "piece_xy_excursion_mm": 0.37056750889580464,
+            "piece_dz_mm": -11.995529808424994
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step10_ply10_g1g3/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.0026256109245079047,
+            "piece_xy_excursion_mm": 0.11094826814701461,
+            "piece_dz_mm": 9.99914968537339
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09638469448648537,
+            "piece_xy_excursion_mm": 0.797429978567124,
+            "piece_dz_mm": -12.04041181478275
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step01_ply01_d3c2/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.39053716336174105,
+            "piece_xy_excursion_mm": 1.2920198376429861,
+            "piece_dz_mm": 9.784961922993078
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.34042691422913207,
+            "piece_xy_excursion_mm": 0.2273964812043436,
+            "piece_dz_mm": -11.868024650169922
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step02_ply02_b5d6/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.0006880400407680985,
+            "piece_xy_excursion_mm": 0.7813074381278544,
+            "piece_dz_mm": 9.926330812720321
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09493974477731582,
+            "piece_xy_excursion_mm": 0.25976275327774373,
+            "piece_dz_mm": -11.772292831531535
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step03_ply03_c7d5/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.0009224965182389527,
+            "piece_xy_excursion_mm": 0.8277535568288867,
+            "piece_dz_mm": 19.916004941623697
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.11200440107043803,
+            "piece_xy_excursion_mm": 0.48311811342260297,
+            "piece_dz_mm": -21.749138353648704
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step04_ply04_f7d7/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.0013037930628713229,
+            "piece_xy_excursion_mm": 1.340969081711892,
+            "piece_dz_mm": 9.991933196347311
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.0516196573518247,
+            "piece_xy_excursion_mm": 1.5783824158285444,
+            "piece_dz_mm": -11.853755758848118
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step05_ply05_f3d1/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.0013592983992410824,
+            "piece_xy_excursion_mm": 0.03847098733557467,
+            "piece_dz_mm": 10.000563427117926
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09538533974708914,
+            "piece_xy_excursion_mm": 0.7194908851470982,
+            "piece_dz_mm": -11.56773136215995
+          }
+        }
+      },
+      {
+        "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step06_ply06_d6f5/trial/result.json",
+        "motion": {
+          "lift": {
+            "tcp_xy_excursion_mm": 0.0011338660151462953,
+            "piece_xy_excursion_mm": 1.7262433980338925,
+            "piece_dz_mm": 30.30685616788759
+          },
+          "lower": {
+            "tcp_xy_excursion_mm": 0.09563000726630426,
+            "piece_xy_excursion_mm": 0.6671827821828742,
+            "piece_dz_mm": -32.02254452692628
+          }
+        }
+      }
+    ],
+    "max_tcp_pickup_xy_mm": 0.39053716336174105,
+    "max_tcp_lower_xy_mm": 0.34042691422913207,
+    "scope": "ActualCartesianpickup/lower diagnostic;no smallslip/tilt abort added."
+  },
+  "failed_prefix_transfer_methods": [
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/three_games_v1/random1_seed101/step01_ply01_f7d7/trial/result.json",
+      "last_transfer_method": "cartesian",
+      "final_phases": {
+        "reposition": 2120,
+        "home": 96,
+        "descend": 292,
+        "source": 48,
+        "close": 461,
+        "hold": 72,
+        "lift": 292,
+        "transfer": 1226,
+        "lower": 540,
+        "support": 159,
+        "open": 189,
+        "settle_board": 144
+      }
+    },
+    {
+      "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step06_ply06_d6f5/trial/result.json",
+      "last_transfer_method": "cartesian",
+      "final_phases": {
+        "reposition": 2348,
+        "home": 96,
+        "descend": 799,
+        "source": 48,
+        "close": 460,
+        "hold": 72,
+        "lift": 770,
+        "transfer": 1394,
+        "lower": 1104,
+        "support": 195,
+        "open": 189,
+        "settle_board": 144
+      }
+    }
+  ]
+}

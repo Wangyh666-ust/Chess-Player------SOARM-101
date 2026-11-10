@@ -1,0 +1,14 @@
+{
+  "category": "program_validation",
+  "passed": 3,
+  "failures": [],
+  "code_hashes": {
+    "_model_tools/control_handoff_20261110/check_environment_v2.py": "5fc8060e1636d86faeaa4d0b42523492a8df862fe9a882ce239f1703fc8609d2"
+  },
+  "checks": [
+    "actual checker main with real threshold_factory and mocked twelve-body world; correct paths/joint IDs",
+    "close failure restores native step and threshold APIs",
+    "constructor failure restores native APIs"
+  ],
+  "scope": "Program integration mocks; zero worlds/physics"
+}

@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "id": "staged_continuous_3x10_20261110_v1",
+  "title": "分段抓放修正后的原始三局各10动作连续复测",
+  "tags": [
+    "staged",
+    "continuous",
+    "3x10",
+    "natural_contact"
+  ],
+  "kind": "executed",
+  "configuration": {
+    "completeness": "complete",
+    "factors": {
+      "task": {
+        "description": "Exactly original random1seed101/random2seed202/random3seed303 sparse12piece scenes;identical original10noncapture moves,piecekeys/types/FEN pergame. Each actual scene persists acrossits10actions;fresh grasp,current measuredH,support/open/settle/withdraw/home. No archived heldstate or peraction world reset.3games30plannedactions."
+      },
+      "method": "Reuse reviewed staged session/planner/controller/support with original3x10 batchlibrary;bounded measuredH goal reselect postclose/postlift;native mesh2mmpreland then .5mm supportfeedback;independent emptywithdrawal and actualsafehome.Original Cartesian transfer first;directjointfallback only after rejection,fully sampled. Original bishop1_0/3_0 priority;alloriginalprofiles retained,current-scene fit. No new implementation API calls.",
+      "backend": "physics_simulation",
+      "layout": {
+        "applicable": true,
+        "board_center_m": [
+          0.24,
+          0
+        ],
+        "board_yaw_deg": 90,
+        "square_m": 0.025223229104719604,
+        "board_top_m": 0.01266,
+        "table_top_m": -0.0024,
+        "hardware_calibrated": false
+      },
+      "inputs": [
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/batch.json",
+          "sha256": "3ce0df1d9d2a8538ce3ad247aeeefcc18912bec6fe927769fa9787a67e7edef1"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/preparation_provenance.json",
+          "sha256": "05599c0683e2205cb7f8d30a4ad4d97bc9155b0b760a2efd5349e0145ad9efd5"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/prior_label_correction.json",
+          "sha256": "f4f7f402cdc43f484a6037fe1b95128509ca82cd43c693c03909af54cbf744b3"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/program_validation.json",
+          "sha256": "51ec3fe1d8987f9f69190afa2b519042be2811892e98b52cf7482ebc3cab02c9"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/config/validated_staged_profile_v1.json",
+          "sha256": "dafc27da6388b0222bd403805595b4cd89736722a45b99c78393deeb5fd1f178"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/random1_seed101.json",
+          "sha256": "550bcef78eab6d8f0052bae01a6a2cf299d7066b72f3c8fe3f4986dfeeebc5d4"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/random2_seed202.json",
+          "sha256": "657d92458e126250d37fb163a38e9527485fdedd8b22775417898f59990415ed"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/random3_seed303.json",
+          "sha256": "61fbd8c0b244cfe91089990af87aa3bc42e071a3a6c72a987c0b8a67d497bc13"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/keypoint_grasps_20261110_v1/config/rook_e4_e5/query.json",
+          "sha256": "c0bba27243173c917da2a70e0a5030f3f2b19861d18771570ee146277ff50fbf"
+        },
+        {
+          "path": "calibration/manipulation_20261109_v1/smoke_grasps_20261110_v1/results/rook_e4_e5/plan/result.json",
+          "sha256": "eb80fb44162eda5262b8b82e1b111a38ce536406e81f76a4e312d911948e016c"
+        }
+      ],
+      "random_seed": 0,
+      "parameters": {
+        "dt_s": 0.004166666666666667,
+        "contactBreakingThreshold": 0.002,
+        "native_target_force_N": 0.25,
+        "torque_cap_Nm": 0.05,
+        "force_friction_motor_recovery": "unchanged original",
+        "max_physical_actions": 30,
+        "max_steps_per_action": 24000,
+        "max_total_physics_steps": 720000,
+        "per_game_deadline_s": 900,
+        "batch_deadline_s": 2700,
+        "per_action_wall_s": 180,
+        "planning_budget": "original60saggregate selection/15scentering/28profiles/4validcenters/64nominalplans;measuredH<=12goals/shared45spercall",
+        "carry_height_options_m": [
+          0.01,
+          0.02,
+          0.03,
+          0.04
+        ],
+        "prelanding_native_mesh_gap_m": [
+          0.001,
+          0.003
+        ],
+        "support_feedback": "max6x.5mm;nativeboardforce>.005N continuous.06sbeforeintentionalopen",
+        "post_release_support_s": 0.6,
+        "final_physical_XY_m": 0.003,
+        "final_piece_tilt_deg": 10,
+        "oldtarget_empty_exit_end_clearance_m": 0.0005,
+        "home_joint_error_max_deg": 2,
+        "projection": false,
+        "fixed_attachment": false,
+        "static_target_board_lower_penetration_m": 0.001,
+        "nearvertical": "same Cartesian source lift/lower;actualXYexcursion diagnostics,notnewtinyabort",
+        "original_game_seeds": [
+          101,
+          202,
+          303
+        ]
+      },
+      "source_hashes": {
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/run_targeted_batch_v2.py": "941fcee581b4a285d954a8a53c3835155d646d74dd943dd83ddfe7d384deada0",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/targeted_batch_v1.py": "a58d0cfb874916bdc4010caac16b9d4462a497ccb9a66901b491c740414288a2",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/prepared_session_staged_v2.py": "988ccbc484f1fe27d101057ed4948293860ab586a094686ac297136545130064",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/resident_planner_staged_v2.py": "ba2771fdb1a223537d6fa5854a15f428f6cf28980f7a60797fd9142f317308f4",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/sequence_coordinator_staged_v1.py": "b3e54dbbbdce57f572764a7e19ac278937486d740fe16b54ae64e990dcdd4592",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/staged_runner_v2.py": "a4a1dd89a5c2d7cc11f1776fa7634e517632da6644c49636e89a9dd89dba75eb",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/stage_routes_bound_v3.py": "b30fe272062aeff19f28327d1a67fdc20b0622cba321e4499c98f28c5579d6f6",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/transfer_bridge_v2.py": "622dd322198fcddfcd73f4df4ea6755f8f1af2ca73822b695900548106305f4b",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/release_planner_bound_v1.py": "a1109ac22be1b298a79b68abe05f5db5dffb96af347a72a20a77204f0ee8f207",
+        "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/query_safety_bound_v1.py": "a7720d826d647bf9f608784fa287f22e1ad211977e6be9921e8c2a346dd58ebc",
+        "calibration/manipulation_20261109_v1/first_contact_root_20261110_v1/work/threshold_factory_v2.py": "489c680f7e7c4796029a8a518de57def96489fe44e93f001990bd15dd1e8c3d4",
+        "calibration/manipulation_20261109_v1/knight_support_20261110_v1/work/support_feedback_v2.py": "aaf015796c37d2bddd73061b1d3909dd799d254364e9c8f12a917b415f134b6f",
+        "experiment_review/tools/recontact_hold_control_v1.py": "1a3ace842971ba2a917b1828173dc05eb88fbb10cd5b69aa604d5a8077d27b99",
+        "reachability_eval/physics_world.py": "33c9534e6768afad7c9e1aa3bec18f4bef33e43db4148d97ecf20a4a76ed95bd",
+        "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_three_staged_v1.py": "d5b5b0e6c83907f0a5bb96e76e347ea72c18f99463b73d805ff5c850cc656a23",
+        "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/staged_three_batch_v1.py": "4b368c80e03e7ad53a934ad1e57e373550f2d479ce0562ad761ee1c3f8c1c84f"
+      }
+    },
+    "unknown_fields": []
+  },
+  "evidence": [
+    {
+      "id": "program",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/program_validation.json",
+      "sha256": "51ec3fe1d8987f9f69190afa2b519042be2811892e98b52cf7482ebc3cab02c9",
+      "selector": ""
+    },
+    {
+      "id": "configuration",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/batch.json",
+      "sha256": "3ce0df1d9d2a8538ce3ad247aeeefcc18912bec6fe927769fa9787a67e7edef1",
+      "selector": ""
+    },
+    {
+      "id": "preparation",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/preparation_provenance.json",
+      "sha256": "05599c0683e2205cb7f8d30a4ad4d97bc9155b0b760a2efd5349e0145ad9efd5",
+      "selector": ""
+    },
+    {
+      "id": "label_correction",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/prior_label_correction.json",
+      "sha256": "f4f7f402cdc43f484a6037fe1b95128509ca82cd43c693c03909af54cbf744b3",
+      "selector": ""
+    },
+    {
+      "id": "prior_raw",
+      "path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/physical_raw_audit_v1.json",
+      "sha256": "e14f13d9ae3bdb958546a40afcf84bb51d6dd8495fc0a0ad3c2e89373b06b235",
+      "selector": ""
+    },
+    {
+      "id": "prior_three_raw",
+      "path": "calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/results/three_games_v1/result.json",
+      "sha256": "2e46a281656c515feae2d41a6007f3a5ad13445107afeb4c3af93b33e78aa7a9",
+      "selector": ""
+    },
+    {
+      "id": "result",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/three_games_v1/result.json",
+      "sha256": "92263f7cb8408666ffb20db7a02efe194e416eb6ca5da20c3f9a28787dd31a35",
+      "selector": ""
+    },
+    {
+      "id": "raw_audit",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/initial_stop_raw_audit.json",
+      "sha256": "6f567d1d93becda1a4e2dc8fd2de7bb914c8722291eeee3826cfbfd172b748d4",
+      "selector": ""
+    },
+    {
+      "id": "action_result",
+      "path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/three_games_v1/random1_seed101/step01_ply01_f7d7/trial/result.json",
+      "sha256": "0f08b1d18a91632a01a5ee40794bd0d8524aa3b404ece64b014ee6ecc7148a27",
+      "selector": ""
+    },
+    {
+      "id": "process",
+      "path": "experiment_review/runs/staged_continuous_3x10_20261110_v1/process_result.json",
+      "sha256": "9dc825ac8b9a4a41aa304b2c83f1b7de7cd9e8b0222b04b797686f45ef1554c3",
+      "selector": ""
+    }
+  ],
+  "history_review": {
+    "searched": [
+      "experiment_review/README_zh.md",
+      "experiment_review/index_zh.md",
+      "experiment_review/coverage.json",
+      "experiment_review/ledger",
+      "calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/results/three_games_v1",
+      "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/results/targeted_physical_v1"
+    ],
+    "related_ids": [
+      "adaptive_continuous_3x10_20261110_v1",
+      "staged_targeted_physical_20261110_v1",
+      "staged_bishop_grasps_static_20261110_v1"
+    ],
+    "known": [
+      "Original3games1/10,2/10,4/10;8actualstarts7complete;measuredHfixedgoal,oldtargetclearance andbishopprelandingblocks",
+      "Targeted staged4/4fresh actions37236ticks;10661unsupportedunreleasedsamplescontinuousnativegrip,allactualsupportsettle/home;notfullgames",
+      "Actual prior nextactionf2h4 is blackqueen bQ;prior proseking label correctedwithrawcase,0physics",
+      "Newactualbatch namespace/30accounting/failurecontinuation/tracewriter6programchecks pass0worlds"
+    ],
+    "unknown": [
+      "Whether newstaged workflow completesall10consecutivemoves ineachoriginalscene",
+      "Newgame later-node grasp/planning feasibility and cumulativepose changes",
+      "Whether directjointfallback willactuallyexecute;previoussuccessfulroutesCartesianonly"
+    ],
+    "decision": "new",
+    "rationale": "Userexplicitlyrequestsoriginal3x10 undernewverifiedworkflow;4targetedactions cannot establish whole-game completion. Reuse originalfrozeninputs/controllers;newrunneeded forcurrentcompletecontinuousgoal.",
+    "changed_conditions": [
+      {
+        "field": "continuous manipulation flow",
+        "before": "originaladaptive3x10 fixedpostgraspgoal,carryheightsharedretreat,negative.03mmtouchgoal",
+        "after": "source-pinnedstaged measuredHreselect,2mmmeshpreland+supportfeedback,independentwithdrawal+physicalhome"
+      },
+      {
+        "field": "bishop profile order",
+        "before": "0_0-first originalfamily",
+        "after": "original1_0/3_0first,all28profilesretained,current-scene fit"
+      },
+      {
+        "field": "physicalXY",
+        "before": "oldinherited5mm",
+        "after": "current3mmprojectpolicy,matchingtargetedvalidatedflow"
+      }
+    ],
+    "repeat_of": [],
+    "repeat_purpose": ""
+  },
+  "judgement": {
+    "unit": "3continuousgames each10originalactions,30plannedfreshactions;peraction andfullgame separate",
+    "success": "3/3games all10actualactions complete withnativebilateralclosure,lift/transfer/supportbeforeopen,>=.6sactualsettlesupport,finalXY<=3mm/tilt<=10deg,12correctoccupancies perstep,checkedactualwithdraw/home,noobserveddrop or unintendedcontact;actualIDs/clockcontinuouspergame",
+    "failure": "Firstgeometric/IK preparation orpostgraspplanningblock,observedcollision/drop,support/finalpose failure stopsitsgame;othergamescontinuefor task/planningfailures. Separate blocks fromobservedcollision/drop.",
+    "inconclusive": "Program/interface/evidencefaultstopsbatch;resourcebudget retainscompletedprefix andunattemptedactions. No tasksuccess fromreturncodealone.",
+    "planned_trials": 3,
+    "budget": {
+      "wall_time_seconds": 2700,
+      "max_attempts": 3
+    },
+    "stop_conditions": [
+      "Exactly3originalgames10plies each;max30physicalactions,no retries/reseed/easierpositions",
+      "Peraction24000ticks/180s;pergame900s;batch2700s;max720000ticks",
+      "Firstfailurestopsthatgame;otherscontinueunlessprogram/evidencefault",
+      "No control/force/friction/timestep/attachment/angularprojection changes",
+      "Preserveallstartedprefixes,unattemptedplies andrawtraces"
+    ],
+    "preregistration": "declared_before_execution"
+  },
+  "execution": {
+    "entrypoint": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_three_staged_v1.py",
+    "args": [
+      "--config",
+      "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/batch.json",
+      "--out",
+      "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/three_games_v1"
+    ],
+    "output_dir": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/three_games_v1"
+  },
+  "observations": [
+    {
+      "category": "measurement",
+      "judgement": "failure",
+      "scope": "Initial3x10 batch:0completegames,1startedgame,2unattemptedgames;1realactionprefix,0completeactions",
+      "count": 0,
+      "total": 3,
+      "interpretation": "Firstqueen f7d7 released/settledbutemptywithdrawalqueryblocked;rawprogram_error is expectedplanningrejection,notobservedcollision/drop. Batchclassificationomission stoppedremaininggames.",
+      "evidence_ids": [
+        "result",
+        "raw_audit",
+        "action_result",
+        "process"
+      ],
+      "execution": {
+        "origin": "new_execution",
+        "mechanism": "numeric_ik",
+        "attempted": true,
+        "confirmed": true,
+        "physics_steps": 5639,
+        "simulation_time_s": 23.495833333333334,
+        "policy_invocations": 0
+      }
+    }
+  ],
+  "design_review": {
+    "reviewer": "GPT",
+    "checked_evidence_ids": [
+      "program",
+      "configuration",
+      "preparation",
+      "label_correction",
+      "prior_raw",
+      "prior_three_raw"
+    ],
+    "conclusion": "approved",
+    "notes": "SameGPT actual source+raw review. Whole-operation.002threshold wrapper and actual current compiled route/support bindings checked. Original30actions/piecekeys/types/FEN verifiedexact;onlybishoporder,versionedworkflow/actionwall differ.6pureprogramchecks inclactualrecorder,gamefailurecontinue/programfaultstop. No agents,0newDS calls."
+  },
+  "review": {
+    "status": "verified",
+    "reviewer": "GPT",
+    "independent": false,
+    "checked_evidence_ids": [
+      "program",
+      "configuration",
+      "preparation",
+      "label_correction",
+      "prior_raw",
+      "prior_three_raw",
+      "result",
+      "raw_audit",
+      "action_result",
+      "process"
+    ],
+    "single_reviewer_exception": {
+      "mode": "user_requested_same_session_raw_audit",
+      "user_instruction_quote": "感觉你不要开子agent了",
+      "raw_audit_evidence_id": "raw_audit",
+      "limitation": "当前同一GPT另读原始逐步数据，非独立审核。"
+    },
+    "claims": [
+      {
+        "text": "第一局首步实际执行5639步，真实支撑后松爪并144步落稳；撤回起点静态预测约0.06mm指尖重叠超0.05mm容差，撤回/复位未执行，完整动作0。",
+        "scope": "单个后f7d7新鲜实际前缀，不能计完整抓放",
+        "evidence_ids": [
+          "raw_audit",
+          "action_result"
+        ]
+      },
+      {
+        "text": "旧批处理将已知撤回路径拒绝误分为program_error，剩余两局未启动；原始记录保留，后续仅补跑未执行两局。",
+        "scope": "程序分类与执行账目，不通过改容差或重试第一局提升完成数",
+        "evidence_ids": [
+          "raw_audit",
+          "result"
+        ]
+      }
+    ],
+    "limitations": [
+      "当前同一GPT另读原始逐步数据，非独立审核。",
+      "未观察到掉落/意外接触不等于完成撤回和复位。",
+      "本记录只含最初批次，剩余两局在单独登记的新执行中。",
+      "原始support_confirmed=false是异常提前返回的汇总字段；直接核查support_feedback与144个原始承托样本。"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+numpy==1.26.4
+scipy==1.14.1
+pybullet==3.2.7
+python-chess==1.999
+chess==1.11.2

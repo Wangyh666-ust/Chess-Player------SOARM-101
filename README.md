@@ -1,10 +1,22 @@
-# SO-ARM101 Chess Player — Vision & Simulation
+# SO-ARM101 Chess Player — Simulation Control & Vision
 
-The project now includes **chess-piece recognition and an initial virtual robot manipulation experiment**. The vision module fine-tunes YOLOv8m for **ezeeone_Dubrovnik_1960_set_02_stls**; the new PyBullet prototype tests SO-ARM101 picking up, moving, releasing pieces, and returning home across consecutive chess moves.
+**Current control snapshot: 10 November 2026.** The PyBullet workflow now uses the project's scanned-piece geometry, 25.223 mm board squares and native-contact holding with natural rotation. It performs measured-grasp path rebuilding, support feedback before opening, settled release, and independently checked withdrawal/home.
 
-The two results are currently separate: vision uses synthetic RGB images and known board corners; motion uses known simulator state, IK/OMPL planning, and an **ideal fixed grasp** during transport. This is preliminary virtual simulation, not an end-to-end vision-driven/VLA policy or hardware demonstration.
+**[English control handoff](CONTROL_HANDOFF.md)** · **[Install and run the simulation](simulation/README.md)** · [Download handoff ZIP](https://wangyh666-ust.github.io/Chess-Player------SOARM-101/assets/control-handoff-20261110.zip) · [Current evidence](artifacts/control-20261110/README.md) · [Online project page](https://wangyh666-ust.github.io/Chess-Player------SOARM-101/)
 
-## New: 10 consecutive simulated moves
+The handoff is for a developer taking over **simulation first**. It covers the exact environment, current models and frames, source map, arm-control phases, reproducible commands and parameters that may be unnecessarily strict. The portable [simulation package](simulation) includes current control source, meshes/URDFs, dependencies, three ten-action sessions and gated launch templates. Running it requires no API key, GPU, vision model or real arm.
+
+| Latest original session | Complete / planned | Outcome |
+| --- | ---: | --- |
+| seed 101 | 0 / 10 | Queen placed/settled; post-release exit planning blocked |
+| seed 202 | **10 / 10** | Complete with checked physical home after every action |
+| seed 303 | 5 / 10 | Knight settled at 3.043 mm XY error, above the 3 mm criterion |
+
+**15/30 complete actions, 17 physical starts, 13 unattempted; 1/3 complete games.** The two remaining issues and possible tolerance revisions are documented without rescoring the baseline. Packaging and zero-step environment checks are separate from these recorded physics results. See [portability validation](artifacts/control-20261110/PORTABILITY.md) for tested platforms.
+
+Control uses known simulator state and explicit planning. Vision remains a separate synthetic Dubrovnik benchmark; integration with camera-driven execution, a VLA policy and hardware validation remains future work. The November scanned models differ from the geometry in the historical video and detector benchmark below.
+
+## Historical demo: 10 consecutive simulated moves (12 October)
 
 **[Watch the 90-second simulation demo](https://wangyh666-ust.github.io/Chess-Player------SOARM-101/#simulation)** · [Download MP4](docs/assets/simulation-random2-10plies.mp4) · [Simulation experiment](SIMULATION.md)
 
@@ -70,7 +82,7 @@ The earlier nine scenes improved from **116/222 (52.25%)** to **222/222 (100%)**
 - Synthetic data generation, fine-tuning, evaluation, and geometry helpers under [vision_eval](vision_eval).
 - [Artifact verifier](tools/verify_artifacts.py) for checkpoint identity, stored prediction/mapping consistency, split isolation, and demo integrity.
 
-The full 3,000-image dataset and original STL assets are generated/local inputs and are not bundled. Their absence does not prevent browsing the demo, verifying the saved results, or using the trained detector.
+The full 3,000-image vision dataset and original Dubrovnik STL assets are generated/local inputs and are not bundled. Their absence does not prevent browsing the vision demo, verifying its saved results, or using the trained detector. The current November simulation assets are separately included under `simulation/runtime`.
 
 ## Use the checkpoint
 

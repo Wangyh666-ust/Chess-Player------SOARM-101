@@ -1,0 +1,12 @@
+{
+  "this_run_calls": 1,
+  "this_run_known_tokens": 1880,
+  "scope": "classification-only patch;no controller/geometry/force change",
+  "GPT_usage": "unknown",
+  "dispatch_record": "_model_tools/dispatch_state/staged_exit_batch_classification_20261110_v1/attempt_1.json",
+  "dispatch_sha256": "98271e0f481b53b388cbbb3162808f0c5c7d6ef81e9c6844a3a7352785bd8ce4",
+  "returned_model": "deepseek-flash",
+  "original_prior_staged_task_calls": 9,
+  "original_prior_staged_task_known_tokens": 33364,
+  "prior_usage_not_counted_as_new": true
+}

@@ -9,3 +9,12 @@
 *.pt binary
 *.png binary
 *.jpg binary
+
+# Audited snapshots retain exact bytes, including original line endings.
+simulation/runtime/** -text
+simulation/tools/** -text
+simulation/manifest.json -text
+artifacts/control-20261110/** -text
+simulation/runtime/**/*.obj binary
+simulation/runtime/**/*.stl binary
+simulation/runtime/**/*.npz binary

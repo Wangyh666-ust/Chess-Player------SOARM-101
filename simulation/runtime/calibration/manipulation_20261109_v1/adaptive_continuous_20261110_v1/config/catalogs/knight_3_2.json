@@ -1,0 +1,52 @@
+{
+  "pieces": {
+    "knight": {
+      "candidates": [
+        {
+          "id": "knight_head_2",
+          "heading_deg": 90,
+          "height_m": 0.02364608008414507,
+          "points_m": [
+            [
+              -9.7166e-05,
+              -0.002951123,
+              0.02364608
+            ],
+            [
+              -9.7242e-05,
+              0.002951572,
+              0.02364608
+            ]
+          ],
+          "normals_local": [
+            [
+              0.0028283062558957725,
+              -0.9817082269036749,
+              -0.19037058048281957
+            ],
+            [
+              -0.002371194599560637,
+              0.981661716354986,
+              -0.19061650526424512
+            ]
+          ],
+          "tool_quat_local": [
+            -0.6925330971105458,
+            0.7001744209833929,
+            -0.12211068044257369,
+            0.12346121386450662
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": -0.06505790443789475,
+          "mesh_normal_vertical_score": 0.3809870857470647,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass",
+          "tilt_candidate_deg": -20
+        }
+      ]
+    }
+  }
+}

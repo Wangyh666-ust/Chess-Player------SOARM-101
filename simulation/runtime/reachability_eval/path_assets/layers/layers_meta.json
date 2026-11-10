@@ -1,0 +1,249 @@
+{
+  "config_hash": "dd9e6e86e4fafd0c",
+  "slab_thickness_m": 0.0015,
+  "pieces": {
+    "king": {
+      "source_obj_hash": "bf19f1a3abed1e4eac1cf9e132bb3eb963ae3143",
+      "hull_count": 32,
+      "hull_paths": [
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_000.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_001.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_002.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_003.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_004.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_005.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_006.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_007.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_008.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_009.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_010.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_011.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_012.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_013.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_014.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_015.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_016.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_017.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_018.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_019.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_020.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_021.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_022.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_023.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_024.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_025.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_026.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_027.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_028.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_029.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_030.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/king_layer_031.obj"
+      ],
+      "bbox_error_m": 3.900000010437221e-10,
+      "bbox_min_m": [
+        -0.009809686,
+        -0.009810163,
+        0.0
+      ],
+      "bbox_max_m": [
+        0.009809686,
+        0.009810163,
+        0.0468
+      ]
+    },
+    "queen": {
+      "source_obj_hash": "5795167e9ad952dfdbd9fb9feafc2b36730315e0",
+      "hull_count": 28,
+      "hull_paths": [
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_000.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_001.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_002.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_003.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_004.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_005.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_006.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_007.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_008.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_009.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_010.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_011.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_012.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_013.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_014.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_015.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_016.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_017.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_018.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_019.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_020.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_021.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_022.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_023.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_024.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_025.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_026.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/queen_layer_027.obj"
+      ],
+      "bbox_error_m": 4.000000053405728e-10,
+      "bbox_min_m": [
+        -0.009609575,
+        -0.009609802,
+        0.0
+      ],
+      "bbox_max_m": [
+        0.009609575,
+        0.009609802,
+        0.040670335
+      ]
+    },
+    "knight": {
+      "source_obj_hash": "663a144a44065157689262831fc1c8b3dd9ff20b",
+      "hull_count": 22,
+      "hull_paths": [
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_000.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_001.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_002.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_003.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_004.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_005.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_006.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_007.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_008.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_009.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_010.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_011.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_012.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_013.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_014.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_015.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_016.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_017.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_018.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_019.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_020.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/knight_layer_021.obj"
+      ],
+      "bbox_error_m": 4.999999997368221e-10,
+      "bbox_min_m": [
+        -0.009019212,
+        -0.009019467,
+        0.0
+      ],
+      "bbox_max_m": [
+        0.009019212,
+        0.009019467,
+        0.032260359
+      ]
+    },
+    "rook": {
+      "source_obj_hash": "cede5f29113c9b062a1facd977b57c9394f35377",
+      "hull_count": 18,
+      "hull_paths": [
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_000.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_001.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_002.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_003.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_004.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_005.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_006.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_007.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_008.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_009.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_010.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_011.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_012.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_013.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_014.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_015.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_016.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/rook_layer_017.obj"
+      ],
+      "bbox_error_m": 3.0000000053598264e-10,
+      "bbox_min_m": [
+        -0.008834577,
+        -0.008834541,
+        0.0
+      ],
+      "bbox_max_m": [
+        0.008834577,
+        0.008834541,
+        0.02615454
+      ]
+    },
+    "pawn": {
+      "source_obj_hash": "8f3ec96adf4788ca2bdb3066c0dd47e374ccea31",
+      "hull_count": 16,
+      "hull_paths": [
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_000.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_001.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_002.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_003.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_004.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_005.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_006.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_007.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_008.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_009.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_010.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_011.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_012.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_013.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_014.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/pawn_layer_015.obj"
+      ],
+      "bbox_error_m": 4.899999989094184e-10,
+      "bbox_min_m": [
+        -0.007834696,
+        -0.007834449,
+        0.0
+      ],
+      "bbox_max_m": [
+        0.007834696,
+        0.007834449,
+        0.023206282
+      ]
+    },
+    "bishop": {
+      "source_obj_hash": "35236c18eb375bbcbfdb4f6df3a6a9cce4f68390",
+      "hull_count": 24,
+      "hull_paths": [
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_000.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_001.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_002.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_003.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_004.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_005.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_006.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_007.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_008.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_009.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_010.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_011.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_012.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_013.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_014.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_015.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_016.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_017.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_018.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_019.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_020.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_021.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_022.obj",
+        "@WORKSPACE@/reachability_eval/path_assets/layers/bishop_layer_023.obj"
+      ],
+      "bbox_error_m": 1.900000001081592e-10,
+      "bbox_min_m": [
+        -0.008637932,
+        -0.00863802,
+        0.0
+      ],
+      "bbox_max_m": [
+        0.008637932,
+        0.00863802,
+        0.035935128
+      ]
+    }
+  },
+  "global_bbox_error_m": 4.999999997368221e-10
+}

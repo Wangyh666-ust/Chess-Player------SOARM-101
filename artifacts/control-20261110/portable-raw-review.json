@@ -1,0 +1,25 @@
+{
+  "reviewer": "GPT",
+  "independent": false,
+  "scope": "Offline source/export semantics and raw static environment review only",
+  "all_source_and_bundle_hashes_match": true,
+  "files": 383,
+  "transformations": {
+    "copy": 364,
+    "urdf_mesh_paths": 7,
+    "json_paths": 12
+  },
+  "urdf_geometry_and_dynamic_attributes_unchanged": true,
+  "all_urdf_mesh_bytes_match_original": true,
+  "preview_decode_dimensions": [
+    1200,
+    800
+  ],
+  "windows_and_linux_raw_static_results_verified": true,
+  "actual_native_physics_steps": 0,
+  "new_manipulation_attempts": 0,
+  "limitations": [
+    "Same GPT raw review; no independent reviewer.",
+    "Does not exercise full dynamic path/control or prove cross-platform game reproducibility."
+  ]
+}

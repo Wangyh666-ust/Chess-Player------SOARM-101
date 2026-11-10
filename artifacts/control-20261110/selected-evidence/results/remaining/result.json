@@ -1,0 +1,87 @@
+{
+  "mode": "games",
+  "sessions": [
+    {
+      "id": "random2_seed202",
+      "returncode": 0,
+      "raw_classification": "physical_task_success",
+      "classification": "physical_task_success",
+      "ok": true,
+      "runner_attempted_actions": 10,
+      "positive_step_actions": 10,
+      "completed_actions": 10,
+      "completed_action_ids": [
+        "ply01_g2f2",
+        "ply02_f5f7",
+        "ply03_f2h4",
+        "ply04_d7c7",
+        "ply05_e4e5",
+        "ply06_d1g1",
+        "ply07_b6c6",
+        "ply08_c7b7",
+        "ply09_h4f6",
+        "ply10_g1g3"
+      ],
+      "total_physics_steps": 80283,
+      "total_sim_time_s": 334.5125,
+      "total_wall_s": 290.66732358932495,
+      "result_path": "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random2_seed202\\result.json",
+      "error": null,
+      "trace_paths": [
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random2_seed202\\step01_ply01_g2f2\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random2_seed202\\step02_ply02_f5f7\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random2_seed202\\step03_ply03_f2h4\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random2_seed202\\step04_ply04_d7c7\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random2_seed202\\step05_ply05_e4e5\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random2_seed202\\step06_ply06_d1g1\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random2_seed202\\step07_ply07_b6c6\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random2_seed202\\step08_ply08_c7b7\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random2_seed202\\step09_ply09_h4f6\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random2_seed202\\step10_ply10_g1g3\\trial\\trace.jsonl.gz"
+      ]
+    },
+    {
+      "id": "random3_seed303",
+      "returncode": 1,
+      "raw_classification": "physical_task_failed",
+      "classification": "physical_task_failed",
+      "ok": false,
+      "runner_attempted_actions": 6,
+      "positive_step_actions": 6,
+      "completed_actions": 5,
+      "completed_action_ids": [
+        "ply01_d3c2",
+        "ply02_b5d6",
+        "ply03_c7d5",
+        "ply04_f7d7",
+        "ply05_f3d1"
+      ],
+      "total_physics_steps": 53741,
+      "total_sim_time_s": 223.92083333333332,
+      "total_wall_s": 219.56766819953918,
+      "result_path": "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random3_seed303\\result.json",
+      "error": null,
+      "trace_paths": [
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random3_seed303\\step01_ply01_d3c2\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random3_seed303\\step02_ply02_b5d6\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random3_seed303\\step03_ply03_c7d5\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random3_seed303\\step04_ply04_f7d7\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random3_seed303\\step05_ply05_f3d1\\trial\\trace.jsonl.gz",
+        "calibration\\manipulation_20261109_v1\\staged_continuous_3x10_20261110_v1\\results\\remaining_two_v1\\random3_seed303\\step06_ply06_d6f5\\trial\\trace.jsonl.gz"
+      ]
+    }
+  ],
+  "unattempted": [],
+  "planned_actions": 20,
+  "completed_actions": 15,
+  "runner_attempted_actions": 16,
+  "positive_step_actions": 16,
+  "total_physics_steps": 134024,
+  "total_sim_time_s": 558.4333333333333,
+  "known_total_physics_steps": 134024,
+  "known_completed_actions": 15,
+  "known_runner_attempted_actions": 16,
+  "accounting_complete": true,
+  "wall_s": 510.5778546333313,
+  "error": null
+}

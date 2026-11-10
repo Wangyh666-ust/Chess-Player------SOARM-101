@@ -1,0 +1,28 @@
+
+
+## Staged original3x10 result (2026-11-10)
+Userrequestedoriginal3games10actions after4targetedpasses. Actual0/10,10/10,
+5/10:1/3fullgames,15/30completeactions,17positivephysicsstarts,13unattempted.
+139663ticks,581.929simseconds;twoexecutionlegs,no firstgame retry.
+Firstgamefirstqueenf7d7 supported/released/144settleticks thenemptyexitquery
+predicts~.06mmfixedfingerpenetration>.05mmtolerance;noexit/home executed.
+Oldbatchmisclassified knownempty_return_no_plan asprogram_error,stoppingrest.
+DSone1880tokenclassification-onlypatch(source+trace-bound) passed6mocks;
+onlyunattemptedoriginalgames2/3ran next,physicalflow/tolerancesunchanged.
+General3gameCLI v2 now includesclassificationfix butonly programvalidated;
+notanotherphysicalrun. NewunknownAPIerrors stillstopbatch.
+Game2all10full support/settle/actualhome;game3first5full inclrookf7d7 and
+bishopf3d1,thenblackknightd6f5finalXY3.043153mm>3mm,nohome. Beforeopen
+XY2.894227mm,afteropen3.043842mm,settled3.043153mm;notdroporcollision
+byrawreview,notsole-causeproof. Keepfailure,noretroactivethresholdrelaxation.
+All17rawtracespositive240Hztiming/stepcountschecked;38529unsupported
+unreleasedsamples after>3mmrise continuousnativebilateral,min.240663N.
+15completeactions each12occupanciescorrect/144supportsettleticks/checkedhome;
+IDs/clockscontinuouspergame. No observed drop/unintendedcontact;notfullpass.
+Whiteknightc7d5actuallyused90nodechecked directjoint transfer andcompleted,
+XY1.389mm,plannedminmeshgap19.70mm;other14completeactionsCartesian.
+This extendspriorprogram-onlyjointfallbackevidenceforONEaction,notglobalproof.
+.002constructor-wideprofile/240Hz/.25N/.05Nm/friction/recoveryunchanged;
+naturalrotation,noattachment/projection. SameGPTnonindependentrawreview.
+Evidence:experiment_review/ledger/staged_continuous_3x10_assessment_20261110_v1.json.
+Profile:calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/execution_profile_v1.json.

@@ -1,0 +1,20 @@
+{
+  "category": "program_validation",
+  "passed": 6,
+  "failures": [],
+  "checks": [
+    "release:actual derivedclassification/continue-stop/rawpreservation checked",
+    "before:actual derivedclassification/continue-stop/rawpreservation checked",
+    "legacy:actual derivedclassification/continue-stop/rawpreservation checked",
+    "unknown:actual derivedclassification/continue-stop/rawpreservation checked",
+    "wrapper:actual derivedclassification/continue-stop/rawpreservation checked",
+    "actual2x10namespace/20budget + fulloperation threshold and restoration;no failedgame replay"
+  ],
+  "native_worlds": 0,
+  "physics_steps": 0,
+  "code_hashes": {
+    "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_remaining_two_v1.py": "2196c636d321930959ecbe4bc3355effdb03b0dd0a4dbe141a2d8deb641a085c",
+    "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/staged_remaining_batch_v1.py": "5c00778e0ebb508c9269567fe6d89011335e74785e022eb5cdb4660e8b7751e7"
+  },
+  "scope": "Actual remaining batch+CLI;source-bound expected exit rejection only. Controller/geometry/native execution unchanged."
+}

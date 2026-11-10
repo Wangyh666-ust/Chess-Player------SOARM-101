@@ -1,0 +1,816 @@
+{
+  "schema_version": 1,
+  "units": "m",
+  "mass_assumption_kg": 0.003,
+  "input_blend": "@WORKSPACE@/calibration/scene_alignment/manual_layout_20261109/camera_mount_v3/package/initial_mount.blend",
+  "input_blend_sha256": "ae537174266ce94104420e45b7d530ce439f16b5a58d171d5b485babf0148790",
+  "scope": "candidate geometry only, not physical grasp acceptance",
+  "pieces": [
+    {
+      "type": "rook",
+      "object_name": "PIECE__rook__g6",
+      "bounds_m": {
+        "min": [
+          -0.007400000002235174,
+          -0.007400000002235174,
+          0.0
+        ],
+        "max": [
+          0.007400000002235174,
+          0.007400000002235174,
+          0.025499999523162842
+        ]
+      },
+      "height_m": 0.025499999523162842,
+      "span_x_m": 0.014800000004470348,
+      "span_y_m": 0.014800000004470348,
+      "vertex_count": 20098,
+      "face_count": 40192,
+      "assets": {
+        "npz": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/rook.npz",
+        "obj": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/rook.obj",
+        "svg": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/rook.svg"
+      },
+      "candidates": [
+        {
+          "height_fraction": 0.42,
+          "heading_deg": 0.0,
+          "plane_z_m": 0.010709999799728392,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -0.003603985375089257,
+            4.413609225661225e-19,
+            0.010709999799728392
+          ],
+          "support_b": [
+            0.003603985375089257,
+            0.0,
+            0.010709999799728392
+          ],
+          "midpoint": [
+            0.0,
+            2.2068046128306123e-19,
+            0.010709999799728392
+          ],
+          "contact_width_m": 0.007207970750178514,
+          "g_open_width_m": 0.013207970750178514,
+          "section_point_count": 256,
+          "provisional": true,
+          "note": "provisional designation only; no scoring claim"
+        },
+        {
+          "height_fraction": 0.42,
+          "heading_deg": 90.0,
+          "plane_z_m": 0.010709999799728392,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -6.620413881918784e-19,
+            -0.003603985375089257,
+            0.010709999799728392
+          ],
+          "support_b": [
+            2.2068046128306123e-19,
+            0.003603985375089257,
+            0.010709999799728392
+          ],
+          "midpoint": [
+            -2.206804634544086e-19,
+            0.0,
+            0.010709999799728392
+          ],
+          "contact_width_m": 0.007207970750178514,
+          "g_open_width_m": 0.013207970750178514,
+          "section_point_count": 256,
+          "provisional": false
+        },
+        {
+          "height_fraction": 0.6,
+          "heading_deg": 0.0,
+          "plane_z_m": 0.015299999713897705,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -0.0028113234542200926,
+            3.442878422484767e-19,
+            0.015299999713897705
+          ],
+          "support_b": [
+            0.0028113234542200926,
+            0.0,
+            0.015299999713897705
+          ],
+          "midpoint": [
+            0.0,
+            1.7214392112423834e-19,
+            0.015299999713897705
+          ],
+          "contact_width_m": 0.005622646908440185,
+          "g_open_width_m": 0.011622646908440185,
+          "section_point_count": 256,
+          "provisional": false
+        },
+        {
+          "height_fraction": 0.6,
+          "heading_deg": 90.0,
+          "plane_z_m": 0.015299999713897705,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -5.164317551008997e-19,
+            -0.0028113234542200926,
+            0.015299999713897705
+          ],
+          "support_b": [
+            1.7214392112423834e-19,
+            0.0028113234542200926,
+            0.015299999713897705
+          ],
+          "midpoint": [
+            -1.7214391698833067e-19,
+            0.0,
+            0.015299999713897705
+          ],
+          "contact_width_m": 0.005622646908440185,
+          "g_open_width_m": 0.011622646908440185,
+          "section_point_count": 256,
+          "provisional": false
+        }
+      ]
+    },
+    {
+      "type": "pawn",
+      "object_name": "PIECE__pawn__e5",
+      "bounds_m": {
+        "min": [
+          -0.007300000172108412,
+          -0.007300000172108412,
+          0.0
+        ],
+        "max": [
+          0.007300000172108412,
+          0.007300000172108412,
+          0.023000000044703484
+        ]
+      },
+      "height_m": 0.023000000044703484,
+      "span_x_m": 0.014600000344216824,
+      "span_y_m": 0.014600000344216824,
+      "vertex_count": 22658,
+      "face_count": 45312,
+      "assets": {
+        "npz": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/pawn.npz",
+        "obj": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/pawn.obj",
+        "svg": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/pawn.svg"
+      },
+      "candidates": [
+        {
+          "height_fraction": 0.4,
+          "heading_deg": 0.0,
+          "plane_z_m": 0.009200000017881394,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -0.0032999999821186066,
+            4.0413343467653064e-19,
+            0.009200000204145908
+          ],
+          "support_b": [
+            0.0032999999821186066,
+            0.0,
+            0.009200000204145908
+          ],
+          "midpoint": [
+            0.0,
+            2.0206671733826532e-19,
+            0.009200000204145908
+          ],
+          "contact_width_m": 0.006599999964237213,
+          "g_open_width_m": 0.012599999964237213,
+          "section_point_count": 128,
+          "provisional": true,
+          "note": "provisional designation only; no scoring claim"
+        },
+        {
+          "height_fraction": 0.4,
+          "heading_deg": 90.0,
+          "plane_z_m": 0.009200000017881394,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -6.062001907888872e-19,
+            -0.0032999999821186066,
+            0.009200000204145908
+          ],
+          "support_b": [
+            2.0206671733826532e-19,
+            0.0032999999821186066,
+            0.009200000204145908
+          ],
+          "midpoint": [
+            -2.0206673672531093e-19,
+            0.0,
+            0.009200000204145908
+          ],
+          "contact_width_m": 0.006599999964237213,
+          "g_open_width_m": 0.012599999964237213,
+          "section_point_count": 128,
+          "provisional": false
+        },
+        {
+          "height_fraction": 0.6,
+          "heading_deg": 0.0,
+          "plane_z_m": 0.01380000002682209,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -0.0032115657413207288,
+            3.9330337364296386e-19,
+            0.01380000002682209
+          ],
+          "support_b": [
+            0.0032115657413207288,
+            0.0,
+            0.01380000002682209
+          ],
+          "midpoint": [
+            0.0,
+            1.9665168682148193e-19,
+            0.01380000002682209
+          ],
+          "contact_width_m": 0.0064231314826414575,
+          "g_open_width_m": 0.012423131482641459,
+          "section_point_count": 256,
+          "provisional": false
+        },
+        {
+          "height_fraction": 0.6,
+          "heading_deg": 90.0,
+          "plane_z_m": 0.01380000002682209,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -5.899550604644458e-19,
+            -0.0032115657413207288,
+            0.01380000002682209
+          ],
+          "support_b": [
+            1.9665168682148193e-19,
+            0.0032115657413207288,
+            0.01380000002682209
+          ],
+          "midpoint": [
+            -1.966516868214819e-19,
+            0.0,
+            0.01380000002682209
+          ],
+          "contact_width_m": 0.0064231314826414575,
+          "g_open_width_m": 0.012423131482641459,
+          "section_point_count": 256,
+          "provisional": false
+        }
+      ]
+    },
+    {
+      "type": "bishop",
+      "object_name": "PIECE__bishop__b4",
+      "bounds_m": {
+        "min": [
+          -0.00774999987334013,
+          -0.00774999987334013,
+          0.0
+        ],
+        "max": [
+          0.00774999987334013,
+          0.00774999987334013,
+          0.03200000151991844
+        ]
+      },
+      "height_m": 0.03200000151991844,
+      "span_x_m": 0.01549999974668026,
+      "span_y_m": 0.01549999974668026,
+      "vertex_count": 28533,
+      "face_count": 57062,
+      "assets": {
+        "npz": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/bishop.npz",
+        "obj": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/bishop.obj",
+        "svg": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/bishop.svg"
+      },
+      "candidates": [
+        {
+          "height_fraction": 0.38,
+          "heading_deg": 0.0,
+          "plane_z_m": 0.012160000577569007,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -0.003043842281940414,
+            3.7276317781960194e-19,
+            0.012160000577569007
+          ],
+          "support_b": [
+            0.003043842281940414,
+            0.0,
+            0.012160000577569007
+          ],
+          "midpoint": [
+            0.0,
+            1.8638158890980097e-19,
+            0.012160000577569007
+          ],
+          "contact_width_m": 0.006087684563880828,
+          "g_open_width_m": 0.012087684563880829,
+          "section_point_count": 256,
+          "provisional": true,
+          "note": "provisional designation only; no scoring claim"
+        },
+        {
+          "height_fraction": 0.38,
+          "heading_deg": 90.0,
+          "plane_z_m": 0.012160000577569007,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -5.591447501856157e-19,
+            -0.003043842281940414,
+            0.012160000577569007
+          ],
+          "support_b": [
+            1.8638158890980097e-19,
+            0.003043842281940414,
+            0.012160000577569007
+          ],
+          "midpoint": [
+            -1.8638158063790738e-19,
+            0.0,
+            0.012160000577569007
+          ],
+          "contact_width_m": 0.006087684563880828,
+          "g_open_width_m": 0.012087684563880829,
+          "section_point_count": 256,
+          "provisional": false
+        },
+        {
+          "height_fraction": 0.55,
+          "heading_deg": 0.0,
+          "plane_z_m": 0.017600000835955143,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -0.0022588107266989254,
+            2.766245333417358e-19,
+            0.017600000835955143
+          ],
+          "support_b": [
+            0.0022588107266989254,
+            0.0,
+            0.017600000835955143
+          ],
+          "midpoint": [
+            0.0,
+            1.383122666708679e-19,
+            0.017600000835955143
+          ],
+          "contact_width_m": 0.004517621453397851,
+          "g_open_width_m": 0.010517621453397852,
+          "section_point_count": 256,
+          "provisional": false
+        },
+        {
+          "height_fraction": 0.55,
+          "heading_deg": 90.0,
+          "plane_z_m": 0.017600000835955143,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -4.1493679941148934e-19,
+            -0.0022588107266989254,
+            0.017600000835955143
+          ],
+          "support_b": [
+            1.383122666708679e-19,
+            0.0022588107266989254,
+            0.017600000835955143
+          ],
+          "midpoint": [
+            -1.3831226637031072e-19,
+            0.0,
+            0.017600000835955143
+          ],
+          "contact_width_m": 0.004517621453397851,
+          "g_open_width_m": 0.010517621453397852,
+          "section_point_count": 256,
+          "provisional": false
+        }
+      ]
+    },
+    {
+      "type": "knight",
+      "object_name": "PIECE__knight__c3",
+      "bounds_m": {
+        "min": [
+          -0.0071998657658696175,
+          -0.0072999983094632626,
+          0.0
+        ],
+        "max": [
+          0.0073997764848172665,
+          0.0072999983094632626,
+          0.02749544195830822
+        ]
+      },
+      "height_m": 0.02749544195830822,
+      "span_x_m": 0.014599642250686884,
+      "span_y_m": 0.014599996618926525,
+      "vertex_count": 217464,
+      "face_count": 434924,
+      "assets": {
+        "npz": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/knight.npz",
+        "obj": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/knight.obj",
+        "svg": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/knight.svg"
+      },
+      "candidates": [
+        {
+          "height_fraction": 0.28,
+          "heading_deg": 0.0,
+          "plane_z_m": 0.007698723748326302,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -0.004598241679634755,
+            -3.111537992217211e-05,
+            0.007698723748326302
+          ],
+          "support_b": [
+            0.004282119254040797,
+            -2.0623319467273364e-06,
+            0.007698723748326302
+          ],
+          "midpoint": [
+            -0.00015806121279697896,
+            -1.6588855934449722e-05,
+            0.007698723748326302
+          ],
+          "contact_width_m": 0.008880362994379085,
+          "g_open_width_m": 0.014880362994379085,
+          "section_point_count": 910,
+          "provisional": true,
+          "note": "provisional designation only; no scoring claim"
+        },
+        {
+          "height_fraction": 0.28,
+          "heading_deg": 90.0,
+          "plane_z_m": 0.007698723748326302,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            0.00036523514973014977,
+            -0.0038319212036510703,
+            0.007698723748326302
+          ],
+          "support_b": [
+            0.0003652607484714836,
+            0.0038319329707973753,
+            0.007698723748326302
+          ],
+          "midpoint": [
+            0.0003652479491008167,
+            5.883573152547922e-09,
+            0.007698723748326302
+          ],
+          "contact_width_m": 0.007663854174448446,
+          "g_open_width_m": 0.013663854174448445,
+          "section_point_count": 910,
+          "provisional": false
+        },
+        {
+          "height_fraction": 0.42,
+          "heading_deg": 0.0,
+          "plane_z_m": 0.011548085622489452,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -0.005416680374079576,
+            -3.433907428735601e-05,
+            0.011548085622489452
+          ],
+          "support_b": [
+            0.005427490626889279,
+            -8.111326188616285e-06,
+            0.011548085622489454
+          ],
+          "midpoint": [
+            5.405126404851857e-06,
+            -2.1225200237986146e-05,
+            0.011548085622489452
+          ],
+          "contact_width_m": 0.010844171621993907,
+          "g_open_width_m": 0.016844171621993906,
+          "section_point_count": 1147,
+          "provisional": false
+        },
+        {
+          "height_fraction": 0.42,
+          "heading_deg": 90.0,
+          "plane_z_m": 0.011548085622489452,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            0.0021324840224479953,
+            -0.003775053743530698,
+            0.011548085622489452
+          ],
+          "support_b": [
+            0.002103862867797428,
+            0.003774968711380274,
+            0.011548085622489452
+          ],
+          "midpoint": [
+            0.0021181734451227114,
+            -4.2516075211872575e-08,
+            0.011548085622489452
+          ],
+          "contact_width_m": 0.007550022454910972,
+          "g_open_width_m": 0.013550022454910972,
+          "section_point_count": 1147,
+          "provisional": false
+        }
+      ]
+    },
+    {
+      "type": "queen",
+      "object_name": "PIECE__queen__f2",
+      "bounds_m": {
+        "min": [
+          -0.007899999618530273,
+          -0.007899999618530273,
+          0.0
+        ],
+        "max": [
+          0.007899999618530273,
+          0.007899999618530273,
+          0.03500000014901161
+        ]
+      },
+      "height_m": 0.03500000014901161,
+      "span_x_m": 0.015799999237060547,
+      "span_y_m": 0.015799999237060547,
+      "vertex_count": 23682,
+      "face_count": 47360,
+      "assets": {
+        "npz": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/queen.npz",
+        "obj": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/queen.obj",
+        "svg": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/queen.svg"
+      },
+      "candidates": [
+        {
+          "height_fraction": 0.38,
+          "heading_deg": 0.0,
+          "plane_z_m": 0.013300000056624413,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -0.0033500257570061327,
+            4.1025982417386077e-19,
+            0.013300000056624413
+          ],
+          "support_b": [
+            0.0033500257570061327,
+            0.0,
+            0.013300000056624413
+          ],
+          "midpoint": [
+            0.0,
+            2.0512991208693038e-19,
+            0.013300000056624413
+          ],
+          "contact_width_m": 0.006700051514012265,
+          "g_open_width_m": 0.012700051514012265,
+          "section_point_count": 256,
+          "provisional": true,
+          "note": "provisional designation only; no scoring claim"
+        },
+        {
+          "height_fraction": 0.38,
+          "heading_deg": 90.0,
+          "plane_z_m": 0.013300000056624413,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -6.153897526320765e-19,
+            -0.0033500257570061327,
+            0.013300000056624413
+          ],
+          "support_b": [
+            2.0512991208693038e-19,
+            0.0033500257570061327,
+            0.013300000056624413
+          ],
+          "midpoint": [
+            -2.0512992027257306e-19,
+            0.0,
+            0.013300000056624413
+          ],
+          "contact_width_m": 0.006700051514012265,
+          "g_open_width_m": 0.012700051514012265,
+          "section_point_count": 256,
+          "provisional": false
+        },
+        {
+          "height_fraction": 0.55,
+          "heading_deg": 0.0,
+          "plane_z_m": 0.01925000008195639,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -0.002448214218020439,
+            2.9981978142839384e-19,
+            0.01924999989569187
+          ],
+          "support_b": [
+            0.002448214218020439,
+            0.0,
+            0.01924999989569187
+          ],
+          "midpoint": [
+            0.0,
+            1.4990989071419692e-19,
+            0.01924999989569187
+          ],
+          "contact_width_m": 0.004896428436040878,
+          "g_open_width_m": 0.010896428436040878,
+          "section_point_count": 128,
+          "provisional": false
+        },
+        {
+          "height_fraction": 0.55,
+          "heading_deg": 90.0,
+          "plane_z_m": 0.01925000008195639,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -4.497296721425908e-19,
+            -0.002448214218020439,
+            0.01924999989569187
+          ],
+          "support_b": [
+            1.4990989071419692e-19,
+            0.002448214218020439,
+            0.01924999989569187
+          ],
+          "midpoint": [
+            -1.4990989071419692e-19,
+            0.0,
+            0.01924999989569187
+          ],
+          "contact_width_m": 0.004896428436040878,
+          "g_open_width_m": 0.010896428436040878,
+          "section_point_count": 128,
+          "provisional": false
+        }
+      ]
+    },
+    {
+      "type": "king",
+      "object_name": "PIECE__king__c7",
+      "bounds_m": {
+        "min": [
+          -0.00860000029206276,
+          -0.00860000029206276,
+          0.0
+        ],
+        "max": [
+          0.00860000029206276,
+          0.00860000029206276,
+          0.04500000178813934
+        ]
+      },
+      "height_m": 0.04500000178813934,
+      "span_x_m": 0.01720000058412552,
+      "span_y_m": 0.01720000058412552,
+      "vertex_count": 23627,
+      "face_count": 47250,
+      "assets": {
+        "npz": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/king.npz",
+        "obj": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/king.obj",
+        "svg": "@WORKSPACE@/calibration/manipulation_20261109_v1/assets/king.svg"
+      },
+      "candidates": [
+        {
+          "height_fraction": 0.38,
+          "heading_deg": 0.0,
+          "plane_z_m": 0.017100000679492952,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -0.0031437599898438452,
+            3.8499956959768754e-19,
+            0.017100000679492952
+          ],
+          "support_b": [
+            0.0031437599898438452,
+            0.0,
+            0.017100000679492952
+          ],
+          "midpoint": [
+            0.0,
+            1.9249978479884377e-19,
+            0.017100000679492952
+          ],
+          "contact_width_m": 0.0062875199796876904,
+          "g_open_width_m": 0.01228751997968769,
+          "section_point_count": 256,
+          "provisional": true,
+          "note": "provisional designation only; no scoring claim"
+        },
+        {
+          "height_fraction": 0.38,
+          "heading_deg": 90.0,
+          "plane_z_m": 0.017100000679492952,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -5.774993673212285e-19,
+            -0.0031437599898438452,
+            0.017100000679492952
+          ],
+          "support_b": [
+            1.9249978479884377e-19,
+            0.0031437599898438452,
+            0.017100000679492952
+          ],
+          "midpoint": [
+            -1.9249979126119233e-19,
+            0.0,
+            0.017100000679492952
+          ],
+          "contact_width_m": 0.0062875199796876904,
+          "g_open_width_m": 0.01228751997968769,
+          "section_point_count": 256,
+          "provisional": false
+        },
+        {
+          "height_fraction": 0.55,
+          "heading_deg": 0.0,
+          "plane_z_m": 0.02475000098347664,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -0.005627162637117703,
+            6.891286890306869e-19,
+            0.02475000098347664
+          ],
+          "support_b": [
+            0.005627162637117703,
+            0.0,
+            0.02475000098347664
+          ],
+          "midpoint": [
+            0.0,
+            3.4456434451534343e-19,
+            0.02475000098347664
+          ],
+          "contact_width_m": 0.011254325274235406,
+          "g_open_width_m": 0.017254325274235406,
+          "section_point_count": 256,
+          "provisional": false
+        },
+        {
+          "height_fraction": 0.55,
+          "heading_deg": 90.0,
+          "plane_z_m": 0.02475000098347664,
+          "valid": true,
+          "status": "geometric_candidate_unvalidated",
+          "support_a": [
+            -1.0336930335460302e-18,
+            -0.005627162637117703,
+            0.02475000098347664
+          ],
+          "support_b": [
+            3.4456434451534343e-19,
+            0.005627162637117703,
+            0.02475000098347664
+          ],
+          "midpoint": [
+            -3.445643445153434e-19,
+            0.0,
+            0.02475000098347664
+          ],
+          "contact_width_m": 0.011254325274235406,
+          "g_open_width_m": 0.017254325274235406,
+          "section_point_count": 256,
+          "provisional": false
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "physics_steps": 0,
+    "hardware_commands": 0,
+    "purpose": "extraction and geometric visualization",
+    "total_piece_count": 6,
+    "total_candidates": 24,
+    "warning": "All figures are candidate geometry; not grasp success or actuator calibration."
+  }
+}

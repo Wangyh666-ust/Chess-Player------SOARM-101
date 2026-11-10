@@ -1,0 +1,52 @@
+{
+  "pieces": {
+    "rook": {
+      "candidates": [
+        {
+          "id": "rook_head_3",
+          "heading_deg": 90,
+          "height_m": 0.022439999580383303,
+          "points_m": [
+            [
+              0.0,
+              -0.005091257,
+              0.02244
+            ],
+            [
+              0.0,
+              0.005091257,
+              0.02244
+            ]
+          ],
+          "normals_local": [
+            [
+              -0.005958221153409217,
+              -0.9820375961657904,
+              -0.18859124931343657
+            ],
+            [
+              0.005958221153409217,
+              0.9820375961657906,
+              -0.18859124931343663
+            ]
+          ],
+          "tool_quat_local": [
+            -0.6925330971105458,
+            0.7001744209833929,
+            -0.12211227005418465,
+            0.1234596416212993
+          ],
+          "region_radius_m": 0.002,
+          "jaw_patch_radius_m": 0.002,
+          "collision_envelope_m": 0.001,
+          "desired_gap_m": 0.0001,
+          "seed_g": 0.002471338691026473,
+          "mesh_normal_vertical_score": 0.3771824986268732,
+          "source": "existing scanned head section; surface-normal area average from nearest12 mesh triangles",
+          "status": "geometric_candidate_not_physical_pass",
+          "tilt_candidate_deg": -20
+        }
+      ]
+    }
+  }
+}

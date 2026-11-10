@@ -1,0 +1,44 @@
+[
+  {
+    "id": "staged_continuous_3x10_20261110_v1",
+    "actual_output": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "历史配置不完整，无法排除与历史重复；GPT 必须核对适用条件"
+      ],
+      "fingerprint": "43fad19245d5c5d5395b051b6b001654695cc683104134a563eab17fa56d8f0e",
+      "duplicates": [],
+      "record_sha256": "16ba898c3b67bfc4a226655da2ee4a0284e662435d3a6efb14a986e095896cc0"
+    },
+    "returncode": 0
+  },
+  {
+    "id": "staged_remaining_2x10_20261110_v1",
+    "actual_output": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "历史配置不完整，无法排除与历史重复；GPT 必须核对适用条件"
+      ],
+      "fingerprint": "9d0c2fcae0495d96ed87a1bbb8c66dabd5c5ba6d1a7c2e9ca43341315b4cfb71",
+      "duplicates": [],
+      "record_sha256": "5af69927683dd04b4b06ff32dca25de7d1bb1a0605a65d35c3ee8bef4dd12e36"
+    },
+    "returncode": 0
+  },
+  {
+    "id": "staged_continuous_3x10_assessment_20261110_v1",
+    "actual_output": {
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "历史配置不完整，无法排除与历史重复；GPT 必须核对适用条件"
+      ],
+      "fingerprint": "f341d80c28423742bcde1216c1326a2648900564302366dd229ccb67c60f119a",
+      "duplicates": [],
+      "record_sha256": "2aed42d918cf5c991033c8fa63cff2de909b6d88556a1292ec46d44f668a828e"
+    },
+    "returncode": 0
+  }
+]

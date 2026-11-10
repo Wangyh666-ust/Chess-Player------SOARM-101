@@ -1,0 +1,45 @@
+{
+  "arm_joint_names": [
+    "shoulder_pan",
+    "shoulder_lift",
+    "elbow_flex",
+    "wrist_flex",
+    "wrist_roll"
+  ],
+  "attempted_step_calls": 0,
+  "category": "static_environment_check",
+  "dt_s": 0.004166666666666667,
+  "geometry_types": [
+    "bishop",
+    "king",
+    "knight",
+    "pawn",
+    "queen",
+    "rook"
+  ],
+  "gripper_joint_name": "gripper",
+  "image": "calibration\\manipulation_20261109_v1\\control_handoff_20261110_v1\\results\\windows_static_v2\\preview.png",
+  "package_versions": {
+    "numpy": "1.26.4",
+    "pybullet": "3.2.7",
+    "python-chess": "1.999",
+    "scipy": "1.14.1"
+  },
+  "physics_steps": 0,
+  "piece_count": 12,
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.10.20",
+  "query_worlds": 1,
+  "scope": "Static load only; no manipulation or physics validation",
+  "threshold_updates": {
+    "constructor_completed": true,
+    "forwarded_updates": [
+      {
+        "original": 0.0002,
+        "physicsClientId": 0,
+        "requested": 0.002
+      }
+    ],
+    "threshold": 0.002
+  }
+}

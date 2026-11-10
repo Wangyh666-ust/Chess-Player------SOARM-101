@@ -1,0 +1,1001 @@
+{
+  "schema_version": 1,
+  "id": "handoff_original_three_games_v1",
+  "title": "Cross-machine reproduction of the original three ten-action sessions",
+  "tags": [
+    "handoff",
+    "physics",
+    "reproduction"
+  ],
+  "kind": "planned",
+  "configuration": {
+    "completeness": "complete",
+    "factors": {
+      "task": {
+        "description": "Exactly original seed101/202/303 scenes and ten frozen moves each, persistent physical scene per game."
+      },
+      "method": "Unmodified reviewed staged native-contact control; measured grasp suffix rebuilding, bounded support feedback, independent empty exit/home. v2 classification fix only.",
+      "backend": "physics_simulation",
+      "layout": {
+        "applicable": true,
+        "source": "Original Nov10 board and scanned piece geometry unchanged"
+      },
+      "inputs": [
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_0_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_0_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_0_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_0_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_1_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_1_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_1_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_1_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_2_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_2_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_2_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_2_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_3_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_3_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_3_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_3_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_4_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_4_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_4_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_4_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_5_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_5_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_5_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_5_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_6_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_6_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_6_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/bishop_6_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_0_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_0_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_0_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_0_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_1_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_1_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_1_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_1_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_2_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_2_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_2_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_2_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_3_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_3_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_3_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_3_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_4_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_4_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_4_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_4_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_5_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_5_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_5_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_5_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_6_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_6_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_6_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/king_6_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_0_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_0_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_0_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_0_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_1_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_1_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_1_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_1_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_2_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_2_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_2_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_2_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_3_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_3_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_3_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_3_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_4_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_4_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_4_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_4_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_5_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_5_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_5_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_5_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_6_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_6_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_6_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/knight_6_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_0_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_0_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_0_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_0_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_1_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_1_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_1_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_1_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_2_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_2_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_2_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_2_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_3_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_3_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_3_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_3_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_4_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_4_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_4_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_4_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_5_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_5_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_5_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_5_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_6_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_6_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_6_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/queen_6_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_0_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_0_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_0_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_0_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_1_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_1_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_1_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_1_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_2_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_2_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_2_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_2_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_3_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_3_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_3_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_3_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_4_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_4_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_4_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_4_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_5_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_5_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_5_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_5_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_6_0.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_6_1.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_6_2.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/config/catalogs/rook_6_3.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/assets/hand_surface_seed.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/assets/profiles.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/keypoint_grasps_20261110_v1/config/gripper_reference.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/keypoint_grasps_20261110_v1/config/gripper_tip_reference.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/keypoint_grasps_20261110_v1/config/keypoints.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/keypoint_grasps_20261110_v1/config/rook_e4_e5/query.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/multi_piece_fast_v1/results_v2/bishop_f4_f5/ik/result.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/multi_piece_fast_v1/results_v2/king_d5_d4/ik/result.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/multi_piece_fast_v1/results_v2/knight_c5_d5/ik/result.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/multi_piece_fast_v1/results_v2/queen_e5_e4/ik/result.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/multi_piece_fast_v1/results_v2/rook_e4_e5/ik/result.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/smoke_grasps_20261110_v1/results/rook_e4_e5/plan/result.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/batch.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/random1_seed101.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/random2_seed202.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/random3_seed303.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "runs/control-workspace/reachability_eval/path_assets/layers/layers_meta.json",
+          "sha256": "PIN_AT_PREPARATION"
+        },
+        {
+          "path": "simulation/manifest.json",
+          "sha256": "00216ebdfe96deeaa13b6e69c8bd9c9d53292878ee02d29e9a48abccd790d68c"
+        }
+      ],
+      "random_seed": 0,
+      "parameters": {
+        "contactBreakingThreshold": 0.002,
+        "dt_s": 0.004166666666666667,
+        "target_force_N_per_jaw": 0.25,
+        "torque_cap_Nm": 0.05,
+        "max_actions": 30,
+        "max_steps_per_action": 24000,
+        "wall_per_action_s": 180,
+        "per_game_wall_s": 900,
+        "batch_wall_s": 2700,
+        "force_friction_recovery": "unchanged original",
+        "projection": false,
+        "fixed_attachment": false,
+        "final_XY_m": 0.003,
+        "settle_s": 0.6,
+        "seeds": [
+          101,
+          202,
+          303
+        ]
+      },
+      "source_hashes": {
+        "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/work/adaptive_selector_bound_v1.py": "37ddf43909761f2e0d1e382cbfe661e22519304677f3ced3c4a4d761ae9bb0df",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/adaptive_continuous_20261110_v1/work/start_bridge_filter_v1.py": "2bc875061a70a2fd41cd2e01321745d99e762d2c0cd5f9aa02dc43858ed9e431",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/bishop.npz": "131872d84f974f41c1e4a63dabb925f3dd26308035fafc39de48f00784dae483",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/bishop.obj": "a28f926a4c7e0e50e97706c763dd970114e01b1e9bd9ceec282c8a22a92ef1d0",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/bishop.urdf": "50f6074131c84cae84749c23077af1c01387ec43b5e8f82ccbe3ccbb037caf31",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_00.obj": "aa78dcd63f99b1c3841c5ff19da0ff5cf91dcf72b0b0bcb8a8b0fe3078a28685",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_01.obj": "7bb7fd1a482104561104bc2a699e8f0adb2896737da2762695981002536f3922",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_02.obj": "2f7a6ffe6a0c52f55108d759b129772cab0a7d7ad6c330e6e4d338f55212b7b8",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_03.obj": "68ab91d27e41f69e660c422e45c9a9d27483554d2affed12e449c45a12ecefe5",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_04.obj": "8982de4b64d04b79acfa5f9d8de19065b2f7c2f14b6ee5917e5a04ae6ecb2dbc",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_05.obj": "a5de1b1165dd43d3a5f66ddaefac0e7d702f455e136a49d2a94b5f2705e03fa0",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_06.obj": "95670117c9d498c3ab36c9b391eed72d676ada60284c833e9473b680194dad0b",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_07.obj": "99738fe16cffad212b4471aff58ca70576dc3cb65b8236dacb7b2587f4479bc5",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_08.obj": "72b6ae6ab443e9204b1f01e9fd6d4cb1cd578c55eaef15f7b90df1c87a616a1f",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_09.obj": "9ee0b60b858c5ece7cdc6643a9b10054e8aee4bcd0837e96736d11194e12985c",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_10.obj": "cd2f0b89b3d2aa8ac56f89980021266debdc4bb69d08bc650ed401c7a40714f7",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_11.obj": "c4bbb2e7ea10ec5452e1239d00c19c1cb40793ae608522f7ea734290dab2dfc6",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_12.obj": "5a28db6fd61a6039dd1b365b3c87ad18ba3eb97df24ba464e1693ca605d9d3b6",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_13.obj": "ce98fabbd31c62168f0ad578d44a77461318ca2e9385d455f3138730ebd0d2b0",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_14.obj": "b4f0c0534100920572d9f30858226486f5c49c9ebcf6674c8e60ed3f5d8c0198",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_15.obj": "3f2961ebab024a8257266c12202f215e59b33a4346e523d0ad128c37a7a35fbf",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_16.obj": "718ff2a68ca0510afb92f4340ece8908abfad0b8a5317bee41da8be07e2aa22b",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/bishop_17.obj": "ebbfd03c3ccec76254dd2188c60fa4996049014d388a461a668f16c4662d8228",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_00.obj": "54d784022cd57d4f580fb00b3b04414da77a584b14c153320c2249f623a868c6",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_01.obj": "66d45bee09cf3e61740b8931c0f05d696fcecbf2a6821db5ff336cc36085b39e",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_02.obj": "4f9b29451c3856a08ca345c17530c146b4b8a07c4c9417bdadc47b234020cfea",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_03.obj": "c3ba503bd4fb8c957bf2d18fa897766cb8b4a12cf38b603517fd8ff889bada1d",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_04.obj": "e1c886d0f9c203d3ea109d2c13df395f7fac82cb368e1779484f46b2fe365eac",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_05.obj": "8a439d8798a5cca5740bec3c1a0b2c1268cea6bbd72c6f2f3ddac6b9013615ef",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_06.obj": "747a38d5c2227d559a83b022e0c0dc18fbc8de7357950c7ab0989c9a9590b7f0",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_07.obj": "c4ab12192a187b0805f3c01f87ad8aa75c7b0b38d4d118f89e8723ab1bdf18d5",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_08.obj": "a83430ece267c400320e783a4e1646c3b6427f85f6fe69ed1cec412a9fff0e57",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_09.obj": "1af07fd10a25c2d0ff6de4731cec9ff0c9b8020bab9ed9415c3f20ba667f0b18",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_10.obj": "b316db1e25f79890a3285f1f6f96575283a5b27368ee512fff0abbd2b4cd2f2c",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_11.obj": "0d1a79342b8334bdd84d822bf001a41280d8ff7020113b420c2cb49fc576ba89",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_12.obj": "340c45912b3595cf037ceee334d2cc8f318f1bfc114c7ff7a0f2b3d27c329c75",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_13.obj": "e05abbf3846104122410690fa5a55bd4013597aa2ed618319fd37f781410069c",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_14.obj": "7bc880d8ae4ad4205a7fe1362d0feb180d3a1fff3f7195c359c6613474605c9f",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_15.obj": "8224ffc9b3f90bea72d790cfbf2ecc6b362e1f5b7990aef90647e11b8194468a",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_16.obj": "478a0939510a7f3f4197c69033c0f5eea322680a7385e8fcfdb75dd8fe4a3218",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/king_17.obj": "73e22acbe0b434b4e63ac2bf85567abc325f09770a7577f19edba69989f61b71",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_00.obj": "7ce432e12ea2e311f23c3192b992b46f73297cacfc0ee31757cdb6867bd7ad95",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_01.obj": "4a20b3f1872f64a552b6ca88efc802ef5a2fc976799730d557d9d7abdca77508",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_02.obj": "100cdb7f475b46745116c2b779291bd452599855face208a0c8d39339dd618f7",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_03.obj": "c75141542fade14f1fbb10b86c7e0ca1c0b0fbe2e8d420a2fd0e803ff2fc723c",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_04.obj": "eecceb0faf5a0c5e20c6691d27efb211908a268728f858668331a08c36ec5a95",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_05.obj": "8369a635a3a5508319dfa74ea13d3943de18a1e8c1d215c33a524f8b0e73de24",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_06.obj": "09f5842f715e9bf0ba78796439af1232be8b9f0a5697de47d729697083f077f4",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_07.obj": "9de487f4685224f890f43cf81803f021cf61ee7d9dc39cc14ad888729365d8a7",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_08.obj": "6440bf3063f604b13a6a36ec82fd18baca383aec4bd15e7e1ef3e4a2672cbaa7",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_09.obj": "1e77678aa48054338edaf514700935dda2331ac1a5467f53621e2c848b3f2ff8",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_10.obj": "487a56aefd33d2f0fdab50ea02c8fea948671f3ecb77e51bc2087b775a1f9bc7",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_11.obj": "6f80d48a6f9117731c03e1bab87accc7933cf143dc55e350fa89174a4dac1378",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_12.obj": "b730ee34e8f055bf56a5f50d5372ac9f4e6d7faba2f283b90a228667d89edb55",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_13.obj": "d2d4c5d13d501006b68b4a1c3cbf46073a754b90c1d0a08661c69f28a86624a2",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_14.obj": "7f9d52cd5d951b80424b70515bcde71ae8cdbf9536c4a496b732dbdbf8ac614b",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_15.obj": "16d4263656989ded19f778ca437c8c3b4415ece348443eb14cf6480918562d58",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_16.obj": "cad8776ee79da17d16a97e61d1e31da407f4f83de29e8c7398d85cc218d0dc0e",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/knight_17.obj": "51113ac835f9993085a5093098ea430851ddec88fd8ec6a24817dff4edd47f55",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_00.obj": "bf535272241a57b129e0247f70edede50ea09a918010300dc8beb3a25d375236",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_01.obj": "762868d71617c81f1454ca27714757fca213b1949dfa8e765b614be87b275a35",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_02.obj": "fad0b904b194a4587f5ea0a7f387cf9e5d702638aab79512f0a2abfd90839fad",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_03.obj": "c1ef4e1b113e3ba39663a957bbc83489bcfdc694cba5701d435452f63745f99f",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_04.obj": "b81d7a92539c7240a8caee3177fc648264a7b06c1da26629e687fde77b6db080",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_05.obj": "2b069fddbb7395fdc726438958f0a2f2ef1992a4f3d3151dd94d2892eb5a4df9",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_06.obj": "eb710964bc6e459af977320602a0b202ba4f8f5f2ea1b0804fbc24eee53b7309",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_07.obj": "f849b7e9fd80a5d2ca4e4b33977527ee3ebc3911e8327023523c3253351dc6d2",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_08.obj": "f44c48e49a8caf5dd0fd96e9c0723c77b31b38dbba55fdf020b5b3a265dc70c1",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_09.obj": "ba62113029e032d04a8470f8ad2d4c4e2d63a7f71dfeb3bb1d521677ffe09f84",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_10.obj": "0400737f2a883de1f9933e0f0a02032f06ec513701b719e69e24dba58cc74542",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_11.obj": "3af88bd2608f51c7e3b43909438e13c15078514726edfeb48366e5236152d4d2",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_12.obj": "3990b19284c9dfb80968bec4707da62361e9dfab192de3b146eca6ff9891d25e",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_13.obj": "e18584fcd47739f9024b2f77ada9576ae97a53bda9615194c91e026987600527",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_14.obj": "531208f7177bd2d4ec7aa8350dd5ff84c343f3bc91bfcf7cf12c2c5ca011cb91",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_15.obj": "2489013395c9021584c326936c32f47610668cca452b469956528d0329b4ec3a",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_16.obj": "1b40d5fe20bb9f5bc72bfe81f05a3c23d6888146c19848125df6117981fc64a5",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/pawn_17.obj": "3bd4c7bbcd0cc577d43bb2ec325b63cdbf98d7463bc53bf3cbbb7164f92a3655",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_00.obj": "9a0a09089d10bf82793323118d74ebafe27ac83e9198fab65df60fd269384027",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_01.obj": "0d735001ed60fe5916498a1520731d39571cd85444236b4f97aa3e1525ca78a3",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_02.obj": "d8d579995b696efeae252bae4059cb637ce99126ec755497bbff905ee2503d06",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_03.obj": "feb15c477155f5f2993f141777fda5641ab0c5e00fc79097ab1c068e4cd4a5f6",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_04.obj": "31f4eee000e5d71156ca2d28e5826f1e8428509642715db4529b5b05ca04f89c",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_05.obj": "74e6d41c9971b250411179f71c433ebcfa620eef9b51e5b10c666b0f37ce5dc9",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_06.obj": "801a585bedc861d29dee66aa04790adc0af420287d13e8ed15a2aba6b59f16aa",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_07.obj": "72e6c7d8d61fe8213638df376f0850b180fd4bba9ad148ea873ea704f1798f73",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_08.obj": "bab6a7f7bc0e7ae3288a4d9b0d3eb5fc4797aaf906e7398ed81a8391820de793",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_09.obj": "f2b91e162a947413287eef21ac290acc31653ba7411ffe98d32a3a906ace5c19",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_10.obj": "8e86130bf04247b2dad14e0e90f9054bb2513ea37d75744338b70083d1d6bef3",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_11.obj": "5b605a247ec1cd9e96216163b57640438d9143eab14970325a19c031bf13a377",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_12.obj": "34a8c81db61eb126cb86d3933230547557b381fd8b61cc02257a8e0216370369",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_13.obj": "8ca54e9eefc562d3ebb6078c7a5eaecb5e6c29972ab1462e08d03e7ae7fe0d27",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_14.obj": "b40681e4019889b9e72dbf6994bf8864317e3d45c74fc83f34931d2d43e2f95e",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_15.obj": "7054669a461e4d3de2369eea203224c94669af8e22e90b16e214618000969952",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_16.obj": "35845fa8db8e5f40b4bc547c3ac85430bbe02008d82fb53e56500dc81f201c60",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/queen_17.obj": "b961c0e46339940b53eed73588b15a660f54f269d8a56334ba548d47ed611646",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_00.obj": "069ed19381c6a11b7cba60f868d07b81530a5e329f8d617d3f12ba6835028c6a",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_01.obj": "a2ef67c3c59e2bd5d2e792099f7d11fad5fd2323ffe1208cfe25b13b5ca0e90c",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_02.obj": "2e44810b0937cf9fcf63eac8bb73d8b9b2758d266206f1c9f05f1d4613c1fb5d",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_03.obj": "cf23b5107aa3a2b309f530abad662b3b823c1b9c9e5f7b6ad2e45930adf0a0c8",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_04.obj": "ede46a98c1b46e201a1d27e4df90ba7e6149f33d98f3658506c42010f80fcef4",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_05.obj": "c0358786230112caced9739184d5c9494e505b1c11610af211f3cd760b1898dc",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_06.obj": "4128c59e09e5d6083acd9b83b162ad6006c81eb2b5fa624dcbe55a3d26f91bd8",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_07.obj": "bf1c51e4d4bce779e69eb647c5ca1bb1b66d57fac48e9488778798c246a0b433",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_08.obj": "458b375171a77b65daabc9a7403fda7ee6b8ac5b0b3514d7cdea1a83a2c1ec62",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_09.obj": "07ed538b8ddb55ad4a3abc984413ddb89fd42c4f18be5d2d79da50776f3511f8",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_10.obj": "d479f5fbe3252ed6b1c392e67d092291de54260dfd01b79cb1285f29f7c54fa6",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_11.obj": "90f6d714d17bbdfa3fdb5b26674e561dfb5c20f3c6b9bc76af3ef5c1d58db9b5",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_12.obj": "95bd8b1ae045efcccd6eae0ad5fbf63607b113c8bbcf34c9a8dcdfd1adefe95b",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_13.obj": "ada52ec5f819243179c5c7371b9f1e26c34492c1e5a4c9576aac7cc7a14e1b6e",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_14.obj": "d5a2087bd8e8d9be051518d70859ce492dc45c4f06c12fb9bb5ecbe7dc7ceebc",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_15.obj": "559910be56ff82612d0bba986e787b1414eab4191a3e73eaec220e66b102d198",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_16.obj": "55e9fddf390c57f96683c1da88dfb2bebc1e90f9fb029287b9cd00e4e425c352",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/collision/rook_17.obj": "2e1c34464b0393c06ab3e2fcebd9c989195e3752e9683e9848cc8be0809301a9",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/king.npz": "cb5e965e8412e3c65e6ad93ba782ab65c3ce54b8c41036769fae54d572795a66",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/king.obj": "75a72aff932ef8438eb6b800ae8604ae42a4ac42df82d697dd98c34bed027ba7",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/king.urdf": "13f2466b02cc03f577469e150e8f04a133a98c7eb7687901ed1c2066863728f3",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/knight.npz": "3dbc4b91e5e4e8cdc8c3d49b04dea3480fbe8e8a423f8c4eac440b8b2253e6e5",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/knight.obj": "a500436cf257896043d7c259c86828a1f1c228b962478216b60fc738e2fb1ec5",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/knight.urdf": "453103e83f1373ca779b3efb79d8ccb5cc48ecad43c1198a5ddb1919cf816899",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/pawn.npz": "9b864f75dc9163cdd5c3c0d7f61760f266034e00abc172d41ec1e4d7fb1a3a8a",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/pawn.obj": "43e0594a2f97b0e3fa19d39c00db34197a745af8ce9b62fa36ff0bd54a35f52c",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/pawn.urdf": "5d699f3ac2e9918203447b89d768c47567b5a3033fae7fb1bed566c0cb67f13b",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/queen.npz": "c21209d12a070732f6e47a68ea087f2ea86576538aa8332cd148824d07ae4e32",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/queen.obj": "203161130057016de6e51bb3f2fef24678a530e9b23ca0c0dc11b689940a8fb5",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/queen.urdf": "9631c682c715af2a6911c3a843c6d072e191b1fc904cf76c51ead19f3b86fe7b",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/robot.srdf": "318646ddfc739ec6d00d8cc460d315067fedbfbb44a437dfe45bd5c5aac9e1d2",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/robot_windows.urdf": "fa78d79cfdc6bf408b209adf82effe914a859c6a4bad36f03e9116e338fef636",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/rook.npz": "b6ea06156d00503b9dbfa9cb11073cb02ac7b57de9f9d5e8437f5e2e52006918",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/rook.obj": "47e533e14f7e2d8d591b5e6a0be29fab696d2f249481c460da3bb07f12b744f9",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/assets/rook.urdf": "3b7be97a4029133cb6a795b2ff551cf62d59739ef999ba9b1e9a1cf9587475e9",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/far_grasp_fast_20261110_v1/work/tilt_geometry_v1.py": "4ae1978a4fd3d7ead07f4f0f3e2c960a3f36bdc24a6d0adc2033d6fc357c8b14",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/far_grasp_fast_20261110_v1/work/tilt_ik_v1.py": "b5480fd479343e4fad374dbb25102abebb26ad92f37878412b87d267587ef2eb",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/far_grasp_fast_20261110_v1/work/tilt_route_base_v1.py": "3b20f6a7f82b107234afb6fed7d9e19ed62d9585ee273eb882653549ae1e31ed",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/far_grasp_fast_20261110_v1/work/tilt_route_v1.py": "f884cae184b32718d2b5f99bc12b523d0fdb3c27fa501478ab9341cc5b83b3b6",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/first_contact_root_20261110_v1/work/threshold_factory_v2.py": "489c680f7e7c4796029a8a518de57def96489fe44e93f001990bd15dd1e8c3d4",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/keypoint_grasps_20261110_v1/work/keypoint_geometry_v3.py": "ac244992fc7902e643814992bbfb04c01e3baaa08d375b5db6d22ac9dfffd197",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/keypoint_grasps_20261110_v1/work/pilot_geometry_contact1mm_v1.py": "866100d3d5b2987dd074b3bab5ac6d12ec2acb0d479217aaf006c2cfd69750a8",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/keypoint_grasps_20261110_v1/work/rook_path_ik_v5.py": "ff11369dec9e4f8333b0d15fb1180b633f0d73ca64bafb7197497ec573ac06ec",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/keypoint_grasps_20261110_v1/work/rook_route_v5.py": "5dc3bdd8dcf2f672c7bad068693fcf16e43550918809129b06406a44cd979c1c",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/knight_support_20261110_v1/work/persistent_execute_support_v1.py": "6fdc5d57c314ba286a4027a1527819d55f8dbc76538d7ec9296f8bab535b26b6",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/knight_support_20261110_v1/work/support_feedback_v2.py": "aaf015796c37d2bddd73061b1d3909dd799d254364e9c8f12a917b415f134b6f",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/planning_repair_20261110_v1/work/placement_yaw_bindings_v1.py": "277a322fae29d9a090e12440284a521a73a67386b43fe789243fffb58e028373",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/planning_repair_20261110_v1/work/tilt_route_placeyaw_v1.py": "8132d25f8ff998c59ac822fcfe133c460ea1e2a5b646397c4436bb6b384bad36",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/smoke_grasps_20261110_v1/work/query_world_snapshot_v1.py": "7374e6ff215c085b9afaba04fa38ff36d99b2ef2a1b5fc63af3704ca69991b0e",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/smoke_grasps_20261110_v1/work/route_snapshot_v1.py": "3461da83e2c89fcce58e7d44d1d23d6dcd7e61571a19fe36e7cf5611f26fcbba",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_three_staged_v2.py": "191b4cde5fdba0f37e9b825604b47234d889c1c596bccce37e69092647f5f182",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/staged_three_batch_v2.py": "cdf77716787e88034dd872ef04e34711fa184f991a88aa749c333d68070a9516",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/prepared_session_staged_v2.py": "988ccbc484f1fe27d101057ed4948293860ab586a094686ac297136545130064",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/query_safety_bound_v1.py": "a7720d826d647bf9f608784fa287f22e1ad211977e6be9921e8c2a346dd58ebc",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/release_planner_bound_v1.py": "a1109ac22be1b298a79b68abe05f5db5dffb96af347a72a20a77204f0ee8f207",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/resident_planner_staged_v2.py": "ba2771fdb1a223537d6fa5854a15f428f6cf28980f7a60797fd9142f317308f4",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/sequence_coordinator_staged_v1.py": "b3e54dbbbdce57f572764a7e19ac278937486d740fe16b54ae64e990dcdd4592",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/stage_routes_bound_v3.py": "b30fe272062aeff19f28327d1a67fdc20b0622cba321e4499c98f28c5579d6f6",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/staged_runner_v2.py": "a4a1dd89a5c2d7cc11f1776fa7634e517632da6644c49636e89a9dd89dba75eb",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/transfer_bridge_v2.py": "622dd322198fcddfcd73f4df4ea6755f8f1af2ca73822b695900548106305f4b",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/work/query_world_reuse_v1.py": "cce7cde8cc1b4b2fe7b06767727b1a3e7c9ff2dd9ad4c34cf573eee2204750db",
+        "runs/control-workspace/calibration/manipulation_20261109_v1/work/query_world_reuse_v2.py": "08aa967c5da882f485fa91d1b1409e6804bb81a391ff58d685e00fe955fdc717",
+        "runs/control-workspace/calibration/scene_alignment/manual_layout_20261109/camera_mount_v3/assets/wrist_camera_mount_so101_v1.stl": "e17a626158951ac8cdf8d960962c1a3c8bf23b64635a02f88b62016fe895cef8",
+        "runs/control-workspace/calibration/scene_alignment/manual_layout_20261109/camera_mount_v3/assets/wrist_camera_so101_v1.stl": "1147857bb136876c81f98d18b533342bae2383f0e23bec216064c9f093bd3577",
+        "runs/control-workspace/experiment_review/experiment_gate.py": "b61419ecd9d778fc41ed2379699233295d29ba35b9ebc6c61f6f146809732d6d",
+        "runs/control-workspace/experiment_review/record_checks.py": "8c8bfd9a4fb31d84b3bc6eee653863df7d27e64e9b7fa894610569f61925cdfa",
+        "runs/control-workspace/experiment_review/tools/centered_pressure_control_v1.py": "3fa9dd281795eed34f95b93f2add3c519bd3f791f20f319934f87114b148410f",
+        "runs/control-workspace/experiment_review/tools/effort_hold_control_v1.py": "8d9ff4a6db513ae4822743eb69f5570dc93e4029a5aaf9c17368a768291f05e0",
+        "runs/control-workspace/experiment_review/tools/force_target_control_v1.py": "801c23a07a991e4daed24f909a87ff286d76fca0dad2e08c45579556f6ff4399",
+        "runs/control-workspace/experiment_review/tools/material_grip_control_v1.py": "279d2b1db971089fdb33d22064b520b4462735dd027f700bc0c6ebb440b6b2b3",
+        "runs/control-workspace/experiment_review/tools/ompl_continuous_helpers_v4.py": "bf427035080a8f4e3e27b695cc613cd3c69eb2f303b0706d2e8146385bdcb10f",
+        "runs/control-workspace/experiment_review/tools/preload_hold_control_v1.py": "994898b03474e88abc15028aceeb2b649ec5be0ac1f3d9e776f3bbf399c1025a",
+        "runs/control-workspace/experiment_review/tools/pressure_center_control_v1.py": "10e9514c2dd495a407fcefcc156035e6b74d58db55ae369d5bda54d028b8efa4",
+        "runs/control-workspace/experiment_review/tools/recontact_hold_control_v1.py": "1a3ace842971ba2a917b1828173dc05eb88fbb10cd5b69aa604d5a8077d27b99",
+        "runs/control-workspace/experiment_review/tools/settled_pressure_control_v1.py": "d68a38c3ae3e3fef64c89642d9fd7423c8f84938925254e8a1fa5cb98fedeb4d",
+        "runs/control-workspace/experiment_review/tools/task_outcome_grip_v1.py": "699f7368ce5926a4b0268da614e89f826476d814542dca65520b9a2be7e9de42",
+        "runs/control-workspace/reachability_eval/core.py": "485c1d445566901ef9d7f6d63f99f37576269e0c40971cb78bf5c29eeb21e81a",
+        "runs/control-workspace/reachability_eval/dynamics_cli.py": "060ea28950e1dbfcfac0463c7d8162633fc202110fca036abcaeafde68bf4bf1",
+        "runs/control-workspace/reachability_eval/dynamics_drive.py": "a41f3360f452be49c4fdec080e1ef60cf26584a04c5f8cf63300ed8fd7321c5b",
+        "runs/control-workspace/reachability_eval/dynamics_evaluate.py": "0fb58834ad4dc5a853f5dd6ee755d7085744bce475f1b43ad7c42754ed962d2a",
+        "runs/control-workspace/reachability_eval/friction_audit_v1.py": "44704d21e10cfa269b2cee73b99880b6a09c05beb88fa6613bf2f0d928b37c24",
+        "runs/control-workspace/reachability_eval/model/assets/base_motor_holder_so101_v1.stl": "8cd2f241037ea377af1191fffe0dd9d9006beea6dcc48543660ed41647072424",
+        "runs/control-workspace/reachability_eval/model/assets/base_so101_v2.stl": "bb12b7026575e1f70ccc7240051f9d943553bf34e5128537de6cd86fae33924d",
+        "runs/control-workspace/reachability_eval/model/assets/motor_holder_so101_base_v1.stl": "31242ae6fb59d8b15c66617b88ad8e9bded62d57c35d11c0c43a70d2f4caa95b",
+        "runs/control-workspace/reachability_eval/model/assets/motor_holder_so101_wrist_v1.stl": "887f92e6013cb64ea3a1ab8675e92da1e0beacfd5e001f972523540545e08011",
+        "runs/control-workspace/reachability_eval/model/assets/moving_jaw_so101_v1.stl": "785a9dded2f474bc1d869e0d3dae398a3dcd9c0c345640040472210d2861fa9d",
+        "runs/control-workspace/reachability_eval/model/assets/rotation_pitch_so101_v1.stl": "9be900cc2a2bf718102841ef82ef8d2873842427648092c8ed2ca1e2ef4ffa34",
+        "runs/control-workspace/reachability_eval/model/assets/sts3215_03a_no_horn_v1.stl": "75ef3781b752e4065891aea855e34dc161a38a549549cd0970cedd07eae6f887",
+        "runs/control-workspace/reachability_eval/model/assets/sts3215_03a_v1.stl": "a37c871fb502483ab96c256baf457d36f2e97afc9205313d9c5ab275ef941cd0",
+        "runs/control-workspace/reachability_eval/model/assets/under_arm_so101_v1.stl": "d01d1f2de365651dcad9d6669e94ff87ff7652b5bb2d10752a66a456a86dbc71",
+        "runs/control-workspace/reachability_eval/model/assets/upper_arm_so101_v1.stl": "475056e03a17e71919b82fd88ab9a0b898ab50164f2a7943652a6b2941bb2d4f",
+        "runs/control-workspace/reachability_eval/model/assets/waveshare_mounting_plate_so101_v2.stl": "e197e24005a07d01bbc06a8c42311664eaeda415bf859f68fa247884d0f1a6e9",
+        "runs/control-workspace/reachability_eval/model/assets/wrist_roll_follower_so101_v1.stl": "4b17b410a12d64ec39554abc3e8054d8a97384b2dc4a8d95a5ecb2a93670f5f4",
+        "runs/control-workspace/reachability_eval/model/assets/wrist_roll_pitch_so101_v2.stl": "6c7ec5525b4d8b9e397a30ab4bb0037156a5d5f38a4adf2c7d943d6c56eda5ae",
+        "runs/control-workspace/reachability_eval/model/so101_new_calib.urdf": "3a65d2d35e68a8d2f0c2cc176d19b884506543c93ba72980145b80abe276022c",
+        "runs/control-workspace/reachability_eval/opening_profile_v1.py": "5e907b599b3bdb3f964842cf197c49519a88d14e6c5abbd443072ab7fc14fa7d",
+        "runs/control-workspace/reachability_eval/path_ik.py": "3a344bf4c2bce62a70999948cd80fa7b0ca173114fbb21ed15f71857727c814b",
+        "runs/control-workspace/reachability_eval/physics_world.py": "33c9534e6768afad7c9e1aa3bec18f4bef33e43db4148d97ecf20a4a76ed95bd",
+        "runs/control-workspace/reachability_eval/pilot_geometry_v2.py": "d8c396cfd8983d343dcc7e24fd2f716b09ea576d017e5b5d47d84aeeb9733dd3",
+        "runs/control-workspace/reachability_eval/pilot_world_v2.py": "107a809e56cc1f755917a8fbfe8fda9d7ed1a28445ffce45c949f3702edba224",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_0.stl": "4653ab1dc9a714ace216fb86ef0b5b20399fdb27b912632f550c018f1e71f55f",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_1.stl": "f92c61d803dd558dabd52b902682905e211dffe399019131799f5243a758b4e0",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_10.stl": "c5f5f84b90aca94294b56675619afa7d14b9f5c7466a798d7b8116b093d1ac04",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_11.stl": "c4e0ffa75cfcd6d1e188892dbdc871c699af9ef8b33a0d8f14fc71d82c999040",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_12.stl": "527722cbdd9de8f8831aa71f262f954d42732ecd4cc2e39c18cb38a499e18977",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_13.stl": "78feb0134890dbd02df3b7c7c68838726dcd4a2662d619d02338afeabb05fc73",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_14.stl": "2a522283b45fb2e05a18c65857b3b1ad612bfdfeb1e46a0006109c6ad76a700a",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_15.stl": "ede20e4e74da83ed8b48a971cae313d4742e682a87dc717c3df9ac1881ceadb9",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_2.stl": "84b70588ae6f31b1931c4fa38a260c5cc6dbeafae4bf54219c5a85764c54f02c",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_3.stl": "7c950a1e3c7e51b0d06428374fd1a6d261d7f47aacb09211d2c67748094904bb",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_4.stl": "4db37e4a04d1b6b7abadcf6ff1fc034b3a39efcb1744f57fc0aa074f537fe787",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_5.stl": "4039901eb5810694b3598884bcd69112811141df9735720cee3411df5090e74a",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_6.stl": "3705593304c58493d6de16c9d0359eb379400de393c5343d7b64e24be6fe356f",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_7.stl": "c21edcddb8e83ec81abdddc32b41858432aff582079f248f5bc9ae40c0c882f2",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_8.stl": "2f42ec9e1bc0ab61d6bc490d072044e694bcd06a51b7214937b85860467f13df",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_fixed_9.stl": "b937690a6b8aae423b17388af0e1fef156cd56af25e3cb4f50c2503f03674088",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_0.stl": "639d5b6bca0acb550c8d4e1f2cec0d9f6fd19905ecdca4868cf72e4ee5347b9b",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_1.stl": "b756780c4abe3673b5e98d2c88bc9a55c822d6aee522c76df28f7f6c1f422a74",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_10.stl": "77cad1c67bba7eed4854f63db6fb08c31889a625df1377de625f3fbbdfbe4f35",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_11.stl": "ece5d7c64807fb961b9ea452404690afe355b33abd67b44c376cffbc4136bd4f",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_12.stl": "c74dfd48af8222410f767f76ba59c09d59500a006b28c748d1d3c7ce9c20d82e",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_13.stl": "4fc289cf9e46cd0d8068ee0e3b6b0907bffccc63f91a0ca3a10dd9453be92fce",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_2.stl": "13c276c63cee343d54fa6f971fceca064c1ec6728b73dac08ef8ad262f7bf568",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_3.stl": "c0945929bda813e1f5e9f490f1872107ca788df77e398f30129283e49f993eda",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_4.stl": "3a10a52b35715d69d70684de7ccbeb77cad6ba5d5ddf28b1b6ef0dab225b3c04",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_5.stl": "a7bae51491fdc3d46a98d7723598beebf766bdcb9de9a133847be84310e2a3c6",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_6.stl": "ec5a85ace20169931a4980793d2a1d974550bce92793be09c7156c07fcd78ce7",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_7.stl": "373a8ffc88c5736b881641659312de415c28438e46a09fd32e08e036a3630d69",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_8.stl": "1f44c994899b0bc6bf572e52d6d2c0d4698fe2ddff106494b6dd6e4852e4beac",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/piece_moving_9.stl": "146f16fc51369b7d49395b19b35f13e042c9ae0aade9a4490d3ba5f5d1a024bd",
+        "runs/control-workspace/reachability_eval/results/advanced_30_v1/assets/proxy_motor.stl": "8bcb7400f2a3a5085c360909962b03655c293863bf5f2cc31cc2ca231db8b9f9",
+        "simulation/tools/check_environment.py": "5fc8060e1636d86faeaa4d0b42523492a8df862fe9a882ce239f1703fc8609d2"
+      }
+    },
+    "unknown_fields": []
+  },
+  "evidence": [
+    {
+      "id": "baseline_audit",
+      "path": "artifacts/control-20261110/combined-raw-audit.json",
+      "sha256": "ea0d95f7bea588aeab79251a27573c6f3ee88dc1532df3aec59eb79a03abe266",
+      "selector": ""
+    },
+    {
+      "id": "bundle",
+      "path": "simulation/manifest.json",
+      "sha256": "00216ebdfe96deeaa13b6e69c8bd9c9d53292878ee02d29e9a48abccd790d68c",
+      "selector": ""
+    }
+  ],
+  "history_review": {
+    "searched": [
+      "artifacts/control-20261110",
+      "simulation/review/ledger"
+    ],
+    "related_ids": [
+      "published_control_baseline_20261110"
+    ],
+    "known": [
+      "Original physical baseline 0/10,10/10,5/10; static loading does not reproduce dynamic results."
+    ],
+    "unknown": [
+      "Whether this receiving machine loads the complete exported source/asset closure."
+    ],
+    "decision": "repeat",
+    "rationale": "Reproduce recorded native-contact baseline after portable setup, without claiming that rebasing repairs its known task blocks.",
+    "changed_conditions": [
+      {
+        "field": "workspace_and_environment",
+        "before": "Original Windows3.10 project environment",
+        "after": "Fresh portable workspace on receiving machine"
+      }
+    ],
+    "repeat_of": [
+      "published_control_baseline_20261110"
+    ],
+    "repeat_purpose": "Cross-machine baseline reproduction; compare stage-specific outcomes and actual environment."
+  },
+  "judgement": {
+    "unit": "Thirty planned physical actions in three ten-action games",
+    "success": "Every action completes intentional support/open/0.6s settle, correct occupancy and XY<=3mm/tilt<=10deg, no observed drop/neighbor collision, checked actual exit/home; each game full only at10/10",
+    "failure": "Observed collision/drop or task tolerance failure, or planning rejection preventing suffix completion; report stage and retain actual positive prefixes",
+    "inconclusive": "Program/resource/evidence fault; retain all physical steps before the fault and stop batch",
+    "planned_trials": 30,
+    "budget": {
+      "wall_time_seconds": 2700,
+      "max_attempts": 30
+    },
+    "stop_conditions": [
+      "First task failure stops its game; other original games may continue",
+      "Program/evidence error stops entire batch",
+      "Per action24000ticks/180swall, game900s, batch2700s; no automatic retries"
+    ],
+    "preregistration": "declared_before_execution"
+  },
+  "execution": {
+    "entrypoint": "runs/control-workspace/calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_three_staged_v2.py",
+    "args": [
+      "--config",
+      "runs/control-workspace/calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/batch.json",
+      "--out",
+      "runs/three-games"
+    ],
+    "output_dir": "runs/three-games"
+  },
+  "observations": [],
+  "design_review": {
+    "reviewer": "GPT",
+    "checked_evidence_ids": [
+      "baseline_audit",
+      "bundle"
+    ],
+    "conclusion": "approved",
+    "notes": "GPT reviewed unchanged baseline recipe and explicit cross-machine repeat purpose; only use with the hash-matching snapshot. Changed conditions/criteria require a new reviewed version. Full reproduction not executed for the handoff."
+  },
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "independent": false,
+    "checked_evidence_ids": [],
+    "claims": [],
+    "limitations": [
+      "No new results in this template; dynamic portability remains unverified until a new run and raw review.",
+      "Same-GPT historical raw review, no independent reviewer."
+    ]
+  }
+}

@@ -1,0 +1,3683 @@
+{
+ "provenance": "Exact field subsets from immutable native traces;line indices+hashes retained;no replay or physics",
+ "actions": [
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/three_games_v1/random1_seed101/step01_ply01_f7d7/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/three_games_v1/random1_seed101/step01_ply01_f7d7/trial/trace.jsonl.gz",
+   "trace_sha256": "fb6c2857337b65b17c97fce553160bea5b13cf8380fda6df85b7587c6ff7a5c6",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 0,
+     "time": 0.0,
+     "world_time": 0.0,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874944309007,
+      0.1425296204451171,
+      -0.1727009555047778,
+      1.5706190044750825,
+      -0.004348306525805314
+     ],
+     "actual_g": 0.04019022184203673,
+     "target_pos": [
+      0.17694192723820099,
+      0.03783484365707941,
+      0.013859999999999999
+     ],
+     "target_quat": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "tcp_pos": [
+      0.24437680840492249,
+      0.008627203293144703,
+      0.07392466813325882
+     ],
+     "tcp_quat": [
+      0.0055956849828362465,
+      0.999869167804718,
+      0.0007227484020404518,
+      0.015161163173615932
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 3381,
+     "step": 3381,
+     "world_step": 3381,
+     "time": 14.0875,
+     "world_time": 14.0875,
+     "phase": "lift",
+     "mode": "hold",
+     "actual_q5": [
+      -0.26840187243449476,
+      -0.4343989514122967,
+      0.5516820609557129,
+      1.4520450906816638,
+      -0.23037087931781466
+     ],
+     "actual_g": -0.003866165089664061,
+     "target_pos": [
+      0.17691197612394755,
+      0.03783456894236879,
+      0.0236827331801164
+     ],
+     "target_quat": [
+      0.002822622709249985,
+      -0.0008770519656200776,
+      -0.015479788089608253,
+      0.9998758121594861
+     ],
+     "tcp_pos": [
+      0.16908952593803406,
+      0.0376809798181057,
+      0.060639627277851105
+     ],
+     "tcp_quat": [
+      0.005321063566952944,
+      0.9999855756759644,
+      0.00020239986770320684,
+      0.0007106891716830432
+     ],
+     "fixed_jaw_collision_sum": 0.25139949508473947,
+     "moving_jaw_collision_sum": 0.25184315261170676,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 4607,
+     "step": 4607,
+     "world_step": 4607,
+     "time": 19.195833333333333,
+     "world_time": 19.195833333333333,
+     "phase": "transfer",
+     "mode": "hold",
+     "actual_q5": [
+      0.08747476679566123,
+      -0.47353453337499596,
+      0.5691009252106973,
+      1.4750342622824528,
+      0.15639839516982226
+     ],
+     "actual_g": -0.0045839232596599075,
+     "target_pos": [
+      0.1768431404121054,
+      -0.01226794627448708,
+      0.02563062889972204
+     ],
+     "target_quat": [
+      -0.0014899438118323879,
+      0.001395160813853962,
+      0.02278006911220354,
+      0.9997384168096094
+     ],
+     "tcp_pos": [
+      0.1691897064447403,
+      -0.012679588980972767,
+      0.06262686103582382
+     ],
+     "tcp_quat": [
+      -0.010125054977834225,
+      0.9999487400054932,
+      -6.684151230729185e-06,
+      0.00010212697816314176
+     ],
+     "fixed_jaw_collision_sum": 0.2502943496591443,
+     "moving_jaw_collision_sum": 0.2504529439694859,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 5291,
+     "step": 5291,
+     "world_step": 5291,
+     "time": 22.045833333333334,
+     "world_time": 22.045833333333334,
+     "phase": "lower",
+     "mode": "hold",
+     "actual_q5": [
+      0.08831857567080495,
+      -0.4622382482187011,
+      0.6493255336705434,
+      1.3835066715434299,
+      0.15731381887019968
+     ],
+     "actual_g": -0.004226758063182743,
+     "target_pos": [
+      0.1767705262411036,
+      -0.01249570614892249,
+      0.013665388122548399
+     ],
+     "target_quat": [
+      -0.004858940389601088,
+      0.0025517947428958586,
+      0.03058894162650294,
+      0.9995169811924413
+     ],
+     "tcp_pos": [
+      0.16919049620628357,
+      -0.01279776357114315,
+      0.050632186233997345
+     ],
+     "tcp_quat": [
+      -0.010160860605537891,
+      0.9999483823776245,
+      -7.101965820766054e-06,
+      0.00010545226541580632
+     ],
+     "fixed_jaw_collision_sum": 0.2531065914269254,
+     "moving_jaw_collision_sum": 0.2563094861721875,
+     "boardforceN": 0.053189776931618964,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 5306,
+     "step": 5306,
+     "world_step": 5306,
+     "time": 22.108333333333334,
+     "world_time": 22.108333333333334,
+     "phase": "support",
+     "mode": "hold",
+     "actual_q5": [
+      0.08831859254245641,
+      -0.4622382212531701,
+      0.6493251095366019,
+      1.3835066830444014,
+      0.1573137731863741
+     ],
+     "actual_g": -0.004248566117372307,
+     "target_pos": [
+      0.17677033990991617,
+      -0.01249464277998552,
+      0.013663288758301462
+     ],
+     "target_quat": [
+      -0.005046158665081297,
+      0.002568728105230374,
+      0.030277354604459655,
+      0.9995254972819873
+     ],
+     "tcp_pos": [
+      0.16919055581092834,
+      -0.012797771953046322,
+      0.05063223838806152
+     ],
+     "tcp_quat": [
+      -0.010160828940570354,
+      0.9999483823776245,
+      -7.120922873582458e-06,
+      0.0001056441615219228
+     ],
+     "fixed_jaw_collision_sum": 0.2533414701330843,
+     "moving_jaw_collision_sum": 0.256554762900277,
+     "boardforceN": 0.056381845276795316,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 5495,
+     "step": 5495,
+     "world_step": 5495,
+     "time": 22.895833333333332,
+     "world_time": 22.895833333333332,
+     "phase": "open",
+     "mode": "position",
+     "actual_q5": [
+      0.08831832674571136,
+      -0.46224001595581765,
+      0.6493356567164524,
+      1.3835067265918093,
+      0.15731630069970892
+     ],
+     "actual_g": 0.034507812565052,
+     "target_pos": [
+      0.17674635946545483,
+      -0.01250681562233214,
+      0.013675122398672841
+     ],
+     "target_quat": [
+      -0.0004862470294826478,
+      0.0020893717332151275,
+      0.029767052329239495,
+      0.9995545611347162
+     ],
+     "tcp_pos": [
+      0.16918879747390747,
+      -0.012797600589692593,
+      0.050631094723939896
+     ],
+     "tcp_quat": [
+      -0.010162225924432278,
+      0.9999483823776245,
+      -6.688646863040049e-06,
+      0.00010126744746230543
+     ],
+     "fixed_jaw_collision_sum": 0.005207461598886874,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.028582130873370068,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 5639,
+     "step": 5639,
+     "world_step": 5639,
+     "time": 23.495833333333334,
+     "world_time": 23.495833333333334,
+     "phase": "settle_board",
+     "mode": "position",
+     "actual_q5": [
+      0.08831832633959914,
+      -0.4622399911728618,
+      0.6493356723720586,
+      1.3835065212734576,
+      0.15731630583069608
+     ],
+     "actual_g": 0.035337733006853306,
+     "target_pos": [
+      0.1767451361561743,
+      -0.012501302243362227,
+      0.013676907291609088
+     ],
+     "target_quat": [
+      -0.00034832655155073134,
+      0.002139784794002918,
+      0.029306160279976158,
+      0.9995681312243269
+     ],
+     "tcp_pos": [
+      0.16918882727622986,
+      -0.012797602452337742,
+      0.0506310872733593
+     ],
+     "tcp_quat": [
+      -0.010162227787077427,
+      0.9999483823776245,
+      -6.696752279822249e-06,
+      0.00010134949116036296
+     ],
+     "fixed_jaw_collision_sum": 0.005060797717167336,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.02817917987596606,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step01_ply01_g2f2/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step01_ply01_g2f2/trial/trace.jsonl.gz",
+   "trace_sha256": "bde735269c569a4e82a4bf675e7c03a9e060584ddb9a1fd5454c58e468af5c26",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 0,
+     "time": 0.0,
+     "world_time": 0.0,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874944309007,
+      0.1425296204451171,
+      -0.1727009555047778,
+      1.5706190044750825,
+      -0.004348306525805314
+     ],
+     "actual_g": 0.04019022184203673,
+     "target_pos": [
+      0.30305807276179897,
+      0.063058072761799,
+      0.013859999999999999
+     ],
+     "target_quat": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "tcp_pos": [
+      0.24437680840492249,
+      0.008627203293144703,
+      0.07392466813325882
+     ],
+     "tcp_quat": [
+      0.0055956849828362465,
+      0.999869167804718,
+      0.0007227484020404518,
+      0.015161163173615932
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 7586,
+     "step": 7586,
+     "world_step": 7586,
+     "time": 31.608333333333334,
+     "world_time": 31.608333333333334,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.041828747946968864,
+      0.14252797436484052,
+      -0.1726906891060428,
+      1.5706190044750825,
+      -0.004346979075370314
+     ],
+     "actual_g": 0.03786301911844351,
+     "target_pos": [
+      0.3028069405947687,
+      0.0376693845657841,
+      0.013647416798480116
+     ],
+     "target_quat": [
+      -0.0003530112376704426,
+      0.0003255154817507686,
+      -0.008724075270450677,
+      0.9999618292382029
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225339650176466,
+      0.015156857669353485
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.029453944627228574,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step02_ply02_f5f7/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step02_ply02_f5f7/trial/trace.jsonl.gz",
+   "trace_sha256": "9a2a10be40edeb62f3a619c2c45c48eb4a482c8728d64b221db551040af03fb3",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 7586,
+     "time": 0.0,
+     "world_time": 31.608333333333334,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.041828747946968864,
+      0.14252797436484052,
+      -0.1726906891060428,
+      1.5706190044750825,
+      -0.004346979075370314
+     ],
+     "actual_g": 0.03786301911844351,
+     "target_pos": [
+      0.22738953760700598,
+      0.03783551503976533,
+      0.013649999225673393
+     ],
+     "target_quat": [
+      4.3557090773022793e-07,
+      -2.2886589386926084e-06,
+      0.00010104044618133492,
+      0.9999999948927003
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225339650176466,
+      0.015156857669353485
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 7825,
+     "step": 7825,
+     "world_step": 15411,
+     "time": 32.60416666666667,
+     "world_time": 64.2125,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.041828747937501985,
+      0.1425279740710865,
+      -0.17269068747985503,
+      1.5706190044749657,
+      -0.004346979017824671
+     ],
+     "actual_g": 0.03929473185119137,
+     "target_pos": [
+      0.1784645320939254,
+      0.03772291331172096,
+      0.013649181009711159
+     ],
+     "target_quat": [
+      -0.00016210989741409753,
+      -8.864738498778172e-05,
+      -0.0042109496219804796,
+      0.9999911168431964
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225339650176466,
+      0.01515685673803091
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.029429999998264365,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step03_ply03_f2h4/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step03_ply03_f2h4/trial/trace.jsonl.gz",
+   "trace_sha256": "a8cbe8f74b0a4bb120d359ae0baef399fd8d3574513645ec08d8fcb052537b68",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 15411,
+     "time": 0.0,
+     "world_time": 64.2125,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.041828747937501985,
+      0.1425279740710865,
+      -0.17269068747985503,
+      1.5706190044749657,
+      -0.004346979017824671
+     ],
+     "actual_g": 0.03929473185119137,
+     "target_pos": [
+      0.3029314771291963,
+      0.03732300447517234,
+      0.013649261248856431
+     ],
+     "target_quat": [
+      9.917059886257651e-05,
+      -0.00011464282952181469,
+      -0.01496158853226539,
+      0.999888057679861
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225339650176466,
+      0.01515685673803091
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 8707,
+     "step": 8707,
+     "world_step": 24118,
+     "time": 36.279166666666654,
+     "world_time": 100.49166666666666,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.041828747947663336,
+      0.14252797437848327,
+      -0.17269068918302782,
+      1.570619004474968,
+      -0.004346979078149571
+     ],
+     "actual_g": 0.03779484232199847,
+     "target_pos": [
+      0.2517854470061917,
+      0.08832616842494011,
+      0.013648331161303841
+     ],
+     "target_quat": [
+      0.0001324057549026256,
+      0.0003017793241140024,
+      0.12326618736071537,
+      0.9923735881468776
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225339650176466,
+      0.015156857669353485
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.02942867913581291,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step04_ply04_d7c7/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step04_ply04_d7c7/trial/trace.jsonl.gz",
+   "trace_sha256": "1973e4eee1d1b09e08277596a3afb23df03e463a885ca8142ae742f06b896f5b",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 24118,
+     "time": 0.0,
+     "world_time": 100.49166666666666,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.041828747947663336,
+      0.14252797437848327,
+      -0.17269068918302782,
+      1.570619004474968,
+      -0.004346979078149571
+     ],
+     "actual_g": 0.03779484232199847,
+     "target_pos": [
+      0.1772974485490422,
+      -0.012361918210065586,
+      0.013649420740015194
+     ],
+     "target_quat": [
+      -5.8849792104707555e-05,
+      -0.00016490482916240346,
+      -0.01470284760850994,
+      0.9998918919639763
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225339650176466,
+      0.015156857669353485
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 7782,
+     "step": 7782,
+     "world_step": 31900,
+     "time": 32.425,
+     "world_time": 132.91666666666666,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.041828747800575,
+      0.14252796991621214,
+      -0.17269066431231694,
+      1.5706190044750736,
+      -0.004346978350516187
+     ],
+     "actual_g": 0.05998639125616924,
+     "target_pos": [
+      0.17723433152695878,
+      -0.03724401950026155,
+      0.013649478037910917
+     ],
+     "target_quat": [
+      -0.0001811482628209091,
+      -1.8486528995917354e-07,
+      -0.018635771024510396,
+      0.9998263225298655
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392360270023346
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225334993563592,
+      0.015156847424805164
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.02942999999993368,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step05_ply05_e4e5/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step05_ply05_e4e5/trial/trace.jsonl.gz",
+   "trace_sha256": "fe33e8bbbb0a7e07a90c493748e4e70c7c392cff922357c3eab5dc8139ee4776",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 31900,
+     "time": 0.0,
+     "world_time": 132.91666666666666,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.041828747800575,
+      0.14252796991621214,
+      -0.17269066431231694,
+      1.5706190044750736,
+      -0.004346978350516187
+     ],
+     "actual_g": 0.05998639125616924,
+     "target_pos": [
+      0.25252565894551804,
+      0.0123430295918754,
+      0.013649755294582127
+     ],
+     "target_quat": [
+      9.888002317128728e-09,
+      -2.623526947697135e-09,
+      0.0009762145728639071,
+      0.9999995235024403
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392360270023346
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225334993563592,
+      0.015156847424805164
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 4448,
+     "step": 4448,
+     "world_step": 36348,
+     "time": 18.53333333333333,
+     "world_time": 151.45,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874779952787,
+      0.14252796987575395,
+      -0.1726906640860737,
+      1.570619004475045,
+      -0.004346978345727607
+     ],
+     "actual_g": 0.06019092167696608,
+     "target_pos": [
+      0.22715071450738406,
+      0.013134626767454197,
+      0.013649755551229934
+     ],
+     "target_quat": [
+      -1.5453551273802352e-07,
+      -3.7274210193062836e-07,
+      -0.006929227335811091,
+      0.9999759926160057
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392360270023346
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225334993563592,
+      0.015156847424805164
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.029429999880153875,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step06_ply06_d1g1/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step06_ply06_d1g1/trial/trace.jsonl.gz",
+   "trace_sha256": "7ad961ba679e769727a569075e96b2ec3e71d6308b62cc6bbf6647a33f8089f1",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 36348,
+     "time": 0.0,
+     "world_time": 151.45,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874779952787,
+      0.14252796987575395,
+      -0.1726906640860737,
+      1.570619004475045,
+      -0.004346978345727607
+     ],
+     "actual_g": 0.06019092167696608,
+     "target_pos": [
+      0.3296012082878853,
+      -0.012112370310757972,
+      0.013643442292662287
+     ],
+     "target_quat": [
+      -0.0002852140865145467,
+      0.00047447850094319244,
+      0.015153010595496286,
+      0.9998850332878124
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392360270023346
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225334993563592,
+      0.015156847424805164
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 9896,
+     "step": 9896,
+     "world_step": 46244,
+     "time": 41.23333333333335,
+     "world_time": 192.68333333333334,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874795019968,
+      0.14252797446270216,
+      -0.17269068964845508,
+      1.5706190044750763,
+      -0.0043469790950928745
+     ],
+     "actual_g": 0.03738578154397901,
+     "target_pos": [
+      0.32777064105819986,
+      0.06455009894039847,
+      0.0136496164579444
+     ],
+     "target_quat": [
+      6.281567107628492e-05,
+      0.00017653416026760556,
+      0.1307188890417912,
+      0.9914194555976605
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225339650176466,
+      0.015156857669353485
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.02943000001615157,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step07_ply07_b6c6/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step07_ply07_b6c6/trial/trace.jsonl.gz",
+   "trace_sha256": "7ddb89ad7939f92e05c2c9d86da12fc688bd52982db6ccd29c97f244c37b617f",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 46244,
+     "time": 0.0,
+     "world_time": 192.68333333333334,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874795019968,
+      0.14252797446270216,
+      -0.17269068964845508,
+      1.5706190044750763,
+      -0.0043469790950928745
+     ],
+     "actual_g": 0.03738578154397901,
+     "target_pos": [
+      0.20232611478939674,
+      -0.06282602502899591,
+      0.013649769118549865
+     ],
+     "target_quat": [
+      -2.2456386364772295e-05,
+      5.3917010833677304e-05,
+      -0.009845931609837924,
+      0.999951525934833
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225339650176466,
+      0.015156857669353485
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 8353,
+     "step": 8353,
+     "world_step": 54597,
+     "time": 34.804166666666646,
+     "world_time": 227.48749999999998,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874793703242,
+      0.142527974071335,
+      -0.17269068748014116,
+      1.570619004474984,
+      -0.0043469790178245074
+     ],
+     "actual_g": 0.039294731851191485,
+     "target_pos": [
+      0.20246804805955995,
+      -0.03773746149272026,
+      0.013650151954697676
+     ],
+     "target_quat": [
+      -3.585804369998881e-05,
+      5.8398008286989685e-05,
+      -0.11216325094350597,
+      0.9936897908510771
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225339650176466,
+      0.01515685673803091
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.029430000028843363,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step08_ply08_c7b7/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step08_ply08_c7b7/trial/trace.jsonl.gz",
+   "trace_sha256": "09edea0b84afe7e46bc84ea0137fc68f06c9e81a11d3dcc41e5dba1d3009ac5d",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 54597,
+     "time": 0.0,
+     "world_time": 227.48749999999998,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874793703242,
+      0.142527974071335,
+      -0.17269068748014116,
+      1.570619004474984,
+      -0.0043469790178245074
+     ],
+     "actual_g": 0.039294731851191485,
+     "target_pos": [
+      0.17719955546019045,
+      -0.037168572314875775,
+      0.013649411834863241
+     ],
+     "target_quat": [
+      2.5622379208852246e-05,
+      -0.00011871651247581883,
+      -0.02455863013323785,
+      0.9996983839818199
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225339650176466,
+      0.01515685673803091
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 8496,
+     "step": 8496,
+     "world_step": 63093,
+     "time": 35.400000000000006,
+     "world_time": 262.8875,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874780053543,
+      0.14252796991633662,
+      -0.17269066431244337,
+      1.57061900447507,
+      -0.004346978350487729
+     ],
+     "actual_g": 0.05998639125616942,
+     "target_pos": [
+      0.1782855348607502,
+      -0.06230415631223304,
+      0.013649132032259498
+     ],
+     "target_quat": [
+      -9.713583306313688e-05,
+      0.00012186015234711287,
+      -0.01895012151847198,
+      0.9998204181797692
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392360270023346
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225334993563592,
+      0.015156847424805164
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0294300000000057,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step09_ply09_h4f6/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step09_ply09_h4f6/trial/trace.jsonl.gz",
+   "trace_sha256": "f16832607495f12c80686a2bc6a73bb810c73339ae7af38577e801a07210a830",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 63093,
+     "time": 0.0,
+     "world_time": 262.8875,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874780053543,
+      0.14252796991633662,
+      -0.17269066431244337,
+      1.57061900447507,
+      -0.004346978350487729
+     ],
+     "actual_g": 0.05998639125616942,
+     "target_pos": [
+      0.2515207822354462,
+      0.08832038419696453,
+      0.013650586061833708
+     ],
+     "target_quat": [
+      7.01612853959921e-05,
+      0.00020952621662966795,
+      0.13895755447413574,
+      0.9902983132524897
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392360270023346
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225334993563592,
+      0.015156847424805164
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 8033,
+     "step": 8033,
+     "world_step": 71126,
+     "time": 33.47083333333336,
+     "world_time": 296.35833333333335,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874796519892,
+      0.1425279749169868,
+      -0.1726906921693403,
+      1.5706190044750155,
+      -0.004346979189202012
+     ],
+     "actual_g": 0.03517003568294105,
+     "target_pos": [
+      0.20232480193013946,
+      0.03824180416235236,
+      0.013649999307407165
+     ],
+     "target_quat": [
+      -3.906470733037859e-08,
+      1.1349319020058665e-07,
+      -0.004177561971932082,
+      0.9999912739499062
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.005595022346824408,
+      0.9998692274093628,
+      0.0007225340232253075,
+      0.01515685860067606
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.029430000000240403,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step10_ply10_g1g3/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random2_seed202/step10_ply10_g1g3/trial/trace.jsonl.gz",
+   "trace_sha256": "e8003b1d779ec56e83b0e4a743a847e3ac93d5ef019ce8ad89311f535edbdbef",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 71126,
+     "time": 0.0,
+     "world_time": 296.35833333333335,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874796519892,
+      0.1425279749169868,
+      -0.1726906921693403,
+      1.5706190044750155,
+      -0.004346979189202012
+     ],
+     "actual_g": 0.03517003568294105,
+     "target_pos": [
+      0.3276511867990689,
+      0.06424930170072789,
+      0.013649233573757946
+     ],
+     "target_quat": [
+      0.00011856623205492404,
+      -0.00019241000073387619,
+      0.12400946626287229,
+      0.9922810091892507
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.005595022346824408,
+      0.9998692274093628,
+      0.0007225340232253075,
+      0.01515685860067606
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 9157,
+     "step": 9157,
+     "world_step": 80283,
+     "time": 38.15416666666664,
+     "world_time": 334.5125,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874794843324,
+      0.14252797440636253,
+      -0.1726906893378489,
+      1.570619004474802,
+      -0.0043469790837123035
+     ],
+     "actual_g": 0.03765848872919906,
+     "target_pos": [
+      0.27766512926559067,
+      0.06338565512905653,
+      0.013649255533560065
+     ],
+     "target_quat": [
+      0.00012927831718557482,
+      -0.00011749309159303271,
+      0.1246872850872671,
+      0.9921960745840798
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225339650176466,
+      0.015156857669353485
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.02942999999996121,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step01_ply01_d3c2/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step01_ply01_d3c2/trial/trace.jsonl.gz",
+   "trace_sha256": "d96463789596a9e46ce3abb9a3c506257d25018a7595bcaee19ec6203966ddf2",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 0,
+     "time": 0.0,
+     "world_time": 0.0,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874944309007,
+      0.1425296204451171,
+      -0.1727009555047778,
+      1.5706190044750825,
+      -0.004348306525805314
+     ],
+     "actual_g": 0.04019022184203673,
+     "target_pos": [
+      0.2778348436570794,
+      -0.012611614552359804,
+      0.013860000000000003
+     ],
+     "target_quat": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ],
+     "tcp_pos": [
+      0.24437680840492249,
+      0.008627203293144703,
+      0.07392466813325882
+     ],
+     "tcp_quat": [
+      0.0055956849828362465,
+      0.999869167804718,
+      0.0007227484020404518,
+      0.015161163173615932
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 8303,
+     "step": 8303,
+     "world_step": 8303,
+     "time": 34.59583333333333,
+     "world_time": 34.59583333333333,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874780129339,
+      0.14252796993705175,
+      -0.17269066442615522,
+      1.570619004475083,
+      -0.0043469783546875645
+     ],
+     "actual_g": 0.0598841260458769,
+     "target_pos": [
+      0.3022169111943877,
+      -0.037030461835267245,
+      0.013649737083648184
+     ],
+     "target_quat": [
+      1.6627476352638113e-06,
+      -1.217012692782568e-07,
+      -0.810946913656531,
+      0.5851197340956527
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392360270023346
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225334993563592,
+      0.015156847424805164
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.02943000000000713,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step02_ply02_b5d6/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step02_ply02_b5d6/trial/trace.jsonl.gz",
+   "trace_sha256": "6979be8e6c4de3be9c26eafdc200d7d34c7105adbb058d411137fe64cad3d005",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 8303,
+     "time": 0.0,
+     "world_time": 34.59583333333333,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874780129339,
+      0.14252796993705175,
+      -0.17269066442615522,
+      1.570619004475083,
+      -0.0043469783546875645
+     ],
+     "actual_g": 0.0598841260458769,
+     "target_pos": [
+      0.22745122795830258,
+      -0.06327652252928544,
+      0.013648976479425605
+     ],
+     "target_quat": [
+      8.443689454638212e-05,
+      -0.00019806921065975406,
+      -0.0016486077096261322,
+      0.9999986178648541
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392360270023346
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225334993563592,
+      0.015156847424805164
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 9254,
+     "step": 9254,
+     "world_step": 17557,
+     "time": 38.55833333333334,
+     "world_time": 73.15416666666667,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.041828748417083006,
+      0.1425279888560645,
+      -0.17269076834003358,
+      1.570619004474955,
+      -0.004346983403135512
+     ],
+     "actual_g": -0.02922293352124667,
+     "target_pos": [
+      0.20170606257099657,
+      -0.013271809709868462,
+      0.013650180073892883
+     ],
+     "target_quat": [
+      -5.493898280831117e-06,
+      -0.00012408139231930623,
+      -0.0013586682688797019,
+      0.9999990692966471
+     ],
+     "tcp_pos": [
+      0.2443753480911255,
+      0.008627131581306458,
+      0.07392361760139465
+     ],
+     "tcp_quat": [
+      0.005595024209469557,
+      0.9998692274093628,
+      0.0007225355366244912,
+      0.015156890265643597
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.029430000000026532,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step03_ply03_c7d5/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step03_ply03_c7d5/trial/trace.jsonl.gz",
+   "trace_sha256": "0dfaef533f79a2862a80425edb93f2570ac7d5ecca2e47dc2efdd2b6769796b2",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 17557,
+     "time": 0.0,
+     "world_time": 73.15416666666667,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.041828748417083006,
+      0.1425279888560645,
+      -0.17269076834003358,
+      1.570619004474955,
+      -0.004346983403135512
+     ],
+     "actual_g": -0.02922293352124667,
+     "target_pos": [
+      0.17688529970179642,
+      -0.03778503954480687,
+      0.013649706484365974
+     ],
+     "target_quat": [
+      -5.0879754260630006e-05,
+      3.070101718867673e-05,
+      0.001984814580831029,
+      0.9999980284879455
+     ],
+     "tcp_pos": [
+      0.2443753480911255,
+      0.008627131581306458,
+      0.07392361760139465
+     ],
+     "tcp_quat": [
+      0.005595024209469557,
+      0.9998692274093628,
+      0.0007225355366244912,
+      0.015156890265643597
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 4357,
+     "step": 4357,
+     "world_step": 21914,
+     "time": 18.15416666666667,
+     "world_time": 91.30833333333334,
+     "phase": "transfer",
+     "mode": "hold",
+     "actual_q5": [
+      0.24856485903016856,
+      -0.4403331405933241,
+      0.5504033528369329,
+      1.4607154225519894,
+      1.8611883263804037
+     ],
+     "actual_g": -0.06891276349953307,
+     "target_pos": [
+      0.17618207739992736,
+      -0.03856566348919912,
+      0.03356575124414334
+     ],
+     "target_quat": [
+      -0.013344265768248138,
+      0.010948222078061681,
+      0.020801023128538668,
+      0.9996346254713478
+     ],
+     "tcp_pos": [
+      0.1769825965166092,
+      -0.04310561716556549,
+      0.06148909404873848
+     ],
+     "tcp_quat": [
+      -0.7046822309494019,
+      0.70952308177948,
+      -4.5541573854279704e-06,
+      7.872380592743866e-06
+     ],
+     "fixed_jaw_collision_sum": 0.25330666225216025,
+     "moving_jaw_collision_sum": 0.2532819567621514,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 5058,
+     "step": 5058,
+     "world_step": 22615,
+     "time": 21.075000000000003,
+     "world_time": 94.22916666666667,
+     "phase": "transfer",
+     "mode": "hold",
+     "actual_q5": [
+      0.14935995833301705,
+      -0.25164005249818655,
+      0.356029050908935,
+      1.4557671019851044,
+      1.7408573022491687
+     ],
+     "actual_g": -0.0688094360719011,
+     "target_pos": [
+      0.2023525959464736,
+      -0.028309841104043956,
+      0.03656314025504216
+     ],
+     "target_quat": [
+      -0.015265368152372885,
+      0.0077521878363741355,
+      0.008907497643050526,
+      0.9998137469572326
+     ],
+     "tcp_pos": [
+      0.20284941792488098,
+      -0.03276289626955986,
+      0.06450561434030533
+     ],
+     "tcp_quat": [
+      -0.6971384286880493,
+      0.7169167995452881,
+      -0.004234740510582924,
+      0.0032250797376036644
+     ],
+     "fixed_jaw_collision_sum": 0.25024587443516116,
+     "moving_jaw_collision_sum": 0.25140706065507185,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 5759,
+     "step": 5759,
+     "world_step": 23316,
+     "time": 23.995833333333337,
+     "world_time": 97.15,
+     "phase": "transfer",
+     "mode": "hold",
+     "actual_q5": [
+      0.052470685562081495,
+      -0.06735141484566949,
+      0.16619181052391002,
+      1.4509342894532935,
+      1.6233350258733352
+     ],
+     "actual_g": -0.0688347579287585,
+     "target_pos": [
+      0.22685781958009402,
+      -0.01347260275688311,
+      0.03553569654010269
+     ],
+     "target_quat": [
+      -0.014240998804727359,
+      0.008918456742389183,
+      -0.0042863989844289544,
+      0.9998496296274376
+     ],
+     "tcp_pos": [
+      0.22726187109947205,
+      -0.01798255182802677,
+      0.06347496807575226
+     ],
+     "tcp_quat": [
+      -0.6896770596504211,
+      0.7240407466888428,
+      -0.007637691218405962,
+      0.007225357461720705
+     ],
+     "fixed_jaw_collision_sum": 0.24846430552673235,
+     "moving_jaw_collision_sum": 0.25042621775431145,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 9903,
+     "step": 9903,
+     "world_step": 27460,
+     "time": 41.2625,
+     "world_time": 114.41666666666667,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874841708893,
+      0.14252798885625187,
+      -0.1726907683402318,
+      1.5706190044749657,
+      -0.004346983403133806
+     ],
+     "actual_g": -0.029222933521245272,
+     "target_pos": [
+      0.22623515985261727,
+      -0.013386238471684539,
+      0.013650154575801658
+     ],
+     "target_quat": [
+      -5.1320468163054076e-05,
+      3.0538615750493614e-05,
+      -0.07309716579532419,
+      0.9973248221047611
+     ],
+     "tcp_pos": [
+      0.2443753480911255,
+      0.008627131581306458,
+      0.07392361760139465
+     ],
+     "tcp_quat": [
+      0.005595024209469557,
+      0.9998692274093628,
+      0.0007225355366244912,
+      0.015156890265643597
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.02942999999733197,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step04_ply04_f7d7/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step04_ply04_f7d7/trial/trace.jsonl.gz",
+   "trace_sha256": "523269ee29de8f894d94d6c49adb2afea8708442cc38c9d702ad6b7867ab1ed9",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 27460,
+     "time": 0.0,
+     "world_time": 114.41666666666667,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874841708893,
+      0.14252798885625187,
+      -0.1726907683402318,
+      1.5706190044749657,
+      -0.004346983403133806
+     ],
+     "actual_g": -0.029222933521245272,
+     "target_pos": [
+      0.17706777654218814,
+      0.03793085196295086,
+      0.013649633443468312
+     ],
+     "target_quat": [
+      8.515726920241149e-05,
+      -9.661818943503411e-05,
+      -0.011683924484393832,
+      0.9999317323306666
+     ],
+     "tcp_pos": [
+      0.2443753480911255,
+      0.008627131581306458,
+      0.07392361760139465
+     ],
+     "tcp_quat": [
+      0.005595024209469557,
+      0.9998692274093628,
+      0.0007225355366244912,
+      0.015156890265643597
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 9738,
+     "step": 9738,
+     "world_step": 37198,
+     "time": 40.575,
+     "world_time": 154.99166666666667,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874793123353,
+      0.14252797389011762,
+      -0.17269068647536792,
+      1.570619004474972,
+      -0.004346978982933586
+     ],
+     "actual_g": 0.040181030216594235,
+     "target_pos": [
+      0.1779685019207494,
+      -0.012409894026155012,
+      0.013650188004713746
+     ],
+     "target_quat": [
+      4.169036219505787e-06,
+      -8.161114035150127e-05,
+      0.7291012112482459,
+      0.6844058862097707
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392360270023346
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225339068099856,
+      0.01515685673803091
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.029438748585328155,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step05_ply05_f3d1/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step05_ply05_f3d1/trial/trace.jsonl.gz",
+   "trace_sha256": "20b2762fd170f51a1085548c58c47e6f438288fef5289db7dee3ca94317cfdea",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 37198,
+     "time": 0.0,
+     "world_time": 154.99166666666667,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874793123353,
+      0.14252797389011762,
+      -0.17269068647536792,
+      1.570619004474972,
+      -0.004346978982933586
+     ],
+     "actual_g": 0.040181030216594235,
+     "target_pos": [
+      0.2780412067140882,
+      0.03757286401678262,
+      0.01365066663951229
+     ],
+     "target_quat": [
+      -0.00019090602852264095,
+      3.853495926353761e-05,
+      0.005104685658662165,
+      0.9999869520420112
+     ],
+     "tcp_pos": [
+      0.2443753331899643,
+      0.008627130649983883,
+      0.07392360270023346
+     ],
+     "tcp_quat": [
+      0.00559502188116312,
+      0.9998692274093628,
+      0.0007225339068099856,
+      0.01515685673803091
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 8924,
+     "step": 8924,
+     "world_step": 46122,
+     "time": 37.18333333333334,
+     "world_time": 192.175,
+     "phase": "ready",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874819889238,
+      0.14252798209812254,
+      -0.17269073164859708,
+      1.5706190044749646,
+      -0.004346981044571655
+     ],
+     "actual_g": 0.0012179955632114936,
+     "target_pos": [
+      0.32832523540503467,
+      -0.013577139086095088,
+      0.013649999998698467
+     ],
+     "target_quat": [
+      -9.088297010069842e-11,
+      -4.413995575603079e-11,
+      0.014533219481946458,
+      0.9998943871887118
+     ],
+     "tcp_pos": [
+      0.2443753480911255,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.005595022812485695,
+      0.9998692274093628,
+      0.0007225348381325603,
+      0.015156875364482403
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.02942999999672425,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bN",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  },
+  {
+   "result_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step06_ply06_d6f5/trial/result.json",
+   "trace_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/random3_seed303/step06_ply06_d6f5/trial/trace.jsonl.gz",
+   "trace_sha256": "04b7464299dba0b59fcc00ab4089443e8764307b64fe3f1088b3cd8f2fdd675f",
+   "frames": [
+    {
+     "zero_based_jsonl_line": 0,
+     "step": 0,
+     "world_step": 46122,
+     "time": 0.0,
+     "world_time": 192.175,
+     "phase": "init",
+     "mode": "position",
+     "actual_q5": [
+      -0.04182874819889238,
+      0.14252798209812254,
+      -0.17269073164859708,
+      1.5706190044749646,
+      -0.004346981044571655
+     ],
+     "actual_g": 0.0012179955632114936,
+     "target_pos": [
+      0.20165258579693712,
+      -0.013390369318627977,
+      0.013650015580042139
+     ],
+     "target_quat": [
+      5.8382075728311925e-05,
+      0.00014615821310138947,
+      -0.005195687630045315,
+      0.9999864899384197
+     ],
+     "tcp_pos": [
+      0.2443753480911255,
+      0.008627130649983883,
+      0.07392361015081406
+     ],
+     "tcp_quat": [
+      0.005595022812485695,
+      0.9998692274093628,
+      0.0007225348381325603,
+      0.015156875364482403
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": null,
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 4593,
+     "step": 4593,
+     "world_step": 50715,
+     "time": 19.13749999999999,
+     "world_time": 211.3125,
+     "phase": "lift",
+     "mode": "hold",
+     "actual_q5": [
+      0.06525094128141723,
+      -0.26264283951311085,
+      0.3149647644197759,
+      1.5187678638019502,
+      1.6635130415953765
+     ],
+     "actual_g": -0.06838390894520253,
+     "target_pos": [
+      0.20149926747200678,
+      -0.011990617378856556,
+      0.04392101730420067
+     ],
+     "target_quat": [
+      0.030139001500780492,
+      0.003812617948260041,
+      0.0048118208562871285,
+      0.9995268635274209
+     ],
+     "tcp_pos": [
+      0.20168015360832214,
+      -0.018717361614108086,
+      0.07148963212966919
+     ],
+     "tcp_quat": [
+      -0.6995692849159241,
+      0.7145648002624512,
+      0.00010994441981893033,
+      -9.251989104086533e-05
+     ],
+     "fixed_jaw_collision_sum": 0.24791119652784094,
+     "moving_jaw_collision_sum": 0.2503880612003262,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 5987,
+     "step": 5987,
+     "world_step": 52109,
+     "time": 24.945833333333326,
+     "world_time": 217.12083333333334,
+     "phase": "transfer",
+     "mode": "hold",
+     "actual_q5": [
+      -0.21304589899089613,
+      0.003055044691254432,
+      0.007982522221401752,
+      1.5656196201999317,
+      1.375425941212883
+     ],
+     "actual_g": -0.06859676934515427,
+     "target_pos": [
+      0.2273540902735628,
+      0.0404536092177482,
+      0.04627218331011189
+     ],
+     "target_quat": [
+      0.05112067326365283,
+      -0.002398712135109076,
+      0.007016470184816989,
+      0.998664954872909
+     ],
+     "tcp_pos": [
+      0.22724710404872894,
+      0.032681286334991455,
+      0.07358010858297348
+     ],
+     "tcp_quat": [
+      -0.6960600018501282,
+      0.7179777026176453,
+      0.0015504806069657207,
+      -0.0024821069091558456
+     ],
+     "fixed_jaw_collision_sum": 0.2438982267425166,
+     "moving_jaw_collision_sum": 0.24895120362747408,
+     "boardforceN": 0.0,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 7271,
+     "step": 7271,
+     "world_step": 53393,
+     "time": 30.29583333333332,
+     "world_time": 222.47083333333333,
+     "phase": "lower",
+     "mode": "hold",
+     "actual_q5": [
+      -0.21352604889862384,
+      0.029497788140472637,
+      0.21792311728065955,
+      1.3292728359620647,
+      1.3749246997515652
+     ],
+     "actual_g": -0.06927709777887547,
+     "target_pos": [
+      0.22705436786221309,
+      0.04070979935228095,
+      0.014250684427423072
+     ],
+     "target_quat": [
+      0.05401181840731421,
+      0.0021800970664594675,
+      0.01607713463100733,
+      0.9984084817303851
+     ],
+     "tcp_pos": [
+      0.22730030119419098,
+      0.03278765082359314,
+      0.041084837168455124
+     ],
+     "tcp_quat": [
+      -0.6960523724555969,
+      0.7179849743843079,
+      0.0015589132672175765,
+      -0.002498387359082699
+     ],
+     "fixed_jaw_collision_sum": 0.26426426532169456,
+     "moving_jaw_collision_sum": 0.2644773773823928,
+     "boardforceN": 0.08214304672805732,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 7286,
+     "step": 7286,
+     "world_step": 53408,
+     "time": 30.35833333333332,
+     "world_time": 222.53333333333333,
+     "phase": "support",
+     "mode": "hold",
+     "actual_q5": [
+      -0.21352604309038165,
+      0.02949778959838755,
+      0.21792323616558631,
+      1.32927281256264,
+      1.3749246938401845
+     ],
+     "actual_g": -0.06929429641879989,
+     "target_pos": [
+      0.22705533852457743,
+      0.04070984434433365,
+      0.014251526103873416
+     ],
+     "target_quat": [
+      0.05401474338714419,
+      0.002189937524130228,
+      0.015996924121845304,
+      0.9984095903431123
+     ],
+     "tcp_pos": [
+      0.22730028629302979,
+      0.03278764337301254,
+      0.04108481854200363
+     ],
+     "tcp_quat": [
+      -0.6960523724555969,
+      0.7179849743843079,
+      0.0015589388785883784,
+      -0.0024984281044453382
+     ],
+     "fixed_jaw_collision_sum": 0.2645187916566063,
+     "moving_jaw_collision_sum": 0.2643872717437853,
+     "boardforceN": 0.08129202082136407,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 7475,
+     "step": 7475,
+     "world_step": 53597,
+     "time": 31.145833333333314,
+     "world_time": 223.32083333333333,
+     "phase": "open",
+     "mode": "position",
+     "actual_q5": [
+      -0.21352590456605808,
+      0.029496175131213012,
+      0.21793548302721183,
+      1.329272331790769,
+      1.3749247027249345
+     ],
+     "actual_g": -0.030048552386908327,
+     "target_pos": [
+      0.2270749743927028,
+      0.04086250750763775,
+      0.013648667458665102
+     ],
+     "target_quat": [
+      -0.00012736482206482012,
+      -1.284168448965294e-05,
+      0.013790934033697275,
+      0.9999048923531534
+     ],
+     "tcp_pos": [
+      0.22729824483394623,
+      0.032787173986434937,
+      0.04108349233865738
+     ],
+     "tcp_quat": [
+      -0.6960523128509521,
+      0.7179850339889526,
+      0.0015616195742040873,
+      -0.0025027384981513023
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.029418121606436354,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    },
+    {
+     "zero_based_jsonl_line": 7619,
+     "step": 7619,
+     "world_step": 53741,
+     "time": 31.74583333333331,
+     "world_time": 223.92083333333332,
+     "phase": "settle_board",
+     "mode": "position",
+     "actual_q5": [
+      -0.21352590557491183,
+      0.029496109303104194,
+      0.2179357654766376,
+      1.3292723135270454,
+      1.3749247092861185
+     ],
+     "actual_g": -0.029216325671175505,
+     "target_pos": [
+      0.2270764008120901,
+      0.04086196201156156,
+      0.013648688369732261
+     ],
+     "target_quat": [
+      -0.0001255118719233005,
+      -1.3058131804566657e-05,
+      0.01367470444226056,
+      0.9999064888951726
+     ],
+     "tcp_pos": [
+      0.22729820013046265,
+      0.03278716653585434,
+      0.04108346626162529
+     ],
+     "tcp_quat": [
+      -0.6960523128509521,
+      0.7179850339889526,
+      0.001561672193929553,
+      -0.0025028225500136614
+     ],
+     "fixed_jaw_collision_sum": 0.0,
+     "moving_jaw_collision_sum": 0.0,
+     "boardforceN": 0.029418146070049323,
+     "gaps_m": null,
+     "neighbor_contacts": [],
+     "target_neighbor_contacts": [
+      {
+       "key": "wK",
+       "points": []
+      },
+      {
+       "key": "wQ",
+       "points": []
+      },
+      {
+       "key": "wR",
+       "points": []
+      },
+      {
+       "key": "wB",
+       "points": []
+      },
+      {
+       "key": "wN",
+       "points": []
+      },
+      {
+       "key": "wP",
+       "points": []
+      },
+      {
+       "key": "bK",
+       "points": []
+      },
+      {
+       "key": "bQ",
+       "points": []
+      },
+      {
+       "key": "bR",
+       "points": []
+      },
+      {
+       "key": "bB",
+       "points": []
+      },
+      {
+       "key": "bP",
+       "points": []
+      }
+     ],
+     "robot_board_contacts": [],
+     "self_contacts": []
+    }
+   ]
+  }
+ ]
+}

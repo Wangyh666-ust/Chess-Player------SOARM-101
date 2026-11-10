@@ -1,0 +1,252 @@
+{
+  "policy": "Smallselectedsource/raw/evidence only;originalnative tracesnotcopied;archivedsourcesnotentrypoints",
+  "files": [
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/run_targeted_batch_v2.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/run_targeted_batch_v2.py",
+      "sha256": "941fcee581b4a285d954a8a53c3835155d646d74dd943dd83ddfe7d384deada0",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/targeted_batch_v1.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/targeted_batch_v1.py",
+      "sha256": "a58d0cfb874916bdc4010caac16b9d4462a497ccb9a66901b491c740414288a2",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/prepared_session_staged_v2.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/prepared_session_staged_v2.py",
+      "sha256": "988ccbc484f1fe27d101057ed4948293860ab586a094686ac297136545130064",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/resident_planner_staged_v2.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/resident_planner_staged_v2.py",
+      "sha256": "ba2771fdb1a223537d6fa5854a15f428f6cf28980f7a60797fd9142f317308f4",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/sequence_coordinator_staged_v1.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/sequence_coordinator_staged_v1.py",
+      "sha256": "b3e54dbbbdce57f572764a7e19ac278937486d740fe16b54ae64e990dcdd4592",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/staged_runner_v2.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/staged_runner_v2.py",
+      "sha256": "a4a1dd89a5c2d7cc11f1776fa7634e517632da6644c49636e89a9dd89dba75eb",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/stage_routes_bound_v3.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/stage_routes_bound_v3.py",
+      "sha256": "b30fe272062aeff19f28327d1a67fdc20b0622cba321e4499c98f28c5579d6f6",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/transfer_bridge_v2.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/transfer_bridge_v2.py",
+      "sha256": "622dd322198fcddfcd73f4df4ea6755f8f1af2ca73822b695900548106305f4b",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/release_planner_bound_v1.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/release_planner_bound_v1.py",
+      "sha256": "a1109ac22be1b298a79b68abe05f5db5dffb96af347a72a20a77204f0ee8f207",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/work/query_safety_bound_v1.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/query_safety_bound_v1.py",
+      "sha256": "a7720d826d647bf9f608784fa287f22e1ad211977e6be9921e8c2a346dd58ebc",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/first_contact_root_20261110_v1/work/threshold_factory_v2.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/threshold_factory_v2.py",
+      "sha256": "489c680f7e7c4796029a8a518de57def96489fe44e93f001990bd15dd1e8c3d4",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/knight_support_20261110_v1/work/support_feedback_v2.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/support_feedback_v2.py",
+      "sha256": "aaf015796c37d2bddd73061b1d3909dd799d254364e9c8f12a917b415f134b6f",
+      "category": "sources"
+    },
+    {
+      "original_path": "experiment_review/tools/recontact_hold_control_v1.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/recontact_hold_control_v1.py",
+      "sha256": "1a3ace842971ba2a917b1828173dc05eb88fbb10cd5b69aa604d5a8077d27b99",
+      "category": "sources"
+    },
+    {
+      "original_path": "reachability_eval/physics_world.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/physics_world.py",
+      "sha256": "33c9534e6768afad7c9e1aa3bec18f4bef33e43db4148d97ecf20a4a76ed95bd",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_three_staged_v1.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/run_three_staged_v1.py",
+      "sha256": "d5b5b0e6c83907f0a5bb96e76e347ea72c18f99463b73d805ff5c850cc656a23",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/staged_three_batch_v1.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/staged_three_batch_v1.py",
+      "sha256": "4b368c80e03e7ad53a934ad1e57e373550f2d479ce0562ad761ee1c3f8c1c84f",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_remaining_two_v1.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/run_remaining_two_v1.py",
+      "sha256": "2196c636d321930959ecbe4bc3355effdb03b0dd0a4dbe141a2d8deb641a085c",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/staged_remaining_batch_v1.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/staged_remaining_batch_v1.py",
+      "sha256": "5c00778e0ebb508c9269567fe6d89011335e74785e022eb5cdb4660e8b7751e7",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/run_three_staged_v2.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/run_three_staged_v2.py",
+      "sha256": "191b4cde5fdba0f37e9b825604b47234d889c1c596bccce37e69092647f5f182",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/staged_three_batch_v2.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/staged_three_batch_v2.py",
+      "sha256": "cdf77716787e88034dd872ef04e34711fa184f991a88aa749c333d68070a9516",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/exit_classification_patch_v1.py",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/sources/exit_classification_patch_v1.py",
+      "sha256": "ae35df43beb5af1cbd57250ecc49cfa624566ae9afabd87335d35d3ed26e0b87",
+      "category": "sources"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/combined_raw_audit_v1.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/combined_raw_audit_v1.json",
+      "sha256": "ea0d95f7bea588aeab79251a27573c6f3ee88dc1532df3aec59eb79a03abe266",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/initial_stop_raw_audit.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/initial_stop_raw_audit.json",
+      "sha256": "6f567d1d93becda1a4e2dc8fd2de7bb914c8722291eeee3826cfbfd172b748d4",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/remaining_raw_audit_progress.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/remaining_raw_audit_progress.json",
+      "sha256": "0e2e807da98f10b112dde1a54f7ecc04a72ae83ff24877909056c26f08f4770f",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/knight_final_XY_stage_review.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/knight_final_XY_stage_review.json",
+      "sha256": "9da348936f4fe1742f3258ce83f7d1ea5488712c554b73a6b3c425691b816b76",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/program_validation.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/program_validation.json",
+      "sha256": "51ec3fe1d8987f9f69190afa2b519042be2811892e98b52cf7482ebc3cab02c9",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/remaining_program_validation.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/remaining_program_validation.json",
+      "sha256": "e186e066d3b0bd341952a965f1209eac941e41f9d50b746abf85ceb6f47db80e",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/work/general_v2_program_validation.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/general_v2_program_validation.json",
+      "sha256": "fb1db7aa062c1fdd14b29d387fbbd03bcc33ba89157169f394ca04a99d516bbd",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/preparation_provenance.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/preparation_provenance.json",
+      "sha256": "05599c0683e2205cb7f8d30a4ad4d97bc9155b0b760a2efd5349e0145ad9efd5",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/prior_label_correction.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/prior_label_correction.json",
+      "sha256": "f4f7f402cdc43f484a6037fe1b95128509ca82cd43c693c03909af54cbf744b3",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/report/index.html",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/index.html",
+      "sha256": "e52034214271c9cdd982477a65b9b78a2e6fa74c69954542b5363794ec2fe394",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_manipulation_20261110_v1/report/index_v2.html",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/index_v2.html",
+      "sha256": "5fbf4f52378ad7a9bfc82c92199fd97566d3b1f386728faabb0c26694cf5a792",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/batch.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/batch.json",
+      "sha256": "3ce0df1d9d2a8538ce3ad247aeeefcc18912bec6fe927769fa9787a67e7edef1",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/remaining_two_batch.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/remaining_two_batch.json",
+      "sha256": "f08ccd99061e753a5ea3d6454742be1ad60085c59a352171a2b99cd0a478c407",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/random1_seed101.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/random1_seed101.json",
+      "sha256": "550bcef78eab6d8f0052bae01a6a2cf299d7066b72f3c8fe3f4986dfeeebc5d4",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/random2_seed202.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/random2_seed202.json",
+      "sha256": "657d92458e126250d37fb163a38e9527485fdedd8b22775417898f59990415ed",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/config/random3_seed303.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/evidence/random3_seed303.json",
+      "sha256": "61fbd8c0b244cfe91089990af87aa3bc42e071a3a6c72a987c0b8a67d497bc13",
+      "category": "evidence"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/three_games_v1/result.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/results/initial/result.json",
+      "sha256": "92263f7cb8408666ffb20db7a02efe194e416eb6ca5da20c3f9a28787dd31a35",
+      "category": "batch_raw"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/three_games_v1/threshold_forwarding.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/results/initial/threshold_forwarding.json",
+      "sha256": "a8c247867aa086c6bca98a5be45312865fc230dd033098e85e3cc1e2fc593957",
+      "category": "batch_raw"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/result.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/results/remaining/result.json",
+      "sha256": "e6f11c1051b7db84005a5f87d39cd9a6fb85618398fd55338274827bbb60473f",
+      "category": "batch_raw"
+    },
+    {
+      "original_path": "calibration/manipulation_20261109_v1/staged_continuous_3x10_20261110_v1/results/remaining_two_v1/threshold_forwarding.json",
+      "archive_path": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/results/remaining/threshold_forwarding.json",
+      "sha256": "88dcd09ca96b28dc7afbc9b8ae2443c0cb572f33d56089a957b7f5febf724363",
+      "category": "batch_raw"
+    }
+  ],
+  "previous_manifest": "experiment_review/evidence/staged_continuous_3x10_20261110_v1/archive_manifest.json"
+}
