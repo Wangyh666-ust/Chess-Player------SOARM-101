@@ -78,7 +78,7 @@ The setup/portability work for this handoff does **not** execute this three-game
 | Symptom | Check |
 | --- | --- |
 | `@WORKSPACE@` in a missing filename | Materialize first; do not launch runtime templates directly. |
-| Missing URDF/OBJ or a bundle hash mismatch | Complete clone/download; inspect `simulation/manifest.json`. Do not replace current models with the old Dubrovnik set. |
+| Missing URDF/OBJ or a bundle hash mismatch | Complete clone/download; inspect `simulation/manifest.json`. Use the models included in this snapshot. |
 | Missing `query_world_reuse_v1.py` | The pinned v2 adapter dynamically compiles its predecessor. Keep the entire exported source closure. |
 | `ModuleNotFoundError` | Activate the control environment; install `simulation/requirements.txt`; keep the original directory layout. |
 | Output already exists | Preserve it. Prepare a new versioned record and new output directory. |

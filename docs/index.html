@@ -4,21 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SO-ARM101 Chess Player — Simulation Control Handoff</title>
-<meta name="description" content="English handoff for current SO-ARM101 PyBullet control: portable setup, scanned chess-piece models, measured-grasp workflow, latest three-game results and known parameter limits.">
+<meta name="description" content="Current SO-ARM101 PyBullet control: English handoff, portable setup, scanned piece models, verified results and known parameter limits.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap header-inner">
-    <div class="brand">
-      <span class="brand-mark">SO-ARM101 / CHESS PLAYER</span>
-    </div>
-    <span class="badge">Simulation handoff · 10 Nov 2026</span>
-  </div>
-</header>
-
+<header class="site-header"><div class="wrap header-inner">
+  <span class="brand-mark">SO-ARM101 / CHESS PLAYER</span>
+  <span class="badge">Simulation handoff · 10 Nov 2026</span>
+</div></header>
 <main class="wrap">
-
   <section class="intro">
     <h1>Take over the virtual arm.</h1>
     <p class="lead">An English developer handoff for the current PyBullet control workflow:
@@ -26,17 +20,16 @@
       and continue from the recorded results and known limits.</p>
     <p class="scope-strip">Simulation first &middot; Native contact &middot; Known simulator state</p>
   </section>
-
   <section class="section" id="current-control" aria-labelledby="current-control-title">
     <h2 id="current-control-title">Current control baseline — November 2026</h2>
-    <p class="note">The current environment uses six scanned piece types, <strong>25.223 mm squares</strong>,
-      five arm joints and one gripper joint. Holding uses native contacts with natural rotation.
+    <p class="note">Six scanned piece types, <strong>25.223 mm squares</strong>, five arm joints
+      and one gripper joint. Holding uses native contacts with natural rotation.
       Measured-grasp rebuilding, bounded support feedback, actual release settling and independent
-      empty-gripper withdrawal are implemented. No fixed attachment is used in this baseline.</p>
+      empty-gripper withdrawal are implemented.</p>
     <div class="metric-grid">
-      <article class="metric"><div class="metric-label">Complete games</div><div class="metric-value">1 / 3</div><div class="metric-sub">Original sessions: 0/10, 10/10, 5/10</div></article>
+      <article class="metric"><div class="metric-label">Complete games</div><div class="metric-value">1 / 3</div><div class="metric-sub">Sessions: 0/10, 10/10, 5/10</div></article>
       <article class="metric"><div class="metric-label">Complete actions</div><div class="metric-value">15 / 30</div><div class="metric-sub">17 physical starts; 13 unattempted</div></article>
-      <article class="metric"><div class="metric-label">Current contact threshold</div><div class="metric-value">0.002 m</div><div class="metric-sub">Whole-operation wrapper; 240 Hz physics</div></article>
+      <article class="metric"><div class="metric-label">Contact threshold</div><div class="metric-value">0.002 m</div><div class="metric-sub">Whole-operation wrapper; 240 Hz physics</div></article>
     </div>
     <p class="note"><strong>Work remaining:</strong> queen f7→d7 settled successfully but exit planning
       rejected approximately 0.06 mm finger overlap against a 0.05 mm tolerance. The third game stopped
@@ -44,240 +37,18 @@
       incomplete actions. The handoff explains which limits merit review and how to preserve the baseline.</p>
     <p><a href="control-handoff.html"><strong>Read the English handoff</strong></a> &middot;
       <a href="control-setup.html">Install and run</a> &middot;
-      <a href="assets/control-handoff-20261110.zip">Download handoff ZIP</a> &middot;
+      <a href="assets/control-handoff-20261110-v2.zip">Download handoff ZIP</a> &middot;
       <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/tree/main/simulation">Control source and current models</a> &middot;
       <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/artifacts/control-20261110/README.md">Evidence and portability checks</a></p>
-    <p class="note">CPU-only control setup; no GPU, detector weights, API credentials or hardware connection required.
-      Environment loading checks perform zero physics and do not add manipulation successes.
-      Full-game results are recorded Windows experiments, with a same-GPT raw review.</p>
+    <p class="note">CPU-only setup. Windows and Ubuntu/WSL static loading checks passed with zero
+      physics steps. The recorded manipulation results come from the Windows baseline and have a
+      same-GPT raw review.</p>
   </section>
-
-  <section class="section" id="simulation" aria-labelledby="simulation-title">
-    <h2 id="simulation-title">Historical demo — October ideal-grasp experiment</h2>
-    <p class="scope-strip">Different assets &middot; 30 mm squares &middot; Fixed translation and rotation</p>
-    <p class="note">Recorded run <strong>random2 — 10/10 plies completed</strong>. Each ply includes
-      pickup, transport, release, settled board support, and a checked return home in the same
-      persistent scene. Ten plies means ten halfmoves.</p>
-    <video class="simulation-video" controls playsinline preload="metadata"
-      poster="assets/simulation-poster.jpg" aria-label="SO-ARM101 recorded ten-ply virtual chess manipulation demo">
-      <source src="assets/simulation-random2-10plies.mp4" type="video/mp4">
-      Your browser does not support embedded video. <a href="assets/simulation-random2-10plies.mp4">Download the MP4</a>.
-    </video>
-    <p class="note"><strong>89.7-second recorded-pose replay, variable playback speed.</strong>
-      All ten action and home segments are retained. No new physics was run to export this video.</p>
-    <div class="metric-grid">
-      <article class="metric"><div class="metric-label">Complete games</div><div class="metric-value">2 / 3</div><div class="metric-sub">Run results: 6/10, 10/10, 10/10</div></article>
-      <article class="metric"><div class="metric-label">Planned plies completed</div><div class="metric-value">26 / 30</div><div class="metric-sub">1 planning block; 3 unattempted</div></article>
-      <article class="metric"><div class="metric-label">Largest final XY error</div><div class="metric-value">0.808 mm</div><div class="metric-sub">Across 26 completed physical actions</div></article>
-    </div>
-    <p class="note">All 26 actions that entered physical manipulation completed release, settled support,
-      and checked home, with no observed drops or unintended collisions. The first game stopped before
-      motion on <code class="code">d4 → a1</code> because candidate/placement-IK preflight failed.</p>
-    <p class="scope-strip"><strong>Model assumption:</strong> real bilateral closure is followed by an
-      ideal fixed grasp that constrains both relative translation and rotation until release.
-      Native force readings remain unchanged. This is a known-state IK/OMPL workflow test,
-      not live vision-driven manipulation, a VLA policy, or a hardware reliability result.</p>
-    <p><a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/SIMULATION-20261012.md">Historical protocol and limitations</a> &middot;
-      <a href="assets/simulation-random2-10plies.mp4" download>Download video</a> &middot;
-      <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/artifacts/simulation-v1/raw-audit.json">Recorded result audit</a></p>
-  </section>
-
-  <section class="intro" id="vision">
-    <h2>Historical vision benchmark — Dubrovnik pieces</h2>
-    <p class="lead">
-      A YOLOv8m chess piece detector was fine-tuned on synthetic RGB scenes built from one exact
-      mesh set, <code class="code">ezeeone_Dubrovnik_1960_set_02_stls</code>. This page reports
-      <strong>recorded, static model predictions</strong> — no live inference, no camera, no upload.
-    </p>
-    <p class="scope-strip">Synthetic RGB scenes &middot; Known board corners &middot; Piece detector only</p>
-  </section>
-
-  <section class="section" aria-labelledby="eval-title">
-    <div class="section-head">
-      <h2 id="eval-title">Evaluation set</h2>
-      <div class="control">
-        <label for="dataset-select">Evaluation set</label>
-        <select id="dataset-select" aria-describedby="dataset-note"></select>
-      </div>
-    </div>
-    <p id="dataset-note" class="note">
-      Metrics are computed on the <strong>full selected dataset</strong> and do not change when the
-      example preview below is filtered.
-    </p>
-
-    <div id="metrics" class="metric-grid" aria-live="polite"></div>
-
-    <details class="details">
-      <summary>How the metrics are defined</summary>
-      <ul>
-        <li><strong>Joint accuracy</strong> = piece colour&nbsp;+&nbsp;type both correct, over the
-          ground-truth <em>occupied</em> squares (denominator = GT occupied squares, not 64).</li>
-        <li><strong>Mismatches / misses</strong> count wrong class or empty prediction on a GT
-          occupied square; spurious detections on GT-empty squares are counted as occupancy errors.</li>
-        <li><strong>Exact board</strong> = all 64 squares match the ground truth exactly
-          (including empty squares).</li>
-        <li><strong>Timing</strong> covers preprocessing + GPU inference + square mapping, and
-          excludes image I/O, camera capture and board-corner detection.
-          Hardware: RTX 5070 Laptop 8&nbsp;GB.</li>
-      </ul>
-    </details>
-  </section>
-
-  <section class="section" aria-labelledby="explorer-title">
-    <div class="section-head">
-      <h2 id="explorer-title">Example explorer</h2>
-      <div class="controls-row">
-        <div class="control">
-          <label for="example-select">Example</label>
-          <select id="example-select"></select>
-        </div>
-        <div class="control control-inline">
-          <input type="checkbox" id="failures-only">
-          <label for="failures-only">Only fine-tuned failures</label>
-        </div>
-        <div class="control control-inline">
-          <input type="checkbox" id="boxes-toggle" checked>
-          <label for="boxes-toggle">Detection boxes</label>
-        </div>
-        <div class="control control-inline">
-          <input type="checkbox" id="corners-toggle" checked>
-          <label for="corners-toggle">Known corners</label>
-        </div>
-        <div class="control control-nav">
-          <button type="button" id="prev-example" aria-label="Previous example">&#8249; Prev</button>
-          <button type="button" id="next-example" aria-label="Next example">Next &#8250;</button>
-        </div>
-      </div>
-    </div>
-
-    <p id="preview-counter" class="counter" aria-live="polite"></p>
-
-    <div class="panels">
-      <article class="panel panel-original">
-        <h3>Original YOLOv8m</h3>
-        <p class="panel-stat" id="stat-original"></p>
-        <div class="svg-holder" id="svg-original"></div>
-      </article>
-      <article class="panel panel-finetuned">
-        <h3>Dubrovnik fine-tuned</h3>
-        <p class="panel-stat" id="stat-finetuned"></p>
-        <div class="svg-holder" id="svg-finetuned"></div>
-      </article>
-    </div>
-
-    <div class="boards-row">
-      <div class="board-card">
-        <h4>Ground truth</h4>
-        <div class="board board-truth" id="board-truth"></div>
-      </div>
-      <div class="board-card">
-        <h4>Original board</h4>
-        <div class="board board-orig" id="board-orig"></div>
-      </div>
-      <div class="board-card">
-        <h4>Fine-tuned board</h4>
-        <div class="board board-ft" id="board-ft"></div>
-      </div>
-    </div>
-
-    <div class="legend">
-      <span class="legend-item"><span class="legend-swatch sw-light">&#9812;</span> White</span>
-      <span class="legend-item"><span class="legend-swatch sw-dark">&#9818;</span> Black</span>
-      <span class="legend-item"><span class="legend-swatch sw-err"></span> Mismatch vs ground truth</span>
-    </div>
-
-    <div class="errors">
-      <h4>Fine-tuned square errors</h4>
-      <ul id="error-list"></ul>
-    </div>
-
-    <details class="details">
-      <summary>Position metadata</summary>
-      <pre id="fen-box" class="fen"></pre>
-    </details>
-  </section>
-
-  <section class="section" aria-labelledby="method-title">
-    <h2 id="method-title">Dataset and method</h2>
-    <p>
-      Training data: <strong>3,000 synthetic RGB images</strong> covering
-      <strong>375 distinct board positions</strong> (8 views per position). The positions were split
-      by board position &mdash; not by image &mdash; into <strong>2,096 train</strong>,
-      <strong>448 validation</strong> and <strong>456 test</strong> images. Three old mesh layouts
-      were excluded from training so the model could not memorise them.
-    </p>
-    <p>
-      Model: <strong>YOLOv8m</strong> initialised from ChessReD2K weights, fine-tuned for
-      <strong>15 epochs</strong> with <strong>AdamW</strong>; training loss combines
-      <strong>CIoU + BCE + DFL</strong>. Scenes are rendered procedurally in VTK with
-      <strong>50&nbsp;mm squares</strong> and a <strong>78&nbsp;mm king</strong>, with no board
-      dynamics.
-    </p>
-
-    <table class="table" id="comparison-table">
-      <caption>Full held-out set (456 images) — original vs. fine-tuned</caption>
-      <thead>
-        <tr>
-          <th scope="col">Metric</th>
-          <th scope="col">Original</th>
-          <th scope="col">Fine-tuned</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-
-    <details class="details">
-      <summary>Training curves and saved evaluation summary</summary>
-      <figure>
-        <img src="assets/training_curve.png" alt="Training loss and validation curves over 15 epochs" loading="lazy">
-      </figure>
-      <figure>
-        <img src="assets/summary.png" alt="Saved evaluation summary comparing original and fine-tuned models on both datasets" loading="lazy">
-      </figure>
-    </details>
-  </section>
-
-  <section class="section limitations" aria-labelledby="lim-title">
-    <h2 id="lim-title">Limitations</h2>
-    <ul>
-      <li>Specialised for the exact Dubrovnik mesh set; no measured performance on real camera input
-        or other piece sets.</li>
-      <li>Automatic corner detection is unchanged and is <strong>not</strong> part of this benchmark
-        (corners are known here).</li>
-      <li>The virtual motion prototype uses known simulator state and an ideal fixed grasp.
-        End-to-end vision/VLA control and real-robot execution remain future work; this demo drives no hardware.</li>
-    </ul>
-    <p class="note">
-      All 14 fine-tuned failure frames are available in the held-out explorer; low-angle views
-      dominate the residual errors.
-    </p>
-    <p class="note">
-      The explorer's selection is the union of the first 6 test frames, 12 evenly spaced frames and
-      all fine-tuned failures; metrics above always reflect all 456 test images.
-    </p>
-  </section>
-
 </main>
-
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101">Repository</a>
-    <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/EXPERIMENT.md">Experiment docs</a>
-    <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/SIMULATION.md">Simulation experiment</a>
-    <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/raw/refs/heads/main/models/dubrovnik-yolov8m-v1.pt">Trained weight</a>
-    <a href="assets/summary.csv" download>Download summary CSV</a>
-    <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101/blob/main/artifacts/dubrovnik-v1/comparison.json">Full results (comparison.json)</a>
-  </div>
-</footer>
-
-<div id="fatal" class="fatal" hidden>
-  <p>
-    Demo data could not be loaded. Make sure <code>assets/demo-data.js</code> is present next to
-    this page and is loaded before <code>assets/app.js</code>.
-  </p>
-</div>
-
-<script src="assets/demo-data.js"></script>
-<script src="assets/app.js"></script>
+<footer class="site-footer"><div class="wrap footer-inner">
+  <a href="control-handoff.html">Control handoff</a>
+  <a href="control-setup.html">Setup and run</a>
+  <a href="https://github.com/Wangyh666-ust/Chess-Player------SOARM-101">GitHub source</a>
+</div></footer>
 </body>
 </html>

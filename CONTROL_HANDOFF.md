@@ -8,7 +8,7 @@ The immediate goal is to reproduce and improve the PyBullet workflow on a new co
 
 The current system moves chess pieces using known simulator state, numerical inverse kinematics (IK), collision queries and feedback from native PyBullet contacts. It has five arm joints and one gripper joint. Each game keeps one physical scene alive across moves; query worlds are separate and may be reset for planning.
 
-The latest controller uses native contact holding with natural piece rotation. It does **not** weld the piece to the gripper or project its orientation. The older October video used an ideal fixed grasp and different geometry; its results belong to that older configuration. Vision recognition is a separate module. The current control input is a frozen list of moves and simulator poses, not camera detections, a learned VLA policy or a chess engine.
+The controller uses native contact holding with natural piece rotation. It does **not** weld the piece to the gripper or project its orientation. The current control input is a frozen list of moves and simulator poses. Camera-driven execution, a learned VLA policy and hardware integration are later stages.
 
 The handoff includes the runtime dependency closure, current robot and piece assets, grasp catalogs, IK seeds, three original ten-action sessions, the unchanged experiment gate, a portable workspace materializer, an environment checker and selected historical evidence. Python controller/planner files are copied without changes. JSON paths and URDF mesh paths are rebased; [the manifest](simulation/manifest.json) records source and exported SHA-256 hashes and every transformation.
 
@@ -47,7 +47,7 @@ Evidence: [combined raw audit](artifacts/control-20261110/combined-raw-audit.jso
 | Environment | `.venv-chess-benchmark`, created with uv; never copy the environment directory between computers |
 | Python | 3.10.20, 64-bit |
 | NumPy / SciPy | 1.26.4 / 1.14.1 |
-| PyBullet | 3.2.7; local Windows build reports 7 October 2026 |
+| PyBullet | 3.2.7 |
 | python-chess / chess | 1.999 / 1.11.2 |
 | Physics timestep | 1/240 s |
 | Control dependencies | CPU only; no GPU, CUDA, ROS, DeepSeek key, detector weights or Stockfish required |
@@ -60,7 +60,7 @@ The [quick start](simulation/README.md) creates a new virtual environment and ma
 
 All controller positions are in **metres**, joints in **radians**, and time in **seconds** unless a field explicitly says otherwise. Larger gripper angle opens; smaller angle closes. `q5` is ordered shoulder pan, shoulder lift, elbow flex, wrist flex, wrist roll. The TCP is `gripper_frame_link`.
 
-The current piece meshes come from the project's November scanned-piece scene, exported from `initial_mount.blend` (source hash retained in the asset profiles). They replace the older Dubrovnik geometry. The six visual OBJ meshes and 18 convex collision slabs per piece are included, with NPZ geometry for further grasp/geometry work. The slabs preserve the neck profile but can conservatively fill local concavities.
+The piece meshes come from the project's current scanned-piece scene, exported from `initial_mount.blend` (source hash retained in the asset profiles). The six visual OBJ meshes and 18 convex collision slabs per piece are included, with NPZ geometry for further grasp/geometry work. The slabs preserve the neck profile but can conservatively fill local concavities.
 
 | Piece | Mesh height | Simulated mass |
 | --- | ---: | ---: |
@@ -180,4 +180,4 @@ Preserve the original robot/planner files when making a correction, use a new ve
 
 This is a headless PyBullet control snapshot. It does not establish hardware motor calibration, serial communication, joint-zero conventions on a real arm, emergency-stop behaviour, camera extrinsics or real-object friction. There is no hardware launch step in the setup guide. Reuse the concepts later only after measuring the real system.
 
-The older [October simulation report](SIMULATION-20261012.md), video and Dubrovnik detector remain available as historical results. Their assets, board dimensions and ideal fixed attachment differ from the November baseline. The public evidence subset contains audits and selected records; full high-frequency recordings and the original Blender authoring scene remain with the maintainer. Asset profiles retain the authoring scene hash so a future geometry revision can be traced.
+The public evidence subset contains audits and selected records for this control baseline; full high-frequency recordings and the original Blender authoring scene remain with the maintainer. Asset profiles retain the authoring scene hash so a future geometry revision can be traced.
