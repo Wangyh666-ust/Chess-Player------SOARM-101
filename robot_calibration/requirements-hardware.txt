@@ -1,0 +1,3 @@
+# Separate from simulation/requirements.txt; use a Python 3.12 virtual environment.
+# Pinned because the collector uses the public motor-bus API for passive reads.
+lerobot[core_scripts,feetech]==0.7.0

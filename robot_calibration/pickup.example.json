@@ -1,0 +1,105 @@
+{
+  "units": {
+    "arm": "deg",
+    "gripper": "normalized_0_100"
+  },
+  "note": "Fill locally taught positions after calibration. Nulls deliberately prevent execution; times must respect velocity limits.",
+  "waypoints": [
+    {
+      "phase": "start",
+      "time_s": 0,
+      "positions": {
+        "shoulder_pan": null,
+        "shoulder_lift": null,
+        "elbow_flex": null,
+        "wrist_flex": null,
+        "wrist_roll": null,
+        "gripper": null
+      }
+    },
+    {
+      "phase": "approach",
+      "time_s": 4,
+      "positions": {
+        "shoulder_pan": null,
+        "shoulder_lift": null,
+        "elbow_flex": null,
+        "wrist_flex": null,
+        "wrist_roll": null,
+        "gripper": null
+      }
+    },
+    {
+      "phase": "close",
+      "time_s": 8,
+      "positions": {
+        "shoulder_pan": null,
+        "shoulder_lift": null,
+        "elbow_flex": null,
+        "wrist_flex": null,
+        "wrist_roll": null,
+        "gripper": null
+      }
+    },
+    {
+      "phase": "lift",
+      "time_s": 12,
+      "positions": {
+        "shoulder_pan": null,
+        "shoulder_lift": null,
+        "elbow_flex": null,
+        "wrist_flex": null,
+        "wrist_roll": null,
+        "gripper": null
+      }
+    },
+    {
+      "phase": "hold",
+      "time_s": 16,
+      "positions": {
+        "shoulder_pan": null,
+        "shoulder_lift": null,
+        "elbow_flex": null,
+        "wrist_flex": null,
+        "wrist_roll": null,
+        "gripper": null
+      }
+    },
+    {
+      "phase": "lower",
+      "time_s": 20,
+      "positions": {
+        "shoulder_pan": null,
+        "shoulder_lift": null,
+        "elbow_flex": null,
+        "wrist_flex": null,
+        "wrist_roll": null,
+        "gripper": null
+      }
+    },
+    {
+      "phase": "release",
+      "time_s": 24,
+      "positions": {
+        "shoulder_pan": null,
+        "shoulder_lift": null,
+        "elbow_flex": null,
+        "wrist_flex": null,
+        "wrist_roll": null,
+        "gripper": null
+      }
+    },
+    {
+      "phase": "return",
+      "time_s": 28,
+      "positions": {
+        "shoulder_pan": null,
+        "shoulder_lift": null,
+        "elbow_flex": null,
+        "wrist_flex": null,
+        "wrist_roll": null,
+        "gripper": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "units": {"arm": "deg", "gripper": "normalized_0_100"},
+  "limits": {
+    "shoulder_pan": [null, null],
+    "shoulder_lift": [null, null],
+    "elbow_flex": [null, null],
+    "wrist_flex": [null, null],
+    "wrist_roll": [null, null],
+    "gripper": [null, null]
+  }
+}

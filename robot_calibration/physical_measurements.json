@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "measured_on": "2026-11-11",
+  "source": "User measurements; grid units confirmed as centimetres",
+  "units": {"mass": "g", "length": "mm"},
+  "measurement_uncertainty": null,
+  "pieces": {
+    "king": {"mass_g": 2, "height_mm": 43, "base_diameter_mm": 14, "base_ring_diameter_mm": 15, "top_ring_diameter_mm": 11, "top_diameter_mm": 12},
+    "queen": {"mass_g": 3, "height_mm": 35, "base_diameter_mm": 14, "base_ring_diameter_mm": 15, "top_ring_diameter_mm": 11, "top_diameter_mm": 9},
+    "rook": {"mass_g": 2, "height_mm": 25.5, "base_diameter_mm": 14, "base_ring_diameter_mm": 15, "top_ring_diameter_mm": 11, "top_diameter_mm": 9},
+    "bishop": {"mass_g": 2, "height_mm": 32, "base_diameter_mm": 14, "base_ring_diameter_mm": 15, "top_ring_diameter_mm": 9.5, "top_diameter_mm": 8},
+    "knight": {"mass_g": 2, "height_mm": 27.5, "base_diameter_mm": 14, "base_ring_diameter_mm": 15, "graspable_width_mm": 6, "top_ring_diameter_mm": null, "top_diameter_mm": null},
+    "pawn": {"mass_g": 2, "height_mm": 23, "base_diameter_mm": 14, "base_ring_diameter_mm": 15, "top_ring_diameter_mm": 9, "top_diameter_mm": 9}
+  },
+  "board": {
+    "outer_dimensions_mm": [248, 248, 15],
+    "seam_width_mm": 2,
+    "cell_dimensions_mm": [24.5, 25],
+    "grid_dimensions_mm": [198, 200],
+    "axis_convention": "As reported; physical axis orientation not yet identified",
+    "grid_includes_seam": null,
+    "consistency_note": "8 * 24.5 = 196 mm, while the reported grid is 198 mm on that axis. Preserve both; do not infer seam inclusion or derive a square pitch yet.",
+    "robot_from_board_transform": null,
+    "alignment_method_planned": "ArUco observations and calibrated robot poses; camera-to-robot transform must also be established"
+  },
+  "contact": {"sliding_friction": null, "gripper_friction": null, "magnetic_pull_off_force_N": null},
+  "notes": [
+    "Colour-specific variation was not supplied.",
+    "Top-ring heights were not supplied; widths alone do not define grasp heights.",
+    "King height is now 43 mm, versus the earlier model's 45 mm.",
+    "These measurements do not automatically update Blender models or the frozen simulation snapshot."
+  ]
+}
