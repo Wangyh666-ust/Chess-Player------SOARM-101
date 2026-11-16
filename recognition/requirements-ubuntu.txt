@@ -1,0 +1,4 @@
+numpy
+opencv-python>=4.7
+scipy
+ultralytics==8.4.173

@@ -1,0 +1,16 @@
+{
+  "host": "192.0.2.10",
+  "port": 8765,
+  "url": "http://192.0.2.10:8765/",
+  "username": "operator",
+  "expected_source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "max_seconds": 7200,
+  "camera_devices": ["/dev/video0", "/dev/video2"],
+  "remote_python": "/usr/bin/python3",
+  "remote_script": "/opt/chess-recognition/vision_eval/aruco_live_service_v10.py",
+  "remote_lock": "/tmp/chess-recognition.lock",
+  "remote_log": "/tmp/chess-recognition.log",
+  "credential_file": "connect_password.txt",
+  "dependency_dir": "local-deps",
+  "known_hosts": "known_hosts"
+}

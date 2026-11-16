@@ -1,0 +1,8 @@
+{
+  "model_path": "/absolute/path/to/chess-detector.pt",
+  "model_sha256": "replace-with-checkpoint-sha256",
+  "capture_root": "/absolute/path/to/captures",
+  "imgsz": 960,
+  "conf": 0.25,
+  "iou": 0.5
+}

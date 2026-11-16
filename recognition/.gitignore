@@ -1,0 +1,13 @@
+/DashScopeAPI.txt
+/connect_password.txt
+/known_hosts
+/captures/
+/chessreal_dual/
+/vision_eval/collection_config.json
+/vision_eval/grid_config.json
+/vision_eval/camera_mapping.json
+/vision_eval/dual_camera_launcher_config.json
+/vision_eval/references/
+/vision_eval/results/
+/vision_eval/board_confirmation/field_references/
+*.pt
