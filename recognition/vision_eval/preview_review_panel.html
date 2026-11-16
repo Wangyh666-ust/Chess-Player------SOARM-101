@@ -1,0 +1,21 @@
+<style>
+  #board-review-status { margin: 0; }
+  #board-review-details { margin: 8px 0; }
+  #board-review-details summary { cursor: pointer; }
+  .review-inflight { box-shadow: inset 0 0 0 3px #ffab55; }
+  .review-corrected { box-shadow: inset 0 0 0 3px #298151; }
+  .review-manual { outline: 2px dashed #9a4618; outline-offset: -4px; }
+  .review-row { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 10px; margin: 8px 0; }
+  .review-row select { max-width: 100%; }
+  .review-row img { width: min(38vw, 210px); max-height: 240px; object-fit: contain; }
+</style>
+<div class="row" style="padding: 10px">
+  <button id="board-review-start" type="button">识别棋局</button>
+  <label><input id="board-review-use-qwen" type="checkbox" autocomplete="off"> 启用 Qwen 辅助复核</label>
+  <button id="board-review-confirm" type="button" hidden>确认并定格</button>
+  <p id="board-review-status" role="status" aria-live="polite">采集 10 秒，汇总 5 个双摄投票结果。</p>
+</div>
+<details id="board-review-details" hidden>
+  <summary id="board-review-summary">复核详情</summary>
+  <div id="board-review-rows"></div>
+</details>

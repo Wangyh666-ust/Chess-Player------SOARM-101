@@ -1,0 +1,9 @@
+{
+  "mapping_path": "camera_mapping.json",
+  "reference_images": ["references/c1.png", "references/c2.png"],
+  "persistent_grid_dir": "results/grid_cache",
+  "class_names": [
+    "white-pawn", "white-rook", "white-knight", "white-bishop", "white-queen", "white-king",
+    "black-pawn", "black-rook", "black-knight", "black-bishop", "black-queen", "black-king"
+  ]
+}

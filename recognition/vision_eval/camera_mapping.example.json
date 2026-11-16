@@ -1,0 +1,17 @@
+{
+  "cameras": [
+    {
+      "id": 1,
+      "orientation": "files_desc_ranks_asc",
+      "width": 1280,
+      "height": 720,
+      "occlusion_rects": [[270, 535, 815, 720]]
+    },
+    {
+      "id": 2,
+      "orientation": "ranks_desc_files_desc",
+      "width": 720,
+      "height": 1280
+    }
+  ]
+}

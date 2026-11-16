@@ -1,0 +1,18 @@
+{
+  "model": "pixel_division_1param",
+  "lambda": -0.19111131794683894,
+  "fit_at_bound": false,
+  "objective_evaluations": 13,
+  "center": [
+    640.0,
+    360.0
+  ],
+  "scale": 640.0,
+  "image_size": [
+    1280,
+    720
+  ],
+  "source": "3 historical grid-reference views",
+  "intrinsics_calibrated": false,
+  "provisional": true
+}
