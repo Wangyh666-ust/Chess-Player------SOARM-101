@@ -2,6 +2,8 @@
 
 **[Dual-camera recognition source and setup](recognition/README.md)** — Ubuntu recognition service and bilingual Windows preview with local board confirmation.
 
+**[Arm calibration and recalibration](robot_calibration/README.md)** — Validation results and operator checklists for a motor replacement or a moved setup.
+
 **Current control snapshot: 10 November 2026.** The PyBullet workflow uses the project's scanned-piece geometry, 25.223 mm board squares and native-contact holding with natural rotation. It performs measured-grasp path rebuilding, support feedback before opening, settled release, and independently checked withdrawal/home.
 
 **[English control handoff](CONTROL_HANDOFF.md)** · **[Install and run](simulation/README.md)** · [Download handoff ZIP](https://wangyh666-ust.github.io/Chess-Player------SOARM-101/assets/control-handoff-20261110-v2.zip) · [Current evidence](artifacts/control-20261110/README.md) · [Project page](https://wangyh666-ust.github.io/Chess-Player------SOARM-101/)

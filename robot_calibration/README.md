@@ -1,66 +1,142 @@
-# Robot measurement collection
+# SO-ARM101 calibration and recalibration
 
-Start with joint calibration and a read-only recording, then measure the response of one joint. For pickup experiments, record current/load telemetry and video while replaying a locally taught trajectory. This collector is separate from the frozen PyBullet runtime. It does not plan grasps from board coordinates, estimate forces or fit a physics model.
+Start here to commission an SO-ARM101 for chess or recover a previously
+calibrated setup. The calibration defines where the arm, board, cameras and
+fingertip are relative to each other.
 
-## Files
+## Choose your workflow
 
-- `AGENTS.md`: instructions for an agent assisting with installation, tests and supervised hardware collection.
-- `physical_measurements.json`: the user's measurements of 11 November 2026, in grams and millimetres. Grid units are confirmed as centimetres and converted to millimetres. Unknown force values remain `null`. Nothing is automatically applied to Blender or PyBullet.
-- `collect_robot_calibration.py`: passive recording (`read`), a small relative joint sweep (`joint_response`), and taught trajectory replay (`pickup`). Defaults to a mock backend that never opens a serial port.
-- `pickup_trial.py`: validates/interpolates taught pickups and records camera video in a separate thread.
-- `pickup.example.json`: intentionally blank, non-executable waypoint template; fill measured local poses.
-- `annotate_separation.py`: exports numbered video frames and saves a human-reviewed separation interval.
-- `limits.example.json`: blank template for a verified local motion envelope. It intentionally cannot enable hardware motion until every interval is filled.
-- `requirements-hardware.txt`: optional, separately installed LeRobot dependencies.
-- `test_collect_robot_calibration.py` and `test_pickup_trial.py`: tests without hardware, including failure and cleanup paths. Fake camera tests do not validate real camera drivers/codecs.
+| Your situation | Start here |
+|---|---|
+| First time on this rig | [Run the offline smoke check](#first-time-software-setup). If the follower has no saved calibration, follow the [guided calibration steps](#after-replacing-a-motor), then work through the calibration order below. |
+| Same rig, no physical change | [Read the arm passively](#passive-check-and-what-to-save), then verify a known working pose against a physical reference. If it still meets the task tolerance, use the saved fit. |
+| Motor or joint mounting changed | [Recalibrate after a motor replacement](#after-replacing-a-motor). If the workspace also moved, register it afterward. |
+| Board, base, or camera moved | [Refresh the scene registration](#after-moving-the-setup). Keep the motor calibration and lens fits that still match the hardware. |
+| Fixed finger, pads, or jaw changed | [Check the geometry that changed](FIXED_TIP_WORKSHEET.md). Refit a changed fixed-tip point and remeasure the gap if the pad contact surfaces or gripper opening changed. |
 
-The 198 mm grid measurement and eight 24.5 mm cells differ by 2 mm. Confirm the seam's inclusion and axis orientation before deriving square centres. The new king height is 43 mm; earlier geometry was 45 mm. Top-ring widths do not specify the height at which to grasp.
+## Calibration order and reuse
 
-## Handoff to a teammate using Codex
+| Step | What you measure and save | When to repeat it |
+|---|---|---|
+| **1. Arm and joint mapping** | Save the LeRobot calibration and conservative local limits. Use physical reference poses to check how encoder positions map to model angles. A passive read and a reviewed small joint-response test check identity, tracking, and return. [Joint reference measurements](ARCHITECTURE.md#protractor-reference-pose-procedure) · [Joint response](TOOL_REFERENCE.md#prepare-a-small-movement-test) | After changing a servo, joint mounting, or encoder calibration. If only control settings changed, repeat the affected response checks. |
+| **2. Board and pieces** | Measure the playing surface, grid, seam, and marker corners. Reuse the board target for the same marker layout. Keep piece sizes and masses with the measured pieces. [Board target](configs/board_target.json) · [Physical measurements](configs/physical_measurements.json) | When the board, markers, or pieces change. Moving an unchanged board calls for scene registration. |
+| **3. Camera lenses and mounts** | Fit each lens from original photos and check it on reserved photos. Record the capture mode. Survey the wrist camera's pose relative to its link and compare views at the intended wrist poses if using metric wrist feedback. [Lens fitting](TOOL_REFERENCE.md#camera-calibration-from-photos) · [Wrist checks](ARM_CONTROL_HISTORY.md) | Recheck the lens after changes to focus, crop, resolution, or optics. Refresh the wrist mounting transform after a remount. |
+| **4. Board relative to the arm** | Use fresh board images and a surveyed rigid base target to locate the board in robot coordinates. Save the scene with the camera settings and survey used. [Scene registration](#after-moving-the-setup) | When the board, base, or fixed camera moves relative to the others, or a marker shifts. |
+| **5. Fixed-tip fit and jaw gap** | Use one [23-mark jogger session](FIXED_TIP_WORKSHEET.md#record-the-23-marks) to fit the fixed fingertip. It includes the 13 surface contacts and adds elevated marks. Use the same data to check the fit by leaving out whole intersections. For grasping, measure the inside jaw gap at stated depths and reserve an opening to check interpolation. | Recheck after joint remapping, finger or pad changes, or repeated misses at known poses. Refit the affected geometry if the physical check fails. |
+| **6. Independent checks at working poses** | Freeze the fit and measure actual XYZ at supervised holds that cover the intended positions and heights. Measure clearance as a separate quantity during the same session. Repeat one hold if you need to measure return repeatability. [Validation worksheet](FIXED_TIP_WORKSHEET.md#validate-the-frozen-fit) | After a change that affects the task, or before using a new route or working height. |
 
-Give Codex this starting request, explicitly naming the local instructions even
-if the session starts at the repository root:
+Keep the **arm profile** with the hardware, joint mapping and tool geometry.
+Keep a separate **scene record** for the current positions of the board, base,
+and cameras. A validation report should identify both revisions and show
+which poses and clearances were physically checked.
 
-> Read robot_calibration/AGENTS.md and robot_calibration/README.md. Run the tests
-> and a mock joint-response recording in a new output directory. Help me install
-> the pinned dependencies in the separate environment and establish passive
-> hardware readings and camera recording. Before physical movement, review the
-> measured limits and locally taught poses with me and wait for my readiness
-> confirmation. Preserve failures and report what has actually been verified.
+### Which checks can share a session?
 
-The teammate still needs to supply the connected port, robot ID, calibrated arm,
-camera device, measured local limits and rehearsed pickup poses. The scripts do
-not provide a teleoperation interface for teaching those poses; use the local
-arm software as described below. Installation and hardware compatibility must
-be checked on that computer before collecting evidence.
+- **Use the 23-mark session as the fixed-tip fit.** It covers the separate
+  13-contact run. Earlier spot contacts and the rank-4 ruler correction are
+  reference evidence for this bench. There is no need to repeat them when
+  fitting the tool with the 23 marks.
+- **Combine hover, near-board, and return checks in one independent session.**
+  Use working locations and heights for the task. A low hold can serve as an
+  XYZ check if you can measure all three axes independently. Add a higher
+  hold if the task uses it or the low views cannot resolve XYZ. Revisit one
+  hold if you need to measure repeatability. The separate 60 mm repeat
+  sequence is available for diagnosing inconsistent returns. If you use a
+  check to change the fit, reserve fresh observations to validate the revision.
+- **Check jaws and loaded behavior when the task uses them.** The fixed-tip
+  fit covers a single point on the arm. Measure jaw gap for the relevant
+  opening and depth, and use supervised piece trials for retention, support,
+  release, and retreat. Wrist mounting checks are needed when using the
+  wrist camera for metric feedback. [Pickup trials](TOOL_REFERENCE.md#repeat-matched-pickup-trials)
 
-Return the complete trial directories, including failed trials, through your
-shared data storage. Keep the videos, frame timestamps, sample logs, metadata,
-trajectory snapshots and separation reviews together. Also include the local
-limits and taught trajectory files, the exact commands, `git rev-parse HEAD`,
-`python --version`, and `python -m pip freeze` from the hardware environment.
-Record the camera view, piece identity, board square, grasp height and any changes
-to placement or support in a short session note. These details make later
-comparisons interpretable. Outputs belong under the ignored `runs/` directory,
-not in the source commit.
+### What another rig needs
 
-## Try the recorder without installing anything
+Bring the follower's own motor calibration and limits, a measured board
+target, lens fits from its cameras, and a rigid base-marker survey. Use the
+[registration template](configs/registration.example.json) to give the
+23-mark jogger those inputs. The [worksheet](FIXED_TIP_WORKSHEET.md) covers
+marking, fitting, and validation. New recordings include a per-mark
+board-to-base transform and target so the offline fitter can read them
+without the original bench archives. The staged e4/f4 ACT runner still uses
+bench-specific taught references.
 
-From the repository root:
+## What has been validated
+
+**On 24 November 2026, the fitted fixed fingertip was validated in 3D at three
+supervised, unloaded board-relative hovers.** The operator's measurements put
+the 3D position error below 1.43 mm at each tested pose. Follow-up checks
+validated near-board fixed-tip positioning at e4 and f4 within the measured
+scope below.
+
+| Check | Recorded result and scope |
+|---|---|
+| Saved motor calibration and guarded motion | All six motors matched the saved LeRobot calibration on the replacement **USB controller board**, with the same servos. A 3° wrist-roll test moved 2.73° and returned within 0.35° of the start. Two g5 handoffs and an empty e4 rehearsal completed under supervision. A later operator-confirmed e4–f4–e4 knight round trip started with the knight already gripped. This evidence is specific to those paths and that installation. |
+| Jaw opening | A single opening excluded from fitting was checked at 5 mm and 10 mm from the fixed tip. The largest difference was 0.83 mm. This checks interpolation for the recorded taped jaws. Ruler uncertainty, powered compression, and grasp-centre accuracy remain open. |
+| Camera lens fits | Fresh-photo reprojection RMS was 2.04 px median / 3.62 px maximum for the fixed camera (13 photos) and 1.40 px / 2.04 px for the wrist camera (12 photos). The fits describe image projection. Wrist camera mounting and independent metric accuracy still need validation. |
+| Fixed fingertip relative to the board | Three higher hovers checked XYZ position. Two near-board descents checked height at two holds per square. All used the same fitted fingertip point. |
+
+| Board intersection | Height above board | 3D error bound from operator measurements |
+|---|---:|---:|
+| d4/e4/d5/e5 | 60 mm | < 1.43 mm |
+| f4/g4/f5/g5 | 92 mm | < 0.62 mm |
+| f6/g6/f7/g7 | 60 mm | < 1.14 mm |
+
+The 3D bounds combine the reported axis errors and measurement resolution. The
+first measurement is attributable to the first target, with the exact run
+unspecified.
+
+| Near-board square | Requested heights | Measured heights (±1 mm) | Measured minus requested |
+|---|---:|---:|---:|
+| e4 | 19.2 → 14.2 mm | 21.2 → 15.7 mm | +2.0, +1.5 mm |
+| f4 | 18.2 → 13.2 mm | 19.7 → 13.5 mm | +1.5, +0.3 mm |
+
+All four holds had a measured height within 2.0 mm of the request before
+accounting for the stated ±1 mm measurement uncertainty. The operator recorded
+zero XY offset at all four holds, with ±1 mm uncertainty per axis. The operator
+also confirmed at least 5 mm between the playing surface and the lowest pad at
+each final hold.
+
+The 5 mm minimum clearance along the full motion path, grasp centre and
+retention under load, and wrist-camera mounting accuracy across poses remain
+open. After a motor or setup change, recheck the intended working poses using
+the procedures below.
+
+This is the calibration baseline for the supervised e4 → f4 workflow.
+The staged ACT trial logged a successful pickup and assisted carry. At f4 the
+placement policy kept requesting descent until it reached the configured
+floor, and the trace recorded no release command. Placement ACT validation
+continues separately using that baseline.
+
+See [arm bench history](ARM_CONTROL_HISTORY.md) and [the tool reference](TOOL_REFERENCE.md)
+for methods and detailed commands. If you have the original recordings, the
+summary sources under `runs/robot-calibration/` are
+`calibration-delivery-20261119/CALIBRATION_STATUS.txt`,
+`calibration-delivery-20261119-update/CURRENT_STATUS.txt`,
+`camera-final-fixed-check-20261117/RESULTS.md`, and
+`powered-placement-20261120/rank4-height-calibration.json`. For the November 24
+checks, see `board23-tip-analysis/filtered/results.json` and
+`board23-tip-analysis/filtered/trial-1-operator-measurement.json`, plus
+`operator-measurement.json` in runs `tip-validation-2-1795517325086542632` and
+`tip-validation-3-1795517595458971477`. The near-board measurements are in
+`operator-measurement.json` in runs `near-board-4-1795522676812525537` and
+`near-board-5-1795523363677430887`. These archives are local and optional for
+reading this guide.
+
+## First-time software setup
+
+Run commands from the repository root. The mock recorder runs without the arm or
+LeRobot. Full regression coverage requires the optional camera and analysis
+dependencies described in the [tool reference](TOOL_REFERENCE.md).
 
 ```bash
-python3 robot_calibration/collect_robot_calibration.py \
-  --mode joint_response --joint shoulder_pan \
-  --output runs/robot-calibration/mock-001
-
-python3 -m unittest discover -s robot_calibration -v
+python3 -m robot_calibration.collection.collect_robot_calibration \
+  --backend mock --mode joint_response --joint shoulder_pan \
+  --output "runs/robot-calibration/mock-$(date +%Y%m%d-%H%M%S-%N)"
 ```
 
-Mock runs execute quickly using synthetic positions. `planned_s` is the simulated sample schedule; host timestamps reflect the actual fast execution. Mock files are marked as mock and must never be used as physical calibration evidence.
-
-## Establish the first hardware connection
-
-Use an isolated Python 3.12 environment, separate from the simulator's dependencies:
+For real hardware, use a separate Python 3.12 environment. Set `ARM_PORT` to
+the port found on this computer and `ROBOT_ID` to the ID of this follower's saved
+calibration. Keep the ID consistent between calibration and the collector.
 
 ```bash
 python3.12 -m venv .venv-robot-calibration
@@ -69,154 +145,116 @@ python -m pip install -r robot_calibration/requirements-hardware.txt
 lerobot-find-port
 ```
 
-Follow the [SO-101 setup and calibration guide](https://huggingface.co/docs/lerobot/so101). If motor IDs have not been configured, follow its motor setup process first. Do not blindly reassign an already assembled arm's IDs.
+### Offline tests
 
-Calibrate the follower with the actual port and a consistent ID (replace the example port):
-
-```bash
-lerobot-calibrate \
-  --robot.type=so101_follower \
-  --robot.port=/dev/ttyACM0 \
-  --robot.id=chess_arm
-```
-
-The guided tool needs manual movement. Support the arm as instructed. Calibration files are managed by LeRobot outside this project environment; keep a copy and reuse the same robot ID. Removing the virtual environment later does not remove those calibration files or recordings.
-
-Neither dependency installation nor physical calibration has been performed by adding this module. The hardware adapter targets LeRobot 0.7.0 and refuses another version until reviewed. Its bus calls were checked against the versioned upstream source; actual motor communication is still unverified.
-
-## Record joint readings without commanding motion
-
-Close other applications controlling the arm. This mode requires saved calibration matching the motors. It reads positions and existing settings; it does not send position goals, configure PID gains, enable torque or disable torque on exit.
+The [calibration workflow](../.github/workflows/calibration.yml) runs the
+offline suites on GitHub Actions. From the repository root, run these in a
+Python 3.12 environment with NumPy, SciPy and headless OpenCV installed:
 
 ```bash
-python robot_calibration/collect_robot_calibration.py \
-  --backend lerobot --mode read \
-  --port /dev/ttyACM0 --robot-id chess_arm \
-  --duration-s 5 --output runs/robot-calibration/read-001
+python -m unittest discover -s robot_calibration/tests -v
+python -m unittest discover -s manipulation/tests -p test_calibration.py -v
 ```
 
-The five arm readings are LeRobot-calibrated **degrees**, not PyBullet joint coordinates. The gripper is **normalized 0–100**, not degrees, millimetres or force. The mapping to the simulator must be checked separately.
+These suites use mock hardware and saved or synthetic data. The graphical
+test skips on runners without a display.
 
-The collector opens the motor bus directly rather than calling the higher-level robot connection routine, because that routine can configure motor gains. Existing gains and torque limits are logged, not overwritten. Add `--telemetry` to read current/load and `--camera 0` to capture video, including in read mode. Do not run a second controller on the same port; read mode is not a concurrent teleoperation recorder.
+## After replacing a motor
 
-## Prepare a small movement test
+1. **Save the previous revision.** Back up the LeRobot calibration JSON, robot
+   profile, and approved limits. Record which joint changed. Support the arm
+   and remove motor power before replacing the servo. Confirm the replacement
+   matches the follower's motor and gearing. If its ID or baud rate needs
+   programming, follow LeRobot's single-motor setup procedure with the replacement
+   isolated from the other servos. [LeRobot SO-101 motor setup](https://huggingface.co/docs/lerobot/so101#configure-the-motors)
+2. **Run the guided follower calibration.** Close all other controllers, clear
+   the manual sweep area and keep the arm supported. This tool writes motor
+   settings. If LeRobot 0.7.0 offers to reuse an existing calibration, type
+   `c` and press Enter to start a fresh calibration. Pressing Enter alone writes
+   the old calibration back to the motors. Follow the guided midpoint and manual
+   range capture.
+   [LeRobot follower calibration](https://huggingface.co/docs/lerobot/so101#calibrate)
 
-1. Secure the base. Remove chess pieces and clear the intended small sweep. Start with the empty arm in a supported pose, with all motor torque off. Never force a powered joint by hand.
-2. Use calibrated observations and manual/teleoperated inspection to choose a collision-free local envelope. Copy `limits.example.json` to `runs/robot-calibration/limits.json` and replace every `null` with a measured limit. These are local experiment limits, not automatically discovered mechanical limits.
-3. Check that the current pose and the selected joint's full positive/negative excursion fit inside that envelope. Joint bounds alone do not establish that a pose is clear of the table, itself or a person.
-4. Keep physical power-off accessible and support the arm when the run finishes or aborts. The collector disables torque after a motion run, which can let the arm fall under gravity. Do not use the joint-response test while holding a piece. Pickup trials can also drop the piece on an abort; use a small lift over a protected area.
+   ```bash
+   lerobot-calibrate --robot.type=so101_follower \
+     --robot.port="${ARM_PORT:?Set ARM_PORT}" --robot.id="${ROBOT_ID:?Set ROBOT_ID}"
+   ```
 
-For the first run, use a 1-degree amplitude and one cycle:
+3. **Check the new readings with the passive command below.** Confirm that all
+   six joints are present, the saved calibration matches the motors, and the
+   readings and settings agree with the hardware. Recheck the joint references
+   against physical measurements. Review measured motion limits and taught
+   poses under the new calibration before any powered test. If the gripper or
+   pads changed, repeat jaw-gap and contact checks. If the wrist camera mount
+   changed, re-estimate its pose relative to the wrist before relying on that view.
+   [Joint reference measurements](ARCHITECTURE.md#protractor-reference-pose-procedure)
+4. **Verify a small supervised empty-arm movement first.** Use a locally
+   reviewed path, compare physical direction, travel and return with the
+   encoder record, and save the resulting calibration as a new revision.
+   Recheck the intended board positions using the
+   [independent checks](FIXED_TIP_WORKSHEET.md#validate-the-frozen-fit).
+   [Guarded joint-response procedure](TOOL_REFERENCE.md#prepare-a-small-movement-test)
+
+## After moving the setup
+
+1. **Check what moved relative to what.** If the whole assembly moved rigidly,
+   verify that the clamp, marker mounts, cameras and board stayed fixed relative
+   to each other. If the board, base or fixed camera moved relative to the others,
+   take fresh measurements of the layout. Keep the saved motor calibration if
+   the motor and joint assemblies are unchanged and the
+   [passive check](#passive-check-and-what-to-save) confirms a match.
+   Lens fits can be reused after checking that the camera, focus, crop,
+   orientation and resolution match. If a wrist camera shifted in its mount,
+   its wrist-relative transform needs a new fit and checks.
+2. **Photograph the current scene.** With the arm stationary, capture raw
+   fixed-camera photos showing the board markers and a rigid base target with
+   measured coordinates relative to the robot base. Reserve visible board
+   markers for a check. If the marker arrangement differs from the checked-in
+   target, supply your measured target JSON via `--target`. Set
+   `FIXED_INTRINSICS` to the saved lens fit and `SCENE_PHOTOS` to the new photo
+   directory. Rerun with the matching wrist fit and photos if you use the wrist view.
+   [Fit or check lens intrinsics](TOOL_REFERENCE.md#camera-calibration-from-photos)
+
+   ```bash
+   python -m robot_calibration.board_pose \
+     --candidate "${FIXED_INTRINSICS:?Set FIXED_INTRINSICS}" \
+     --images "${SCENE_PHOTOS:?Set SCENE_PHOTOS}" --holdout-ids 8 9 \
+     --output "runs/robot-calibration/board-pose-$(date +%Y%m%d-%H%M%S-%N)"
+   ```
+
+   Choose other reserved IDs if 8 and 9 are hidden. Keep at least four known
+   markers for fitting, and inspect the held-out results and overlays. This
+   command locates the board **in the camera frame**. The jogger's explicit registration
+   inputs let it also estimate the board position relative to the arm at
+   each mark, assuming a level board at the measured height. If you lack
+   a verified base survey, stop at the camera-frame result. Use independent
+   physical checks before relying on the new registration for motion.
+   [Scene registration design](ARCHITECTURE.md#reconnect-workflow-and-independent-final-validation)
+3. **Review clearance and measure independent points.** Check the new board
+   height, reachability, and clearance along the entire path. Start with
+   supervised, empty-arm, non-contact holds at independently measured
+   landmarks on both board halves. Compare measured XYZ and uncertainty against
+   the tolerance for the intended task. Compare the two views if both are used.
+   Missing observations or errors outside tolerance leave the setup unverified.
+   [Operator guide](ARM_OPERATOR_GUIDE.md)
+
+## Passive check and what to save
+
+Use one terminal owner for the serial port. Support the arm and keep physical
+power-off accessible. Read mode records the present state without sending
+position goals or changing torque.
 
 ```bash
-python robot_calibration/collect_robot_calibration.py \
-  --backend lerobot --mode joint_response --execute \
-  --port /dev/ttyACM0 --robot-id chess_arm \
-  --joint shoulder_pan --amplitude-deg 1 \
-  --ramp-s 3 --hold-s 1 --cycles 1 --hz 30 \
-  --limits runs/robot-calibration/limits.json \
-  --output runs/robot-calibration/shoulder-pan-001
+python -m robot_calibration.collection.collect_robot_calibration \
+  --backend lerobot --mode read --telemetry --duration-s 5 \
+  --port "${ARM_PORT:?Set ARM_PORT}" --robot-id "${ROBOT_ID:?Set ROBOT_ID}" \
+  --output "runs/robot-calibration/read-$(date +%Y%m%d-%H%M%S-%N)"
 ```
 
-The selected joint follows: initial hold → positive ramp/hold → centre ramp/hold → negative ramp/hold → initial ramp/hold. Other joints, including the gripper, hold their starting readings. There is no absolute home movement and no automatic retry.
-
-Before enabling torque, the script requires position mode and torque off, checks the saved calibration and all pose bounds, and seeds the motor goals with current readings. It then enables torque without altering gains. Only the five arm joints can be selected for this first response test; automated gripper-gap calibration is a later mode.
-
-Joint-response commands are capped at 5 degrees of excursion and 5 degrees/second. These are software caps, not a claim that every permitted trajectory is safe. Samples use a monotonic clock. Excessive lateness, out-of-bound readings, excessive tracking error, invalid values or communication errors abort the run and preserve partial data. Ctrl+C and SIGTERM use the same cleanup path.
-
-## Current and load telemetry
-
-```bash
-python robot_calibration/collect_robot_calibration.py \
-  --backend lerobot --mode read --telemetry --camera 0 --hz 10 \
-  --port /dev/ttyACM0 --robot-id chess_arm \
-  --duration-s 10 --output runs/robot-calibration/telemetry-001
-```
-
-The collector records `Present_Current`, `Present_Load`, `Present_Voltage`, `Present_Temperature` and `Goal_Position` for all six motors. Current/load are kept as register values, without guessing sign encoding, amperes, joint torque or gripper force. Goal positions use the same degree/normalized-gripper units as commands. Each register read has its own timestamp interval; these reads are sequential, not simultaneous.
-
-These register names are supported by the [STS3215 driver definition](https://docs.rs/rustypot/latest/rustypot/servo/feetech/sts3215/index.html). The actual firmware/driver must answer every requested register. A failed preflight read prevents movement; a failed read during motion aborts and retains partial evidence. We do not replace missing values with zero. Start at 10 Hz because the extra reads increase bus traffic; the observed timestamps determine the effective sample rate.
-
-## Teach a pickup before repeating it
-
-Copy `pickup.example.json` to `runs/robot-calibration/pawn-pickup.json`. Fill it with poses measured on the real robot after calibration. Never copy simulation joint coordinates or the synthetic test fixture into hardware.
-
-Use the teammate's working teleoperation/jogging software to establish poses. Stop that software before running the collector on the same port. A short `--mode read` run saves all six current values in `metadata.json.initial_positions`; copy that dictionary into the corresponding waypoint. A saved encoder pose does not prove that the path between poses is collision-free: rehearse the complete path locally, slowly and initially without the piece.
-
-The required phases are:
-
-| Phase | Pose to supply |
-| --- | --- |
-| `start` | Supported, repeatable pose with the empty gripper open, near the piece |
-| `approach` | Fingers around the piece at a measured grasp height; same opening as start |
-| `close` | Same arm angles as approach, smaller tested gripper opening |
-| `lift` | Locally verified small upward movement; retain the closing command |
-| `hold` | Identical pose to lift, later timestamp to establish a hold period |
-| `lower` | Back to the supported piece position, gripper still closed |
-| `release` | Same arm angles as lower, larger gripper opening |
-| `return` | Exactly the initial pose and opening |
-
-Times are seconds since trajectory start. Increase segment durations when needed; limits are 5 deg/s for arm joints, 20 normalized units/s for the gripper and 20 degrees total arm excursion from start. The final pose is held for one second. A brief alignment ramp removes a starting discrepancy of at most 0.5 units; larger discrepancies are rejected. Software checks do not establish a vertical Cartesian lift or board clearance. Verify those physically. The interpolated path uses joint-space linear ramps, not the simulator's collision-checked IK planner.
-
-## Repeat matched pickup trials
-
-```bash
-python robot_calibration/collect_robot_calibration.py \
-  --backend lerobot --mode pickup --execute \
-  --port /dev/ttyACM0 --robot-id chess_arm \
-  --trajectory runs/robot-calibration/pawn-pickup.json \
-  --limits runs/robot-calibration/limits.json \
-  --piece-id white-pawn-1 --condition magnetic-board \
-  --camera 0 --camera-fps 30 --hz 10 --trials 3 \
-  --output runs/robot-calibration/pawn-series-001
-```
-
-Pickup mode automatically requires telemetry and, on hardware, a camera. It does not begin until telemetry and a first video frame are available. Before every trial the operator must reset the same piece to the marked square, offset and orientation, check the start pose and torque-off state, then type `ready`. A failure stops the series. There is no automatic retry. Motor gains are preserved and logged.
-
-Each repetition gets `trial-001`, `trial-002`, etc. A copied trajectory plus its SHA-256, calibration snapshot, limits, piece ID and condition label accompany each trial. Keep the same physical piece, grasp height, closing command, path, lift speed, board location and camera view. Manual placement is not guaranteed identical by the code; mark positions and review the video. If comparing a non-magnetic reference, match its top-surface height and path, and label the changed condition. Do not infer attraction solely from a current difference without checking repeatability and confounding factors.
-
-`status: completed` means command playback finished. It does not prove the piece was grasped or detached; `pickup_outcome` remains `unreviewed` until visual inspection. Real pose teaching and trials must be done with the teammate's arm. No real pickup has been validated by the mock tests.
-
-## Review the instant of separation
-
-Aim the camera low enough to see the piece base and board contact. Each trial saves `video.avi` and `frames.jsonl`. The video uses MJPEG; timestamps in the JSONL are authoritative for alignment, since nominal playback FPS may differ from capture timing. Camera and motor reads share one host monotonic time origin. This is software timestamp alignment, not hardware synchronization: exposure and camera buffering latency remain unknown.
-
-Watch the video, then export numbered frames around the event (example range only):
-
-```bash
-python robot_calibration/annotate_separation.py \
-  --trial runs/robot-calibration/pawn-series-001/trial-001 \
-  --export-frames 20 50
-```
-
-Inspect the JPEGs and record the last frame with contact and the first frame with a visible gap. Replace the example frame numbers with observed values:
-
-```bash
-python robot_calibration/annotate_separation.py \
-  --trial runs/robot-calibration/pawn-series-001/trial-001 \
-  --reviewer teammate --outcome separated \
-  --last-contact-frame 32 --first-clear-frame 33
-```
-
-This writes a new `separation.json` with frame indices, a host-time interval, matching telemetry sample indices and evidence hashes. It never overwrites a review. Use `--outcome no-separation` or `--outcome occluded` without frame indices when appropriate. A frame interval is more honest than claiming an exact physical separation time. No automatic computer-vision separation detector is included.
-
-A blocked driver call, killed process, disconnected cable or failed torque-disable command cannot be stopped reliably by this Python loop. Physical power-off is the fallback. There is no hardware watchdog, torque/force control, collision model or current-based contact detector in this collector.
-
-## Read the results
-
-Each new output directory contains:
-
-- `metadata.json`: backend, status, settings, units, starting positions, limits, hardware calibration/settings, source hash and a tracking summary for motion runs. Failure and cleanup status are explicit.
-- `samples.jsonl`: one record per sample, with requested joint positions, measured positions, phase and host-side command/read timestamps. Read-only records have `command: null`.
-- `video.avi` and `frames.jsonl`, when a camera is selected: video plus frame acquisition intervals on the telemetry clock.
-- `separation.json`, after review: human-labelled separation or uncertainty; no force estimate.
-
-The metadata contains the full calibration snapshot; the record is not just tied to an ID that might be recalibrated later. Each run uses a new directory, and existing results are never overwritten. Outputs under `runs/` are already ignored by Git.
-
-Read timings bound the host acquisition interval; they are not exact motor sensor timestamps. The tracking RMSE is a diagnostic, not an automatically estimated motor delay. External video/markers will be needed to distinguish encoder tracking from mechanical play and gripper position error. An offline fitting module can be added after real recordings exist.
-
-## Force measurements can wait
-
-A force gauge is a physical push/pull instrument, not a software setting. If none is available, leave contact values unknown for now. Pickup recordings can reveal repeatable load changes and separation timing, but do not by themselves yield magnetic attraction in newtons. Do not convert a motor current or torque setting directly into a measured jaw force.
-
-Board alignment through ArUco still needs camera calibration and a camera-to-robot relationship. A single known arm pose does not generally determine all unknown camera/tool transforms. This module does not solve that calibration yet.
+Check `metadata.json` and `samples.jsonl` for a complete six-joint record and
+resolve any mismatch or read failure before planning motion. Before any powered
+test, review the specific plan, start pose, clearances, and recovery procedure
+with the operator. Save the hardware and camera IDs, calibration and scene
+revisions, raw observations, independent errors with units, and pass/fail/not
+tested status. Keep the raw runs and machine-specific calibration files local.
+[Operator recovery procedure](ARM_OPERATOR_GUIDE.md#6-stop-recover-and-diagnose-a-timeout)

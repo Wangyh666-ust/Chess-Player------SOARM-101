@@ -1,0 +1,36 @@
+name: Calibration tests
+
+on:
+  push:
+    paths: &calibration_paths
+      - '.github/workflows/calibration.yml'
+      - 'robot_calibration/**'
+      - 'manipulation/calibration.py'
+      - 'manipulation/observations.py'
+      - 'manipulation/tests/test_calibration.py'
+      - 'simulation/runtime/reachability_eval/**'
+  pull_request:
+    paths: *calibration_paths
+
+permissions:
+  contents: read
+
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install offline test dependencies
+        run: >-
+          python -m pip install numpy==2.2.6
+          opencv-python-headless==4.13.0.92
+          -r robot_calibration/requirements-controller.txt
+      - name: Run calibration tests
+        run: |
+          python -m unittest discover -s robot_calibration/tests -v
+          python -m unittest discover -s manipulation/tests -p test_calibration.py -v
