@@ -1,0 +1,11 @@
+{
+  "board_target": "board_target.json",
+  "fixed_lens": "fixed-intrinsics.json",
+  "board_anchor_ids": [1, 4, 5, 8],
+  "base_marker_corners_m": {
+    "20": null,
+    "22": null
+  },
+  "board_height_m": null,
+  "cell_pitch_m": [null, null]
+}

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd -- "$(dirname -- "$0")/.."
+exec "${CALIBRATION_PYTHON:-.venv-robot-calibration/bin/python}" \
+  -m robot_calibration.collection.visual_controller "$@"
