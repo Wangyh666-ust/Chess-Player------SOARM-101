@@ -8,7 +8,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-import collect_robot_calibration as collector
+from robot_calibration.collection import collect_robot_calibration as collector
 
 
 class FakeBus:
@@ -18,7 +18,7 @@ class FakeBus:
         self.torque = 0
         self.mode = 0
 
-    def sync_read(self, register, normalize=True):
+    def sync_read(self, register, normalize=True, **kwargs):
         self.events.append(("read", register))
         if register == "Present_Position":
             return self.position.copy()
@@ -55,7 +55,7 @@ class CollectorTests(unittest.TestCase):
 
     def test_limits_require_measured_values(self):
         with self.assertRaises(ValueError):
-            collector.read_limits(Path(__file__).with_name("limits.example.json"))
+            collector.read_limits(Path(__file__).resolve().parents[1] / "configs" / "limits.example.json")
         with self.assertRaises(ValueError):
             collector.check_positions(collector.MockArm().read() | {"shoulder_pan": float("nan")})
 
@@ -190,21 +190,22 @@ class CollectorTests(unittest.TestCase):
         arm.close()
         self.assertEqual(arm.bus.events, [("read", "Present_Position"), ("disconnect", False)])
 
-    def test_hardware_goal_seed_precedes_torque(self):
+    def test_hardware_uses_guarded_seed(self):
         arm = collector.LeRobotArm.__new__(collector.LeRobotArm)
         arm.bus = FakeBus()
         arm.enabled = False
-        arm.enable(arm.bus.position.copy())
-        self.assertEqual(arm.bus.events[-2][0:2], ("write", "Goal_Position"))
-        self.assertEqual(arm.bus.events[-1], ("enable",))
-        arm.close()
-        self.assertEqual(arm.bus.events[-1], ("disconnect", True))
+        arm.recovery = object()
+        with patch.object(collector.placement_guards, 'seed_and_verify') as seed:
+            arm.enable(arm.bus.position.copy())
+        self.assertEqual(seed.call_args.args[:3], (arm, arm.bus.position, collector.JOINTS))
+        self.assertTrue(seed.call_args.kwargs['enable_if_all_off'])
 
     def test_hardware_refuses_torque_on_and_wrong_mode(self):
         for attribute in ("torque", "mode"):
             arm = collector.LeRobotArm.__new__(collector.LeRobotArm)
             arm.bus = FakeBus()
             arm.enabled = False
+            arm.recovery = object()
             setattr(arm.bus, attribute, 1)
             with self.assertRaises(RuntimeError):
                 arm.enable(arm.bus.position.copy())

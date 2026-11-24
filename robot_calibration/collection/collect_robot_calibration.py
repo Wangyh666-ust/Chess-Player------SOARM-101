@@ -8,7 +8,6 @@ which would change the response we want to measure. No gains are changed here.
 import argparse
 from dataclasses import asdict
 from datetime import datetime, timezone
-import hashlib
 import importlib.metadata
 import json
 import math
@@ -16,15 +15,26 @@ from pathlib import Path
 import platform
 import signal
 import sys
+import subprocess
 import time
 
+from robot_calibration.collection import placement_guards, stop_recovery
+from robot_calibration.records import ARM as ARM_JOINTS, JOINTS, sha256
 
-ARM_JOINTS = ("shoulder_pan", "shoulder_lift", "elbow_flex", "wrist_flex", "wrist_roll")
-JOINTS = (*ARM_JOINTS, "gripper")
+
 UNITS = {"arm": "deg", "gripper": "normalized_0_100"}
 SDK_VERSION = "0.7.0"
 TELEMETRY_REGISTERS = ("Present_Current", "Present_Load", "Present_Voltage", "Present_Temperature",
                        "Goal_Position")
+
+
+def require_unowned_port(port):
+    """Fail closed if the local serial device is missing or ownership is unclear."""
+    if not Path(port).exists():
+        raise RuntimeError('Follower serial port is missing')
+    result = subprocess.run(['fuser', port], capture_output=True)
+    if result.returncode != 1 or result.stderr.strip():
+        raise RuntimeError('Serial port is in use or ownership could not be established')
 
 
 def read_telemetry(arm, origin):
@@ -156,28 +166,79 @@ class LeRobotArm:
     def read_register(self, register):
         return self.bus.sync_read(register, normalize=(register == "Goal_Position"))
 
+    def raw_positions(self, values):
+        return placement_guards.raw_positions(self.bus, values)
+
+    def normalized_positions(self, values):
+        return placement_guards.normalized_positions(self.bus, values)
+
+    def prepare_recovery(self, config_path, limits, output):
+        """Prepare console, audit log and raw envelope before enabling motors."""
+        config = stop_recovery.load_config(config_path)
+        bounds = {}
+        for joint in JOINTS:
+            calibration = self.bus.calibration[joint]
+            # Reuse conversion from the pinned SDK, including gripper direction.
+            endpoints = [self.raw_positions({joint: value})[joint]
+                         for value in limits[joint]]
+            low, high = sorted(endpoints)
+            if not calibration.range_min <= low < high <= calibration.range_max:
+                raise ValueError(f"Recovery envelope exceeds saved calibration: {joint}")
+            bounds[joint] = (low, high)
+
+        for register in ("Status", "Present_Temperature", "Torque_Enable", "Operating_Mode"):
+            values = self.bus.sync_read(register, normalize=False)
+            if set(values) != set(JOINTS) or any(type(v) is not int for v in values.values()):
+                raise ValueError(f"Recovery feedback unavailable: {register}")
+            if register == "Present_Temperature":
+                if any(v >= config["max_temperature"] for v in values.values()):
+                    raise RuntimeError("Motor temperature exceeds recovery threshold")
+            elif any(values.values()):
+                raise RuntimeError(f"Motion preflight requires {register}=0 for every motor")
+
+        self.operator = stop_recovery.TerminalOperator()
+        self.recovery_log = (output / "recovery.jsonl").open("x", buffering=1)
+
+        def emit(row):
+            self.recovery_log.write(json.dumps(row, allow_nan=False) + "\n")
+
+        self.recovery = stop_recovery.StopSupervisor(
+            self.bus, self.cancel_motion, bounds, emit=emit,
+            **{key: value for key, value in config.items() if key != "poll_s"})
+        self.recovery_poll_s = config["poll_s"]
+        self.motion_cancelled = False
+        emit({"event": "prepared", "raw_bounds": bounds, "thresholds": config})
+
+    def cancel_motion(self):
+        """Permanently refuse trajectory writes for this session."""
+        self.motion_cancelled = True
+
+    def recover(self, reason):
+        """Remain supervised until the operator confirms a supported release."""
+        self.cancel_motion()
+        result = stop_recovery.supervise(self.recovery, reason, self.operator, self.recovery_poll_s)
+        self.enabled = False  # Only reached after explicit supported release/power removal.
+        return result
+
     def enable(self, initial):
-        # Start supported, with torque off. Seed every goal BEFORE enabling
-        # motors, so an old stored goal cannot trigger an unexpected movement.
-        if any(self.bus.sync_read("Torque_Enable", normalize=False).values()):
-            raise RuntimeError("Motion requires all torque OFF initially; support the arm first")
-        if any(self.bus.sync_read("Operating_Mode", normalize=False).values()):
-            raise RuntimeError("Expected position mode (0); configure with LeRobot separately")
-        current = self.read()
-        check_positions(current)
-        if any(abs(current[j] - initial[j]) > 0.5 for j in JOINTS):
-            raise RuntimeError("Arm moved during preparation; reposition and start a new run")
-        self.bus.sync_write("Goal_Position", initial)
-        self.enabled = True  # Cleanup also covers partially successful torque enabling.
-        self.bus.enable_torque()
+        def log(event, values):
+            self.recovery_log.write(json.dumps(dict(event=event, values=values), allow_nan=False) + "\n")
+
+        placement_guards.seed_and_verify(self, initial, JOINTS, log, enable_if_all_off=True)
 
     def send(self, command):
+        if not self.enabled or getattr(self, "motion_cancelled", False):
+            raise RuntimeError("Trajectory commands disabled")
         self.bus.sync_write("Goal_Position", command)
 
     def close(self):
-        # Passive recording must not change torque. Motion always releases it.
-        # Support the arm: disabling torque can let it fall under gravity.
-        self.bus.disconnect(disable_torque=self.enabled)
+        if self.enabled:
+            raise RuntimeError("Cannot disconnect before supervised recovery releases the arm")
+        self.bus.disconnect(disable_torque=False)
+        for name in ("recovery_log", "operator"):
+            resource = getattr(self, name, None)
+            if resource is not None:
+                resource.close()
 
 
 def run(args, arm, limits, schedule, video=None):
@@ -187,7 +248,7 @@ def run(args, arm, limits, schedule, video=None):
             "mode": args.mode, "units": UNITS, "joint_order": JOINTS,
             "started_utc": datetime.now(timezone.utc).isoformat(),
             "python": platform.python_version(), "platform": platform.platform(),
-            "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+            "script_sha256": sha256(Path(__file__)),
             "settings": {k: str(v) if isinstance(v, Path) else v for k, v in vars(args).items()},
             "limits": limits, "samples": 0,
             "timestamp_note": "Host monotonic read intervals; not device acquisition timestamps"}
@@ -210,7 +271,7 @@ def run(args, arm, limits, schedule, video=None):
             meta["initial_telemetry"] = read_telemetry(arm, origin)
         if args.trajectory:
             meta["trajectory"] = json.loads(args.trajectory.read_text())
-            meta["trajectory_sha256"] = hashlib.sha256(args.trajectory.read_bytes()).hexdigest()
+            meta["trajectory_sha256"] = sha256(args.trajectory)
             if meta["trajectory_sha256"] != args.trajectory_sha256:
                 raise ValueError("Trajectory changed after validation; start a new experiment")
         if args.mode == "pickup":
@@ -230,6 +291,8 @@ def run(args, arm, limits, schedule, video=None):
                 check_positions(initial | {args.joint: initial[args.joint] + sign * args.amplitude_deg}, limits)
         if args.mode != "read":
             save()  # Persist the configuration before enabling motion.
+            if isinstance(arm, LeRobotArm):
+                arm.prepare_recovery(args.recovery_config, limits, args.output)
             arm.enable(initial)
         previous = initial.copy()
         started = time.monotonic()
@@ -311,6 +374,8 @@ def run(args, arm, limits, schedule, video=None):
         meta["error"] = f"{type(exc).__name__}: {exc}"
     finally:
         try:
+            if isinstance(arm, LeRobotArm) and arm.enabled:
+                meta["recovery"] = arm.recover(meta.get("error", meta["status"]))
             arm.close()
             meta["cleanup"] = "completed"
         except BaseException as exc:
@@ -340,6 +405,7 @@ def parse_args(argv=None):
     parser.add_argument("--robot-id")
     parser.add_argument("--execute", action="store_true", help="Explicitly enable real joint motion")
     parser.add_argument("--limits", type=Path, help="Measured local joint envelope JSON")
+    parser.add_argument("--recovery-config", type=Path, help="Reviewed local supervised-stop thresholds")
     parser.add_argument("--joint", choices=ARM_JOINTS, default="shoulder_pan")
     parser.add_argument("--amplitude-deg", type=float, default=3.0)
     parser.add_argument("--ramp-s", type=float, default=3.0)
@@ -369,8 +435,8 @@ def parse_args(argv=None):
     if args.backend == "lerobot":
         if not args.port or not args.robot_id:
             parser.error("Hardware requires --port and --robot-id")
-        if args.mode != "read" and (not args.execute or not args.limits):
-            parser.error("Real movement requires --execute and a filled --limits file")
+        if args.mode != "read" and (not args.execute or not args.limits or not args.recovery_config):
+            parser.error("Real movement requires --execute, --limits and --recovery-config")
     elif args.execute:
         parser.error("--execute is for the lerobot backend; mock never accesses hardware")
     if not 1 <= args.trials <= 20 or (args.trials != 1 and args.mode != "pickup"):
@@ -394,8 +460,8 @@ def main(argv=None):
     schedule = (response_schedule(args.hz, args.amplitude_deg, args.ramp_s, args.hold_s, args.cycles)
                 if args.mode == "joint_response" else [("read", 0.0)] * math.ceil(args.duration_s * args.hz))
     if args.mode == "pickup":
-        from pickup_trial import load_pickup
-        args.trajectory_sha256 = hashlib.sha256(args.trajectory.read_bytes()).hexdigest()
+        from robot_calibration.collection.pickup_trial import load_pickup
+        args.trajectory_sha256 = sha256(args.trajectory)
         _, schedule = load_pickup(args.trajectory, args.hz, JOINTS, limits)
     if len(schedule) / args.hz > 300:
         raise ValueError("Experiment exceeds the 300 second budget")
@@ -403,7 +469,8 @@ def main(argv=None):
         print("Hardware mode: close all other robot controllers. Joint bounds do not check collisions.", flush=True)
         if args.mode != "read":
             print("Start with the arm supported, gripper empty and torque OFF. Clear the taught path. "
-                  "Torque will be disabled on exit; support it against falling. Keep physical power-off accessible.", flush=True)
+                  "Completion and abort enter supervised recovery. Mechanical support and an explicit terminal                   "
+                  "release are required before disconnect. Keep physical power-off accessible.", flush=True)
     output_root = args.output
     if args.trials > 1:
         output_root.mkdir(parents=True, exist_ok=False)
@@ -415,10 +482,14 @@ def main(argv=None):
                            "support the arm at start with torque OFF. Type ready (anything else stops): ")
             if answer.strip().lower() != "ready":
                 raise KeyboardInterrupt("Operator stopped trial series")
-        arm = LeRobotArm(args.port, args.robot_id) if args.backend == "lerobot" else MockArm()
+        if args.backend == "lerobot":
+            require_unowned_port(args.port)
+            arm = LeRobotArm(args.port, args.robot_id)
+        else:
+            arm = MockArm()
         video = None
         if args.camera:
-            from pickup_trial import VideoRecorder
+            from robot_calibration.collection.pickup_trial import VideoRecorder
             video = VideoRecorder(args.camera, args.camera_fps)
         result = run(args, arm, limits, schedule, video)
         print(f"{result['status']}: {result['samples']} samples in {args.output} ({args.backend})")

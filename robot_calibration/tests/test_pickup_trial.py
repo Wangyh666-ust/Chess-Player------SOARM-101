@@ -10,9 +10,9 @@ from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
 
-import collect_robot_calibration as collector
-from pickup_trial import PHASES, VideoRecorder, load_pickup
-from annotate_separation import annotate
+from robot_calibration.collection import collect_robot_calibration as collector
+from robot_calibration.collection.pickup_trial import PHASES, VideoRecorder, load_pickup
+from robot_calibration.collection.annotate_separation import annotate
 
 
 def taught_data():

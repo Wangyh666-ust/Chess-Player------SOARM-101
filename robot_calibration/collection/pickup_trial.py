@@ -11,7 +11,7 @@ PHASES = ("start", "approach", "close", "lift", "hold", "lower", "release", "ret
 
 
 def load_pickup(path, hz, joints, limits):
-    from collect_robot_calibration import UNITS, check_positions, finite
+    from robot_calibration.collection.collect_robot_calibration import UNITS, check_positions, finite
 
     data = json.loads(path.read_text())
     if data.get("units") != UNITS:
@@ -69,7 +69,8 @@ class VideoRecorder:
     Camera buffering/exposure latency is unknown and must not be called exact sync.
     """
 
-    def __init__(self, source, fps):
+    def __init__(self, source, fps, fixed_resolution=None):
+        self.fixed_resolution = fixed_resolution
         self.source = source
         self.fps = fps
         self.stop = threading.Event()
@@ -77,6 +78,8 @@ class VideoRecorder:
         self.error = None
         self.count = 0
         self.last_frame = None
+        self.latest_sample = None
+        self.policy_frame_sink = None
         self.thread = None
 
     def start(self, directory, origin):
@@ -98,6 +101,10 @@ class VideoRecorder:
             capture = cv2.VideoCapture(source)
             if not capture.isOpened():
                 raise RuntimeError(f"Cannot open camera {self.source}")
+            if self.fixed_resolution:
+                capture.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'MJPG'))
+                capture.set(cv2.CAP_PROP_FRAME_WIDTH, self.fixed_resolution[0])
+                capture.set(cv2.CAP_PROP_FRAME_HEIGHT, self.fixed_resolution[1])
             capture.set(cv2.CAP_PROP_FPS, self.fps)
             capture.set(cv2.CAP_PROP_BUFFERSIZE, 1)  # A request; not supported by every backend.
             with (self.directory / "frames.jsonl").open("x", buffering=1) as frames:
@@ -109,6 +116,8 @@ class VideoRecorder:
                         raise RuntimeError("Camera frame acquisition failed")
                     if writer is None:
                         size = (frame.shape[1], frame.shape[0])
+                        if self.fixed_resolution and size != self.fixed_resolution:
+                            raise RuntimeError('Camera resolution differs from calibration')
                         writer = cv2.VideoWriter(str(self.directory / "video.avi"),
                                                  cv2.VideoWriter_fourcc(*"MJPG"), self.fps, size)
                         if not writer.isOpened():
@@ -119,6 +128,10 @@ class VideoRecorder:
                     frames.write(json.dumps({"frame": self.count, "read_start_s": before,
                                              "read_end_s": after}) + "\n")
                     self.count += 1
+                    if self.policy_frame_sink is not None:
+                        small = cv2.resize(frame, (320, 180), interpolation=cv2.INTER_AREA)
+                        self.policy_frame_sink((self.count - 1, before, after, small))
+                    self.latest_sample = (self.count - 1, after, frame)
                     self.last_frame = time.monotonic()
                     self.ready.set()
         except BaseException as exc:

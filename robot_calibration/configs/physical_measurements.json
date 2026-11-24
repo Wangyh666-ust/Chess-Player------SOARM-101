@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "measured_on": "2026-11-11",
+  "source": "User measurements; grid units confirmed as centimetres",
+  "units": {
+    "mass": "g",
+    "length": "mm"
+  },
+  "measurement_uncertainty": null,
+  "pieces": {
+    "king": {
+      "mass_g": 2,
+      "height_mm": 43,
+      "base_diameter_mm": 14,
+      "base_ring_diameter_mm": 15,
+      "top_ring_diameter_mm": 11,
+      "top_diameter_mm": 12
+    },
+    "queen": {
+      "mass_g": 3,
+      "height_mm": 35,
+      "base_diameter_mm": 14,
+      "base_ring_diameter_mm": 15,
+      "top_ring_diameter_mm": 11,
+      "top_diameter_mm": 9
+    },
+    "rook": {
+      "mass_g": 2,
+      "height_mm": 25.5,
+      "base_diameter_mm": 14,
+      "base_ring_diameter_mm": 15,
+      "top_ring_diameter_mm": 11,
+      "top_diameter_mm": 9
+    },
+    "bishop": {
+      "mass_g": 2,
+      "height_mm": 32,
+      "base_diameter_mm": 14,
+      "base_ring_diameter_mm": 15,
+      "top_ring_diameter_mm": 9.5,
+      "top_diameter_mm": 8
+    },
+    "knight": {
+      "mass_g": 2,
+      "height_mm": 27.5,
+      "base_diameter_mm": 14,
+      "base_ring_diameter_mm": 15,
+      "graspable_width_mm": 6,
+      "top_ring_diameter_mm": null,
+      "top_diameter_mm": null
+    },
+    "pawn": {
+      "mass_g": 2,
+      "height_mm": 23,
+      "base_diameter_mm": 14,
+      "base_ring_diameter_mm": 15,
+      "top_ring_diameter_mm": 9,
+      "top_diameter_mm": 9
+    }
+  },
+  "board": {
+    "outer_dimensions_mm": [
+      248,
+      248,
+      16
+    ],
+    "seam_width_mm": 1.5,
+    "cell_dimensions_mm": [
+      25,
+      24.5
+    ],
+    "grid_dimensions_mm": [
+      202,
+      198
+    ],
+    "axis_convention": "X: a1 toward h1 (202 mm); Y: a1 toward a8 (198 mm), crossing the seam. Dimension arrays are X/Y.",
+    "grid_includes_seam": null,
+    "consistency_note": "Grid dimensions are X/Y = 202/198 mm; nominal pitches are X/Y = 25/24.5 mm. Y-direction W-B-W widths sum to 73.1 mm, matching the reported span. X-direction B-W-B widths sum to 75.8 mm versus an approximately 76 mm span. Preserve ruler measurements without forcing exact pitch; seam inclusion conventions and marker corners remain to be verified; seam location is confirmed between ranks 4 and 5.",
+    "robot_from_board_transform": null,
+    "alignment_method_planned": "ArUco observations and calibrated robot poses; camera-to-robot transform must also be established",
+    "measurements_updated_on": "2026-11-19",
+    "grid_height_above_border_mm": 1,
+    "grid_height_source": "User correction, 2026-11-19: grid, grey surround and thin black outline are 20 mm above the table; outer black border is 1 mm lower, at 19 mm. With 3 mm feet, body thickness to the border is derived as 16 mm.",
+    "feet_height_mm": 3,
+    "nominal_supported_height_mm": 19,
+    "seam_effect_reported": "The a1-to-a8 (Y) direction crosses the seam.",
+    "printed_cell_measurements": {
+      "black_line_extra_reported_mm": 0.45,
+      "black_line_extra_interpretation": "User reports each black boundary line is 0.45 mm wide, on each side; relation to colour widths and nominal pitch remains unverified.",
+      "first_direction": {
+        "white_width_mm": 24.1,
+        "black_width_mm": 24.9,
+        "three_cell_colours": [
+          "white",
+          "black",
+          "white"
+        ],
+        "three_cell_total_mm": 73.1,
+        "axis": "y"
+      },
+      "second_direction": {
+        "white_width_mm": 24.8,
+        "black_width_mm": 25.5,
+        "three_cell_colours": [
+          "black",
+          "white",
+          "black"
+        ],
+        "three_cell_total_mm": 76,
+        "axis": "x"
+      },
+      "note": "First/second direction retain the original measurement labels (Y/X). Dimensions elsewhere are now X/Y. Approximate ruler spans and visible colour widths are retained separately from logical cell pitch."
+    },
+    "dimension_order": [
+      "x",
+      "y"
+    ],
+    "seam_crossing_axis": "y",
+    "seam_location": {
+      "between_ranks": [
+        4,
+        5
+      ],
+      "spans_files": [
+        "a",
+        "h"
+      ],
+      "description": "Middle of board, separating a4..h4 from a5..h5; width approximately 1.5 mm"
+    },
+    "border_height_above_table_mm": 19,
+    "playing_surface_height_above_table_mm": 20,
+    "surround_height_above_table_mm": 20
+  },
+  "contact": {
+    "sliding_friction": null,
+    "gripper_friction": null,
+    "magnetic_pull_off_force_N": null
+  },
+  "notes": [
+    "Colour-specific variation was not supplied.",
+    "Top-ring heights were not supplied; widths alone do not define grasp heights.",
+    "King height is now 43 mm, versus the earlier model's 45 mm.",
+    "These measurements do not automatically update Blender models or the frozen simulation snapshot."
+  ]
+}

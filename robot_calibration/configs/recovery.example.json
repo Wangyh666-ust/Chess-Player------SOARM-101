@@ -1,0 +1,8 @@
+{
+  "drift_ticks": null,
+  "max_temperature": null,
+  "read_deadline_s": null,
+  "poll_deadline_s": null,
+  "hold_deadline_s": null,
+  "poll_s": null
+}
