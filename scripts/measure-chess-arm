@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd -- "$(dirname -- "$0")/.."
+case "${1:-help}" in
+  preview) shift ;;
+  run) shift; set -- --execute "$@" ;;
+  measure-start) shift; set -- --execute --measure-start "$@" ;;
+  plan)
+    shift
+    exec "${CALIBRATION_ANALYSIS_PYTHON:-.venv-control/bin/python}" \
+      -m robot_calibration.analysis.plan_powered_placement "$@"
+    ;;
+  help) set -- --help ;;
+  *) echo 'Usage: measure-chess-arm {preview|run|measure-start|plan} [options]' >&2; exit 2 ;;
+esac
+exec "${CALIBRATION_PYTHON:-.venv-robot-calibration/bin/python}" \
+  -m robot_calibration.collection.powered_placement "$@"
