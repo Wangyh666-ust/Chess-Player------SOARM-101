@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex offline review, 2026-11-13",
+  "boundary_convention": "Half-open host-time intervals. Conservative exclusion windows, not exact event times.",
+  "scope": "Recording-level outcome labels elsewhere are inherited from the handoff; only listed exceptions have additional temporal review. Idle time is retained. Candidate does not mean independently certified success.",
+  "trials": {
+    "manual-recordings/white-bishop-1/trial-001": {
+      "notes": "Setup only: human repositions the piece, no robot pickup. Supplied review confirmed by sampled fixed frames.",
+      "segments": [
+        {"start_s": 0, "end_s": null, "kind": "manual_setup", "outcome": "no_attempt", "imitation_candidate": false}
+      ]
+    },
+    "manual-recordings/white-knight-1/trial-003": {
+      "notes": "Fixed frames 231/246 show loss/withdrawal; 291/306/321 show hand reset; 351/366 show hand withdrawn and approach to retry. Exclude 18-25 s conservatively. Retry outcome inherited from supplied outcome review; not a new independent success label.",
+      "evidence": {"camera": "fixed", "frames": [231, 246, 261, 291, 306, 321, 351, 366, 426, 547]},
+      "segments": [
+        {"start_s": 0, "end_s": 18, "kind": "attempt", "outcome": "failed", "imitation_candidate": false},
+        {"start_s": 18, "end_s": 25, "kind": "manual_reset_and_transition", "outcome": "intervention", "imitation_candidate": false},
+        {"start_s": 25, "end_s": null, "kind": "retry", "outcome": "success_reported", "imitation_candidate": true}
+      ]
+    },
+    "manual-recordings/white-pawn-1/trial-004": {
+      "source_square_unreliable": true,
+      "notes": "Supplied review identifies regrip around 22.8-24.8 s, then final placement near 28.8 s. Fixed frames 306-426 reviewed; exclusion 21-29 s intentionally includes the ambiguous transitions. No human reset is inferred. Entire recording excluded from simple imitation candidates; preserve for recovery work.",
+      "evidence": {"camera": "fixed", "frames": [306, 321, 336, 351, 366, 381, 396, 411, 426]},
+      "segments": [
+        {"start_s": 0, "end_s": 21, "kind": "initial_transfer", "outcome": "incomplete_transfer", "imitation_candidate": false},
+        {"start_s": 21, "end_s": 29, "kind": "robot_regrip_and_placement", "outcome": "recovery", "imitation_candidate": false},
+        {"start_s": 29, "end_s": null, "kind": "withdrawal", "outcome": "success_reported_after_regrip", "imitation_candidate": false}
+      ]
+    }
+  }
+}

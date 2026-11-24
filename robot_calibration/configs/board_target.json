@@ -1,0 +1,821 @@
+{
+  "schema_version": 1,
+  "target_id": "physical_chessboard",
+  "target_type": "custom_aruco_board",
+  "status": "measured_geometry_decoder_order_verified",
+  "units": "mm",
+  "source": "User board dimensions and 40 ruler-measured marker corners; historical recognition used only for identity/orientation candidates",
+  "validated_on": null,
+  "coordinate_frame": {
+    "origin": "Outer grid corner at a1, on the board playing surface",
+    "x_axis": "From file a toward file h",
+    "y_axis": "From rank 1 toward rank 8",
+    "z_axis": "Out of the playing surface"
+  },
+  "reported_measurements": {
+    "outer_dimensions_mm": [
+      248,
+      248,
+      16
+    ],
+    "grid_dimensions_mm": [
+      202,
+      198
+    ],
+    "cell_dimensions_mm": [
+      25,
+      24.5
+    ],
+    "seam_width_mm": 1.5,
+    "first_dimension_axis": "x",
+    "grid_includes_seam": null,
+    "seam_location": {
+      "between_ranks": [
+        4,
+        5
+      ],
+      "spans_files": [
+        "a",
+        "h"
+      ],
+      "description": "Middle of board, separating a4..h4 from a5..h5; width approximately 1.5 mm"
+    },
+    "measurement_uncertainty_mm": null,
+    "feet_height_mm": 3,
+    "grid_height_above_border_mm": 1,
+    "grid_height_source": "User correction, 2026-11-19: grid, grey surround and thin black outline are 20 mm above the table; outer black border is 1 mm lower, at 19 mm. With 3 mm feet, body thickness to the border is derived as 16 mm.",
+    "nominal_supported_height_mm": 19,
+    "printed_cell_measurements": {
+      "black_line_extra_reported_mm": 0.45,
+      "black_line_extra_interpretation": "User reports each black boundary line is 0.45 mm wide, on each side; relation to colour widths and nominal pitch remains unverified.",
+      "first_direction": {
+        "white_width_mm": 24.1,
+        "black_width_mm": 24.9,
+        "three_cell_colours": [
+          "white",
+          "black",
+          "white"
+        ],
+        "three_cell_total_mm": 73.1,
+        "axis": "y"
+      },
+      "second_direction": {
+        "white_width_mm": 24.8,
+        "black_width_mm": 25.5,
+        "three_cell_colours": [
+          "black",
+          "white",
+          "black"
+        ],
+        "three_cell_total_mm": 76,
+        "axis": "x"
+      },
+      "note": "First/second direction retain the original measurement labels (Y/X). Dimensions elsewhere are now X/Y. Approximate ruler spans and visible colour widths are retained separately from logical cell pitch."
+    },
+    "updated_on": "2026-11-19",
+    "reported_direction_order": [
+      "a1 toward h1 (X)",
+      "a1 toward a8 (Y)"
+    ],
+    "seam_effect_reported": "The a1-to-a8 (Y) direction crosses the seam.",
+    "dimension_order": [
+      "x",
+      "y"
+    ],
+    "seam_crossing_axis": "y",
+    "border_height_above_table_mm": 19,
+    "playing_surface_height_above_table_mm": 20,
+    "surround_height_above_table_mm": 20
+  },
+  "surface": {
+    "model": "plane",
+    "basis": "User confirms the opened board is flat enough; the seam does not change flatness"
+  },
+  "marker_dictionary": "DICT_4X4_50",
+  "marker_corner_order": "Canonical decoded marker order: top-left, top-right, bottom-right, bottom-left; not image-sorted",
+  "markers": [
+    {
+      "id": 0,
+      "cell": "a8",
+      "corners_mm": [
+        [
+          2.5,
+          196.5,
+          0.0
+        ],
+        [
+          22.5,
+          197.0,
+          0.0
+        ],
+        [
+          22.7,
+          177.0,
+          0.0
+        ],
+        [
+          3.0,
+          176.5,
+          0.0
+        ]
+      ],
+      "identity_source": "User ID/square association confirmed against current decoded board views",
+      "identity_was_manually_annotated": false,
+      "measured_board_corners_mm": {
+        "TL": [
+          2.5,
+          196.5,
+          0.0
+        ],
+        "TR": [
+          22.5,
+          197.0,
+          0.0
+        ],
+        "BR": [
+          22.7,
+          177.0,
+          0.0
+        ],
+        "BL": [
+          3.0,
+          176.5,
+          0.0
+        ]
+      },
+      "measurement_precision_mm": 0.5,
+      "measurement_source": "User ruler measurements, 2026-11-17; precision estimated \u00b10.5 mm",
+      "corner_order_verified": true,
+      "candidate_decoder_corner_order": [
+        "TL",
+        "TR",
+        "BR",
+        "BL"
+      ],
+      "candidate_order_source": "Historical recognition marker orientation only; confirm using a current decoded view before populating corners_mm",
+      "decoder_corner_order": [
+        "TL",
+        "TR",
+        "BR",
+        "BL"
+      ],
+      "corner_order_evidence": {
+        "verified_on": "2026-11-17",
+        "method": "Marker decoding and board orientation checked; canonical corner ordering verified."
+      }
+    },
+    {
+      "id": 1,
+      "cell": "e8",
+      "corners_mm": [
+        [
+          124.0,
+          176.2,
+          0.0
+        ],
+        [
+          104.0,
+          177.0,
+          0.0
+        ],
+        [
+          104.5,
+          197.0,
+          0.0
+        ],
+        [
+          124.5,
+          196.2,
+          0.0
+        ]
+      ],
+      "identity_source": "User ID/square association confirmed against current decoded board views",
+      "identity_was_manually_annotated": false,
+      "measured_board_corners_mm": {
+        "TL": [
+          104.5,
+          197.0,
+          0.0
+        ],
+        "TR": [
+          124.5,
+          196.2,
+          0.0
+        ],
+        "BR": [
+          124.0,
+          176.2,
+          0.0
+        ],
+        "BL": [
+          104.0,
+          177.0,
+          0.0
+        ]
+      },
+      "measurement_precision_mm": 0.5,
+      "measurement_source": "User ruler measurements, 2026-11-17; precision estimated \u00b10.5 mm",
+      "corner_order_verified": true,
+      "candidate_decoder_corner_order": [
+        "BR",
+        "BL",
+        "TL",
+        "TR"
+      ],
+      "candidate_order_source": "Historical recognition marker orientation only; confirm using a current decoded view before populating corners_mm",
+      "decoder_corner_order": [
+        "BR",
+        "BL",
+        "TL",
+        "TR"
+      ],
+      "corner_order_evidence": {
+        "verified_on": "2026-11-17",
+        "method": "Marker decoding and board orientation checked; canonical corner ordering verified."
+      }
+    },
+    {
+      "id": 2,
+      "cell": "h7",
+      "corners_mm": [
+        [
+          198.5,
+          151.5,
+          0.0
+        ],
+        [
+          179.0,
+          153.0,
+          0.0
+        ],
+        [
+          179.5,
+          172.7,
+          0.0
+        ],
+        [
+          199.5,
+          171.5,
+          0.0
+        ]
+      ],
+      "identity_source": "User ID/square association confirmed against current decoded board views",
+      "identity_was_manually_annotated": false,
+      "measured_board_corners_mm": {
+        "TL": [
+          179.5,
+          172.7,
+          0.0
+        ],
+        "TR": [
+          199.5,
+          171.5,
+          0.0
+        ],
+        "BR": [
+          198.5,
+          151.5,
+          0.0
+        ],
+        "BL": [
+          179.0,
+          153.0,
+          0.0
+        ]
+      },
+      "measurement_precision_mm": 0.5,
+      "measurement_source": "User ruler measurements, 2026-11-17; precision estimated \u00b10.5 mm",
+      "corner_order_verified": true,
+      "candidate_decoder_corner_order": [
+        "BR",
+        "BL",
+        "TL",
+        "TR"
+      ],
+      "candidate_order_source": "Historical recognition marker orientation only; confirm using a current decoded view before populating corners_mm",
+      "decoder_corner_order": [
+        "BR",
+        "BL",
+        "TL",
+        "TR"
+      ],
+      "corner_order_evidence": {
+        "verified_on": "2026-11-17",
+        "method": "Marker decoding and board orientation checked; canonical corner ordering verified."
+      }
+    },
+    {
+      "id": 3,
+      "cell": "h3",
+      "corners_mm": [
+        [
+          199.1,
+          70.5,
+          0.0
+        ],
+        [
+          199.5,
+          50.5,
+          0.0
+        ],
+        [
+          179.5,
+          50.1,
+          0.0
+        ],
+        [
+          179.1,
+          70.1,
+          0.0
+        ]
+      ],
+      "identity_source": "User ID/square association confirmed against current decoded board views",
+      "identity_was_manually_annotated": false,
+      "measured_board_corners_mm": {
+        "TL": [
+          179.1,
+          70.1,
+          0.0
+        ],
+        "TR": [
+          199.1,
+          70.5,
+          0.0
+        ],
+        "BR": [
+          199.5,
+          50.5,
+          0.0
+        ],
+        "BL": [
+          179.5,
+          50.1,
+          0.0
+        ]
+      },
+      "measurement_precision_mm": 0.5,
+      "measurement_source": "User ruler measurements, 2026-11-17; precision estimated \u00b10.5 mm",
+      "corner_order_verified": true,
+      "candidate_decoder_corner_order": [
+        "TR",
+        "BR",
+        "BL",
+        "TL"
+      ],
+      "candidate_order_source": "Historical recognition marker orientation only; confirm using a current decoded view before populating corners_mm",
+      "decoder_corner_order": [
+        "TR",
+        "BR",
+        "BL",
+        "TL"
+      ],
+      "corner_order_evidence": {
+        "verified_on": "2026-11-17",
+        "method": "Marker decoding and board orientation checked; canonical corner ordering verified."
+      }
+    },
+    {
+      "id": 4,
+      "cell": "h1",
+      "corners_mm": [
+        [
+          180.0,
+          2.0,
+          0.0
+        ],
+        [
+          179.0,
+          21.5,
+          0.0
+        ],
+        [
+          198.8,
+          23.0,
+          0.0
+        ],
+        [
+          200.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "identity_source": "User ID/square association confirmed against current decoded board views",
+      "identity_was_manually_annotated": false,
+      "measured_board_corners_mm": {
+        "TL": [
+          179.0,
+          21.5,
+          0.0
+        ],
+        "TR": [
+          198.8,
+          23.0,
+          0.0
+        ],
+        "BR": [
+          200.0,
+          3.0,
+          0.0
+        ],
+        "BL": [
+          180.0,
+          2.0,
+          0.0
+        ]
+      },
+      "measurement_precision_mm": 0.5,
+      "measurement_source": "User ruler measurements, 2026-11-17; precision estimated \u00b10.5 mm",
+      "corner_order_verified": true,
+      "candidate_decoder_corner_order": [
+        "BL",
+        "TL",
+        "TR",
+        "BR"
+      ],
+      "candidate_order_source": "Historical recognition marker orientation only; confirm using a current decoded view before populating corners_mm",
+      "decoder_corner_order": [
+        "BL",
+        "TL",
+        "TR",
+        "BR"
+      ],
+      "corner_order_evidence": {
+        "verified_on": "2026-11-17",
+        "method": "Marker decoding and board orientation checked; canonical corner ordering verified."
+      }
+    },
+    {
+      "id": 5,
+      "cell": "d1",
+      "corners_mm": [
+        [
+          98.2,
+          2.5,
+          0.0
+        ],
+        [
+          78.2,
+          2.6,
+          0.0
+        ],
+        [
+          78.5,
+          22.1,
+          0.0
+        ],
+        [
+          98.5,
+          22.2,
+          0.0
+        ]
+      ],
+      "identity_source": "User ID/square association confirmed against current decoded board views",
+      "identity_was_manually_annotated": true,
+      "measured_board_corners_mm": {
+        "TL": [
+          78.5,
+          22.1,
+          0.0
+        ],
+        "TR": [
+          98.5,
+          22.2,
+          0.0
+        ],
+        "BR": [
+          98.2,
+          2.5,
+          0.0
+        ],
+        "BL": [
+          78.2,
+          2.6,
+          0.0
+        ]
+      },
+      "measurement_precision_mm": 0.5,
+      "measurement_source": "User ruler measurements, 2026-11-17; precision estimated \u00b10.5 mm",
+      "corner_order_verified": true,
+      "candidate_decoder_corner_order": [
+        "BR",
+        "BL",
+        "TL",
+        "TR"
+      ],
+      "candidate_order_source": "Historical recognition marker orientation only; confirm using a current decoded view before populating corners_mm",
+      "decoder_corner_order": [
+        "BR",
+        "BL",
+        "TL",
+        "TR"
+      ],
+      "corner_order_evidence": {
+        "verified_on": "2026-11-17",
+        "method": "Marker decoding and board orientation checked; canonical corner ordering verified."
+      }
+    },
+    {
+      "id": 6,
+      "cell": "a2",
+      "corners_mm": [
+        [
+          22.0,
+          47.3,
+          0.0
+        ],
+        [
+          22.5,
+          27.4,
+          0.0
+        ],
+        [
+          2.5,
+          27.1,
+          0.0
+        ],
+        [
+          2.0,
+          47.1,
+          0.0
+        ]
+      ],
+      "identity_source": "User ID/square association confirmed against current decoded board views",
+      "identity_was_manually_annotated": false,
+      "measured_board_corners_mm": {
+        "TL": [
+          2.0,
+          47.1,
+          0.0
+        ],
+        "TR": [
+          22.0,
+          47.3,
+          0.0
+        ],
+        "BR": [
+          22.5,
+          27.4,
+          0.0
+        ],
+        "BL": [
+          2.5,
+          27.1,
+          0.0
+        ]
+      },
+      "measurement_precision_mm": 0.5,
+      "measurement_source": "User ruler measurements, 2026-11-17; precision estimated \u00b10.5 mm",
+      "corner_order_verified": true,
+      "candidate_decoder_corner_order": [
+        "TR",
+        "BR",
+        "BL",
+        "TL"
+      ],
+      "candidate_order_source": "Historical recognition marker orientation only; confirm using a current decoded view before populating corners_mm",
+      "decoder_corner_order": [
+        "TR",
+        "BR",
+        "BL",
+        "TL"
+      ],
+      "corner_order_evidence": {
+        "verified_on": "2026-11-17",
+        "method": "Marker decoding and board orientation checked; canonical corner ordering verified."
+      }
+    },
+    {
+      "id": 8,
+      "cell": "c6",
+      "corners_mm": [
+        [
+          53.1,
+          147.0,
+          0.0
+        ],
+        [
+          73.1,
+          146.0,
+          0.0
+        ],
+        [
+          72.9,
+          126.1,
+          0.0
+        ],
+        [
+          52.9,
+          127.0,
+          0.0
+        ]
+      ],
+      "identity_source": "User ID/square association confirmed against current decoded board views",
+      "identity_was_manually_annotated": false,
+      "measured_board_corners_mm": {
+        "TL": [
+          53.1,
+          147.0,
+          0.0
+        ],
+        "TR": [
+          73.1,
+          146.0,
+          0.0
+        ],
+        "BR": [
+          72.9,
+          126.1,
+          0.0
+        ],
+        "BL": [
+          52.9,
+          127.0,
+          0.0
+        ]
+      },
+      "measurement_precision_mm": 0.5,
+      "measurement_source": "User ruler measurements, 2026-11-17; precision estimated \u00b10.5 mm",
+      "corner_order_verified": true,
+      "candidate_decoder_corner_order": [
+        "TL",
+        "TR",
+        "BR",
+        "BL"
+      ],
+      "candidate_order_source": "Historical recognition marker orientation only; confirm using a current decoded view before populating corners_mm",
+      "decoder_corner_order": [
+        "TL",
+        "TR",
+        "BR",
+        "BL"
+      ],
+      "corner_order_evidence": {
+        "verified_on": "2026-11-17",
+        "method": "Marker decoding and board orientation checked; canonical corner ordering verified."
+      }
+    },
+    {
+      "id": 9,
+      "cell": "f5",
+      "corners_mm": [
+        [
+          129.0,
+          102.8,
+          0.0
+        ],
+        [
+          129.0,
+          122.8,
+          0.0
+        ],
+        [
+          149.0,
+          123.0,
+          0.0
+        ],
+        [
+          149.0,
+          103.0,
+          0.0
+        ]
+      ],
+      "identity_source": "User ID/square association confirmed against current decoded board views",
+      "identity_was_manually_annotated": false,
+      "measured_board_corners_mm": {
+        "TL": [
+          129.0,
+          122.8,
+          0.0
+        ],
+        "TR": [
+          149.0,
+          123.0,
+          0.0
+        ],
+        "BR": [
+          149.0,
+          103.0,
+          0.0
+        ],
+        "BL": [
+          129.0,
+          102.8,
+          0.0
+        ]
+      },
+      "measurement_precision_mm": 0.5,
+      "measurement_source": "User ruler measurements, 2026-11-17; precision estimated \u00b10.5 mm",
+      "corner_order_verified": true,
+      "candidate_decoder_corner_order": [
+        "BL",
+        "TL",
+        "TR",
+        "BR"
+      ],
+      "candidate_order_source": "Historical recognition marker orientation only; confirm using a current decoded view before populating corners_mm",
+      "decoder_corner_order": [
+        "BL",
+        "TL",
+        "TR",
+        "BR"
+      ],
+      "corner_order_evidence": {
+        "verified_on": "2026-11-17",
+        "method": "Marker decoding and board orientation checked; canonical corner ordering verified."
+      }
+    },
+    {
+      "id": 11,
+      "cell": "f3",
+      "corners_mm": [
+        [
+          148.0,
+          72.0,
+          0.0
+        ],
+        [
+          149.0,
+          52.0,
+          0.0
+        ],
+        [
+          129.0,
+          51.1,
+          0.0
+        ],
+        [
+          128.0,
+          71.1,
+          0.0
+        ]
+      ],
+      "identity_source": "User ID/square association confirmed against current decoded board views",
+      "identity_was_manually_annotated": false,
+      "measured_board_corners_mm": {
+        "TL": [
+          128.0,
+          71.1,
+          0.0
+        ],
+        "TR": [
+          148.0,
+          72.0,
+          0.0
+        ],
+        "BR": [
+          149.0,
+          52.0,
+          0.0
+        ],
+        "BL": [
+          129.0,
+          51.1,
+          0.0
+        ]
+      },
+      "measurement_precision_mm": 0.5,
+      "measurement_source": "User ruler measurements, 2026-11-17; precision estimated \u00b10.5 mm",
+      "corner_order_verified": true,
+      "candidate_decoder_corner_order": [
+        "TR",
+        "BR",
+        "BL",
+        "TL"
+      ],
+      "candidate_order_source": "Historical recognition marker orientation only; confirm using a current decoded view before populating corners_mm",
+      "decoder_corner_order": [
+        "TR",
+        "BR",
+        "BL",
+        "TL"
+      ],
+      "corner_order_evidence": {
+        "verified_on": "2026-11-17",
+        "method": "Marker decoding and board orientation checked; canonical corner ordering verified."
+      }
+    }
+  ],
+  "notes": [
+    "Measured marker geometry and decoded corner ordering are recorded. Camera intrinsic calibration and held-out validation have not been performed; no calibration consumer is connected yet.",
+    "Dimension arrays use X/Y: a1-to-h1 then a1-to-a8. The original first/second printed-width labels correspond to Y/X.",
+    "Measure the outer black marker boundary, not the paper or tape edge. Include marker placement and rotation; do not assume it is centred in a square.",
+    "A taped-marker chessboard is treated as a custom target unless a standard ChArUco corner/ID layout is explicitly verified.",
+    "Grid dimensions are X/Y = 202/198 mm; nominal pitches are X/Y = 25/24.5 mm. Y-direction W-B-W widths sum to 73.1 mm, matching the reported span. X-direction B-W-B widths sum to 75.8 mm versus an approximately 76 mm span. Preserve ruler measurements without forcing exact pitch; seam inclusion conventions and decoded corner order remain to be verified; seam location is confirmed between ranks 4 and 5.",
+    "Body plus feet gives the outer black border height: 16 + 3 = 19 mm. Grid and grey surround are at 20 mm. Board-frame Z remains zero at the playing surface.",
+    "All 40 board-relative corners are preserved exactly as supplied. Canonical coordinates are enabled only for markers with corner_order_verified=true. Remaining markers must be excluded from calibration until verified. Do not force measured quadrilaterals to perfect squares."
+  ],
+  "marker_identity_source": {
+    "path": "recognition/vision_eval/aruco_live_assets/layout.json",
+    "source_geometry_used": false,
+    "reason": "Existing coordinates derive from manual pixel references and nominal 26 mm cell spacing, not independently measured physical marker corners."
+  },
+  "marker_measurements": {
+    "measured_on": "2026-11-17",
+    "estimated_precision_mm": 0.5,
+    "precision_interpretation": "User estimate, not a statistical standard deviation",
+    "corner_labels": "Board-relative TL/TR/BR/BL when a1 is bottom-left and h1 bottom-right; distinct from decoded marker order",
+    "surface_z_mm": 0,
+    "surface_z_basis": "Planar target assumption, not a measured tape thickness"
+  },
+  "decoder_order_verified_on": "2026-11-17"
+}

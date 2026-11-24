@@ -1,0 +1,4 @@
+# Optional offline simulation/plotting environment; no robot SDK or serial access.
+numpy==1.26.4
+pybullet==3.2.7
+matplotlib==3.9.2
